@@ -386,3 +386,174 @@ html { font-size: calc(100% * var(--schrift, 1)); }
 .lb-text a { color: #fff; }
 .lb-zu { position: absolute; top: calc(var(--safe-top) + var(--s2)); right: calc(var(--safe-right) + var(--s2)); width: var(--tap); height: var(--tap); border-radius: 50%; background: rgba(255,255,255,.18); color: #fff; font-size: 1.25rem; display: inline-flex; align-items: center; justify-content: center; }
 body.lb-offen { overflow: hidden; }
+
+/* =====================================================================
+   Liquid-Glass-Überarbeitung (29.10.2026): Sand hell, Nachtblau dunkel,
+   Kopfzeile und Tab-Leiste als schwebende Pillen, gleich hohe Karten
+   ===================================================================== */
+
+/* ---------- Farbwelten ---------- */
+:root, :root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #EEE5D5; --bg-2: #FBF7F0; --label: #2B2219;
+  --label-2: rgba(66,50,32,.78); --label-3: rgba(66,50,32,.35);
+  --trenner: rgba(110,85,50,.18); --fuellung: rgba(130,100,60,.12);
+  --glas-bg: rgba(251,246,238,.58); --glas-rand: rgba(255,255,255,.65);
+  --glas-schatten: 0 10px 30px rgba(90,65,30,.14), 0 1px 2px rgba(90,65,30,.08);
+  --glas-glanz: inset 0 1px 0 rgba(255,255,255,.75), inset 0 -1px 0 rgba(120,90,50,.06);
+  --karte-bg: rgba(252,248,241,.70); --karte-rand: rgba(255,255,255,.7);
+  --karte-schatten: 0 12px 36px rgba(90,65,30,.12), 0 1px 2px rgba(90,65,30,.06);
+  --seiten-verlauf: linear-gradient(165deg, #F5EEE2 0%, #EDE2CF 55%, #E6D8C0 100%);
+  --seiten-bg-1: rgba(0,71,171,.07); --seiten-bg-2: rgba(46,196,207,.09); --seiten-bg-3: rgba(255,154,60,.12);
+  --aktiv-bg: rgba(255,255,255,.85);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0A1430; --bg-2: #14223F; --label: #EDF1FA;
+    --label-2: rgba(220,228,246,.74); --label-3: rgba(220,228,246,.32);
+    --trenner: rgba(150,172,225,.16); --fuellung: rgba(140,165,225,.14);
+    --glas-bg: rgba(18,32,66,.52); --glas-rand: rgba(255,255,255,.12);
+    --glas-schatten: 0 12px 34px rgba(0,0,0,.45);
+    --glas-glanz: inset 0 1px 0 rgba(255,255,255,.14), inset 0 -1px 0 rgba(0,0,0,.25);
+    --karte-bg: rgba(20,36,72,.62); --karte-rand: rgba(255,255,255,.10);
+    --karte-schatten: 0 14px 40px rgba(0,0,0,.45);
+    --seiten-verlauf: linear-gradient(170deg, #12245A 0%, #0B1838 42%, #070F26 100%);
+    --seiten-bg-1: rgba(60,110,230,.30); --seiten-bg-2: rgba(46,196,207,.12); --seiten-bg-3: rgba(255,154,60,.08);
+    --aktiv-bg: rgba(255,255,255,.16);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0A1430; --bg-2: #14223F; --label: #EDF1FA;
+  --label-2: rgba(220,228,246,.74); --label-3: rgba(220,228,246,.32);
+  --trenner: rgba(150,172,225,.16); --fuellung: rgba(140,165,225,.14);
+  --glas-bg: rgba(18,32,66,.52); --glas-rand: rgba(255,255,255,.12);
+  --glas-schatten: 0 12px 34px rgba(0,0,0,.45);
+  --glas-glanz: inset 0 1px 0 rgba(255,255,255,.14), inset 0 -1px 0 rgba(0,0,0,.25);
+  --karte-bg: rgba(20,36,72,.62); --karte-rand: rgba(255,255,255,.10);
+  --karte-schatten: 0 14px 40px rgba(0,0,0,.45);
+  --seiten-verlauf: linear-gradient(170deg, #12245A 0%, #0B1838 42%, #070F26 100%);
+  --seiten-bg-1: rgba(60,110,230,.30); --seiten-bg-2: rgba(46,196,207,.12); --seiten-bg-3: rgba(255,154,60,.08);
+  --aktiv-bg: rgba(255,255,255,.16);
+}
+body { background: var(--bg); }
+body::before {
+  background:
+    radial-gradient(60vmax 50vmax at 0% 0%, var(--seiten-bg-1), transparent 70%),
+    radial-gradient(50vmax 40vmax at 100% 35%, var(--seiten-bg-2), transparent 70%),
+    radial-gradient(50vmax 40vmax at 25% 100%, var(--seiten-bg-3), transparent 70%),
+    var(--seiten-verlauf);
+}
+
+/* ---------- Glasflächen ---------- */
+.glas, .glas-leicht, .karte, .event, .uebersicht, .erklaerung .kachel {
+  background: var(--glas-bg);
+  border: 1px solid var(--glas-rand);
+  box-shadow: var(--glas-glanz), var(--glas-schatten);
+  -webkit-backdrop-filter: blur(22px) saturate(170%); backdrop-filter: blur(22px) saturate(170%);
+}
+.karte, .event, .uebersicht { background: var(--karte-bg); box-shadow: var(--glas-glanz), var(--karte-schatten); }
+
+/* ---------- Kopfzeile als Pille ---------- */
+.titelzeile {
+  position: sticky; top: max(8px, var(--safe-top)); z-index: 30;
+  width: min(1200px, calc(100% - 2 * var(--rand))); margin: 8px auto 0;
+  min-height: 56px; padding: 6px 6px 6px var(--s4);
+  border-radius: 999px; flex-wrap: nowrap; gap: var(--s2);
+}
+.ichbin { border-radius: 999px; padding: 3px; background: var(--fuellung); }
+.seg { border-radius: 999px; min-height: 38px; }
+.seg[aria-pressed="true"] { background: var(--aktiv-bg); color: var(--kobalt); box-shadow: 0 1px 6px rgba(0,0,0,.12); }
+.thema, .schrift button { border-radius: 999px; }
+.schrift { gap: 0; }
+@media (max-width: 480px) {
+  .titelzeile { padding-left: var(--s3); gap: 4px; }
+  .marke-text { display: none; }
+  .seg { padding: 0 10px; font-size: var(--fs-footnote); }
+  .schrift button { min-width: 36px; }
+  .thema { min-width: 40px; }
+}
+
+/* ---------- Tab-Leiste als schwebende Pille ---------- */
+.tabbar {
+  position: fixed; left: 50%; right: auto; bottom: calc(var(--safe-bottom) + 10px); top: auto; z-index: 30;
+  transform: translateX(-50%); width: max-content; max-width: calc(100% - 24px);
+  display: flex; gap: 2px; padding: 4px; border-radius: 999px; border-width: 1px;
+}
+.tabbar a {
+  flex: 0 0 auto; min-width: 92px; min-height: 52px; padding: 4px var(--s4); border-radius: 999px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  font-size: var(--fs-caption); font-weight: 600; color: var(--label-2);
+  transition: background-color var(--dauer) var(--ease), color var(--dauer) var(--ease);
+}
+.tabbar a[aria-current="page"] { background: var(--aktiv-bg); color: var(--kobalt); box-shadow: 0 1px 6px rgba(0,0,0,.10); }
+.tabbar svg { width: 22px; height: 22px; }
+@media (max-width: 360px) { .tabbar a { min-width: 0; padding: 4px var(--s3); } }
+@media (min-width: 768px) {
+  .tabbar { position: sticky; top: calc(max(8px, var(--safe-top)) + 66px); bottom: auto; left: auto; transform: none; margin: 10px auto 0; z-index: 29; }
+  .tabbar a { flex-direction: row; gap: var(--s2); min-height: 44px; min-width: 0; padding: 0 var(--s5); font-size: var(--fs-subhead); }
+  .tabbar a[aria-current="page"] { background: var(--aktiv-bg); }
+  .tabbar svg { width: 20px; height: 20px; }
+}
+.inhalt { padding-bottom: calc(76px + var(--safe-bottom) + var(--s6)); }
+.fuss { padding-bottom: calc(76px + var(--safe-bottom) + var(--s6)); }
+@media (min-width: 768px) { .inhalt, .fuss { padding-bottom: var(--s8); } }
+.toast { bottom: calc(80px + var(--safe-bottom)); border-radius: 999px; }
+[id] { scroll-margin-top: 140px; }
+
+/* ---------- Bedienelemente ---------- */
+.steuer { border-radius: 26px; padding: var(--s3) var(--s4); }
+.chip, .kopfzeile { border-radius: 999px; }
+.chip { background: var(--fuellung); }
+.suche-feld input, .filter select { border-radius: 999px; background: var(--aktiv-bg); border-color: var(--trenner); }
+.filter select { padding: 0 var(--s3); }
+.filter-auf > summary { display: inline-flex; border: 0; padding: 0 var(--s4); min-height: 40px; border-radius: 999px; background: var(--fuellung); color: var(--label); font-size: var(--fs-subhead); width: max-content; }
+.filter-auf[open] > summary { margin-bottom: var(--s2); }
+.like { border-radius: 999px; }
+.komm-knopf, .komm-senden, .komm-abbrechen { border-radius: 999px; }
+.komm-mehr { border-radius: 999px; }
+.komm-form textarea { border-radius: 18px; background: var(--aktiv-bg); }
+
+/* ---------- Karten: gleich hoch, Aufklapper unten ---------- */
+.karten { align-items: stretch; gap: var(--s5); }
+.karte { border-radius: 28px; display: flex; flex-direction: column; }
+.karte > details.mehr { margin-top: auto; }
+.karte > .bild { border-radius: 0; }
+.karte-kopf { padding: var(--s4) var(--s4) var(--s3); display: flex; flex-direction: column; gap: var(--s1); }
+.karte-kopf > * { margin: 0; }
+.karte h3 { margin: 0; line-height: 1.2; }
+.preis { display: flex; align-items: baseline; gap: var(--s2); }
+.preis-label { font-size: var(--fs-footnote); color: var(--label-2); }
+.preis-neu { font-size: var(--fs-body); }
+.aktionen { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2); margin: var(--s2) 0 0; }
+.aktionen .likes, .aktionen .komm { margin: 0; }
+.aktionen .komm:has(.komm-liste), .aktionen .komm:has(.komm-form) { flex-basis: 100%; }
+.linkleiste { margin: 0; }
+details.quellen > summary { font-size: var(--fs-footnote); }
+.stand-innen { color: var(--label-2); }
+.events { align-items: stretch; }
+.event { border-radius: 24px; display: flex; flex-direction: column; gap: var(--s1); }
+.event > details.mehr { margin: auto calc(-1 * var(--s4)) calc(-1 * var(--s4)); }
+.event > p { margin: 0; }
+
+/* ---------- Erklärungen eingeklappt ---------- */
+details.erklaerung > summary { border: 0; padding: 0 var(--s4); border-radius: 999px; background: var(--fuellung); width: max-content; max-width: 100%; font-size: var(--fs-subhead); }
+details.erklaerung[open] > summary { margin-bottom: var(--s3); }
+details.erklaerung .kachel { border-radius: 22px; }
+
+/* Linkzeile als kleine Glas-Pillen statt Punkt-Trenner */
+.linkleiste { display: flex; flex-wrap: wrap; gap: 6px; }
+.linkleiste > span[aria-hidden="true"] { display: none; }
+.linkleiste a { min-height: 36px; padding: 0 var(--s3); border-radius: 999px; background: var(--fuellung); font-size: var(--fs-footnote); font-weight: 600; text-decoration: none; }
+.linkleiste a:hover { text-decoration: none; filter: brightness(1.05); }
+.mehr-innen .linkleiste, .quellen-innen .linkleiste { margin-top: var(--s1); }
+
+/* Kopfzeile bleibt einzeilig: Zusatztexte nur, wenn Platz ist */
+.marke, .seg, .thema, .schrift button { white-space: nowrap; }
+@media (max-width: 680px) {
+  .ichbin-label, .thema-text { display: none; }
+}
+@media (max-width: 480px) {
+  .marke-text { display: none; }
+}

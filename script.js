@@ -238,8 +238,9 @@
     return teile.length ? '<p class="linkleiste">' + teile.join('<span aria-hidden="true"> · </span>') + "</p>" : "";
   }
 
-  function quellenBlock(e, extra) {
-    var h = '<details class="quellen"><summary>Quellen, Bilder &amp; ursprüngliche Angaben</summary><div class="quellen-innen">';
+  function quellenBlock(e, extra, stand) {
+    var h = '<details class="quellen"><summary>Quellen &amp; Stand</summary><div class="quellen-innen">';
+    if (stand) h += '<p class="stand-innen">' + stand + "</p>";
     h += extra || "";
     var bs = (e.bilder || []).filter(function (b) { return b && b.quelle_url; });
     if (bs.length) {
@@ -254,8 +255,14 @@
     return h + "</div></details>";
   }
 
-  function standZeile(e, quelle) {
-    return '<p class="stand">Stand ' + STAND + " · Quelle: " + esc(quelle) + "</p>";
+  function standText(quelle) {
+    return "Stand " + STAND + " · Quelle: " + esc(quelle);
+  }
+
+  // Kurzer Text bleibt auf der Karte, langer wandert in die Details
+  function kurz(t, max) { return t && String(t).length <= (max || 60) ? t : null; }
+  function aktionen(key, label) {
+    return '<div class="aktionen">' + likeBar(key, label) + kommentarBar(key) + "</div>";
   }
 
   function feld(titel, inhalt) {
@@ -275,15 +282,18 @@
   }
 
   function preisZeile(r) {
-    var neu = r.preis_pro_person_korrigiert;
-    var alt = r.stephans_preisangabe;
-    var h = '<div class="preis">';
-    if (r.preis_abweichung && alt) {
-      h += '<span class="preis-alt" title="' + esc(r.preis_abweichung) + '"><s>' + esc(alt) + '</s><span class="sr"> (ursprüngliche Angabe)</span></span> <span aria-hidden="true">→</span> ';
-    }
-    h += neu ? '<span class="preis-neu">' + esc(neu) + "</span>" : '<span class="ng">Preis ' + NG + "</span>";
-    if (r.preis_abweichung) h += '<p class="preis-abw">' + esc(r.preis_abweichung) + "</p>";
-    return h + "</div>";
+    var pb = beispielA(r);
+    if (pb) return '<p class="preis"><span class="preis-label">Beispiel zu zweit</span> <span class="preis-neu zahlen">' + (pb.unvollstaendig ? "ca. " : "") + euro(pb.summe) + "</span></p>";
+    var neu = kurz(r.preis_pro_person_korrigiert, 70);
+    return '<p class="preis">' + (neu ? '<span class="preis-neu">' + esc(neu) + "</span>" : '<span class="ng">Preis ' + NG + "</span>") + "</p>";
+  }
+  function preisCheckHtml(r) {
+    var neu = r.preis_pro_person_korrigiert, alt = r.stephans_preisangabe;
+    if (!neu && !r.preis_abweichung) return "";
+    var h = neu ? "<p><b>Preisniveau:</b> " + esc(neu) + "</p>" : "";
+    if (alt) h += "<p><b>Ursprüngliche Angabe:</b> " + esc(alt) + "</p>";
+    if (r.preis_abweichung) h += '<p class="hinweis">' + esc(r.preis_abweichung) + "</p>";
+    return feld("Preis-Check", h);
   }
 
   function preisbeispieleHtml(r) {
@@ -382,21 +392,20 @@
       '<p class="fakten">' + bewertungHtml(r) + '<span class="trenn" aria-hidden="true">·</span>' + entfHtml(r) + "</p>" +
       preisZeile(r) +
       '<div class="status-zeile">' + statusHtml(r) + "</div>" +
-      likeBar(key, r.name) + kommentarBar(key) +
+      aktionen(key, r.name) +
       linkLeiste(r) +
       "</div>" +
-      '<details class="mehr"><summary>Details, Preisbeispiele &amp; Reservierung</summary><div class="mehr-innen">' +
+      '<details class="mehr"><summary>Mehr: Preise, Reservierung, Parken</summary><div class="mehr-innen">' +
       (r.beschreibung ? '<p class="beschreibung">' + esc(r.beschreibung) + "</p>" : "") +
       preisbeispieleHtml(r) +
+      preisCheckHtml(r) +
       oeffnungHtml(r) +
       reservierungHtml(r) +
       parkenHtml(r.parken) +
       kontaktHtml(r) +
       nichtGeprueftKasten(r.nicht_geprueft) +
       "</div></details>" +
-      quellenBlock(r, urspr) +
-      '<p class="fussnote karte-fuss">Ohne Trinkgeld und Parken.</p>' +
-      standZeile(r, "Website des Restaurants; Bewertung: " + bewQuelle + "; Fahrzeit: Google Maps") +
+      quellenBlock(r, urspr + '<p class="fussnote">Preise ohne Trinkgeld und Parken.</p>', standText("Website des Restaurants; Bewertung: " + bewQuelle + "; Fahrzeit: Google Maps")) +
       "</article>";
   }
 
@@ -460,12 +469,12 @@
       [["auswahl", "Auswahl"], ["bewertung", "Bewertung"], ["preis", "Preis"], ["entfernung", "Entfernung"], ["status", "Status"]].map(function (x) {
         return '<button type="button" class="chip sort" data-sort="' + x[0] + '" aria-pressed="' + (zustand.sort === x[0]) + '">' + x[1] + "</button>";
       }).join("") + "</div>" +
-      '<div class="steuer-zeile filter">' +
+      '<details class="filter-auf"><summary>Filter</summary><div class="steuer-zeile filter">' +
       '<label>Status <select id="f-status"><option value="alle">alle</option><option value="ja">Plätze frei</option><option value="unbekannt">unbekannt</option></select></label>' +
       '<label>Ort <select id="f-ort"><option value="alle">alle</option>' + orte.map(function (o) { return '<option value="' + esc(o) + '">' + esc(o) + "</option>"; }).join("") + "</select></label>" +
       '<label>max. Fahrzeit <select id="f-min"><option value="0">egal</option><option value="20">20 Min.</option><option value="25">25 Min.</option><option value="30">30 Min.</option><option value="40">40 Min.</option></select></label>' +
       '<label class="check"><input type="checkbox" id="f-fav"> nur Favoriten</label>' +
-      "</div></div>" +
+      "</div></details></div>" +
       '<div id="uebersicht"></div>' +
       '<nav class="schnelllinks" aria-label="Schnelllinks zu den Restaurants">' +
       rs.map(function (r) {
@@ -526,17 +535,17 @@
   }
 
   function kopfzeile() {
-    return '<p class="kopfzeile">27. Jahrestag · Samstag, 31. Oktober 2026 · Start: Dirschauer Weg, Mannheim</p>';
+    return '<p class="kopfzeile">Sa, 31.10.2026 · Start: Dirschauer Weg, Mannheim</p>';
   }
 
   function erklaerung() {
-    return '<section class="block erklaerung" aria-labelledby="erk-titel"><h2 id="erk-titel">So sind die Angaben zu verstehen</h2>' +
+    return '<details class="block erklaerung"><summary>So sind die Angaben zu verstehen</summary>' +
       '<div class="erk-grid"><div class="kachel"><h3>So sind die Fahrdaten zu verstehen</h3>' +
       "<p>Kilometer und Minuten stammen aus dem Google-Maps-Routenplaner, abgefragt am Donnerstag, 29.10.2026, mittags, ab Dirschauer Weg, 68307 Mannheim (schnellste Route). " +
       "Das ist eine Momentaufnahme des damaligen Verkehrs – am Samstagabend kann es anders aussehen. Der Fußweg vom Parkplatz zum Restaurant kommt noch hinzu.</p></div>" +
       '<div class="kachel"><h3>Preise &amp; Reservierungen</h3>' +
       "<p>Preise stammen aus den online veröffentlichten Karten (Stand 29.10.2026). Fehlt ein Preis online, steht „– nicht online“ und die Summe trägt ein „ca.“. Alle Summen ohne Trinkgeld und Parken. " +
-      "Freie Plätze wurden nur lesend abgefragt – es wurde nichts gebucht, angefragt oder reserviert.</p></div></div></section>";
+      "Freie Plätze wurden nur lesend abgefragt – es wurde nichts gebucht, angefragt oder reserviert.</p></div></div></details>";
   }
 
   // ---------- Nachmittag ----------
@@ -564,13 +573,16 @@
       '<p class="kicker">' + esc((n.region || "").toUpperCase()) + "</p>" +
       "<h3>" + esc(n.titel) + "</h3>" +
       '<p class="fakten"><span>Dauer: ' + oderNG(n.dauer) + '</span><span class="trenn" aria-hidden="true">·</span>' + entfHtml(n) + "</p>" +
-      '<p class="kosten"><b>Kosten:</b> ' + oderNG(n.kosten) + "</p>" +
-      (n.veranstaltung ? '<p class="tag-zeile"><span class="tag event">Veranstaltung</span> ' + esc(n.veranstaltung) + "</p>" : "") +
-      likeBar(key, n.titel) + kommentarBar(key) +
+      (kurz(n.kosten, 50) ? '<p class="kosten"><b>Kosten:</b> ' + esc(n.kosten) + "</p>" : "") +
+      (n.cafe_vorschlag && n.cafe_vorschlag.name ? '<p class="kosten"><span aria-hidden="true">☕</span> ' + esc(n.cafe_vorschlag.name) + "</p>" : (n.cafe && n.cafe.name ? '<p class="kosten"><span aria-hidden="true">☕</span> ' + esc(n.cafe.name) + "</p>" : "")) +
+      (n.veranstaltung ? '<p class="tag-zeile"><span class="tag event">Veranstaltung</span></p>' : "") +
+      aktionen(key, n.titel) +
       '<p class="linkleiste">' + [link(n.maps_url, "Google Maps ↗"), link(routeUrl(n.start_adresse), "Autoroute ↗")].filter(Boolean).join('<span aria-hidden="true"> · </span>') + "</p>" +
       "</div>" +
-      '<details class="mehr"><summary>Ablauf, Café &amp; Details</summary><div class="mehr-innen">' +
+      '<details class="mehr"><summary>Mehr: Ablauf, Kosten, Café</summary><div class="mehr-innen">' +
       (n.beschreibung ? '<p class="beschreibung">' + esc(n.beschreibung) + "</p>" : "") +
+      (n.veranstaltung ? feld("Veranstaltung", "<p>" + esc(n.veranstaltung) + "</p>") : "") +
+      (kurz(n.kosten, 50) ? "" : feld("Kosten", "<p>" + oderNG(n.kosten) + "</p>")) +
       ((n.ablauf || []).length ? feld("Ablauf", '<ol class="ablauf">' + n.ablauf.map(function (a) { return "<li>" + esc(a) + "</li>"; }).join("") + "</ol>") : "") +
       feld("Start", "<p>" + oderNG(n.start_adresse) + "</p>") +
       feld("Geöffnet am 31.10.", "<p>" + oderNG(n.oeffnung_31_10) + "</p>" + (n.oeffnung_quelle ? '<p class="fussnote">Quelle: ' + (link(n.oeffnung_quelle, "Öffnungszeiten ↗") || esc(n.oeffnung_quelle)) + "</p>" : "")) +
@@ -580,8 +592,7 @@
       (weitere.length ? feld("Weitere Links", '<p class="linkleiste">' + weitere.join('<span aria-hidden="true"> · </span>') + "</p>") : "") +
       nichtGeprueftKasten(n.nicht_geprueft) +
       "</div></details>" +
-      quellenBlock(n, "") +
-      standZeile(n, "Websites der Anbieter, Wikimedia Commons (Bilder)") +
+      quellenBlock(n, "", standText("Websites der Anbieter, Wikimedia Commons (Bilder)")) +
       "</article>";
   }
 
@@ -591,12 +602,15 @@
       '<p class="event-zeit zahlen">' + oderNG(v.uhrzeit) + "</p>" +
       "<h3>" + esc(v.titel) + "</h3>" +
       '<p class="event-ort">' + oderNG(v.ort) + (v.adresse ? " · " + esc(v.adresse) : "") + "</p>" +
-      "<p><b>Preis:</b> " + oderNG(v.preis) + "</p>" +
-      (v.beschreibung ? '<p class="beschreibung">' + esc(v.beschreibung) + "</p>" : "") +
-      likeBar(key, v.titel) + kommentarBar(key) +
+      (kurz(v.preis, 50) ? "<p><b>Preis:</b> " + esc(v.preis) + "</p>" : "") +
+      aktionen(key, v.titel) +
       '<p class="linkleiste">' + [link(v.tickets_url, "Tickets ↗"), link(v.url, "Infos ↗"), link(routeUrl(v.adresse), "Autoroute ↗")].filter(Boolean).join('<span aria-hidden="true"> · </span>') + "</p>" +
+      '<details class="mehr"><summary>Mehr</summary><div class="mehr-innen">' +
+      (v.beschreibung ? '<p class="beschreibung">' + esc(v.beschreibung) + "</p>" : "") +
+      (kurz(v.preis, 50) ? "" : feld("Preis", "<p>" + oderNG(v.preis) + "</p>")) +
       nichtGeprueftKasten(v.nicht_geprueft) +
-      '<p class="stand">Stand ' + STAND + " · Quelle: " + (link(v.quelle, "Veranstalter ↗") || esc(v.quelle || NG)) + "</p>" +
+      '<p class="fussnote">Stand ' + STAND + " · Quelle: " + (link(v.quelle, "Veranstalter ↗") || esc(v.quelle || NG)) + "</p>" +
+      "</div></details>" +
       "</li>";
   }
 
@@ -652,8 +666,8 @@
   }
 
   function erklaerungKurz() {
-    return '<section class="block erklaerung"><div class="kachel"><h3>So sind die Fahrdaten zu verstehen</h3>' +
-      "<p>Fahrzeiten stammen aus Google Maps (Abruf 29.10.2026, mittags, Verkehrs-Momentaufnahme). Wo „Entfernung: nicht geprüft“ steht, liegt noch kein Abruf vor. Fußwege vom Parkplatz kommen hinzu.</p></div></section>";
+    return '<details class="block erklaerung"><summary>So sind die Angaben zu verstehen</summary><div class="kachel"><h3>Fahrdaten</h3>' +
+      "<p>Fahrzeiten stammen aus Google Maps (Abruf 29.10.2026, mittags, Verkehrs-Momentaufnahme). Wo „Entfernung: nicht geprüft“ steht, liegt noch kein Abruf vor. Fußwege vom Parkplatz kommen hinzu.</p></div></details>";
   }
 
   // ---------- Cafés ----------
@@ -674,21 +688,19 @@
       '<p class="kueche">' + oderNG(c.spezialitaet) + "</p>" +
       '<p class="fakten">' + bewertungHtml(c) + '<span class="trenn" aria-hidden="true">·</span>' + entfHtml(c) + "</p>" +
       (schwelle ? '<p class="tag-zeile">' + schwelle + "</p>" : "") +
-      (c.bewertung_hinweis ? '<p class="hinweis klein">' + esc(c.bewertung_hinweis) + "</p>" : "") +
-      '<p class="kosten"><b>Preise:</b> ' + oderNG(c.preisniveau) + "</p>" +
       '<p class="kosten"><b>Samstag:</b> ' + oderNG(c.oeffnung_samstag) + "</p>" +
-      likeBar(key, c.name) + kommentarBar(key) +
+      aktionen(key, c.name) +
       linkLeiste(c) +
       "</div>" +
-      '<details class="mehr"><summary>Details</summary><div class="mehr-innen">' +
+      '<details class="mehr"><summary>Mehr: Preise, Öffnung, Parken</summary><div class="mehr-innen">' +
       (c.beschreibung ? '<p class="beschreibung">' + esc(c.beschreibung) + "</p>" : "") +
+      feld("Preise", "<p>" + oderNG(c.preisniveau) + "</p>") +
       oeffnungHtml(c) +
       parkenHtml(c.parken) +
       kontaktHtml(c) +
       nichtGeprueftKasten(c.nicht_geprueft) +
       "</div></details>" +
-      quellenBlock(c, urspr) +
-      standZeile(c, "Website des Cafés; Bewertung: " + bewQuelle) +
+      quellenBlock(c, urspr, standText("Website des Cafés; Bewertung: " + bewQuelle)) +
       "</article>";
   }
 
