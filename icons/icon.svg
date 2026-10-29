@@ -1,30 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#16307A"/><stop offset=".55" stop-color="#0B1A45"/><stop offset="1" stop-color="#060D24"/>
-    </linearGradient>
-    <radialGradient id="glow" cx=".5" cy=".38" r=".55">
-      <stop offset="0" stop-color="#9FB4E6" stop-opacity=".30"/><stop offset="1" stop-color="#9FB4E6" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="254" y1="204" x2="590" y2="540">
-      <stop offset="0" stop-color="#FFE3A8"/><stop offset=".5" stop-color="#FFB466"/><stop offset="1" stop-color="#E07A1F"/>
-    </linearGradient>
-    <linearGradient id="silber" gradientUnits="userSpaceOnUse" x1="434" y1="204" x2="770" y2="540">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".45" stop-color="#D5DAE3"/><stop offset="1" stop-color="#7D8696"/>
-    </linearGradient>
-    <linearGradient id="schrift" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE6FF"/>
-    </linearGradient>
-  </defs>
-  <rect width="1024" height="1024" fill="url(#bg)"/>
-  <rect width="1024" height="1024" fill="url(#glow)"/>
-  <!-- zwei Ringe, ineinander verschlungen -->
-  <g fill="none" stroke-width="44" stroke-linecap="round">
-    <circle cx="422" cy="372" r="168" stroke="url(#gold)"/>
-    <circle cx="602" cy="372" r="168" stroke="url(#silber)"/>
-    <!-- Gold liegt oben am rechten Schnittpunkt: kurzer Bogen des Goldrings über Türkis -->
-    <path d="M 473.9 212.2 A 168 168 0 0 1 544.9 257.4" stroke="url(#gold)"/>
-  </g>
-  <circle cx="343.1" cy="223.7" r="12" fill="#FFFFFF" opacity=".95"/>
-  <text x="512" y="868" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="330" letter-spacing="-12" fill="url(#schrift)">27</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16307A"/><stop offset=".55" stop-color="#0B1A45"/><stop offset="1" stop-color="#060D24"/></linearGradient>
+<radialGradient id="glow" cx=".5" cy=".42" r=".55"><stop offset="0" stop-color="#9FB4E6" stop-opacity=".30"/><stop offset="1" stop-color="#9FB4E6" stop-opacity="0"/></radialGradient>
+<linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="317" y1="180" x2="557" y2="420"><stop offset="0" stop-color="#FFF6CF"/><stop offset=".45" stop-color="#F3D068"/><stop offset="1" stop-color="#B8891C"/></linearGradient>
+<linearGradient id="silber" gradientUnits="userSpaceOnUse" x1="467" y1="180" x2="707" y2="420"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".45" stop-color="#D5DAE3"/><stop offset="1" stop-color="#7D8696"/></linearGradient>
+<linearGradient id="goldText" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6CF"/><stop offset=".55" stop-color="#F3D068"/><stop offset="1" stop-color="#C99A2A"/></linearGradient>
+<linearGradient id="weiss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE6FF"/></linearGradient>
+</defs><rect width="1024" height="1024" fill="url(#bg)"/><rect width="1024" height="1024" fill="url(#glow)"/><g fill="none" stroke-width="30" stroke-linecap="round"><circle cx="437.0" cy="300.0" r="120" stroke="url(#gold)"/><circle cx="587.0" cy="300.0" r="120" stroke="url(#silber)"/><path d="M 487.1 191.0 A 120 120 0 0 1 532.4 227.3" stroke="url(#gold)"/></g><circle cx="380.7" cy="194.0" r="12" fill="#FFFFFF" opacity=".95"/><text x="512" y="880" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="560" letter-spacing="-24" fill="url(#weiss)">27</text></svg>
