@@ -97,20 +97,49 @@
   function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* privat-Modus: egal */ } }
 
   // ---------- Bausteine ----------
-  function bilder(e) {
+  // Galerie: Fotos (Außen, Innen, Gericht …) zum Wischen, am Ende ein Luftbild mit Stecknadel
+  var ART_NAME = { aussen: "Außen", innen: "Innen", gericht: "Gericht", cafe: "Café", location: "", produkt: "", ausstellung: "" };
+  var ART_RANG = { aussen: 0, location: 1, innen: 2, gericht: 3, produkt: 4, cafe: 5 };
+  function luftbild(koKey, zoom) {
+    var ko = (D.koordinaten || {})[koKey];
+    if (!ko) return "";
+    var z = zoom || 17, n = Math.pow(2, z), rad = ko.lat * Math.PI / 180;
+    var xf = (ko.lon + 180) / 360 * n, yf = (1 - Math.log(Math.tan(rad) + 1 / Math.cos(rad)) / Math.PI) / 2 * n;
+    var tx = Math.floor(xf), ty = Math.floor(yf), fx = xf - tx, fy = yf - ty;
+    var kacheln = "";
+    for (var dy = -1; dy <= 1; dy++) for (var dx = -1; dx <= 1; dx++) {
+      kacheln += '<img src="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/' + z + "/" + (ty + dy) + "/" + (tx + dx) +
+        '" alt="" loading="lazy" decoding="async" style="left:' + ((dx + 1) * 100 / 3).toFixed(4) + "%;top:" + ((dy + 1) * 100 / 3).toFixed(4) + '%">';
+    }
+    // Kachelraster 180 % der Breite; Bildfeld 16:10 – Punkt genau in die Mitte schieben
+    var left = 50 - (1 + fx) * 60, top = 50 - (1 + fy) * 96;
+    var maps = "https://www.google.com/maps/@?api=1&map_action=map&basemap=satellite&zoom=18&center=" + ko.lat + "," + ko.lon;
+    return '<figure class="gal-bild luftbild"><div class="lb-raster" style="left:' + left.toFixed(3) + "%;top:" + top.toFixed(3) + '%">' + kacheln + "</div>" +
+      '<span class="pin" aria-hidden="true"></span><span class="gal-art">Luftbild</span>' +
+      '<a class="gal-maps" href="' + maps + '" target="_blank" rel="noopener" aria-label="Luftbild in Google Maps öffnen"></a>' +
+      '<figcaption class="gal-quelle">Esri, Maxar, Earthstar Geographics</figcaption></figure>';
+  }
+  function bilder(e, koKey, zoom) {
     var bs = (e.bilder || []).filter(function (b) { return b && b.datei && b.vorhanden !== false; });
+    bs = bs.map(function (b, i) { return { b: b, i: i }; }).sort(function (x, y) {
+      var rx = ART_RANG[x.b.art] != null ? ART_RANG[x.b.art] : 6, ry = ART_RANG[y.b.art] != null ? ART_RANG[y.b.art] : 6;
+      return rx - ry || x.i - y.i;
+    }).map(function (x) { return x.b; });
     var name = e.name || e.titel;
     var platz = '<div class="platzhalter" aria-hidden="true"><span>' + esc(initialen(name)) + "</span></div>";
-    if (!bs.length) return '<div class="bild">' + platz + "</div>";
-    var h = '<div class="bild' + (bs[1] ? " zwei" : "") + '">' + platz +
-      '<img class="b1" src="' + esc(bs[0].datei) + '" alt="' + esc(bs[0].beschreibung || name) + '" data-quelle="' + esc(bs[0].quelle_url || "") + '" data-art="' + esc(bs[0].art || "") + '" loading="lazy" decoding="async">';
-    if (bs[1]) {
-      h += '<img class="b2" src="' + esc(bs[1].datei) + '" alt="' + esc(bs[1].beschreibung || name) + '" data-quelle="' + esc(bs[1].quelle_url || "") + '" data-art="' + esc(bs[1].art || "") + '" loading="lazy" decoding="async">';
-    }
-    h += '<button type="button" class="bild-gross" aria-label="Bild vergrößern: ' + esc(name) + '"></button>';
-    if (bs[1]) {
-      h += '<button type="button" class="bild-wechsel" aria-label="Zweites Bild zeigen" aria-pressed="false">' +
-        '<img src="' + esc(bs[1].datei) + '" alt="" loading="lazy" decoding="async"></button>';
+    var luft = koKey ? luftbild(koKey, zoom) : "";
+    if (!bs.length && !luft) return '<div class="bild">' + platz + "</div>";
+    var teile = bs.map(function (b) {
+      var art = ART_NAME[b.art] || "";
+      return '<figure class="gal-bild"><img src="' + esc(b.datei) + '" alt="' + esc(b.beschreibung || name) + '" data-quelle="' + esc(b.quelle_url || "") + '" loading="lazy" decoding="async">' +
+        (art ? '<span class="gal-art">' + art + "</span>" : "") +
+        '<button type="button" class="bild-gross" aria-label="Bild vergrößern: ' + esc(b.beschreibung || name) + '"></button></figure>';
+    });
+    if (luft) teile.push(luft);
+    var h = '<div class="bild galerie">' + platz + '<div class="gal-band" tabindex="-1">' + teile.join("") + "</div>";
+    if (teile.length > 1) {
+      h += '<button type="button" class="gal-pfeil zurueck" aria-label="Vorheriges Bild">‹</button><button type="button" class="gal-pfeil weiter" aria-label="Nächstes Bild">›</button>' +
+        '<div class="gal-punkte" aria-hidden="true">' + teile.map(function (_, i) { return "<i" + (i ? "" : ' class="an"') + "></i>"; }).join("") + "</div>";
     }
     return h + "</div>";
   }
@@ -170,6 +199,7 @@
     document.querySelectorAll(".likes").forEach(function (el) {
       el.innerHTML = likeInnen(el.dataset.key, el.dataset.label);
     });
+    if (window.JG && typeof window.JG.beimAktualisieren === "function") window.JG.beimAktualisieren();
   }
 
   // ---------- Kommentare ----------
@@ -210,17 +240,19 @@
     }
     return h;
   }
-  function kommentareAktualisieren() {
-    document.querySelectorAll(".komm").forEach(function (el) {
-      if (kommSchreiben[el.dataset.key]) return; // nicht unter den Fingern wegzeichnen, während geschrieben wird
-      el.innerHTML = kommentarInnen(el.dataset.key);
-    });
-  }
-  function kommEinsZeichnen(el) {
+  // Neu zeichnen, ohne einen angefangenen Text zu verlieren
+  function kommNeu(el, fokus) {
+    var alt = el.querySelector("textarea");
+    var entwurf = alt ? alt.value : null, hatFokus = alt && document.activeElement === alt;
     el.innerHTML = kommentarInnen(el.dataset.key);
     var ta = el.querySelector("textarea");
-    if (ta) ta.focus();
+    if (ta && entwurf != null) ta.value = entwurf;
+    if (ta && (fokus || hatFokus)) ta.focus();
   }
+  function kommentareAktualisieren() {
+    document.querySelectorAll(".komm").forEach(function (el) { kommNeu(el, false); });
+  }
+  function kommEinsZeichnen(el) { kommNeu(el, true); }
 
   function nichtGeprueftKasten(liste) {
     if (!liste || !liste.length) return "";
@@ -228,13 +260,14 @@
       liste.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul></div>";
   }
 
-  function linkLeiste(e, adresse) {
-    var teile = [
-      link(e.website, "Website ↗"),
+  function linkLeiste(e, adresse, voll) {
+    var teile = (voll ? [
       link(e.speisekarte_url, "Speisekarte ↗"),
-      link(e.maps_url, "Google Maps ↗"),
-      link(routeUrl(adresse || e.adresse), "Autoroute ↗")
-    ].filter(Boolean);
+      link(e.maps_url, "Google Maps ↗")
+    ] : [
+      link(e.website, "Website ↗"),
+      link(routeUrl(adresse || e.adresse), "Route ↗")
+    ]).filter(Boolean);
     return teile.length ? '<p class="linkleiste">' + teile.join('<span aria-hidden="true"> · </span>') + "</p>" : "";
   }
 
@@ -361,7 +394,7 @@
     if (e.getraenkekarte_url) extra.push(link(e.getraenkekarte_url, "Getränkekarte ↗"));
     if (e.weinkarte_url) extra.push(link(e.weinkarte_url, "Weinkarte ↗"));
     (e.speisekarte_pdfs || []).forEach(function (u, i) { extra.push(link(u, "Speisekarte PDF " + (i + 1) + " ↗")); });
-    var h = '<dl class="dl">' +
+    var h = linkLeiste(e, null, true) + '<dl class="dl">' +
       "<dt>Adresse</dt><dd>" + oderNG(e.adresse) + "</dd>" +
       "<dt>Telefon</dt><dd>" + (telLink(e.telefon) || '<span class="ng">' + NG + "</span>") + "</dd>" +
       "<dt>E-Mail</dt><dd>" + (e.email ? link("mailto:" + e.email, esc(e.email)) : '<span class="ng">' + NG + "</span>") + "</dd>" +
@@ -383,7 +416,7 @@
       (r.bewertung_original && r.bewertung_original.quelle ? " – " + esc(r.bewertung_original.quelle) : "") + "</li>" +
       "<li>Preisangabe: " + oderNG(r.stephans_preisangabe) + "</li></ul>";
     return '<article class="karte" id="r-' + esc(r.slug) + '" data-status="' + r.status + '">' +
-      bilder(r) +
+      bilder(r, "r:" + r.slug, 17) +
       '<div class="karte-kopf">' +
       '<p class="kicker"><span class="zahlen">' + nr + "</span> / " + esc((r.ort_kicker || r.ort || "").toUpperCase()) +
       (r.zusatz ? ' <span class="tag zusatz">Zusatz</span>' : "") + "</p>" +
@@ -506,6 +539,9 @@
       }).join("");
       tab += "</tbody></table></div>";
       sucheInfo(gefiltert.length);
+      var aktiv = (zustand.status !== "alle") + (zustand.ort !== "alle") + (!!zustand.maxMin) + (!!zustand.nurFav);
+      var fs = document.querySelector(".filter-auf > summary");
+      if (fs) fs.textContent = aktiv ? "Filter (" + aktiv + ") · " + gefiltert.length + " von " + rs.length : "Filter";
       if (!gefiltert.length) tab = leer(zustand.suche ? "Keine Treffer für diese Suche und Filter." : "Kein Restaurant passt zu diesen Filtern.");
       document.getElementById("uebersicht").innerHTML = tab;
       var ka = gefiltert.filter(function (r) { return !r.zusatz; });
@@ -568,14 +604,14 @@
     var key = "n:" + n.slug;
     var weitere = (n.weitere_links || []).map(function (l) { return link(l.url, esc(l.text) + " ↗"); }).filter(Boolean);
     return '<article class="karte" id="n-' + esc(n.slug) + '">' +
-      bilder({ bilder: n.bilder, name: n.titel }) +
+      bilder({ bilder: n.bilder, name: n.titel }, "n:" + n.slug, 16) +
       '<div class="karte-kopf">' +
       '<p class="kicker">' + esc((n.region || "").toUpperCase()) + "</p>" +
       "<h3>" + esc(n.titel) + "</h3>" +
       '<p class="fakten"><span>Dauer: ' + oderNG(n.dauer) + '</span><span class="trenn" aria-hidden="true">·</span>' + entfHtml(n) + "</p>" +
       (kurz(n.kosten, 50) ? '<p class="kosten"><b>Kosten:</b> ' + esc(n.kosten) + "</p>" : "") +
       (n.cafe_vorschlag && n.cafe_vorschlag.name ? '<p class="kosten"><span aria-hidden="true">☕</span> ' + esc(n.cafe_vorschlag.name) + "</p>" : (n.cafe && n.cafe.name ? '<p class="kosten"><span aria-hidden="true">☕</span> ' + esc(n.cafe.name) + "</p>" : "")) +
-      (n.veranstaltung ? '<p class="tag-zeile"><span class="tag event">Veranstaltung</span></p>' : "") +
+      (n.veranstaltung ? '<p class="tag-zeile"><span class="tag veranst">Veranstaltung</span></p>' : "") +
       aktionen(key, n.titel) +
       '<p class="linkleiste">' + [link(n.maps_url, "Google Maps ↗"), link(routeUrl(n.start_adresse), "Autoroute ↗")].filter(Boolean).join('<span aria-hidden="true"> · </span>') + "</p>" +
       "</div>" +
@@ -681,7 +717,7 @@
     var urspr = "<p><b>Bewertungsquelle:</b> " + esc(c.google_quelle || NG) + "</p>" +
       (c.bewertung_hinweis ? '<p class="hinweis">' + esc(c.bewertung_hinweis) + "</p>" : "");
     return '<article class="karte" id="c-' + esc(c.slug) + '">' +
-      bilder(c) +
+      bilder(c, "c:" + c.slug, 17) +
       '<div class="karte-kopf">' +
       '<p class="kicker">' + esc((c.ort_kicker || c.ort || "").toUpperCase()) + "</p>" +
       "<h3>" + esc(c.name) + "</h3>" +
@@ -695,7 +731,7 @@
       '<details class="mehr"><summary>Mehr: Preise, Öffnung, Parken</summary><div class="mehr-innen">' +
       (c.beschreibung ? '<p class="beschreibung">' + esc(c.beschreibung) + "</p>" : "") +
       feld("Preise", "<p>" + oderNG(c.preisniveau) + "</p>") +
-      oeffnungHtml(c) +
+      (c.oeffnung_hinweis || c.oeffnung_quelle ? feld("Öffnung", (c.oeffnung_hinweis ? '<p class="hinweis">' + esc(c.oeffnung_hinweis) + "</p>" : "") + (c.oeffnung_quelle ? '<p class="fussnote">Quelle: ' + (link(c.oeffnung_quelle, "Öffnungszeiten ↗") || esc(c.oeffnung_quelle)) + "</p>" : "")) : "") +
       parkenHtml(c.parken) +
       kontaktHtml(c) +
       nichtGeprueftKasten(c.nicht_geprueft) +
@@ -826,8 +862,8 @@
     var t = ev.target;
     if (t && t.tagName === "IMG") {
       t.classList.add("kaputt");
-      var bx = t.closest(".bild");
-      if (bx && t.classList.contains("b1")) bx.classList.add("ohne-bild");
+      var fig = t.closest(".gal-bild:not(.luftbild)");
+      if (fig) fig.remove();
     }
   }, true);
 
@@ -852,6 +888,81 @@
     schriftAkt = schriftSetzen(SCHRIFT_STUFEN[i], true);
   });
 
+  // ---------- Einstellungen und Gesamtsuche (Fenster von unten) ----------
+  var sheetOffen = null;
+  function sheetAuf(id, zurueck) {
+    var el = document.getElementById(id), hin = document.getElementById(id === "einstellungen" ? "einst-hinter" : "suche-hinter");
+    if (!el) return;
+    el.hidden = false; if (hin) hin.hidden = false;
+    document.body.classList.add("sheet-offen");
+    sheetOffen = { el: el, hin: hin, zurueck: zurueck };
+    var f = el.querySelector("input") || el.querySelector(".sheet-zu");
+    if (f) setTimeout(function () { f.focus(); }, 30);
+  }
+  function sheetZu() {
+    if (!sheetOffen) return;
+    var o = sheetOffen; sheetOffen = null;
+    o.el.hidden = true; if (o.hin) o.hin.hidden = true;
+    document.body.classList.remove("sheet-offen");
+    if (o.zurueck) o.zurueck.focus();
+  }
+  function normal(t) { return String(t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss"); }
+  var suchIndex = null;
+  function suchIndexBauen() {
+    var liste = [];
+    (D.restaurants || []).forEach(function (r) { liste.push({ i: "🍽️", n: r.name, o: r.ort || "", l: "restaurants.html#r-" + r.slug, t: [r.name, r.ort, r.kueche, r.beschreibung].join(" ") }); });
+    (D.cafes || []).forEach(function (c) { liste.push({ i: "🍰", n: c.name, o: c.ort || "", l: "cafes.html#c-" + c.slug, t: [c.name, c.ort, c.spezialitaet, c.beschreibung].join(" ") }); });
+    (D.nachmittag || []).forEach(function (n) { liste.push({ i: "🍂", n: n.titel, o: n.region || "", l: "nachmittag.html#n-" + n.slug, t: [n.titel, n.region, n.beschreibung, (n.cafe_vorschlag || {}).name, (n.cafe || {}).name].join(" ") }); });
+    (D.veranstaltungen || []).forEach(function (v) { liste.push({ i: "✨", n: v.titel, o: (v.uhrzeit ? v.uhrzeit + " · " : "") + (v.ort || ""), l: "nachmittag.html#g-abends", t: [v.titel, v.ort, v.beschreibung].join(" ") }); });
+    liste.forEach(function (e) { e.nt = normal(e.t); e.nn = normal(e.n); });
+    return liste;
+  }
+  function sucheZeigen(q) {
+    var ziel = document.getElementById("such-treffer");
+    if (!ziel) return;
+    suchIndex = suchIndex || suchIndexBauen();
+    var w = normal(q).split(/\s+/).filter(Boolean);
+    if (!w.length) { ziel.innerHTML = '<li class="hinweis">Tippe z. B. „Heidelberg“, „Tatar“, „Matcha“ oder „Jazz“.</li>'; return; }
+    var t = suchIndex.filter(function (e) { return w.every(function (x) { return e.nt.indexOf(x) >= 0; }); })
+      .sort(function (a, b) { return (b.nn.indexOf(w[0]) >= 0) - (a.nn.indexOf(w[0]) >= 0); }).slice(0, 25);
+    ziel.innerHTML = t.length ? t.map(function (e) {
+      return '<li><a href="' + esc(e.l) + '"><span class="st-icon" aria-hidden="true">' + e.i + '</span><span><b>' + esc(e.n) + "</b><small>" + esc(e.o) + "</small></span></a></li>";
+    }).join("") : '<li class="hinweis">Nichts gefunden.</li>';
+  }
+  document.addEventListener("click", function (ev) {
+    if (ev.target.closest("#einst-auf")) { sheetAuf("einstellungen", ev.target.closest("#einst-auf")); return; }
+    if (ev.target.closest("#suche-auf")) { sheetAuf("suchfenster", ev.target.closest("#suche-auf")); sucheZeigen(document.getElementById("global-suche").value); return; }
+    if (ev.target.closest(".sheet-zu") || ev.target.classList.contains("sheet-hinter")) { sheetZu(); return; }
+    var treffer = ev.target.closest(".such-treffer a");
+    if (treffer) {
+      var ziel = treffer.getAttribute("href").split("#");
+      if (location.pathname.split("/").pop() === ziel[0] || (ziel[0] === "index.html" && !location.pathname.split("/").pop())) {
+        ev.preventDefault(); sheetZu();
+        var z = document.getElementById(ziel[1]); if (z) z.scrollIntoView({ behavior: "smooth" }); history.replaceState(null, "", "#" + ziel[1]);
+      }
+    }
+  });
+  document.addEventListener("input", function (ev) { if (ev.target.id === "global-suche") sucheZeigen(ev.target.value); });
+  document.addEventListener("keydown", function (ev) {
+    if (ev.key === "Escape" && sheetOffen) { ev.preventDefault(); sheetZu(); }
+    if ((ev.metaKey || ev.ctrlKey) && ev.key.toLowerCase() === "k") { ev.preventDefault(); sheetAuf("suchfenster", null); }
+  });
+
+  // ---------- Galerie: Pfeile und Punkte ----------
+  document.addEventListener("click", function (ev) {
+    var pf = ev.target.closest(".gal-pfeil");
+    if (!pf) return;
+    var band = pf.parentNode.querySelector(".gal-band");
+    band.scrollBy({ left: (pf.classList.contains("weiter") ? 1 : -1) * band.clientWidth, behavior: "smooth" });
+  });
+  document.addEventListener("scroll", function (ev) {
+    var band = ev.target;
+    if (!band.classList || !band.classList.contains("gal-band")) return;
+    var i = Math.round(band.scrollLeft / Math.max(1, band.clientWidth));
+    var punkte = band.parentNode.querySelectorAll(".gal-punkte i");
+    for (var k = 0; k < punkte.length; k++) punkte[k].classList.toggle("an", k === i);
+  }, true);
+
   // ---------- Bild vergrößern (Lightbox) ----------
   var lbOffen = null; // { el, zurueck }
   function lbBauen() {
@@ -868,9 +979,9 @@
     return el;
   }
   function lbOeffnen(knopf) {
-    var box = knopf.closest(".bild");
+    var box = knopf.closest(".gal-bild") || knopf.closest(".bild");
     if (!box) return;
-    var img = box.classList.contains("zeige2") && box.querySelector("img.b2") ? box.querySelector("img.b2") : box.querySelector("img.b1");
+    var img = box.querySelector("img");
     if (!img || img.classList.contains("kaputt")) return;
     var el = document.getElementById("lightbox") || lbBauen();
     var gross = el.querySelector(".lb-bild");
@@ -922,9 +1033,35 @@
   ich = lsGet("jg-ich");
   ichSetzen(ich);
 
-  var app = document.getElementById("app");
+  // Schnittstelle für Start- und Planerseite (start.js, planer.js werden vor script.js geladen)
+  var JG = window.JG = {
+    D: D, NAMEN: NAMEN, STAND: STAND, NG: NG,
+    esc: esc, euro: euro, zahl: zahl, link: link, telLink: telLink, routeUrl: routeUrl, slugify: slugify,
+    toast: toast, bilder: bilder, bewertungHtml: bewertungHtml, entfHtml: entfHtml, statusHtml: statusHtml,
+    aktionen: aktionen, istFavorit: istFavorit, lsGet: lsGet, lsSet: lsSet,
+    ich: function () { return ich; }, likes: function () { return likes; },
+    ichSetzen: function (p) { ichSetzen(p); },
+    beispielA: beispielA, beimAktualisieren: null
+  };
+
+  // 15-Minuten-Regel: war die Seite länger weg, geht es auf der Startseite weiter
+  var PAUSE_MS = 15 * 60 * 1000;
   var seite = document.body.dataset.seite;
-  if (seite === "nachmittag") seiteNachmittag(app);
+  function zuletztMerken() { lsSet("jg-zuletzt", String(Date.now())); }
+  function langeWeg() { var z = Number(lsGet("jg-zuletzt")); return z && Date.now() - z > PAUSE_MS; }
+  if (seite !== "start" && langeWeg() && !location.hash) { zuletztMerken(); location.replace("index.html"); return; }
+  zuletztMerken();
+  setInterval(function () { if (!document.hidden) zuletztMerken(); }, 60000);
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) { zuletztMerken(); return; }
+    if (langeWeg() && seite !== "start") { location.href = "index.html"; return; }
+    zuletztMerken();
+  });
+
+  var app = document.getElementById("app");
+  var eigene = window.JG_SEITEN && window.JG_SEITEN[seite];
+  if (eigene) eigene(app, JG);
+  else if (seite === "nachmittag") seiteNachmittag(app);
   else if (seite === "cafes") seiteCafes(app);
   else seiteRestaurants(app);
 

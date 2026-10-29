@@ -1,0 +1,368 @@
+{
+ "start": {
+  "lat": 49.53773,
+  "lon": 8.47482,
+  "adresse": "Dirschauer Weg, 68307 Mannheim"
+ },
+ "r:das-atelier": {
+  "lat": 49.49234,
+  "lon": 8.46139,
+  "adresse": "G7 17, 68159 Mannheim"
+ },
+ "r:mary-jane": {
+  "lat": 49.40785,
+  "lon": 8.68816,
+  "adresse": "Poststraße 36/7, 69115 Heidelberg"
+ },
+ "r:rieds": {
+  "lat": 49.40898,
+  "lon": 8.68062,
+  "adresse": "Vangerowstraße 4, 69115 Heidelberg"
+ },
+ "r:der-philosoph": {
+  "lat": 49.41465,
+  "lon": 8.69239,
+  "adresse": "Brückenstraße 14, 69120 Heidelberg"
+ },
+ "r:doblers": {
+  "lat": 49.48096,
+  "lon": 8.47631,
+  "adresse": "Seckenheimer Straße 20, 68165 Mannheim"
+ },
+ "r:tourist-trap": {
+  "lat": 49.49475,
+  "lon": 8.46901,
+  "adresse": "Neckarvorlandstraße 2a, 68159 Mannheim"
+ },
+ "r:grenzhof": {
+  "lat": 49.4178,
+  "lon": 8.59549,
+  "adresse": "Grenzhof 9, 69123 Heidelberg"
+ },
+ "r:turmrestaurant": {
+  "lat": 49.48856,
+  "lon": 8.41513,
+  "adresse": "Erzbergerstraße 69, 67063 Ludwigshafen am Rhein"
+ },
+ "r:minoh": {
+  "lat": 49.4828,
+  "lon": 8.47241,
+  "adresse": "M7 13, 68161 Mannheim"
+ },
+ "r:spinne": {
+  "lat": 49.37171,
+  "lon": 8.14263,
+  "adresse": "Eichkehle 58, 67433 Neustadt an der Weinstraße"
+ },
+ "r:atable": {
+  "lat": 49.50698,
+  "lon": 8.21146,
+  "adresse": "Hauptstraße 29, 67251 Freinsheim"
+ },
+ "r:kurfuerstenstube": {
+  "lat": 49.40779,
+  "lon": 8.6949,
+  "adresse": "Friedrich-Ebert-Anlage 1, 69117 Heidelberg"
+ },
+ "r:ziegler": {
+  "lat": 49.52028,
+  "lon": 8.66885,
+  "adresse": "Sachsenstraße 39, 69469 Weinheim-Hohensachsen"
+ },
+ "r:bistronauten": {
+  "lat": 49.54881,
+  "lon": 8.66519,
+  "adresse": "Kopernikusstraße 43, 69469 Weinheim"
+ },
+ "c:mousse-mousse": {
+  "lat": 49.38122,
+  "lon": 8.68681,
+  "adresse": "Römerstraße 216, 69126 Heidelberg"
+ },
+ "c:patisserie-sophie": {
+  "lat": 49.41473,
+  "lon": 8.6915,
+  "adresse": "Ladenburger Straße 10, 69120 Heidelberg"
+ },
+ "c:yagiya": {
+  "lat": 49.49537,
+  "lon": 8.47877,
+  "adresse": "Käfertaler Straße 35, 68167 Mannheim"
+ },
+ "c:pastry-poets": {
+  "lat": 49.55423,
+  "lon": 8.67049,
+  "adresse": "Alte Postgasse 53, 69469 Weinheim"
+ },
+ "c:sunday": {
+  "lat": 49.41135,
+  "lon": 8.70406,
+  "adresse": "Hauptstraße 110 (am Theaterplatz), 69117 Heidelberg"
+ },
+ "c:blum": {
+  "lat": 49.47777,
+  "lon": 8.47814,
+  "adresse": "Schwetzinger Straße 92, 68165 Mannheim"
+ },
+ "c:panno": {
+  "lat": 49.41126,
+  "lon": 8.71027,
+  "adresse": "Ingrimstraße 22, 69117 Heidelberg"
+ },
+ "c:chocami": {
+  "lat": 49.37801,
+  "lon": 8.58513,
+  "adresse": "Scheffelstraße 28, 68723 Schwetzingen"
+ },
+ "c:frankys-farm": {
+  "lat": 49.49258,
+  "lon": 8.46095,
+  "adresse": "G7 20, 68159 Mannheim"
+ },
+ "c:coer": {
+  "lat": 49.48561,
+  "lon": 8.46747,
+  "adresse": "N3 15, 68161 Mannheim"
+ },
+ "c:schafheutle": {
+  "lat": 49.41108,
+  "lon": 8.70247,
+  "adresse": "Hauptstraße 94, 69117 Heidelberg"
+ },
+ "c:macaronnerie": {
+  "lat": 49.40848,
+  "lon": 8.69425,
+  "adresse": "Sofienstraße 23, 69115 Heidelberg"
+ },
+ "n:nm-ma-barockschloss": {
+  "lat": 49.48368,
+  "lon": 8.46149,
+  "adresse": "Barockschloss Mannheim, Bismarckstraße, 68161 Mannheim"
+ },
+ "cv:dolceamaro": {
+  "lat": 49.48407,
+  "lon": 8.47816,
+  "adresse": "Friedrichsplatz 13, 68165 Mannheim"
+ },
+ "n:nm-ma-wasserturm-kunsthalle": {
+  "lat": 49.48261,
+  "lon": 8.47542,
+  "adresse": "Kunsthalle Mannheim, Friedrichsplatz 4, 68165 Mannheim"
+ },
+ "cv:konditorei-kaffee-herrdegen": {
+  "lat": 49.48929,
+  "lon": 8.46731,
+  "adresse": "E 2, 8, 68159 Mannheim"
+ },
+ "n:nm-ma-rem-jungbusch": {
+  "lat": 49.49491,
+  "lon": 8.45287,
+  "adresse": "Reiss-Engelhorn-Museen, Museum Weltkulturen D5, 68159 Mannheim"
+ },
+ "cv:cafe-brue": {
+  "lat": 49.48628,
+  "lon": 8.4727,
+  "adresse": "Q7 27, 68161 Mannheim"
+ },
+ "n:nm-ma-rhein-reissinsel": {
+  "lat": 49.46964,
+  "lon": 8.46642,
+  "adresse": "Stephanienufer, 68163 Mannheim"
+ },
+ "cv:cafe-meerwiesen": {
+  "lat": 49.4703,
+  "lon": 8.47049,
+  "adresse": "Meerwiesenstraße 1, 68163 Mannheim"
+ },
+ "n:nm-schwetzingen-schlossgarten": {
+  "lat": 49.3836,
+  "lon": 8.5785,
+  "adresse": "Schloss Schwetzingen, Schloss Mittelbau, 68723 Schwetzingen"
+ },
+ "cv:walzwerk-cafe": {
+  "lat": 49.38461,
+  "lon": 8.57375,
+  "adresse": "Carl-Theodor-Straße 1, 68723 Schwetzingen"
+ },
+ "n:nm-lu-ebertpark-hack": {
+  "lat": 49.47933,
+  "lon": 8.42924,
+  "adresse": "Wilhelm-Hack-Museum, Berliner Straße 23, 67059 Ludwigshafen am Rhein"
+ },
+ "n:ma-kaefertaler-wald-wolfsbau": {
+  "lat": 49.5345,
+  "lon": 8.49529,
+  "adresse": "Karlstern, Karlsternstraße 130, 68305 Mannheim"
+ },
+ "cv:cafe-wolfsbau": {
+  "lat": 49.53625,
+  "lon": 8.49496,
+  "adresse": "Waldpforte 81, 68305 Mannheim"
+ },
+ "n:hd-philosophenweg": {
+  "lat": 49.41827,
+  "lon": 8.69136,
+  "adresse": "Parkhaus Nordbrückenkopf (P16), Uferstraße, 69120 Heidelberg"
+ },
+ "cv:cafe-schafheutle": {
+  "lat": 49.41108,
+  "lon": 8.70247,
+  "adresse": "Hauptstraße 94, 69117 Heidelberg"
+ },
+ "cv:patisserie-sophie": {
+  "lat": 49.41473,
+  "lon": 8.6915,
+  "adresse": "Ladenburger Straße 10, 69120 Heidelberg"
+ },
+ "n:hd-schloss-koenigstuhl": {
+  "lat": 49.41112,
+  "lon": 8.71192,
+  "adresse": "Parkhaus Kornmarkt/Schloss (P12), Neue Schlossstraße, 69117 Heidelberg"
+ },
+ "cv:cafe-hotel-knosel": {
+  "lat": 49.4124,
+  "lon": 8.70899,
+  "adresse": "Haspelgasse 20, 69117 Heidelberg"
+ },
+ "n:hd-altstadt-museum": {
+  "lat": 49.41137,
+  "lon": 8.7029,
+  "adresse": "Kurpfälzisches Museum, Hauptstraße 97, 69117 Heidelberg"
+ },
+ "n:hd-prinzhorn": {
+  "lat": 49.40981,
+  "lon": 8.68875,
+  "adresse": "Sammlung Prinzhorn, Voßstraße 2, 69115 Heidelberg"
+ },
+ "n:wh-exotenwald-wachenburg": {
+  "lat": 49.54114,
+  "lon": 8.6724,
+  "adresse": "Weinheimer Schloss (Rathaus), Obertorstraße 9, 69469 Weinheim"
+ },
+ "cv:patisserie-cafe-pastry-poets": {
+  "lat": 49.55423,
+  "lon": 8.67049,
+  "adresse": "Alte Postgasse 53, 69469 Weinheim"
+ },
+ "n:wh-altstadt-pastry": {
+  "lat": 49.54638,
+  "lon": 8.67219,
+  "adresse": "Marktplatz, 69469 Weinheim"
+ },
+ "n:hd-koenigstuhl-bergstube": {
+  "lat": 49.40266,
+  "lon": 8.72979,
+  "adresse": "Berggasthof Königstuhl, Königstuhl 2, 69117 Heidelberg"
+ },
+ "cv:bergstube-im-berggasthof-konigstuhl": {
+  "lat": 49.40266,
+  "lon": 8.72979,
+  "adresse": "Königstuhl 2, 69117 Heidelberg"
+ },
+ "n:wh-hermannshof-schlosspark": {
+  "lat": 49.54182,
+  "lon": 8.67464,
+  "adresse": "Schau- und Sichtungsgarten Hermannshof, Babostraße 5, 69469 Weinheim"
+ },
+ "cv:flo-cafe-florian": {
+  "lat": 49.5466,
+  "lon": 8.67237,
+  "adresse": "Marktplatz 8, 69469 Weinheim"
+ },
+ "v:fuhrung-uber-die-spielhausbaustelle-des-nationaltheaters-nat": {
+  "lat": 49.48834,
+  "lon": 8.47654,
+  "adresse": "Goetheplatz, 68161 Mannheim"
+ },
+ "v:the-beatles-today-now-and-then-capitol-mannheim": {
+  "lat": 49.49734,
+  "lon": 8.47256,
+  "adresse": "Waldhofstraße 2, 68169 Mannheim"
+ },
+ "v:firebrigade-live-musik-der-80er-zu-halloween-capitol-mannhei": {
+  "lat": 49.49734,
+  "lon": 8.47256,
+  "adresse": "Waldhofstraße 2, 68169 Mannheim"
+ },
+ "v:disney-in-concert-sap-arena-mannheim": {
+  "lat": 49.46412,
+  "lon": 8.51796,
+  "adresse": "An der Arena 1, 68163 Mannheim"
+ },
+ "v:clapton-experience-tribute-an-eric-clapton-7er-club-mannheim": {
+  "lat": 49.50559,
+  "lon": 8.45944,
+  "adresse": "7er Club Mannheim"
+ },
+ "v:ausstellung-baustelle-artenvielfalt-klimawandel-in-historisc": {
+  "lat": 49.3836,
+  "lon": 8.5785,
+  "adresse": "Schloss Mittelbau, 68723 Schwetzingen"
+ },
+ "v:ausstellung-andre-wischnewski-please-take-note-wilhelm-hack-": {
+  "lat": 49.4798,
+  "lon": 8.44395,
+  "adresse": "Berliner Straße 23, 67059 Ludwigshafen am Rhein"
+ },
+ "v:ausstellung-leonardo-da-vinci-erfindungen-erleben-reiss-enge": {
+  "lat": 49.48898,
+  "lon": 8.46223,
+  "adresse": "D5, 68159 Mannheim"
+ },
+ "v:halloween-das-familienfest-im-luisenpark-luisenpark-mannheim": {
+  "lat": 49.47834,
+  "lon": 8.49593,
+  "adresse": "Theodor-Heuss-Anlage 2, 68165 Mannheim"
+ },
+ "v:wein-delikatessen-montpellier-verkostung-mit-weinbar-und-liv": {
+  "lat": 49.41469,
+  "lon": 8.71914,
+  "adresse": "Am Karlstor 1, 69117 Heidelberg"
+ },
+ "v:enjoy-jazz-the-messthetics-james-brandon-lewis-metropolink-s": {
+  "lat": 49.37403,
+  "lon": 8.62969,
+  "adresse": "South Gettysburg Avenue 46, 69124 Heidelberg"
+ },
+ "v:steffen-weber-band-american-songbook-jazzhaus-heidelberg": {
+  "lat": 49.41314,
+  "lon": 8.71329,
+  "adresse": "Leyergasse 6, 69117 Heidelberg"
+ },
+ "v:der-zerbrochne-krug-kleist-wiederaufnahme-theater-heidelberg": {
+  "lat": 49.41023,
+  "lon": 8.7038,
+  "adresse": "Theaterstraße 10, 69117 Heidelberg"
+ },
+ "v:asiawochen-yannic-han-biao-federer-wiederaufnahme-theater-he": {
+  "lat": 49.41023,
+  "lon": 8.7038,
+  "adresse": "Theaterstraße 10, 69117 Heidelberg (Adresse Theater & Orchester; Zwinger-Eingang nicht geprüft)"
+ },
+ "v:auf-den-spuren-der-nachtwachter-altstadtfuhrung-treffpunkt-e": {
+  "lat": 49.41218,
+  "lon": 8.71087,
+  "adresse": "Marktplatz 10, 69117 Heidelberg"
+ },
+ "v:ich-bin-einer-wie-alle-nur-besser-theaterlabor-bielefeld-tik": {
+  "lat": 49.38687,
+  "lon": 8.68099,
+  "adresse": "Marlene-Dietrich-Platz 3, 69126 Heidelberg"
+ },
+ "v:sirenia-illumishade-symphonic-metal-cafe-central-weinheim": {
+  "lat": 49.55147,
+  "lon": 8.66803,
+  "adresse": "Bahnhofstraße 19, 69469 Weinheim"
+ },
+ "v:marionettenoper-mozarts-die-zauberflote-collegium-musicum-un": {
+  "lat": 49.42014,
+  "lon": 8.68434,
+  "adresse": "Keplerstraße 87, 69120 Heidelberg-Neuenheim"
+ },
+ "_quelle": "OpenStreetMap Nominatim, 29.10.2026 (Adressen aus den Datendateien)",
+ "v:faust-schauspiel-ntm-anschlie-end-theaterparty-teuflisches-h": {
+  "lat": 49.51823,
+  "lon": 8.53596,
+  "adresse": "Altes Kino Franklin, Mannheim"
+ }
+}

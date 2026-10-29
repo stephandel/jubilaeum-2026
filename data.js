@@ -186,16 +186,16 @@ window.GUIDE_DATA = {
     }
    ],
    "preisbeispiele_hinweis": "Tee steht nicht auf der Getränkekarte (Summe ohne Tee). Offene Weine nur im 0,2-l-Glas.",
-   "oeffnung_samstag": "17:00–00:00",
-   "oeffnung_hinweis": "Angabe nur aus Schlemmer Atlas (Di–Do + So 17–23 Uhr, Fr+Sa 17–24 Uhr), keine eigene Website gefunden; Ruhetag/Betriebsferien nicht prüfbar",
-   "oeffnung_quelle": "https://www.schlemmer-atlas.de/restaurants/deutschland/mannheim/das-atelier/",
+   "oeffnung_samstag": "17:00–24:00",
+   "oeffnung_hinweis": "Laut eigener Website: Mo geschlossen, Di–Do 17–23, Fr und Sa 17–24, So 17–23 Uhr. Keine Hinweise auf Schließung am 31.10.",
+   "oeffnung_quelle": "https://dasatelierma.de/",
    "reservierung": {
     "art": "telefon",
     "tool": null,
-    "url": null,
+    "url": "https://dasatelierma.de/#Reservieren",
     "verfuegbar_31_10": "unbekannt",
     "freie_zeiten": [],
-    "hinweis": "Keine Website und kein Online-Tool gefunden – online nicht prüfbar – bitte anrufen: +49 174 6086339 (Mobilnummer laut Schlemmer Atlas)",
+    "hinweis": "Kein Online-Buchungssystem mit Live-Verfügbarkeit. Reservierung telefonisch (+49 174 6086339), per E-Mail (service@dasatelierma.de) oder über das Kontaktformular der Website – das ist zunächst eine Anfrage.",
     "stand": "2026-10-29"
    },
    "parken": {
@@ -206,9 +206,16 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/das-atelier-1.jpg",
-     "art": "location",
+     "art": "aussen",
      "beschreibung": "Schaufenster mit Schriftzug und Sitzbank vor dem Eingang",
      "quelle_url": "https://dasatelierma.de/wp-content/uploads/2025/05/Das-Atelier-Mannheim-Restaurant-square.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/das-atelier-3.jpg",
+     "art": "innen",
+     "beschreibung": "Gastraum und Küche (schwarz-weiß)",
+     "quelle_url": "https://dasatelierma.de/wp-content/uploads/2025/05/Das-Atelier-Mannheim-Cooking.jpg",
      "vorhanden": true
     },
     {
@@ -216,13 +223,6 @@ window.GUIDE_DATA = {
      "art": "gericht",
      "beschreibung": "Fleischgericht auf Püree, daneben Fensterfront",
      "quelle_url": "https://dasatelierma.de/wp-content/uploads/2025/05/Das-Atelier-Mannheim-Header-01.jpg",
-     "vorhanden": true
-    },
-    {
-     "datei": "img/das-atelier-3.jpg",
-     "art": "location",
-     "beschreibung": "Gastraum und Küche (schwarz-weiß)",
-     "quelle_url": "https://dasatelierma.de/wp-content/uploads/2025/05/Das-Atelier-Mannheim-Cooking.jpg",
      "vorhanden": true
     }
    ],
@@ -238,10 +238,7 @@ window.GUIDE_DATA = {
     "Küchenschluss am Samstag",
     "Parkgebühren Tiefgarage H6 und genauer Fußweg",
     "Datum der Speisekarte: Seite zuletzt geändert am 27.10.2026 laut Seitenzeitstempel, Karte also aktuell, aber nicht ausdrücklich datiert",
-    "Eigene Website nicht gefunden",
-    "Telefonnummer und Öffnungszeiten nur aus Schlemmer Atlas, nicht vom Betrieb bestätigt",
-    "Trip.com nennt für G7 17 ein Lokal 'Gluck & Verstand' (Tel. +49 621 44588753) – möglicher Betreiberwechsel, ungeklärt",
-    "E-Mail unbekannt"
+    "Freie Tische am 31.10. (nur telefonisch/per Anfrage)"
    ],
    "stand": "2026-10-29",
    "zusatz": false,
@@ -360,7 +357,7 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/mary-jane-1.webp",
-     "art": "location",
+     "art": "innen",
      "beschreibung": "Gastraum mit langer Tafel, abends",
      "quelle_url": "https://mary-jane.space/build/assets/mobile-space-02-wWSoi4OM.webp",
      "vorhanden": true
@@ -377,6 +374,13 @@ window.GUIDE_DATA = {
      "art": "gericht",
      "beschreibung": "Gang im Ringteller",
      "quelle_url": "https://mary-jane.space/build/assets/mobile-home-03-CS7YMGyS.webp",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/mary-jane-4.webp",
+     "art": "gericht",
+     "beschreibung": "Lammrücken mit Gemüse und Sauce",
+     "quelle_url": "https://mary-jane.space/build/assets/desktop-faq-01-CiGzEfka.webp",
      "vorhanden": true
     }
    ],
@@ -644,9 +648,16 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/rieds-1.jpg",
-     "art": "location",
+     "art": "innen",
      "beschreibung": "Gastraum am Abend",
      "quelle_url": "https://rieds-restaurant.de/assets/682c167382.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/rieds-3.jpg",
+     "art": "innen",
+     "beschreibung": "Eingedeckter Gastraum",
+     "quelle_url": "https://rieds-restaurant.de/assets/41650d1358.jpg",
      "vorhanden": true
     },
     {
@@ -657,10 +668,17 @@ window.GUIDE_DATA = {
      "vorhanden": true
     },
     {
-     "datei": "img/rieds-3.jpg",
-     "art": "location",
-     "beschreibung": "Eingedeckter Gastraum",
-     "quelle_url": "https://rieds-restaurant.de/assets/41650d1358.jpg",
+     "datei": "img/rieds-4.jpg",
+     "art": "gericht",
+     "beschreibung": "Dessert mit Eis und Karamell",
+     "quelle_url": "https://rieds-restaurant.de/assets/1269d6a9b8.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/rieds-5.jpg",
+     "art": "gericht",
+     "beschreibung": "Fisch auf Schaum mit Gemüse",
+     "quelle_url": "https://rieds-restaurant.de/assets/8f002741de.jpg",
      "vorhanden": true
     }
    ],
@@ -892,19 +910,22 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/der-philosoph-1.webp",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Gastraum mit rotem Samt und gedeckten Tischen",
      "quelle_url": "https://restaurant-philosoph.de/assets/media/restaurant-1-c2.webp",
      "vorhanden": true
     },
     {
      "datei": "img/der-philosoph-2.webp",
      "art": "gericht",
+     "beschreibung": "Lammgericht mit Sauce",
      "quelle_url": "https://restaurant-philosoph.de/assets/media/lammgericht.webp",
      "vorhanden": true
     },
     {
      "datei": "img/der-philosoph-3.webp",
      "art": "gericht",
+     "beschreibung": "Fischgericht auf Trüffelrisotto",
      "quelle_url": "https://restaurant-philosoph.de/assets/media/fischgericht.webp",
      "vorhanden": true
     }
@@ -1133,20 +1154,30 @@ window.GUIDE_DATA = {
    },
    "bilder": [
     {
+     "datei": "img/doblers-4.jpg",
+     "art": "aussen",
+     "beschreibung": "Eingang und Terrasse mit Schriftzug Dobler's",
+     "quelle_url": "https://doblers-restaurant.de/wp-content/uploads/2022/10/doblers-aussenansicht.jpg",
+     "vorhanden": true
+    },
+    {
      "datei": "img/doblers-1.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Heller Gastraum mit Kronleuchtern",
      "quelle_url": "https://doblers-restaurant.de/wp-content/uploads/2023/08/Doblers-2307-Interior-4.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/doblers-2.jpg",
      "art": "gericht",
+     "beschreibung": "Vorspeise mit Kaviar und Blüten",
      "quelle_url": "https://doblers-restaurant.de/wp-content/uploads/2023/08/Doblers-2307-8292.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/doblers-3.jpg",
      "art": "gericht",
+     "beschreibung": "Gerichte werden in der Küche angerichtet",
      "quelle_url": "https://doblers-restaurant.de/wp-content/uploads/2023/08/Doblers-2307-8262.jpg",
      "vorhanden": true
     }
@@ -1412,20 +1443,30 @@ window.GUIDE_DATA = {
    },
    "bilder": [
     {
-     "datei": "img/tourist-trap-1.webp",
-     "art": "location",
-     "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-mannheim-schiff-neckar.webp",
+     "datei": "img/tourist-trap-4.jpg",
+     "art": "aussen",
+     "beschreibung": "Museumsschiff am Neckarufer",
+     "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-schiff-scaled-e1746002498976.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/tourist-trap-5.jpg",
+     "art": "innen",
+     "beschreibung": "Sitzbank mit Kissen und Vasen am Fenster",
+     "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-restaurant.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/tourist-trap-2.webp",
      "art": "gericht",
+     "beschreibung": "Menügang auf gedecktem Tisch",
      "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-mannheim-Menue-Interior.webp",
      "vorhanden": true
     },
     {
      "datei": "img/tourist-trap-3.webp",
      "art": "gericht",
+     "beschreibung": "Menügang auf gemustertem Teller",
      "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-mannheim-Menue.webp",
      "vorhanden": true
     }
@@ -1639,14 +1680,14 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/grenzhof-1.jpg",
-     "art": "location",
+     "art": "aussen",
      "beschreibung": "Fassade Hotel & Restaurant",
      "quelle_url": "https://www.grenzhof.de/wp-content/uploads/2023/06/GRENZHOF-Hotel-Restaurant-Fassade.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/grenzhof-2.jpg",
-     "art": "gastraum",
+     "art": "innen",
      "beschreibung": "Gastraum Gutsstube",
      "quelle_url": "https://www.grenzhof.de/wp-content/uploads/2024/09/2024-05-22_Fine-Dine_Grenzhof-HeidelbergDSCF4588.jpg",
      "vorhanden": true
@@ -1902,14 +1943,14 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/turmrestaurant-1.jpg",
-     "art": "location",
+     "art": "aussen",
      "beschreibung": "Turmbau im Ebertpark mit Brunnen",
      "quelle_url": "https://www.turm.restaurant/images/1200/15072782/turmrestaurant-is-02.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/turmrestaurant-2.jpg",
-     "art": "gastraum",
+     "art": "innen",
      "beschreibung": "Gastraum Restaurant",
      "quelle_url": "https://www.turm.restaurant/images/1024/22342573/restaurant-1R-EDCw-GoDOtBmUAwET6Q.jpg",
      "vorhanden": true
@@ -2108,9 +2149,23 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/minoh-1.jpg",
-     "art": "location",
+     "art": "aussen",
      "beschreibung": "Eingang des Restaurants bei der Eröffnung (Foto: Stephanie Bach, mannheim24)",
      "quelle_url": "https://www.mannheim24.de/assets/images/40/16/40016659-eingangsbereich-neueroeffneten-restaurants-minoh-mannheim-asiatisch-2x6h8uHfcjfe.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/minoh-2.jpg",
+     "art": "innen",
+     "beschreibung": "Gastraum mit Holzwänden und Theke (Gäste-Fotocollage)",
+     "quelle_url": "https://restaurantguru.com/Minoh-Mannheim",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/minoh-3.jpg",
+     "art": "gericht",
+     "beschreibung": "Reis- und Nudelgerichte (Gäste-Fotocollage)",
+     "quelle_url": "https://restaurantguru.com/Minoh-Mannheim",
      "vorhanden": true
     }
    ],
@@ -2320,20 +2375,30 @@ window.GUIDE_DATA = {
    },
    "bilder": [
     {
+     "datei": "img/spinne-4.jpg",
+     "art": "aussen",
+     "beschreibung": "Terrasse im Innenhof am Abend",
+     "quelle_url": "https://static.wixstatic.com/media/aefe10_6ce8349e25944ad9919f0dab26e7cf61~mv2_d_2903_1594_s_2.jpg",
+     "vorhanden": true
+    },
+    {
      "datei": "img/spinne-1.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Gewölbekeller mit langer Tafel",
      "quelle_url": "https://static.wixstatic.com/media/aefe10_70aba0f0215d4d1abd1208f0d4876434~mv2.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/spinne-2.jpg",
      "art": "gericht",
+     "beschreibung": "Geschmorter Rinderbacken auf Püree",
      "quelle_url": "https://static.wixstatic.com/media/aefe10_9f2321ac9d284ed0814ce8b7f08bd498~mv2.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/spinne-3.jpg",
      "art": "gericht",
+     "beschreibung": "Dessert mit Beeren und Schokolade",
      "quelle_url": "https://static.wixstatic.com/media/aefe10_15c1488d33b84fd29f680659d130d713~mv2.jpg",
      "vorhanden": true
     }
@@ -2524,15 +2589,9 @@ window.GUIDE_DATA = {
     "url": "https://services.gastronovi.com/restaurants/123465/reservation/widget/referral?embed=1",
     "verfuegbar_31_10": "ja",
     "freie_zeiten": [
-     "18:30",
-     "18:45",
-     "19:00",
-     "19:15",
-     "19:30",
-     "19:45",
-     "20:00"
+     "19:00"
     ],
-    "hinweis": "gastronovi-Widget im Browser geprüft (29.10., ca. 14:40 Uhr), 2 Personen: Zeitfenster 18:30–21:00 wählbar; 19:00 führte bis zur Eingabe der persönlichen Daten (frei). Nichts eingegeben, nicht gebucht. Nur 19:00 wirklich bis zum Ende geprüft.",
+    "hinweis": "gastronovi-Widget im Browser geprüft (29.10., ca. 14:40 Uhr), 2 Personen: 19:00 führte bis zur Eingabe der persönlichen Daten, also frei (nichts eingegeben, nicht gebucht). Andere Uhrzeiten zeigt das Widget als Standardliste – die sagt nichts über echte Verfügbarkeit.",
     "stand": "2026-10-29"
    },
    "parken": {
@@ -2542,20 +2601,30 @@ window.GUIDE_DATA = {
    },
    "bilder": [
     {
+     "datei": "img/atable-4.jpg",
+     "art": "aussen",
+     "beschreibung": "Amtshaus in der Hauptstraße von Freinsheim, Fassade mit Fensterläden",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Hauptstra%C3%9Fe_29_Freinsheim.jpg",
+     "vorhanden": true
+    },
+    {
      "datei": "img/atable-1.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Gewölberaum mit eingedeckten Tischen",
      "quelle_url": "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/atable_raeume/Atable_21-06-14_web_2192.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/atable-2.jpg",
      "art": "gericht",
+     "beschreibung": "Pasta-Gericht mit Trüffel",
      "quelle_url": "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/atable_kueche/Atable_21-06-14_web_2572.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/atable-3.jpg",
      "art": "gericht",
+     "beschreibung": "Dessert auf rotem Teller",
      "quelle_url": "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/atable_kueche/Atable_21-06-14_web_2677.jpg",
      "vorhanden": true
     }
@@ -2778,14 +2847,23 @@ window.GUIDE_DATA = {
    },
    "bilder": [
     {
+     "datei": "img/kurfuerstenstube-3.jpg",
+     "art": "aussen",
+     "beschreibung": "Hotel Der Europäische Hof, Eingang und Innenhof",
+     "quelle_url": "https://www.europaeischerhof.com/wp-content/uploads/2024/12/luxus-hotel-europaeischer-hof-heidelberg-aussenansicht_300dpi-Kopie.jpg",
+     "vorhanden": true
+    },
+    {
      "datei": "img/kurfuerstenstube-1.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Holzgetäfelter Gourmet-Saal mit Servierwagen",
      "quelle_url": "https://www.europaeischerhof.com/wp-content/uploads/2026/10/Luxus-Hotel-Europaeischer-Hof-Heidelberg-Die_Kurfuerstenstube_Michelin-2026-01.webp",
      "vorhanden": true
     },
     {
      "datei": "img/kurfuerstenstube-2.jpg",
      "art": "gericht",
+     "beschreibung": "Zwischengang mit Fisch auf schwarzem Reis",
      "quelle_url": "https://www.europaeischerhof.com/wp-content/uploads/2024/12/Food_Zwischengang-1.jpg",
      "vorhanden": true
     }
@@ -3003,13 +3081,15 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/ziegler-1.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Gedeckter Tisch mit Gläsern im Gastraum",
      "quelle_url": "https://static.wixstatic.com/media/202473_eac717ea1cd5440abccdc9d3f525208e~mv2.png",
      "vorhanden": true
     },
     {
      "datei": "img/ziegler-2.jpg",
      "art": "gericht",
+     "beschreibung": "Lachs mit grüner Sauce, von oben",
      "quelle_url": "https://static.wixstatic.com/media/202473_9296e3f54022463687ce096e90ea3444~mv2.jpg",
      "vorhanden": true
     }
@@ -3210,21 +3290,24 @@ window.GUIDE_DATA = {
    },
    "bilder": [
     {
+     "datei": "img/bistronauten-3.jpg",
+     "art": "aussen",
+     "beschreibung": "Haus der Bistronauten am Abend",
+     "quelle_url": "https://www.bistronauten.de/images/7.Gebaeude.jpg",
+     "vorhanden": true
+    },
+    {
      "datei": "img/bistronauten-1.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Gastraum mit Theke",
      "quelle_url": "https://www.bistronauten.de/images/2.Theke.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/bistronauten-2.jpg",
      "art": "gericht",
+     "beschreibung": "Gericht wird mit Sauce angerichtet",
      "quelle_url": "https://www.bistronauten.de/images/4.2.Loeffel_drip.jpg",
-     "vorhanden": true
-    },
-    {
-     "datei": "img/bistronauten-3.jpg",
-     "art": "location",
-     "quelle_url": "https://www.bistronauten.de/images/7.Gebaeude.jpg",
      "vorhanden": true
     }
    ],
@@ -3283,15 +3366,31 @@ window.GUIDE_DATA = {
    "parken": null,
    "bilder": [
     {
-     "datei": "img/cafe-mousse-mousse-1.jpg",
-     "art": "cafe",
-     "quelle_url": "https://primary.jwwb.nl/public/o/z/j/temp-roftsigprpstlughycta/cafe-high.jpg",
+     "datei": "img/cafe-mousse-mousse-3.jpg",
+     "art": "innen",
+     "beschreibung": "Gastraum mit Mousse-Mousse-Schriftzug",
+     "quelle_url": "https://www.moussemousse-patisseriemoderneheidelberg.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-mousse-mousse-4.jpg",
+     "art": "gericht",
+     "beschreibung": "Éclairs aus der Produktgalerie",
+     "quelle_url": "https://www.moussemousse-patisseriemoderneheidelberg.de/",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-mousse-mousse-2.png",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Glutenfreie Törtchen in der Vitrine",
      "quelle_url": "https://primary.jwwb.nl/public/o/z/j/temp-roftsigprpstlughycta/gallery1-high-iu2tiv.png",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-mousse-mousse-1.jpg",
+     "art": "gericht",
+     "beschreibung": "Cappuccino mit Kaffeebohnen",
+     "quelle_url": "https://primary.jwwb.nl/public/o/z/j/temp-roftsigprpstlughycta/cafe-high.jpg",
      "vorhanden": true
     }
    ],
@@ -3346,13 +3445,22 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/cafe-patisserie-sophie-1.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Törtchen-Auslage",
+     "quelle_url": "https://patisserie-sophie.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-patisserie-sophie-3.jpg",
+     "art": "gericht",
+     "beschreibung": "Croissant",
      "quelle_url": "https://patisserie-sophie.de/",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-patisserie-sophie-2.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Cappuccino mit Herz",
      "quelle_url": "https://patisserie-sophie.de/",
      "vorhanden": true
     }
@@ -3409,21 +3517,38 @@ window.GUIDE_DATA = {
    "parken": null,
    "bilder": [
     {
+     "datei": "img/cafe-yagiya-4.jpg",
+     "art": "aussen",
+     "beschreibung": "Hauseingang mit Kreidetafel und YagiYa-Schild",
+     "quelle_url": "https://www.mawayoflife.de/",
+     "vorhanden": true
+    },
+    {
      "datei": "img/cafe-yagiya-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Open-Schild an der Tür",
      "quelle_url": "https://www.mawayoflife.de/wp-content/uploads/2019/06/mawayXyagiya1.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-yagiya-2.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Japanische Schoko-Törtchen",
      "quelle_url": "https://www.mawayoflife.de/wp-content/uploads/2019/06/mawayXyagiya11.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-yagiya-3.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Törtchen und Erdbeer-Shortcake",
      "quelle_url": "https://www.mawayoflife.de/wp-content/uploads/2019/06/mawayXyagiya13.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-yagiya-5.jpg",
+     "art": "gericht",
+     "beschreibung": "Matcha-Rolle und Windbeutel",
+     "quelle_url": "https://www.instagram.com/yagiya.yagiya/",
      "vorhanden": true
     }
    ],
@@ -3480,21 +3605,31 @@ window.GUIDE_DATA = {
    "parken": null,
    "bilder": [
     {
-     "datei": "img/cafe-pastry-poets-1.jpg",
-     "art": "team",
-     "quelle_url": "https://pastry-poets.de/wp-content/uploads/2024/09/IMG_60451-scaled.jpg",
-     "vorhanden": true
-    },
-    {
      "datei": "img/cafe-pastry-poets-2.jpg",
-     "art": "produkt",
-     "quelle_url": "https://pastry-poets.de/wp-content/uploads/elementor/thumbs/IMG_0335-qpuj53eyrfni76zq46d4bp1grc46ntc96uv2fxhbxc.jpg",
+     "art": "gericht",
+     "beschreibung": "Schoko-Törtchen mit Haselnuss und Blaubeeren",
+     "quelle_url": "https://pastry-poets.de/",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-pastry-poets-3.jpg",
-     "art": "produkt",
-     "quelle_url": "https://pastry-poets.de/wp-content/uploads/elementor/thumbs/EAXM8130-scaled-qpuj8hlzfwas4i28an6mbu7dzfdwggtczno6twg5gg.jpeg",
+     "art": "gericht",
+     "beschreibung": "Macarons und Kleingebäck",
+     "quelle_url": "https://pastry-poets.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-pastry-poets-4.jpg",
+     "art": "gericht",
+     "beschreibung": "Croissants",
+     "quelle_url": "https://pastry-poets.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-pastry-poets-1.jpg",
+     "art": "team",
+     "beschreibung": "Pâtissière",
+     "quelle_url": "https://pastry-poets.de/wp-content/uploads/2024/09/IMG_60451-scaled.jpg",
      "vorhanden": true
     }
    ],
@@ -3550,14 +3685,23 @@ window.GUIDE_DATA = {
    },
    "bilder": [
     {
+     "datei": "img/cafe-sunday-3.jpg",
+     "art": "aussen",
+     "beschreibung": "Aufsteller vor dem Café auf der Straße",
+     "quelle_url": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/",
+     "vorhanden": true
+    },
+    {
      "datei": "img/cafe-sunday-1.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Gastraum mit Kuchentheke",
      "quelle_url": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-sunday-2.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Zitronen- und Himbeertorte",
      "quelle_url": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/",
      "vorhanden": true
     }
@@ -3614,13 +3758,15 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/cafe-blum-1.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Gastraum mit blauer und gelber Wand und Holztischen",
      "quelle_url": "https://www.google.com/maps/place/Blum+Caf%C3%A9/",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-blum-2.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Kuchen- und Gebäcktheke",
      "quelle_url": "https://www.google.com/maps/place/Blum+Caf%C3%A9/",
      "vorhanden": true
     }
@@ -3684,14 +3830,44 @@ window.GUIDE_DATA = {
    },
    "bilder": [
     {
-     "datei": "img/cafe-panno-1.jpg",
-     "art": "location",
-     "quelle_url": "https://www.google.com/maps/place/Caf%C3%A9+Panno/",
+     "datei": "img/cafe-panno-3.jpg",
+     "art": "aussen",
+     "beschreibung": "Eingang mit Panno-Schriftzug und Aufsteller",
+     "quelle_url": "https://panno-heidelberg.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-panno-4.jpg",
+     "art": "innen",
+     "beschreibung": "Theke vor gelber Wand",
+     "quelle_url": "https://panno-heidelberg.de/",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-panno-2.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Kaffee mit Keks",
+     "quelle_url": "https://www.google.com/maps/place/Caf%C3%A9+Panno/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-panno-5.jpg",
+     "art": "gericht",
+     "beschreibung": "Matcha-Erdbeer-Drinks",
+     "quelle_url": "https://panno-heidelberg.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-panno-6.jpg",
+     "art": "gericht",
+     "beschreibung": "Latte Art",
+     "quelle_url": "https://panno-heidelberg.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-panno-1.jpg",
+     "art": "innen",
+     "beschreibung": "Blick ins Café durch den Spiegel",
      "quelle_url": "https://www.google.com/maps/place/Caf%C3%A9+Panno/",
      "vorhanden": true
     }
@@ -3752,19 +3928,22 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/cafe-chocami-1.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Zweistöckige Torte mit Macarons und Beeren",
      "quelle_url": "https://chocami.de/wp-content/uploads/2025/07/IMG_20250919_132717.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-chocami-2.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Torte mit Eistüte aus Waffel und Beeren",
      "quelle_url": "https://chocami.de/wp-content/uploads/2025/07/IMG_20250919_132736.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-chocami-3.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Schokoladen-Törtchen im Halloween-Look",
      "quelle_url": "https://chocami.de/wp-content/uploads/2026/10/Halloween-Toertchen-2026.jpeg",
      "vorhanden": true
     }
@@ -3821,13 +4000,15 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/cafe-frankys-farm-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Schaufensterfront in G7 mit Lampen",
      "quelle_url": "https://www.google.com/maps/place/Franky%E2%80%98s+Farm+(Coffee+%26+Cheesecake)/",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-frankys-farm-2.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Pistazen-Kuchen mit Eiskaffee",
      "quelle_url": "https://www.google.com/maps/place/Franky%E2%80%98s+Farm+(Coffee+%26+Cheesecake)/",
      "vorhanden": true
     }
@@ -3895,20 +4076,37 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/cafe-coer-1.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Zitrus-Tartelette mit Orange",
      "quelle_url": "https://cdn.sanity.io/images/oypifleg/production/b3c3efe6463a381f5af5fbb8d56819f5b802bed3-4499x3892.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-coer-2.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Canelé auf Teller",
      "quelle_url": "https://cdn.sanity.io/images/oypifleg/production/0c7323e10739156c864a9c235cd64f27ac05dc45-4000x4000.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-coer-3.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Choux mit Sahnehaube",
      "quelle_url": "https://cdn.sanity.io/images/oypifleg/production/990607af8869abf2015315e9a135154644a3e31d-2304x3456.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-coer-4.jpg",
+     "art": "gericht",
+     "beschreibung": "Schoko-Éclair mit Blattgold",
+     "quelle_url": "https://www.patisserie-coer.de/kontakt",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-coer-5.jpg",
+     "art": "gericht",
+     "beschreibung": "Rosa Törtchen mit Blüten",
+     "quelle_url": "https://www.patisserie-coer.de/events",
      "vorhanden": true
     }
    ],
@@ -3964,21 +4162,24 @@ window.GUIDE_DATA = {
    "parken": null,
    "bilder": [
     {
+     "datei": "img/cafe-schafheutle-3.jpg",
+     "art": "aussen",
+     "beschreibung": "Historische Außenansicht des Theater-Cafés (Schwarzweiß)",
+     "quelle_url": "https://cafe-schafheutle.de/cdn/shop/files/cafe_front_1500x1500.jpg",
+     "vorhanden": true
+    },
+    {
      "datei": "img/cafe-schafheutle-1.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Gastraum mit Sitzbank",
      "quelle_url": "https://cafe-schafheutle.de/cdn/shop/files/interior_dark_1600x.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/cafe-schafheutle-2.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Himbeer-Kiwi-Torte",
      "quelle_url": "https://cafe-schafheutle.de/cdn/shop/files/fruchtkuchen.jpg",
-     "vorhanden": true
-    },
-    {
-     "datei": "img/cafe-schafheutle-3.jpg",
-     "art": "location",
-     "quelle_url": "https://cafe-schafheutle.de/cdn/shop/files/cafe_front_1500x1500.jpg",
      "vorhanden": true
     }
    ],
@@ -4013,7 +4214,7 @@ window.GUIDE_DATA = {
   {
    "slug": "macaronnerie",
    "name": "Macaronnerie Heidelberg",
-   "adresse": "Sofienstraße 23, 69115 Heidelberg",
+   "adresse": "Sofienstraße 23, 69117 Heidelberg",
    "ort": "Heidelberg",
    "telefon": "+49 6221 1866935",
    "email": null,
@@ -4032,9 +4233,31 @@ window.GUIDE_DATA = {
    "parken": null,
    "bilder": [
     {
+     "datei": "img/cafe-macaronnerie-2.jpg",
+     "art": "aussen",
+     "beschreibung": "Ladenfront in der Heidelberger Altstadt",
+     "quelle_url": "https://www.macarons-heidelberg.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-macaronnerie-3.jpg",
+     "art": "innen",
+     "beschreibung": "Blick durch das Schaufenster in den Laden",
+     "quelle_url": "https://www.macarons-heidelberg.de/wp-content/uploads/2021/02/Macaronnerie-vitrine.jpg",
+     "vorhanden": true
+    },
+    {
      "datei": "img/cafe-macaronnerie-1.jpg",
-     "art": "produkt",
+     "art": "gericht",
+     "beschreibung": "Macarons in der Auslage",
      "quelle_url": "https://www.macarons-heidelberg.de/wp-content/uploads/2021/02/macaronnerie-heidelberg.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-macaronnerie-4.jpg",
+     "art": "gericht",
+     "beschreibung": "Pâtisserie-Auswahl",
+     "quelle_url": "https://www.macarons-heidelberg.de/wp-content/uploads/2023/01/patisserie.jpg",
      "vorhanden": true
     }
    ],
@@ -4112,13 +4335,29 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-ma-barockschloss-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Mannheimer Barockschloss, Ehrenhof mit Denkmal",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim_-_Barockschloss_%281%29.jpg",
      "vorhanden": true
     },
     {
+     "datei": "img/nm-ma-barockschloss-3.jpg",
+     "art": "innen",
+     "beschreibung": "Deckengemälde in der Schlosskirche des Mannheimer Schlosses",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Deckengemaelde_Schlosskirche_Mannheimer_Schloss.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-barockschloss-4.jpg",
+     "art": "cafe",
+     "beschreibung": "Café Dolceamaro am Friedrichsplatz (Ecke Elisabethstraße)",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Dolceamaro_Mannheim_Friedrichsplatz.jpg",
+     "vorhanden": true
+    },
+    {
      "datei": "img/nm-ma-barockschloss-2.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Stephanienufer am Rhein, kleine Kiesbucht",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Stephanienufer_Mannheim_Bucht.jpg",
      "vorhanden": true
     }
@@ -4178,25 +4417,29 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-ma-wasserturm-kunsthalle-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Wasserturm Mannheim mit Anlagen am Friedrichsplatz",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:2026-07-11_Wasserturm_Mannheim_Friedrichsplatz_%28Z5-1322M%29_by_Achim_Lammerts.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/nm-ma-wasserturm-kunsthalle-2.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Atrium der Kunsthalle Mannheim",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Kunsthalle_Mannheim%2C_Atrium_02.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/nm-ma-wasserturm-kunsthalle-3.jpg",
      "art": "cafe",
+     "beschreibung": "Konditorei Herrdegen von außen",
      "quelle_url": "https://images.toubiz.de/image/big2/57939_04.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/nm-ma-wasserturm-kunsthalle-4.jpg",
      "art": "cafe",
+     "beschreibung": "Torten aus der Konditorei Herrdegen",
      "quelle_url": "https://media.deutsche-handwerks-zeitung.de/uploads/2020/12/Tortenkreationen-aus-dem-Caf_-Herrdegen-in-Mannheim.jpg",
      "vorhanden": true
     }
@@ -4261,15 +4504,38 @@ window.GUIDE_DATA = {
    },
    "bilder": [
     {
-     "datei": "img/nm-ma-rem-jungbusch-1.jpg",
-     "art": "location",
-     "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim_-_Museum_Zeughaus.jpg",
+     "datei": "img/nm-ma-rem-jungbusch-2.jpg",
+     "art": "aussen",
+     "beschreibung": "Museum der Weltkulturen (REM) in C 5",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:REM-D5.jpg",
      "vorhanden": true
     },
     {
-     "datei": "img/nm-ma-rem-jungbusch-2.jpg",
-     "art": "location",
-     "quelle_url": "https://commons.wikimedia.org/wiki/File:REM-D5.jpg",
+     "datei": "img/nm-ma-rem-jungbusch-3.jpg",
+     "art": "innen",
+     "beschreibung": "Musikinstrumente-Abteilung im Zeughaus der Reiss-Engelhorn-Museen",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Reiss-Engelhorn-Museen_Zeughaus_Musikinstrumentenabteilung.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-rem-jungbusch-4.jpg",
+     "art": "cafe",
+     "beschreibung": "Gäste im Innenraum des Café Brue",
+     "quelle_url": "https://cafebrue.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-rem-jungbusch-5.jpg",
+     "art": "cafe",
+     "beschreibung": "Cappuccino mit Latte-Art im Café Brue",
+     "quelle_url": "https://cafebrue.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-rem-jungbusch-1.jpg",
+     "art": "aussen",
+     "beschreibung": "Tor und Fassade in Mannheim (Quadrate/Jungbusch-Route)",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim_-_Museum_Zeughaus.jpg",
      "vorhanden": true
     }
    ],
@@ -4323,14 +4589,30 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-ma-rhein-reissinsel-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Stephanienufer mit schattigen Bäumen und Rheinblick",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Stephanienufer_in_Mannheim.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/nm-ma-rhein-reissinsel-2.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Spazierpfad durch den Waldpark Reißinsel (Detail)",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Spazierpfad_%28Rei%C3%9Finsel_Mannheim%29.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-rhein-reissinsel-3.jpg",
+     "art": "cafe",
+     "beschreibung": "Gastraum des Café Meerwiesen",
+     "quelle_url": "https://www.mannheim24.de/mannheim/kaffee-und-kuchen-mannheim-besten-cafes-wochenende-sonntag-93099003.html",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-rhein-reissinsel-4.jpg",
+     "art": "cafe",
+     "beschreibung": "Kuchenpause im Café Meerwiesen",
+     "quelle_url": "https://www.mannheim24.de/mannheim/kaffee-und-kuchen-mannheim-besten-cafes-wochenende-sonntag-93099003.html",
      "vorhanden": true
     }
    ],
@@ -4391,25 +4673,29 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-schwetzingen-schlossgarten-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Gartenmoschee im Schwetzinger Schlossgarten über dem Spiegelweiher",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Schwetzingen_-_Schlossgarten_-_Moschee_-_Ansicht_%C3%BCber_den_Moscheeweiher_im_Herbst_1.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/nm-schwetzingen-schlossgarten-2.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Herbstliche Spiegelung im Großen Weiher des Schlossgartens (Garten-Detail)",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Schwetzingen_-_Schlossgarten_-_Gro%C3%9Fer_Weiher_-_Westende_mit_Br%C3%BCcke_im_Herbst_2.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/nm-schwetzingen-schlossgarten-3.jpg",
      "art": "cafe",
+     "beschreibung": "WALZWERK Café, Fassade am Schlossplatz",
      "quelle_url": "https://www.walzwerk-cafe.de/de/",
      "vorhanden": true
     },
     {
      "datei": "img/nm-schwetzingen-schlossgarten-4.jpg",
      "art": "cafe",
+     "beschreibung": "Innenraum des WALZWERK Café",
      "quelle_url": "https://www.walzwerk-cafe.de/de/",
      "vorhanden": true
     }
@@ -4473,15 +4759,31 @@ window.GUIDE_DATA = {
    "cafe_vorschlag": null,
    "bilder": [
     {
-     "datei": "img/nm-lu-ebertpark-hack-1.jpg",
-     "art": "location",
-     "quelle_url": "https://commons.wikimedia.org/wiki/File:Ludwigshafen-Ebertpark-06-Trauerweide-2008-gje.jpg",
+     "datei": "img/nm-lu-ebertpark-hack-2.jpg",
+     "art": "aussen",
+     "beschreibung": "Wilhelm-Hack-Museum Ludwigshafen mit Mosaikfassade",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Wilhelm-Hack-Museum_in_Ludwigshafen.jpg",
      "vorhanden": true
     },
     {
-     "datei": "img/nm-lu-ebertpark-hack-2.jpg",
-     "art": "location",
-     "quelle_url": "https://commons.wikimedia.org/wiki/File:Wilhelm-Hack-Museum_in_Ludwigshafen.jpg",
+     "datei": "img/nm-lu-ebertpark-hack-3.jpg",
+     "art": "innen",
+     "beschreibung": "Entree des Wilhelm-Hack-Museums mit Farbwand",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Ludwigshafen-Wilhelm-Hack-Museum-10-Entree-2026-gje.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-lu-ebertpark-hack-4.jpg",
+     "art": "cafe",
+     "beschreibung": "Gastraum im Ebertpark (Café-Restaurant)",
+     "quelle_url": "Sammlung Stephan (Fremdbild, Quelle nicht einzeln dokumentiert)",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-lu-ebertpark-hack-1.jpg",
+     "art": "aussen",
+     "beschreibung": "Ebertpark mit Teich und Trauerweiden",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Ludwigshafen-Ebertpark-06-Trauerweide-2008-gje.jpg",
      "vorhanden": true
     }
    ],
@@ -4534,7 +4836,7 @@ window.GUIDE_DATA = {
      "url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Wolfsbau%2C%20Waldpforte%2081%2C%2068305%20Mannheim"
     }
    ],
-   "oeffnung_31_10": "Wald öffentlich zugänglich. Café Wolfsbau: Mittwoch–Sonntag 9:00–17:00 Uhr (Samstag also 9–17), Montag und Dienstag Ruhetag; Frühstück 9:00–11:30, Mittagstisch 12:30–15:30, samstags Suppen-/Eintopf-Tag",
+   "oeffnung_31_10": "Wald öffentlich zugänglich. Café Wolfsbau: Mittwoch–Sonntag 9:00–17:00 Uhr (Samstag also 9–17), Montag und Dienstag Ruhetag. (Wechselnder Mittagstisch laut Website momentan nur sonntags.)",
    "oeffnung_quelle": "https://www.cafewolfsbau.de/kontakt/",
    "kosten": "Wald frei; Kaffee und Kuchen nach Verzehr (Preise nicht geprüft)",
    "veranstaltung": null,
@@ -4547,25 +4849,29 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Karlstern-Pavillon im Käfertaler Wald",
      "quelle_url": "https://www.mannheim.de/de/service-bieten/gruene-stadt/wald/kaefertaler-wald",
      "vorhanden": true
     },
     {
      "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-2.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Karlsternweiher im Käfertaler Wald (Detail)",
      "quelle_url": "https://www.komoot.com/",
      "vorhanden": true
     },
     {
      "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-3.jpg",
      "art": "cafe",
+     "beschreibung": "Gastraum im Café Wolfsbau",
      "quelle_url": "https://www.cafewolfsbau.de/",
      "vorhanden": true
     },
     {
      "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-4.jpg",
      "art": "cafe",
+     "beschreibung": "Kuchen und Heißgetränk im Café Wolfsbau",
      "quelle_url": "https://www.cafewolfsbau.de/",
      "vorhanden": true
     }
@@ -4635,26 +4941,30 @@ window.GUIDE_DATA = {
    "veranstaltung": null,
    "bilder": [
     {
-     "datei": "img/nm-hd-philosophenweg-1.jpg",
-     "art": "location",
-     "quelle_url": "https://commons.wikimedia.org/wiki/File:HeidelbergPhilosophenweg.JPG",
+     "datei": "img/nm-hd-philosophenweg-2.jpg",
+     "art": "aussen",
+     "beschreibung": "Blick vom Philosophenweg auf Altstadt und Neckar",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Heidelberg_Philosophenweg_vom_Burgweg.jpg",
      "vorhanden": true
     },
     {
-     "datei": "img/nm-hd-philosophenweg-2.jpg",
-     "art": "location",
-     "quelle_url": "https://commons.wikimedia.org/wiki/File:Heidelberg_Philosophenweg_vom_Burgweg.jpg",
+     "datei": "img/nm-hd-philosophenweg-1.jpg",
+     "art": "innen",
+     "beschreibung": "Alte Brücke in Heidelberg mit Brückentor (Detail)",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:HeidelbergPhilosophenweg.JPG",
      "vorhanden": true
     },
     {
      "datei": "img/nm-hd-philosophenweg-3.jpg",
      "art": "cafe",
+     "beschreibung": "Törtchenauslage der Pâtisserie Sophie",
      "quelle_url": "https://patisserie-sophie.de/",
      "vorhanden": true
     },
     {
      "datei": "img/nm-hd-philosophenweg-4.jpg",
      "art": "cafe",
+     "beschreibung": "Cappuccino mit Latte-Art",
      "quelle_url": "https://patisserie-sophie.de/",
      "vorhanden": true
     }
@@ -4695,8 +5005,9 @@ window.GUIDE_DATA = {
     "13:00 oder 14:00 optional klassische Schlossführung (Innenräume nur mit Führung, Sa stündlich 10–16 Uhr, 60 Min.)",
     "14:45 Bergbahn Schloss → Molkenkur, dort Umstieg in die historische obere Bahn (alle 20 Min.) zum Königstuhl",
     "15:15 Königstuhl (über 550 m), Aussicht über Rheinebene, kurzer Waldspaziergang",
-    "16:30 Talfahrt Königstuhl → Molkenkur → Kornmarkt",
-    "17:00 Kaffee im Café Schafheutle (Hauptstraße 94, ca. 5 Min. vom Kornmarkt) – Sonnenuntergang 17:05 alternativ am Schloss-Altan erleben (Schlosshof bis 18 Uhr offen)"
+    "16:00 Kaffee und Kuchen in der Bergstube auf dem Königstuhl (täglich ab 12 Uhr)",
+    "16:45 Talfahrt Königstuhl → Molkenkur → Kornmarkt; Sonnenuntergang ca. 17:05 von der Bahn bzw. vom Kornmarkt aus",
+    "17:15 Zurück zum Auto (P12), weiter zum Abendessen"
    ],
    "dauer": "ca. 5 h",
    "start_adresse": "Parkhaus Kornmarkt/Schloss (P12), Neue Schlossstraße, 69117 Heidelberg",
@@ -4742,26 +5053,30 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-hd-schloss-koenigstuhl-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Heidelberger Schloss, Schlosshof (historische Postkarte)",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:HeidelbergerSchlossHof.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/nm-hd-schloss-koenigstuhl-2.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Bergbahn in der Station Königstuhl",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Obere_Bergbahn_Heidelberg,_Bahn_in_der_Station_Königstuhl.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/nm-hd-schloss-koenigstuhl-3.jpg",
      "art": "cafe",
+     "beschreibung": "Café Konditorei Knösel in der Haspelgasse",
      "quelle_url": "https://www.cafeknoesel-hd.de/",
      "vorhanden": true
     },
     {
-     "datei": "img/nm-hd-schloss-koenigstuhl-4.jpg",
+     "datei": "img/nm-hd-schloss-koenigstuhl-5.jpg",
      "art": "cafe",
-     "quelle_url": "https://www.cafeknoesel-hd.de/",
+     "beschreibung": "Schaufenster der Knösel-Konditorei mit Studentenkuss",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Heidelberg_Cafe_Knoesel_Studentenkuss_Nov_2012.jpg",
      "vorhanden": true
     }
    ],
@@ -4828,7 +5143,7 @@ window.GUIDE_DATA = {
     }
    ],
    "oeffnung_31_10": "Kurpfälzisches Museum Di–So 10:00–18:00 (museum-heidelberg.de); Café Schafheutle Sa 09:30–18:00 (speisekarte.de); Alte Brücke, Neckarwiese frei",
-   "kosten": "Museum vermutlich 7 € p. P. (Reiseportal audiala, Stand April 2026, nicht offiziell bestätigt); Parken ca. 6–10 €; Café nach Verzehr",
+   "kosten": "Museum 8 € p. P. (Sonderausstellung inkl. Dauerausstellung und Audioguide, museum-heidelberg.de), 16 € für zwei; Parken ca. 6–10 €; Café nach Verzehr",
    "cafe": {
     "name": "Café Schafheutle",
     "adresse": "Hauptstraße 94, 69117 Heidelberg",
@@ -4842,13 +5157,29 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-hd-altstadt-museum-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Haupteingang des Kurpfälzischen Museums",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Kurpfälzisches_Museum_Haupteingang.JPG",
      "vorhanden": true
     },
     {
+     "datei": "img/nm-hd-altstadt-museum-3.jpg",
+     "art": "innen",
+     "beschreibung": "Salon Louis-Philippe im Kurpfälzischen Museum",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Kurpf%C3%A4lzisches_Museum_Heidelberg_Blick_in_einen_Salon_Louis_Philippe_IMG_0614.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-hd-altstadt-museum-4.jpg",
+     "art": "cafe",
+     "beschreibung": "Café Konditorei Knösel in der Haspelgasse",
+     "quelle_url": "https://www.cafeknoesel-hd.de/",
+     "vorhanden": true
+    },
+    {
      "datei": "img/nm-hd-altstadt-museum-2.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Alte Brücke Heidelberg mit Neckar",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Alte_Brücke_Heidelberg_von_Nordwesten.jpg",
      "vorhanden": true
     }
@@ -4859,10 +5190,7 @@ window.GUIDE_DATA = {
     "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83"
    ],
    "nicht_geprueft": [
-    "Eintrittspreis Kurpfälzisches Museum (offizielle Preisliste nicht abrufbar)",
-    "Enddatum der Ausstellung „Unschätzbar“ nicht genannt",
-    "Die Sonderausstellung „Lotte Hofmann Preis für Textilkunst 2026“ (18.10.2026–10.01.2027) ist in der Textilsammlung Max Berk (eigener Standort, Sa 13–18 Uhr), nicht im Hauptgebäude – Adresse nicht geprüft",
-    "Café-Vorschlag (Knösel/Sophie): Preise, Kuchenangebot und Tischverfügbarkeit nicht geprüft; Google-Bewertung nicht eingetragen"
+    "Enddatum der Ausstellung „Unschätzbar“ nicht genannt"
    ],
    "stand": "2026-10-29",
    "cafe_vorschlag": {
@@ -4922,14 +5250,30 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-hd-prinzhorn-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Sammlung Prinzhorn, Ansicht von Westen",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Sammlung_Prinzhorn_Ansicht_von_Westen.JPG",
      "vorhanden": true
     },
     {
      "datei": "img/nm-hd-prinzhorn-2.jpg",
-     "art": "ausstellung",
+     "art": "innen",
+     "beschreibung": "Besucher in der Ausstellung der Sammlung Prinzhorn",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:In_der_Sammlung_Prinzhorn.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-hd-prinzhorn-3.jpg",
+     "art": "cafe",
+     "beschreibung": "Törtchenauslage der Pâtisserie Sophie",
+     "quelle_url": "https://patisserie-sophie.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-hd-prinzhorn-4.jpg",
+     "art": "cafe",
+     "beschreibung": "Cappuccino mit Latte-Art",
+     "quelle_url": "https://patisserie-sophie.de/",
      "vorhanden": true
     }
    ],
@@ -5013,13 +5357,29 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-wh-exotenwald-wachenburg-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Waldweg im Exotenwald Weinheim",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Exotenwald_Weinheim_01.jpg",
      "vorhanden": true
     },
     {
+     "datei": "img/nm-wh-exotenwald-wachenburg-3.jpg",
+     "art": "innen",
+     "beschreibung": "Hohe Mammutbäume im Exotenwald (Detail)",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Exotenwald_Weinheim_04.JPG",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-wh-exotenwald-wachenburg-4.jpg",
+     "art": "cafe",
+     "beschreibung": "Gebäck von Pastry Poets",
+     "quelle_url": "https://pastry-poets.de",
+     "vorhanden": true
+    },
+    {
      "datei": "img/nm-wh-exotenwald-wachenburg-2.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Wachenburg über Weinheim",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Wachenburg_2010.jpg",
      "vorhanden": true
     }
@@ -5088,13 +5448,22 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-wh-altstadt-pastry-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Weinheimer Altstadt mit Außengastronomie",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Marktplatz_in_Weinheim_(1).jpg",
      "vorhanden": true
     },
     {
+     "datei": "img/nm-wh-altstadt-pastry-3.jpg",
+     "art": "innen",
+     "beschreibung": "Marktbrunnen vor dem Alten Rathaus (Detail)",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Weinheim,_Marktbrunnen.jpg",
+     "vorhanden": true
+    },
+    {
      "datei": "img/nm-wh-altstadt-pastry-2.jpg",
-     "art": "produkt",
+     "art": "cafe",
+     "beschreibung": "Gebäck von Pastry Poets",
      "quelle_url": "https://pastry-poets.de/wp-content/uploads/elementor/thumbs/DSC_0368-scaled-qpuj3cfs1j9albj7bx546mxkyiqlc3e8m75jae2pi8.jpg",
      "vorhanden": true
     }
@@ -5160,19 +5529,22 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-hd-koenigstuhl-bergstube-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Berggasthof und Fernsehturm auf dem Königstuhl",
      "quelle_url": "https://gasthof-koenigstuhl.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-hd-koenigstuhl-bergstube-4.jpg",
+     "art": "innen",
+     "beschreibung": "Aussicht vom Königstuhl im Herbst",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Aussicht_vom_Koenigstuhl2.jpg",
      "vorhanden": true
     },
     {
      "datei": "img/nm-hd-koenigstuhl-bergstube-2.jpg",
      "art": "cafe",
-     "quelle_url": "https://gasthof-koenigstuhl.de/kulinarik/",
-     "vorhanden": true
-    },
-    {
-     "datei": "img/nm-hd-koenigstuhl-bergstube-3.jpg",
-     "art": "cafe",
+     "beschreibung": "Warme Holzstube der Bergstube",
      "quelle_url": "https://gasthof-koenigstuhl.de/kulinarik/",
      "vorhanden": true
     }
@@ -5240,25 +5612,29 @@ window.GUIDE_DATA = {
    "bilder": [
     {
      "datei": "img/nm-wh-hermannshof-schlosspark-1.jpg",
-     "art": "location",
+     "art": "aussen",
+     "beschreibung": "Staudenpflanzung im Sichtungsgarten Hermannshof",
      "quelle_url": "https://sichtungsgarten-hermannshof.de/",
      "vorhanden": true
     },
     {
      "datei": "img/nm-wh-hermannshof-schlosspark-2.jpg",
-     "art": "location",
+     "art": "innen",
+     "beschreibung": "Teich und Blüten im Weinheimer Schlosspark (Detail)",
      "quelle_url": "https://www.weinheim.de/746773.html",
      "vorhanden": true
     },
     {
      "datei": "img/nm-wh-hermannshof-schlosspark-3.jpg",
      "art": "cafe",
+     "beschreibung": "Innenraum mit großen Fenstern im Flo",
      "quelle_url": "https://www.flo-weinheim.de/",
      "vorhanden": true
     },
     {
      "datei": "img/nm-wh-hermannshof-schlosspark-4.jpg",
      "art": "cafe",
+     "beschreibung": "Klassischer Cafébereich im Flo",
      "quelle_url": "https://www.flo-weinheim.de/",
      "vorhanden": true
     }
@@ -5365,7 +5741,7 @@ window.GUIDE_DATA = {
    "uhrzeit": "Einlass 18:30, Beginn 19:30",
    "datum": "2026-10-31",
    "preis": null,
-   "tickets_url": null,
+   "tickets_url": "https://tickets.saparena.de/shop/103/event/4567",
    "url": "https://saparena.de/events/",
    "kategorie": "abends",
    "beschreibung": "Orchesterkonzert mit Disney-Filmmusik (Semmel Concerts).",
@@ -5411,16 +5787,16 @@ window.GUIDE_DATA = {
   },
   {
    "titel": "Ausstellung „André Wischnewski. Please Take Note“",
-   "ort": "Wilhelm-Hack-Museum Ludwigshafen",
-   "adresse": "Berliner Straße 23, 67059 Ludwigshafen am Rhein",
-   "uhrzeit": "10:00–18:00",
+   "ort": "Rudolf-Scharpf-Galerie (Wilhelm-Hack-Museum), Ludwigshafen",
+   "adresse": "Hemshofstraße 54, 67063 Ludwigshafen",
+   "uhrzeit": "Fr–So 11:00–18:00",
    "datum": "2026-10-31",
-   "preis": "samstags frei",
+   "preis": "nicht geprüft (freier Samstag gilt fürs Hack-Museum)",
    "tickets_url": null,
    "url": "https://www.wilhelmhack.museum/de/ausstellungen/aktuelle-ausstellungen",
    "kategorie": "nachmittag",
-   "beschreibung": "Neue Ausstellung (24.10.2026–24.1.2027); samstags freier Eintritt.",
-   "quelle": "https://www.wilhelmhack.museum/de/besuch/tickets-und-oeffnungszeiten",
+   "beschreibung": "Neue Ausstellung (24.10.2026–24.1.2027); samstags freier Eintritt. Korrektur 29.10.: Die Ausstellung läuft in der Rudolf-Scharpf-Galerie, nicht im Hack-Museum selbst. Ob dort samstags freier Eintritt gilt, steht nicht auf der Seite. Im Hack-Museum eröffnet am 30.10. die neue Sammlungspräsentation „Die Unendlichkeit des Raumes“ (Sa 10–18 Uhr, samstags freier Eintritt).",
+   "quelle": "https://www.wilhelmhack.museum/de/ausstellungen/aktuelle-ausstellungen/andre-wischnewski",
    "stand": "2026-10-29",
    "datei_region": "Mannheim und Umgebung"
   },
@@ -5526,21 +5902,6 @@ window.GUIDE_DATA = {
    "datei_region": "Heidelberg und Umgebung"
   },
   {
-   "titel": "»Asiawochen« (Yannic Han Biao Federer) – Wiederaufnahme",
-   "ort": "Theater Heidelberg, Zwinger 1",
-   "adresse": "Theaterstraße 10, 69117 Heidelberg (Adresse Theater & Orchester; Zwinger-Eingang nicht geprüft)",
-   "uhrzeit": "20:00–21:45, Einführung 19:30, danach Nachgespräch",
-   "datum": "2026-10-31",
-   "preis": null,
-   "tickets_url": "https://theaterheidelberg.eventim-inhouse.de/webshop/webticket/shop?event=15981",
-   "url": "https://www.theaterheidelberg.de/spielplan/",
-   "kategorie": "abends",
-   "beschreibung": "Schauspiel ab 16 Jahren nach dem Roman von Federer, kleine Bühne.",
-   "quelle": "https://www.theaterheidelberg.de/spielplan/",
-   "stand": "2026-10-29",
-   "datei_region": "Heidelberg und Umgebung"
-  },
-  {
    "titel": "Auf den Spuren der Nachtwächter – Altstadtführung",
    "ort": "Treffpunkt Eingang Rathaus",
    "adresse": "Marktplatz 10, 69117 Heidelberg",
@@ -5606,6 +5967,426 @@ window.GUIDE_DATA = {
     "Platzandrang bei freiem Eintritt ohne Reservierung"
    ],
    "datei_region": "Heidelberg und Umgebung"
+  }
+ ],
+ "koordinaten": {
+  "start": {
+   "lat": 49.53773,
+   "lon": 8.47482,
+   "adresse": "Dirschauer Weg, 68307 Mannheim"
+  },
+  "r:das-atelier": {
+   "lat": 49.49234,
+   "lon": 8.46139,
+   "adresse": "G7 17, 68159 Mannheim"
+  },
+  "r:mary-jane": {
+   "lat": 49.40785,
+   "lon": 8.68816,
+   "adresse": "Poststraße 36/7, 69115 Heidelberg"
+  },
+  "r:rieds": {
+   "lat": 49.40898,
+   "lon": 8.68062,
+   "adresse": "Vangerowstraße 4, 69115 Heidelberg"
+  },
+  "r:der-philosoph": {
+   "lat": 49.41465,
+   "lon": 8.69239,
+   "adresse": "Brückenstraße 14, 69120 Heidelberg"
+  },
+  "r:doblers": {
+   "lat": 49.48096,
+   "lon": 8.47631,
+   "adresse": "Seckenheimer Straße 20, 68165 Mannheim"
+  },
+  "r:tourist-trap": {
+   "lat": 49.49475,
+   "lon": 8.46901,
+   "adresse": "Neckarvorlandstraße 2a, 68159 Mannheim"
+  },
+  "r:grenzhof": {
+   "lat": 49.4178,
+   "lon": 8.59549,
+   "adresse": "Grenzhof 9, 69123 Heidelberg"
+  },
+  "r:turmrestaurant": {
+   "lat": 49.48856,
+   "lon": 8.41513,
+   "adresse": "Erzbergerstraße 69, 67063 Ludwigshafen am Rhein"
+  },
+  "r:minoh": {
+   "lat": 49.4828,
+   "lon": 8.47241,
+   "adresse": "M7 13, 68161 Mannheim"
+  },
+  "r:spinne": {
+   "lat": 49.37171,
+   "lon": 8.14263,
+   "adresse": "Eichkehle 58, 67433 Neustadt an der Weinstraße"
+  },
+  "r:atable": {
+   "lat": 49.50698,
+   "lon": 8.21146,
+   "adresse": "Hauptstraße 29, 67251 Freinsheim"
+  },
+  "r:kurfuerstenstube": {
+   "lat": 49.40779,
+   "lon": 8.6949,
+   "adresse": "Friedrich-Ebert-Anlage 1, 69117 Heidelberg"
+  },
+  "r:ziegler": {
+   "lat": 49.52028,
+   "lon": 8.66885,
+   "adresse": "Sachsenstraße 39, 69469 Weinheim-Hohensachsen"
+  },
+  "r:bistronauten": {
+   "lat": 49.54881,
+   "lon": 8.66519,
+   "adresse": "Kopernikusstraße 43, 69469 Weinheim"
+  },
+  "c:mousse-mousse": {
+   "lat": 49.38122,
+   "lon": 8.68681,
+   "adresse": "Römerstraße 216, 69126 Heidelberg"
+  },
+  "c:patisserie-sophie": {
+   "lat": 49.41473,
+   "lon": 8.6915,
+   "adresse": "Ladenburger Straße 10, 69120 Heidelberg"
+  },
+  "c:yagiya": {
+   "lat": 49.49537,
+   "lon": 8.47877,
+   "adresse": "Käfertaler Straße 35, 68167 Mannheim"
+  },
+  "c:pastry-poets": {
+   "lat": 49.55423,
+   "lon": 8.67049,
+   "adresse": "Alte Postgasse 53, 69469 Weinheim"
+  },
+  "c:sunday": {
+   "lat": 49.41135,
+   "lon": 8.70406,
+   "adresse": "Hauptstraße 110 (am Theaterplatz), 69117 Heidelberg"
+  },
+  "c:blum": {
+   "lat": 49.47777,
+   "lon": 8.47814,
+   "adresse": "Schwetzinger Straße 92, 68165 Mannheim"
+  },
+  "c:panno": {
+   "lat": 49.41126,
+   "lon": 8.71027,
+   "adresse": "Ingrimstraße 22, 69117 Heidelberg"
+  },
+  "c:chocami": {
+   "lat": 49.37801,
+   "lon": 8.58513,
+   "adresse": "Scheffelstraße 28, 68723 Schwetzingen"
+  },
+  "c:frankys-farm": {
+   "lat": 49.49258,
+   "lon": 8.46095,
+   "adresse": "G7 20, 68159 Mannheim"
+  },
+  "c:coer": {
+   "lat": 49.48561,
+   "lon": 8.46747,
+   "adresse": "N3 15, 68161 Mannheim"
+  },
+  "c:schafheutle": {
+   "lat": 49.41108,
+   "lon": 8.70247,
+   "adresse": "Hauptstraße 94, 69117 Heidelberg"
+  },
+  "c:macaronnerie": {
+   "lat": 49.40848,
+   "lon": 8.69425,
+   "adresse": "Sofienstraße 23, 69115 Heidelberg"
+  },
+  "n:nm-ma-barockschloss": {
+   "lat": 49.48368,
+   "lon": 8.46149,
+   "adresse": "Barockschloss Mannheim, Bismarckstraße, 68161 Mannheim"
+  },
+  "cv:dolceamaro": {
+   "lat": 49.48407,
+   "lon": 8.47816,
+   "adresse": "Friedrichsplatz 13, 68165 Mannheim"
+  },
+  "n:nm-ma-wasserturm-kunsthalle": {
+   "lat": 49.48261,
+   "lon": 8.47542,
+   "adresse": "Kunsthalle Mannheim, Friedrichsplatz 4, 68165 Mannheim"
+  },
+  "cv:konditorei-kaffee-herrdegen": {
+   "lat": 49.48929,
+   "lon": 8.46731,
+   "adresse": "E 2, 8, 68159 Mannheim"
+  },
+  "n:nm-ma-rem-jungbusch": {
+   "lat": 49.49491,
+   "lon": 8.45287,
+   "adresse": "Reiss-Engelhorn-Museen, Museum Weltkulturen D5, 68159 Mannheim"
+  },
+  "cv:cafe-brue": {
+   "lat": 49.48628,
+   "lon": 8.4727,
+   "adresse": "Q7 27, 68161 Mannheim"
+  },
+  "n:nm-ma-rhein-reissinsel": {
+   "lat": 49.46964,
+   "lon": 8.46642,
+   "adresse": "Stephanienufer, 68163 Mannheim"
+  },
+  "cv:cafe-meerwiesen": {
+   "lat": 49.4703,
+   "lon": 8.47049,
+   "adresse": "Meerwiesenstraße 1, 68163 Mannheim"
+  },
+  "n:nm-schwetzingen-schlossgarten": {
+   "lat": 49.3836,
+   "lon": 8.5785,
+   "adresse": "Schloss Schwetzingen, Schloss Mittelbau, 68723 Schwetzingen"
+  },
+  "cv:walzwerk-cafe": {
+   "lat": 49.38461,
+   "lon": 8.57375,
+   "adresse": "Carl-Theodor-Straße 1, 68723 Schwetzingen"
+  },
+  "n:nm-lu-ebertpark-hack": {
+   "lat": 49.47933,
+   "lon": 8.42924,
+   "adresse": "Wilhelm-Hack-Museum, Berliner Straße 23, 67059 Ludwigshafen am Rhein"
+  },
+  "n:ma-kaefertaler-wald-wolfsbau": {
+   "lat": 49.5345,
+   "lon": 8.49529,
+   "adresse": "Karlstern, Karlsternstraße 130, 68305 Mannheim"
+  },
+  "cv:cafe-wolfsbau": {
+   "lat": 49.53625,
+   "lon": 8.49496,
+   "adresse": "Waldpforte 81, 68305 Mannheim"
+  },
+  "n:hd-philosophenweg": {
+   "lat": 49.41827,
+   "lon": 8.69136,
+   "adresse": "Parkhaus Nordbrückenkopf (P16), Uferstraße, 69120 Heidelberg"
+  },
+  "cv:cafe-schafheutle": {
+   "lat": 49.41108,
+   "lon": 8.70247,
+   "adresse": "Hauptstraße 94, 69117 Heidelberg"
+  },
+  "cv:patisserie-sophie": {
+   "lat": 49.41473,
+   "lon": 8.6915,
+   "adresse": "Ladenburger Straße 10, 69120 Heidelberg"
+  },
+  "n:hd-schloss-koenigstuhl": {
+   "lat": 49.41112,
+   "lon": 8.71192,
+   "adresse": "Parkhaus Kornmarkt/Schloss (P12), Neue Schlossstraße, 69117 Heidelberg"
+  },
+  "cv:cafe-hotel-knosel": {
+   "lat": 49.4124,
+   "lon": 8.70899,
+   "adresse": "Haspelgasse 20, 69117 Heidelberg"
+  },
+  "n:hd-altstadt-museum": {
+   "lat": 49.41137,
+   "lon": 8.7029,
+   "adresse": "Kurpfälzisches Museum, Hauptstraße 97, 69117 Heidelberg"
+  },
+  "n:hd-prinzhorn": {
+   "lat": 49.40981,
+   "lon": 8.68875,
+   "adresse": "Sammlung Prinzhorn, Voßstraße 2, 69115 Heidelberg"
+  },
+  "n:wh-exotenwald-wachenburg": {
+   "lat": 49.54114,
+   "lon": 8.6724,
+   "adresse": "Weinheimer Schloss (Rathaus), Obertorstraße 9, 69469 Weinheim"
+  },
+  "cv:patisserie-cafe-pastry-poets": {
+   "lat": 49.55423,
+   "lon": 8.67049,
+   "adresse": "Alte Postgasse 53, 69469 Weinheim"
+  },
+  "n:wh-altstadt-pastry": {
+   "lat": 49.54638,
+   "lon": 8.67219,
+   "adresse": "Marktplatz, 69469 Weinheim"
+  },
+  "n:hd-koenigstuhl-bergstube": {
+   "lat": 49.40266,
+   "lon": 8.72979,
+   "adresse": "Berggasthof Königstuhl, Königstuhl 2, 69117 Heidelberg"
+  },
+  "cv:bergstube-im-berggasthof-konigstuhl": {
+   "lat": 49.40266,
+   "lon": 8.72979,
+   "adresse": "Königstuhl 2, 69117 Heidelberg"
+  },
+  "n:wh-hermannshof-schlosspark": {
+   "lat": 49.54182,
+   "lon": 8.67464,
+   "adresse": "Schau- und Sichtungsgarten Hermannshof, Babostraße 5, 69469 Weinheim"
+  },
+  "cv:flo-cafe-florian": {
+   "lat": 49.5466,
+   "lon": 8.67237,
+   "adresse": "Marktplatz 8, 69469 Weinheim"
+  },
+  "v:fuhrung-uber-die-spielhausbaustelle-des-nationaltheaters-nat": {
+   "lat": 49.48834,
+   "lon": 8.47654,
+   "adresse": "Goetheplatz, 68161 Mannheim"
+  },
+  "v:the-beatles-today-now-and-then-capitol-mannheim": {
+   "lat": 49.49734,
+   "lon": 8.47256,
+   "adresse": "Waldhofstraße 2, 68169 Mannheim"
+  },
+  "v:firebrigade-live-musik-der-80er-zu-halloween-capitol-mannhei": {
+   "lat": 49.49734,
+   "lon": 8.47256,
+   "adresse": "Waldhofstraße 2, 68169 Mannheim"
+  },
+  "v:disney-in-concert-sap-arena-mannheim": {
+   "lat": 49.46412,
+   "lon": 8.51796,
+   "adresse": "An der Arena 1, 68163 Mannheim"
+  },
+  "v:clapton-experience-tribute-an-eric-clapton-7er-club-mannheim": {
+   "lat": 49.50559,
+   "lon": 8.45944,
+   "adresse": "7er Club Mannheim"
+  },
+  "v:ausstellung-baustelle-artenvielfalt-klimawandel-in-historisc": {
+   "lat": 49.3836,
+   "lon": 8.5785,
+   "adresse": "Schloss Mittelbau, 68723 Schwetzingen"
+  },
+  "v:ausstellung-andre-wischnewski-please-take-note-wilhelm-hack-": {
+   "lat": 49.4798,
+   "lon": 8.44395,
+   "adresse": "Berliner Straße 23, 67059 Ludwigshafen am Rhein"
+  },
+  "v:ausstellung-leonardo-da-vinci-erfindungen-erleben-reiss-enge": {
+   "lat": 49.48898,
+   "lon": 8.46223,
+   "adresse": "D5, 68159 Mannheim"
+  },
+  "v:halloween-das-familienfest-im-luisenpark-luisenpark-mannheim": {
+   "lat": 49.47834,
+   "lon": 8.49593,
+   "adresse": "Theodor-Heuss-Anlage 2, 68165 Mannheim"
+  },
+  "v:wein-delikatessen-montpellier-verkostung-mit-weinbar-und-liv": {
+   "lat": 49.41469,
+   "lon": 8.71914,
+   "adresse": "Am Karlstor 1, 69117 Heidelberg"
+  },
+  "v:enjoy-jazz-the-messthetics-james-brandon-lewis-metropolink-s": {
+   "lat": 49.37403,
+   "lon": 8.62969,
+   "adresse": "South Gettysburg Avenue 46, 69124 Heidelberg"
+  },
+  "v:steffen-weber-band-american-songbook-jazzhaus-heidelberg": {
+   "lat": 49.41314,
+   "lon": 8.71329,
+   "adresse": "Leyergasse 6, 69117 Heidelberg"
+  },
+  "v:der-zerbrochne-krug-kleist-wiederaufnahme-theater-heidelberg": {
+   "lat": 49.41023,
+   "lon": 8.7038,
+   "adresse": "Theaterstraße 10, 69117 Heidelberg"
+  },
+  "v:asiawochen-yannic-han-biao-federer-wiederaufnahme-theater-he": {
+   "lat": 49.41023,
+   "lon": 8.7038,
+   "adresse": "Theaterstraße 10, 69117 Heidelberg (Adresse Theater & Orchester; Zwinger-Eingang nicht geprüft)"
+  },
+  "v:auf-den-spuren-der-nachtwachter-altstadtfuhrung-treffpunkt-e": {
+   "lat": 49.41218,
+   "lon": 8.71087,
+   "adresse": "Marktplatz 10, 69117 Heidelberg"
+  },
+  "v:ich-bin-einer-wie-alle-nur-besser-theaterlabor-bielefeld-tik": {
+   "lat": 49.38687,
+   "lon": 8.68099,
+   "adresse": "Marlene-Dietrich-Platz 3, 69126 Heidelberg"
+  },
+  "v:sirenia-illumishade-symphonic-metal-cafe-central-weinheim": {
+   "lat": 49.55147,
+   "lon": 8.66803,
+   "adresse": "Bahnhofstraße 19, 69469 Weinheim"
+  },
+  "v:marionettenoper-mozarts-die-zauberflote-collegium-musicum-un": {
+   "lat": 49.42014,
+   "lon": 8.68434,
+   "adresse": "Keplerstraße 87, 69120 Heidelberg-Neuenheim"
+  },
+  "v:faust-schauspiel-ntm-anschlie-end-theaterparty-teuflisches-h": {
+   "lat": 49.51823,
+   "lon": 8.53596,
+   "adresse": "Altes Kino Franklin, Mannheim"
+  }
+ },
+ "toptipps": [
+  {
+   "id": "heidelberg-verliebt",
+   "titel": "Heidelberg zum Verlieben",
+   "stimmung": "romantisch · Gourmet",
+   "kurz": "Törtchen in Neuenheim, Philosophenweg im letzten Licht, danach Gourmetmenü gleich um die Ecke.",
+   "n": "hd-philosophenweg",
+   "c": "c:patisserie-sophie",
+   "r": "der-philosoph",
+   "zeit": "18:30",
+   "ablauf": [
+    "13:30 Pâtisserie Sophie in Neuenheim (Sa bis 17:30)",
+    "14:30 Philosophenweg und Philosophengärtchen",
+    "ca. 17:05 Sonnenuntergang über Altstadt und Schloss",
+    "18:30 Der Philosoph – Menü oder à la carte"
+   ],
+   "warum": "Alles liegt in Neuenheim, ihr parkt nur einmal (P16, abends höchstens 2 €). Der Philosoph hatte für Samstag freie Tische zwischen 18:15 und 19:30 Uhr."
+  },
+  {
+   "id": "nah-und-ruhig",
+   "titel": "Nah, ruhig, ohne Stress",
+   "stimmung": "entspannt · kurze Wege",
+   "kurz": "Waldrunde am Karlstern, Torte im Café Wolfsbau, abends Landhausküche in der Gutsstube.",
+   "n": "ma-kaefertaler-wald-wolfsbau",
+   "c": "cv:cafe-wolfsbau",
+   "r": "grenzhof",
+   "zeit": "18:30",
+   "ablauf": [
+    "13:30 Karlstern: Weiher und Wildgehege",
+    "15:00 Kaffee und Kuchen im Café Wolfsbau (bis 17 Uhr)",
+    "Zuhause kurz frisch machen",
+    "18:30 Grenzhof, Gutsstube"
+   ],
+   "warum": "Nur wenige Minuten bis zum Wald, am Grenzhof wird kostenlos direkt am Haus geparkt. Für Samstag waren dort 18:00, 18:30 und 19:30 Uhr frei."
+  },
+  {
+   "id": "schloss-und-omakase",
+   "titel": "Schlossblick & Überraschungsmenü",
+   "stimmung": "besonders · Erlebnis",
+   "kurz": "Mit der Bergbahn vom Schloss bis auf den Königstuhl, Kaffee in der Bergstube, abends Omakase im Mary Jane.",
+   "n": "hd-schloss-koenigstuhl",
+   "c": "cv:bergstube-im-berggasthof-konigstuhl",
+   "r": "mary-jane",
+   "zeit": "19:00",
+   "ablauf": [
+    "12:40 Bergbahn ab Kornmarkt zum Schloss",
+    "14:45 weiter über die Molkenkur auf den Königstuhl",
+    "16:00 Kaffee und Kuchen in der Bergstube",
+    "19:00 Mary Jane – Regular Omakase (Vorkasse)"
+   ],
+   "warum": "Ein Tag mit vielen Aussichten und einem Abend, der überrascht. Bei Mary Jane waren für Samstag noch Plätze frei; Menü 129 € pro Person, Getränke extra."
   }
  ]
 };

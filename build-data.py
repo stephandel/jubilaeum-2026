@@ -181,6 +181,8 @@ def main():
         "cafes": cafes(bew, entf, fehlend),
         "nachmittag": nachmittag(entf, fehlend),
         "veranstaltungen": veranstaltungen(),
+        "koordinaten": {k: v for k, v in (lade("koordinaten.json", {}) or {}).items() if not k.startswith("_")},
+        "toptipps": lade("toptipps.json", []) or [],
     }
     daten["meta"]["fehlende_bilder"] = fehlend
     text = ("// Automatisch erzeugt von build-data.py – nicht von Hand bearbeiten.\n"
@@ -203,12 +205,15 @@ def versionsstempel_setzen():
     die neue Datei statt einer alten Kopie aus dem Zwischenspeicher (GitHub Pages, iPhone)."""
     import hashlib
     import re
-    dateien = ["data.js", "script.js", "likestore.js", "style.css", "base.css"]
+    dateien = ["data.js", "script.js", "likestore.js", "style.css", "base.css", "start.js", "planer.js"]
+    dateien = [n for n in dateien if os.path.exists(os.path.join(HIER, n))]
     stempel = {}
     for name in dateien:
         with open(os.path.join(HIER, name), "rb") as f:
             stempel[name] = hashlib.md5(f.read()).hexdigest()[:8]
-    for html in ["index.html", "nachmittag.html", "cafes.html"]:
+    for html in ["index.html", "restaurants.html", "nachmittag.html", "cafes.html", "planer.html"]:
+        if not os.path.exists(os.path.join(HIER, html)):
+            continue
         pfad = os.path.join(HIER, html)
         with open(pfad, encoding="utf-8") as f:
             inhalt = f.read()

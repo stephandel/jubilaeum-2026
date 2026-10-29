@@ -1,0 +1,53 @@
+[
+  {
+    "id": "heidelberg-verliebt",
+    "titel": "Heidelberg zum Verlieben",
+    "stimmung": "romantisch · Gourmet",
+    "kurz": "Törtchen in Neuenheim, Philosophenweg im letzten Licht, danach Gourmetmenü gleich um die Ecke.",
+    "n": "hd-philosophenweg",
+    "c": "c:patisserie-sophie",
+    "r": "der-philosoph",
+    "zeit": "18:30",
+    "ablauf": [
+      "13:30 Pâtisserie Sophie in Neuenheim (Sa bis 17:30)",
+      "14:30 Philosophenweg und Philosophengärtchen",
+      "ca. 17:05 Sonnenuntergang über Altstadt und Schloss",
+      "18:30 Der Philosoph – Menü oder à la carte"
+    ],
+    "warum": "Alles liegt in Neuenheim, ihr parkt nur einmal (P16, abends höchstens 2 €). Der Philosoph hatte für Samstag freie Tische zwischen 18:15 und 19:30 Uhr."
+  },
+  {
+    "id": "nah-und-ruhig",
+    "titel": "Nah, ruhig, ohne Stress",
+    "stimmung": "entspannt · kurze Wege",
+    "kurz": "Waldrunde am Karlstern, Torte im Café Wolfsbau, abends Landhausküche in der Gutsstube.",
+    "n": "ma-kaefertaler-wald-wolfsbau",
+    "c": "cv:cafe-wolfsbau",
+    "r": "grenzhof",
+    "zeit": "18:30",
+    "ablauf": [
+      "13:30 Karlstern: Weiher und Wildgehege",
+      "15:00 Kaffee und Kuchen im Café Wolfsbau (bis 17 Uhr)",
+      "Zuhause kurz frisch machen",
+      "18:30 Grenzhof, Gutsstube"
+    ],
+    "warum": "Nur wenige Minuten bis zum Wald, am Grenzhof wird kostenlos direkt am Haus geparkt. Für Samstag waren dort 18:00, 18:30 und 19:30 Uhr frei."
+  },
+  {
+    "id": "schloss-und-omakase",
+    "titel": "Schlossblick & Überraschungsmenü",
+    "stimmung": "besonders · Erlebnis",
+    "kurz": "Mit der Bergbahn vom Schloss bis auf den Königstuhl, Kaffee in der Bergstube, abends Omakase im Mary Jane.",
+    "n": "hd-schloss-koenigstuhl",
+    "c": "cv:bergstube-im-berggasthof-konigstuhl",
+    "r": "mary-jane",
+    "zeit": "19:00",
+    "ablauf": [
+      "12:40 Bergbahn ab Kornmarkt zum Schloss",
+      "14:45 weiter über die Molkenkur auf den Königstuhl",
+      "16:00 Kaffee und Kuchen in der Bergstube",
+      "19:00 Mary Jane – Regular Omakase (Vorkasse)"
+    ],
+    "warum": "Ein Tag mit vielen Aussichten und einem Abend, der überrascht. Bei Mary Jane waren für Samstag noch Plätze frei; Menü 129 € pro Person, Getränke extra."
+  }
+]

@@ -44,6 +44,67 @@ window.LikeStore = (function () {
     });
   }
 
+  // Alle Worker-Einträge der Art "jub", die keine Likes sind (z. B. "tag|…" für Unser Tag), unverändert
+  function rohOhneLikes(jub) {
+    return Object.keys(jub || {}).filter(function (slug) { return slug.indexOf("tag|") === 0; })
+      .map(function (slug) { return { slug: slug, by: (jub[slug] && jub[slug].by) || "stephan", at: jub[slug] && jub[slug].at }; });
+  }
+  function rohNurLikes(jub) {
+    return Object.keys(jub || {}).filter(function (slug) { return slug.indexOf("tag|") !== 0; })
+      .map(function (slug) { return { slug: slug, by: (jub[slug] && jub[slug].by) || "stephan", at: jub[slug] && jub[slug].at }; });
+  }
+
+  // ---------- Unser Tag (gemeinsamer Plan) ----------
+  // Form: { n: "<nachmittag-slug>", c: "<café-schlüssel>", r: "<restaurant-slug>", zeit: "19:00", v: "<event-schlüssel>", fest: true, von: "S"|"B", at }
+  // Online als Worker-Einträge "tag|<feld>|<wert>" in der Art "jub", sonst localStorage.
+  var TKEY = "jg-tag-v1";
+  var TFELDER = ["n", "c", "r", "zeit", "v", "fest", "erledigt"];
+  function tagAusWorker(jub) {
+    var plan = {}, at = 0, von = null;
+    Object.keys(jub || {}).forEach(function (slug) {
+      if (slug.indexOf("tag|") !== 0) return;
+      var t = slug.split("|");
+      if (t.length < 3 || TFELDER.indexOf(t[1]) < 0) return;
+      plan[t[1]] = t[1] === "fest" ? t[2] === "1" : t.slice(2).join("|");
+      var e = jub[slug] || {};
+      if (Number(e.at) > at) { at = Number(e.at); von = KUERZEL[e.by] || null; }
+    });
+    if (at) { plan.at = at; plan.von = von; }
+    return plan;
+  }
+  function tLokal() { try { return JSON.parse(localStorage.getItem(TKEY)) || {}; } catch (e) { return {}; } }
+  function tLokalSpeichern(p) { try { localStorage.setItem(TKEY, JSON.stringify(p || {})); } catch (e) {} }
+  window.TagStore = {
+    online: online,
+    load: function () {
+      if (!online) return Promise.resolve(tLokal());
+      return standHolen().then(function (d) { var p = tagAusWorker(d.jub); tLokalSpeichern(p); return p; })
+        .catch(function () { return tLokal(); });
+    },
+    save: function (plan, person) {
+      var jetzt = Date.now();
+      var p = {}; TFELDER.forEach(function (f) { if (plan && plan[f]) p[f] = plan[f]; });
+      p.at = jetzt; p.von = person;
+      tLokalSpeichern(p);
+      if (!online) return Promise.resolve(p);
+      return standHolen().then(function (d) {
+        var liste = rohNurLikes(d.jub);
+        TFELDER.forEach(function (f) {
+          if (!p[f]) return;
+          var wert = f === "fest" ? "1" : String(p[f]).replace(/\|/g, "/").slice(0, 70);
+          liste.push({ slug: "tag|" + f + "|" + wert, by: LEUTE[person] || "stephan", at: jetzt });
+        });
+        return fetch(WORKER + "/marks", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ by: LEUTE[person] || "stephan", jub: liste })
+        });
+      }).then(function (r) {
+        if (!r.ok) throw new Error("Worker " + r.status);
+        return r.json();
+      }).then(function (d) { var q = tagAusWorker(d.jub); tLokalSpeichern(q); return q; });
+    }
+  };
+
   // ---------- Kommentare ----------
   // Online über die Notizen des Workers (slug "jub|<eintrag-schluessel>", nur eigene löschbar),
   // sonst localStorage. Form: { "<eintrag-schluessel>": [{ id, by: "S"|"B", text, at }] }
@@ -108,7 +169,8 @@ window.LikeStore = (function () {
     }
   };
 
-  return {
+  var kette = Promise.resolve();
+  var api = {
     KEY: KEY,
     online: online,
     load: function () {
@@ -121,13 +183,21 @@ window.LikeStore = (function () {
     },
     // person: "S" oder "B" – nur deren Stimmen werden ersetzt, die der anderen Person bleiben,
     // wie sie gerade auf dem Server liegen (so überschreiben sich zwei Geräte nicht gegenseitig)
+    // Speichervorgänge laufen nacheinander, damit ein schnelles Umentscheiden nicht von einer älteren Antwort überholt wird
     save: function (obj, person) {
+      var kopie = JSON.parse(JSON.stringify(obj || {}));
+      kette = kette.catch(function () {}).then(function () { return speichernJetzt(kopie, person); });
+      return kette;
+    }
+  };
+  function speichernJetzt(obj, person) {
+    {
       lokalSpeichern(obj);
       if (!online) return Promise.resolve();
       var andere = person === "S" ? "B" : "S";
       return standHolen().then(function (d) {
         var server = ausWorker(d.jub);
-        var liste = fuerWorker(server, andere).concat(fuerWorker(obj, person));
+        var liste = fuerWorker(server, andere).concat(fuerWorker(obj, person)).concat(rohOhneLikes(d.jub));
         return fetch(WORKER + "/marks", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -142,5 +212,6 @@ window.LikeStore = (function () {
         return obj2;
       });
     }
-  };
+  }
+  return api;
 })();
