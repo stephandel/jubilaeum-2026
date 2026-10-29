@@ -44,6 +44,70 @@ window.LikeStore = (function () {
     });
   }
 
+  // ---------- Kommentare ----------
+  // Online über die Notizen des Workers (slug "jub|<eintrag-schluessel>", nur eigene löschbar),
+  // sonst localStorage. Form: { "<eintrag-schluessel>": [{ id, by: "S"|"B", text, at }] }
+  var KKEY = "jg-kommentare-v1";
+  var KUERZEL = { stephan: "S", bilgen: "B" };
+  function kommentareAusWorker(notes) {
+    var obj = {};
+    Object.keys(notes || {}).forEach(function (slug) {
+      if (slug.indexOf("jub|") !== 0) return;
+      obj[slug.slice(4)] = (notes[slug] || []).map(function (n) {
+        return { id: n.id, by: KUERZEL[n.by] || "S", text: n.text, at: n.at };
+      });
+    });
+    return obj;
+  }
+  function kLokal() {
+    try { return JSON.parse(localStorage.getItem(KKEY)) || {}; } catch (e) { return {}; }
+  }
+  function kLokalSpeichern(obj) {
+    try { localStorage.setItem(KKEY, JSON.stringify(obj || {})); } catch (e) {}
+  }
+  function post(pfad, daten) {
+    return fetch(WORKER + pfad, {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(daten)
+    }).then(function (r) {
+      if (!r.ok) throw new Error("Worker " + r.status);
+      return r.json();
+    }).then(function (d) { var o = kommentareAusWorker(d.notes); kLokalSpeichern(o); return o; });
+  }
+  // Der Worker kürzt Schlüssel auf 80 Zeichen; lange Schlüssel daher eindeutig kürzen (Anfang + Prüfsumme)
+  function schluessel(key) {
+    if (key.length <= 70) return key;
+    var h = 0;
+    for (var i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
+    return key.slice(0, 60) + "~" + h.toString(36);
+  }
+  window.KommentarStore = {
+    online: online,
+    schluessel: schluessel,
+    load: function () {
+      if (!online) return Promise.resolve(kLokal());
+      return standHolen().then(function (d) {
+        var o = kommentareAusWorker(d.notes); kLokalSpeichern(o); return o;
+      }).catch(function () { return kLokal(); });
+    },
+    add: function (key, text, person) {
+      if (online) return post("/note", { slug: "jub|" + schluessel(key), text: text, by: LEUTE[person] });
+      var o = kLokal();
+      key = schluessel(key);
+      (o[key] = o[key] || []).push({ id: Date.now(), by: person, text: text, at: Date.now() });
+      kLokalSpeichern(o);
+      return Promise.resolve(o);
+    },
+    remove: function (key, id, person) {
+      if (online) return post("/note/delete", { id: id, by: LEUTE[person] });
+      var o = kLokal();
+      key = schluessel(key);
+      o[key] = (o[key] || []).filter(function (k) { return !(k.id === id && k.by === person); });
+      if (!o[key].length) delete o[key];
+      kLokalSpeichern(o);
+      return Promise.resolve(o);
+    }
+  };
+
   return {
     KEY: KEY,
     online: online,

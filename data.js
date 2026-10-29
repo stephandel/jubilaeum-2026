@@ -3,8 +3,8 @@ window.GUIDE_DATA = {
  "meta": {
   "stand": "29.10.2026",
   "startadresse": "Dirschauer Weg, 68307 Mannheim",
-  "bewertung_quelle": "Google Maps im Browser, live abgelesen am Do 29.10.2026 (Restaurants ca. 13:45 Uhr, Cafés ca. 15:10 Uhr)",
-  "entfernung_quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'.",
+  "bewertung_quelle": "Google Maps im Browser, live abgelesen am Do 29.10.2026 (Restaurants ca. 13:45 Uhr, Cafés ca. 15:10 Uhr); Nachtrag 5 Cafés am 29.10.2026 abends",
+  "entfernung_quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends.",
   "fehlende_bilder": []
  },
  "restaurants": [
@@ -257,7 +257,7 @@ window.GUIDE_DATA = {
     "km": 7.5,
     "min": 17,
     "route": "über B44",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Mannheim",
    "ort_kicker": "Mannheim"
@@ -412,7 +412,7 @@ window.GUIDE_DATA = {
     "km": 35.9,
     "min": 34,
     "route": "über A6 und A656",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Heidelberg",
    "ort_kicker": "Heidelberg"
@@ -689,7 +689,7 @@ window.GUIDE_DATA = {
     "km": 34.8,
     "min": 29,
     "route": "über A6 und A656",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Heidelberg",
    "ort_kicker": "Heidelberg"
@@ -885,9 +885,9 @@ window.GUIDE_DATA = {
     "stand": "2026-10-29"
    },
    "parken": {
-    "text": "Parkhaus Nordbrückenkopf (P16), Brückenkopfstraße 1, 69120 Heidelberg – ca. 120 m Luftlinie (Koordinaten OpenStreetMap), etwa 2–3 Min. zu Fuß; 238 Plätze, 24 h geöffnet, Einfahrtshöhe 1,80 m, laut Bewertungen sehr eng. Preis laut Parkopedia-Übersicht 1 € / 2 h (Momentaufnahme, nicht geprüft).",
+    "text": "Parkhaus Nordbrückenkopf (P16), Brückenkopfstraße 1, ca. 2–3 Min. zu Fuß; 24 h geöffnet, Einfahrtshöhe 1,80 m, laut Bewertungen sehr eng. Tarif laut Stadtwerke Heidelberg: tagsüber bis 3 Stunden 7,50 €; Abend-/Nachttarif 20–8 Uhr 0,50 € je angefangene Stunde, höchstens 2,00 €.",
     "parkopedia_url": "https://www.parkopedia.de/parken/heidelberg/",
-    "quelle": "https://www.parkinglist.de/parkplatz/heidelberg/parkhaus-nordbrueckenkopf-heidelberg-483 https://www.heidelberg24.de/heidelberg/schlimmste-schlechteste-parkhaeuser-stadt-preise-vergleich-93715408.html; nominatim.openstreetmap.org"
+    "quelle": "https://www.swhd.de/p16"
    },
    "bilder": [
     {
@@ -938,7 +938,7 @@ window.GUIDE_DATA = {
     "km": 36.7,
     "min": 34,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Heidelberg",
    "ort_kicker": "Heidelberg · Neuenheim"
@@ -1184,7 +1184,7 @@ window.GUIDE_DATA = {
     "km": 8.9,
     "min": 20,
     "route": "über B44",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Mannheim",
    "ort_kicker": "Mannheim · Oststadt"
@@ -1462,7 +1462,7 @@ window.GUIDE_DATA = {
     "km": 7.0,
     "min": 15,
     "route": "über B44",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Mannheim",
    "ort_kicker": "Mannheim · Jungbusch"
@@ -1688,7 +1688,7 @@ window.GUIDE_DATA = {
     "km": 30.6,
     "min": 30,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Heidelberg",
    "ort_kicker": "Heidelberg · Grenzhof"
@@ -1888,8 +1888,10 @@ window.GUIDE_DATA = {
     "tool": "gastronovi",
     "url": "https://services.gastronovi.com/restaurants/118467/reservation/widget?L=de",
     "verfuegbar_31_10": "unbekannt",
-    "freie_zeiten": [],
-    "hinweis": "Nur telefonisch möglich: Das Online-Tool (gastronovi) wirkt kaputt, es meldet pauschal „nicht verfügbar“ (Stephans Einschätzung, 29.10. abends). Bitte anrufen: 0621 65714720.",
+    "freie_zeiten": [
+     "20:30 (Pfälzer Stube)"
+    ],
+    "hinweis": "Online im Bereich „Turmrestaurant“ abends kein Tisch. Im zweiten Gastraum „Pfälzer Stube“ (gleiches Haus) bot das gastronovi-Widget am 29.10. abends für 2 Personen am 31.10. nur 15:30, 15:45 und 20:30 Uhr an (19:00 nicht verfügbar; nichts gebucht). Für einen Tisch im Turmrestaurant selbst bitte anrufen: 0621 65714720.",
     "stand": "2026-10-29"
    },
    "parken": {
@@ -1949,7 +1951,7 @@ window.GUIDE_DATA = {
     "km": 16.2,
     "min": 22,
     "route": "über L523",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Ludwigshafen",
    "ort_kicker": "Ludwigshafen · Friesenheim"
@@ -2146,7 +2148,7 @@ window.GUIDE_DATA = {
     "km": 8.5,
     "min": 20,
     "route": "über B44",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Mannheim",
    "ort_kicker": "Mannheim · Quadrate"
@@ -2364,7 +2366,7 @@ window.GUIDE_DATA = {
     "km": 45.1,
     "min": 38,
     "route": "über A61 und A65",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Neustadt an der Weinstraße",
    "ort_kicker": "Neustadt an der Weinstraße · Haardt"
@@ -2587,7 +2589,7 @@ window.GUIDE_DATA = {
     "km": 31.5,
     "min": 32,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Freinsheim",
    "ort_kicker": "Freinsheim"
@@ -2817,7 +2819,7 @@ window.GUIDE_DATA = {
     "km": 36.5,
     "min": 36,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Heidelberg",
    "ort_kicker": "Heidelberg"
@@ -3045,7 +3047,7 @@ window.GUIDE_DATA = {
     "km": 18.1,
     "min": 23,
     "route": "über Waldstraße",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Weinheim",
    "ort_kicker": "Weinheim · Hohensachsen"
@@ -3253,7 +3255,7 @@ window.GUIDE_DATA = {
     "km": 17.6,
     "min": 24,
     "route": "über A659",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Weinheim",
    "ort_kicker": "Weinheim"
@@ -3316,10 +3318,75 @@ window.GUIDE_DATA = {
     "km": 37.3,
     "min": 35,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Heidelberg",
    "ort_kicker": "Heidelberg · Rohrbach"
+  },
+  {
+   "name": "Pâtisserie Sophie",
+   "adresse": "Ladenburger Straße 10, 69120 Heidelberg",
+   "ort": "Heidelberg-Neuenheim",
+   "telefon": "+49 6221 6736550",
+   "email": "info@patisserie-sophie.de",
+   "website": "https://patisserie-sophie.de/",
+   "speisekarte_url": null,
+   "bewertung_hinweis": null,
+   "spezialitaet": "Feine Törtchen (Mousse, Crème, Gelee, Nuss/Schokolade), Viennoiserie (Croissant, Pain au Chocolat, Kouign-Amann), Specialty Coffee",
+   "preisniveau": null,
+   "beschreibung": "Kleine Pâtisserie einer Konditormeisterin in Neuenheim, die französische, spanische und deutsche Einflüsse verbindet. Es gibt feine Törtchen, Viennoiserie und Specialty Coffee – zum Mitnehmen oder vor Ort.",
+   "oeffnung_samstag": "09:30–17:30",
+   "oeffnung_hinweis": "Öffnungszeiten 2026: Freitag und Samstag 9:30–17:30, Sonn- und Feiertag 10–16 Uhr; sonst kein Hinweis (Mo–Do vermutlich zu)",
+   "oeffnung_quelle": "https://patisserie-sophie.de/",
+   "parken": {
+    "text": "Parkhaus P16 Nordbrückenkopf, Uferstraße 5 laut fremder Fassung (nicht geprüft)",
+    "parkopedia_url": null,
+    "quelle": "https://www.swhd.de/p16"
+   },
+   "bilder": [
+    {
+     "datei": "img/cafe-patisserie-sophie-1.jpg",
+     "art": "produkt",
+     "quelle_url": "https://patisserie-sophie.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-patisserie-sophie-2.jpg",
+     "art": "produkt",
+     "quelle_url": "https://patisserie-sophie.de/",
+     "vorhanden": true
+    }
+   ],
+   "quellen": [
+    "https://patisserie-sophie.de/"
+   ],
+   "nicht_geprueft": [
+    "Preise: Website nennt keine",
+    "Sitzplätze: Website sagt „to go oder vor Ort“, Anzahl/Reservierung unbekannt",
+    "Parkhaus P16 nicht selbst geprüft",
+    "Bildquelle: fremde Fassung nennt patisserie-sophie.de als Quelle; Dateien nicht auf der Seite verglichen"
+   ],
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=P%C3%A2tisserie%20Sophie%2C%20Ladenburger%20Stra%C3%9Fe%2010%2C%2069120%20Heidelberg",
+   "slug": "patisserie-sophie",
+   "google_bewertung": 5.0,
+   "google_anzahl": 40,
+   "google_quelle": "Google Maps, live 29.10.2026",
+   "stand": "2026-10-29",
+   "bewertung_original": {
+    "wert": null,
+    "anzahl": null,
+    "quelle": "wird von der Leitung live geprüft"
+   },
+   "google_live": true,
+   "schwelle": "ok",
+   "entfernung": {
+    "km": 25.0,
+    "min": 30,
+    "route": "",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   },
+   "ort_basis": "Heidelberg",
+   "ort_kicker": "Heidelberg · Neuenheim"
   },
   {
    "slug": "yagiya",
@@ -3387,7 +3454,7 @@ window.GUIDE_DATA = {
     "km": 6.4,
     "min": 18,
     "route": "über B44",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Mannheim",
    "ort_kicker": "Mannheim · Neckarstadt-Ost"
@@ -3456,10 +3523,212 @@ window.GUIDE_DATA = {
     "km": 18.9,
     "min": 27,
     "route": "über A659",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Weinheim",
    "ort_kicker": "Weinheim"
+  },
+  {
+   "name": "Sunday Café",
+   "adresse": "Hauptstraße 110 (am Theaterplatz), 69117 Heidelberg",
+   "ort": "Heidelberg-Altstadt",
+   "telefon": null,
+   "email": null,
+   "website": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/",
+   "speisekarte_url": null,
+   "bewertung_hinweis": "Fremde Fassung nennt 4,9 (164) – nicht selbst geprüft, nur Hinweis.",
+   "spezialitaet": "Täglich frische Kuchen, Kaffee, süße und herzhafte Snacks",
+   "preisniveau": null,
+   "beschreibung": "Liebevoll geführtes Nachbarschafts-Café direkt am Theaterplatz in der Altstadt, mit lockerer, familiärer Stimmung. Es gibt täglich frische Kuchen und guten Kaffee – ein gemütlicher Stopp beim Altstadtbummel.",
+   "oeffnung_samstag": "10:00–18:00",
+   "oeffnung_hinweis": "Di–Fr 9–18, Sa/So 10–18, Feiertage 10–18, Mo geschlossen",
+   "oeffnung_quelle": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/",
+   "parken": {
+    "text": "Parkhaus P10 Friedrich-Ebert-Platz laut fremder Fassung (nicht geprüft)",
+    "parkopedia_url": null,
+    "quelle": "https://www.swhd.de/p10"
+   },
+   "bilder": [
+    {
+     "datei": "img/cafe-sunday-1.jpg",
+     "art": "location",
+     "quelle_url": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-sunday-2.jpg",
+     "art": "produkt",
+     "quelle_url": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/",
+     "vorhanden": true
+    }
+   ],
+   "quellen": [
+    "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/",
+    "https://instagram.com/sunday_heidelberg"
+   ],
+   "nicht_geprueft": [
+    "Preise: keine öffentliche Karte gefunden",
+    "Telefon: keines gefunden (Kontakt über Instagram)",
+    "Parkhaus P10 und Tarife nicht selbst geprüft",
+    "Reservierung nicht bekannt; Platz am Samstag nicht bestätigt",
+    "Instagram nicht abgerufen"
+   ],
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Sunday%20Caf%C3%A9%2C%20Hauptstra%C3%9Fe%20110%2C%2069117%20Heidelberg",
+   "slug": "sunday",
+   "google_bewertung": 4.9,
+   "google_anzahl": 164,
+   "google_quelle": "Google Maps, live 29.10.2026",
+   "stand": "2026-10-29",
+   "bewertung_original": {
+    "wert": null,
+    "anzahl": null,
+    "quelle": "wird von der Leitung live geprüft"
+   },
+   "google_live": true,
+   "schwelle": "ok",
+   "entfernung": {
+    "km": 37.2,
+    "min": 33,
+    "route": "",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   },
+   "ort_basis": "Heidelberg",
+   "ort_kicker": "Heidelberg · Altstadt"
+  },
+  {
+   "name": "Blum Café (Konditorei & Café)",
+   "adresse": "Schwetzinger Straße 92, 68165 Mannheim",
+   "ort": "Mannheim",
+   "telefon": "+49 621 26230",
+   "email": "info@blum-mannheim.de",
+   "website": "https://blum-mannheim.de/",
+   "speisekarte_url": null,
+   "bewertung_hinweis": "Fremde Fassung nennt 4,8 (358) – nicht selbst geprüft, nur Hinweis.",
+   "spezialitaet": "Konditorei-Torten und Kuchen (Käsekuchen, Schwarzwälder Kirsch, Mango-Sahne, Zitronen-Baiser u. a. laut Website-Beiträgen), Gebäck, Mittagstisch",
+   "preisniveau": null,
+   "beschreibung": "Konditorei mit Café in der Schwetzingerstadt, die klassische Torten und feines Gebäck anbietet. Ein ruhiger, traditioneller Kuchenstopp für den Nachmittag.",
+   "oeffnung_samstag": "11:00–16:00 (unsicher)",
+   "oeffnung_hinweis": "Quellen widersprechen sich: Yelp (11/2025), yably, nochoffen Sa 11–16; Cylex/Tripadvisor 10:30–18; 11880 10–18; Deutsche Business 11–17; fremde Fassung: Website 10:30–18, Google 11–18. Website blum-mannheim.de steht im Wartungsmodus ohne Zeiten. Vor Fahrt telefonisch klären; ein Tripadvisor-Gast fand Sa 11 Uhr geschlossen.",
+   "oeffnung_quelle": "https://www.yelp.de/biz/blum-coffee-bar-mannheim-2",
+   "parken": null,
+   "bilder": [
+    {
+     "datei": "img/cafe-blum-1.jpg",
+     "art": "location",
+     "quelle_url": "https://www.google.com/maps/place/Blum+Caf%C3%A9/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-blum-2.jpg",
+     "art": "produkt",
+     "quelle_url": "https://www.google.com/maps/place/Blum+Caf%C3%A9/",
+     "vorhanden": true
+    }
+   ],
+   "quellen": [
+    "https://blum-mannheim.de/",
+    "https://www.yelp.de/biz/blum-coffee-bar-mannheim-2",
+    "https://www.tripadvisor.com.au/Restaurant_Review-g187290-d10264434-Reviews-Blum_Coffee_bar-Mannheim_Baden_Wurttemberg.html",
+    "https://web2.cylex.de/firma-home/blum-coffee-bar-6094629.html",
+    "https://www.nochoffen.de/mannheim-blum-coffee-bar"
+   ],
+   "nicht_geprueft": [
+    "Öffnung Samstag widersprüchlich (siehe Hinweis), keine offizielle Angabe abrufbar",
+    "Preise: keine online (Website im Wartungsmodus)",
+    "Parken: keine belegte Angabe; Parkhausfinder https://parken-mannheim.de/",
+    "Telefonnummer aus Yelp/Tripadvisor und fremder Fassung, nicht aus offiziellem Impressum (Seite im Wartungsmodus)",
+    "Teils als „Blum Coffee Bar“ gelistet – gleiche Adresse; nicht mit cafe-blum.de verwechseln",
+    "Google-Öffnungszeiten nicht selbst gesehen"
+   ],
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Blum%20Caf%C3%A9%2C%20Schwetzinger%20Stra%C3%9Fe%2092%2C%2068165%20Mannheim",
+   "slug": "blum",
+   "google_bewertung": 4.8,
+   "google_anzahl": 358,
+   "google_quelle": "Google Maps, live 29.10.2026",
+   "stand": "2026-10-29",
+   "bewertung_original": {
+    "wert": null,
+    "anzahl": null,
+    "quelle": "wird von der Leitung live geprüft"
+   },
+   "google_live": true,
+   "schwelle": "ok",
+   "entfernung": {
+    "km": 9.4,
+    "min": 19,
+    "route": "",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   },
+   "ort_basis": "Mannheim",
+   "ort_kicker": "Mannheim"
+  },
+  {
+   "name": "Café Panno",
+   "adresse": "Ingrimstraße 22, 69117 Heidelberg",
+   "ort": "Heidelberg-Altstadt",
+   "telefon": null,
+   "email": "hi@panno-heidelberg.de",
+   "website": "https://panno-heidelberg.de/",
+   "speisekarte_url": "https://panno-heidelberg.de/karte/",
+   "bewertung_hinweis": "Fremde Fassung nennt 4,8 (331) – nicht selbst geprüft, nur Hinweis.",
+   "spezialitaet": "Espresso-Getränke, Organic Matcha, Signature Drinks (Cookie Butter Matcha, Tiramisu Latte, Salted Caramel), hauseigene Espressoröstung",
+   "preisniveau": "Getränkekarte: Espresso 3,00 €, Cappuccino klein 4,00 € / groß 4,70 €, Flat White 4,50 €, Matcha Latte 5,30 €, Signature Drinks 5,80–7,00 €; keine Kuchenpreise online",
+   "beschreibung": "Kleines Café in einer ruhigen Altstadtgasse mit sorgfältigem Kaffee, Organic Matcha und kreativen Special Drinks. Ein entspannter Zwischenstopp zwischen Altstadt und Neckar – Schwerpunkt sind die Getränke.",
+   "oeffnung_samstag": "12:00–17:00",
+   "oeffnung_hinweis": "Mo–Fr 10–17:30, Sa–So 12–17 Uhr (Startseite und Kontaktseite stimmen überein)",
+   "oeffnung_quelle": "https://panno-heidelberg.de/kontakt/",
+   "parken": {
+    "text": "Parkhaus P13 Karlsplatz/Rathaus laut fremder Fassung (nicht geprüft)",
+    "parkopedia_url": null,
+    "quelle": "https://parken.heidelberg.de/detailView/P13"
+   },
+   "bilder": [
+    {
+     "datei": "img/cafe-panno-1.jpg",
+     "art": "location",
+     "quelle_url": "https://www.google.com/maps/place/Caf%C3%A9+Panno/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-panno-2.jpg",
+     "art": "produkt",
+     "quelle_url": "https://www.google.com/maps/place/Caf%C3%A9+Panno/",
+     "vorhanden": true
+    }
+   ],
+   "quellen": [
+    "https://panno-heidelberg.de/",
+    "https://panno-heidelberg.de/karte/",
+    "https://panno-heidelberg.de/kontakt/"
+   ],
+   "nicht_geprueft": [
+    "Kuchen: auf der Website kein Kuchenangebot und keine Kuchenpreise genannt – Café ist getränkelastig",
+    "Telefon: keines auf der Website (nur E-Mail/Formular)",
+    "Parkhaus P13 nicht selbst geprüft",
+    "Zweites Bild (Gästefoto, nur ca. 10 KB, Getränk mit Keks) ist klein",
+    "Sitzplatz am Samstag nicht bestätigt"
+   ],
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Panno%2C%20Ingrimstra%C3%9Fe%2022%2C%2069117%20Heidelberg",
+   "slug": "panno",
+   "google_bewertung": 4.8,
+   "google_anzahl": 331,
+   "google_quelle": "Google Maps, live 29.10.2026",
+   "stand": "2026-10-29",
+   "bewertung_original": {
+    "wert": null,
+    "anzahl": null,
+    "quelle": "wird von der Leitung live geprüft"
+   },
+   "google_live": true,
+   "schwelle": "ok",
+   "entfernung": {
+    "km": 38.1,
+    "min": 34,
+    "route": "",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   },
+   "ort_basis": "Heidelberg",
+   "ort_kicker": "Heidelberg · Altstadt"
   },
   {
    "slug": "chocami",
@@ -3524,10 +3793,80 @@ window.GUIDE_DATA = {
     "km": 36.4,
     "min": 33,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Schwetzingen",
    "ort_kicker": "Schwetzingen"
+  },
+  {
+   "name": "Franky’s Farm (Coffee & Cheesecake)",
+   "adresse": "G7 20, 68159 Mannheim",
+   "ort": "Mannheim",
+   "telefon": "+49 621 48203548",
+   "email": null,
+   "website": "https://lnk.bio/frankysfarm_mannheim",
+   "speisekarte_url": "https://www.ubereats.com/de/store/frankys-farm-spezialitaten-coffee-mannheim/2GgbRAdBURWyt400DxqloA",
+   "bewertung_hinweis": "Fremde Fassung nennt 4,8 (943) – nicht selbst geprüft, nur Hinweis.",
+   "spezialitaet": "Cheesecake (San-Sebastian-Variante, Pistazie), Kaffee, Matcha",
+   "preisniveau": null,
+   "beschreibung": "Gemütliches Café am Rand von G7 mit Cheesecake in mehreren Sorten, Kaffee und Matcha. Lange geöffnet, daher auch als späterer Süßstopp vor oder nach dem Abendessen gut denkbar.",
+   "oeffnung_samstag": "10:30–23:00",
+   "oeffnung_hinweis": "Mehrere Verzeichnisse (Coolibri, Tripadvisor, Restaurantguru, koffie.work): Mo–Do 10:30–22:00, Fr–So 10:30–23:00. Abweichend: Apple Maps 10:30–21:00, Wolt 9–23 Uhr. Keine offizielle Zeitenangabe abrufbar (lnk.bio blockiert).",
+   "oeffnung_quelle": "https://coolibri.de/restaurant/frankys-farm-cheesecake-spezialitaten-cafe-mannheim/",
+   "parken": {
+    "text": "Keine eigenen Parkplätze belegt; Tiefgarage G1 Marktplatz laut fremder Fassung (nicht geprüft)",
+    "parkopedia_url": null,
+    "quelle": "https://parken-mannheim.de/parking/g1-marktplatz/"
+   },
+   "bilder": [
+    {
+     "datei": "img/cafe-frankys-farm-1.jpg",
+     "art": "location",
+     "quelle_url": "https://www.google.com/maps/place/Franky%E2%80%98s+Farm+(Coffee+%26+Cheesecake)/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/cafe-frankys-farm-2.jpg",
+     "art": "produkt",
+     "quelle_url": "https://www.google.com/maps/place/Franky%E2%80%98s+Farm+(Coffee+%26+Cheesecake)/",
+     "vorhanden": true
+    }
+   ],
+   "quellen": [
+    "https://coolibri.de/restaurant/frankys-farm-cheesecake-spezialitaten-cafe-mannheim/",
+    "https://maps.apple.com/place?place-id=IF44FEA7852BF1EE9",
+    "https://www.tripadvisor.com/Restaurant_Review-g187290-d26533231-Reviews-Frankys_Farm_Cafe_Mannheim-Mannheim_Baden_Wurttemberg.html",
+    "https://lnk.bio/frankysfarm_mannheim",
+    "https://www.ubereats.com/de/store/frankys-farm-spezialitaten-coffee-mannheim/2GgbRAdBURWyt400DxqloA"
+   ],
+   "nicht_geprueft": [
+    "Preise: Uber-Eats-Lieferkarte nicht abrufbar (403); die fremde Fassung nennt dort Cappuccino 3,90 €, San-Sebastian-Cheesecake 5,90 €, Matcha-Latte 4,30 €, Pistazien-Cheesecake 7,70 € – nur Lieferkartenpreise, nicht bestätigt, Vor-Ort-Preise können abweichen",
+    "Offizieller Linkhub lnk.bio blockiert Abruf (Cloudflare); Öffnung nur aus Verzeichnissen",
+    "Öffnung am 31.10. nicht gesondert bestätigt",
+    "Aachener Seite frankys-home.de gehört nicht zu diesem Café",
+    "Reservierung/Tisch nicht geprüft"
+   ],
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Franky%E2%80%99s%20Farm%2C%20G7%2020%2C%2068159%20Mannheim",
+   "slug": "frankys-farm",
+   "google_bewertung": 4.8,
+   "google_anzahl": 943,
+   "google_quelle": "Google Maps, live 29.10.2026",
+   "stand": "2026-10-29",
+   "bewertung_original": {
+    "wert": null,
+    "anzahl": null,
+    "quelle": "wird von der Leitung live geprüft"
+   },
+   "google_live": true,
+   "schwelle": "ok",
+   "entfernung": {
+    "km": 7.5,
+    "min": 16,
+    "route": "",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   },
+   "ort_basis": "Mannheim",
+   "ort_kicker": "Mannheim"
   },
   {
    "slug": "coer",
@@ -3598,7 +3937,7 @@ window.GUIDE_DATA = {
     "km": 8.1,
     "min": 19,
     "route": "über B44",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Mannheim",
    "ort_kicker": "Mannheim"
@@ -3666,7 +4005,7 @@ window.GUIDE_DATA = {
     "km": 36.4,
     "min": 33,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Heidelberg",
    "ort_kicker": "Heidelberg · Altstadt"
@@ -3723,7 +4062,7 @@ window.GUIDE_DATA = {
     "km": 36.2,
     "min": 35,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    },
    "ort_basis": "Heidelberg",
    "ort_kicker": "Heidelberg"
@@ -3799,19 +4138,19 @@ window.GUIDE_DATA = {
     "km": 8.4,
     "min": 20,
     "route": "über B44",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   },
   {
    "slug": "nm-ma-wasserturm-kunsthalle",
    "titel": "Kunsthalle Mannheim, Wasserturm und Augustaanlage",
    "region": "Mannheim",
-   "beschreibung": "Kunsthalle am Friedrichsplatz mit Sammlung (Moderne) und der Grafik-Schau „Von Dürer bis Piranesi“ (bis 8.11.2026); die große Sonderausstellung „RADIKAL. REAL.“ ist bereits am 11.10. zu Ende. Danach Jugendstil-Anlage am Wasserturm und Spaziergang über die Augustaanlage. Atrium mit Shop und Gastronomie ist frei zugänglich.",
+   "beschreibung": "Kunsthalle am Friedrichsplatz mit Sammlung (Moderne) und der Grafik-Schau „Von Dürer bis Piranesi“ (bis 8.11.2026); die große Sonderausstellung „RADIKAL. REAL.“ ist bereits am 11.10. zu Ende. Danach Jugendstil-Anlage am Wasserturm und Spaziergang über die Augustaanlage. Atrium mit Shop und Gastronomie ist frei zugänglich. Hinweis: Die Wasserspiele am Wasserturm sind außer Betrieb, die Saison 2026 endete am Sonntag, 4.10.2026 (kein Fontänenspiel am 31.10.).",
    "ablauf": [
     "13:00 Kunsthalle, Eingang Friedrichsplatz",
     "13:00–15:00 Sammlung + „Von Dürer bis Piranesi“",
-    "15:00–16:00 Kaffee am Friedrichsplatz",
-    "16:00–17:15 Spaziergang Wasserturm → Augustaanlage und zurück, Sonnenuntergang 17:05"
+    "14:30–15:45 Torte und Kaffee bei Herrdegen (E 2, 8; geöffnet bis 16:00) oder am Friedrichsplatz",
+    "16:00–17:15 Spaziergang Wasserturm → Augustaanlage und zurück, Sonnenuntergang 17:05 (Fontänen sind außer Betrieb)"
    ],
    "dauer": "ca. 4 h",
    "start_adresse": "Kunsthalle Mannheim, Friedrichsplatz 4, 68165 Mannheim",
@@ -3831,10 +4170,10 @@ window.GUIDE_DATA = {
    "kosten": "vermutlich 14 € p. P. (Drittquelle, nicht offiziell geprüft); Atrium frei",
    "veranstaltung": null,
    "cafe_vorschlag": {
-    "name": "Dolceamaro",
-    "adresse": "Friedrichsplatz 13, 68165 Mannheim",
-    "hinweis": "direkt gegenüber; Öffnungszeiten nicht geprüft. Alternative: Gastronomie im Kunsthallen-Atrium",
-    "quelle": "https://www.mannheim24.de/mannheim/kaffee-und-kuchen-mannheim-besten-cafes-wochenende-sonntag-93099003.html"
+    "name": "Konditorei & Kaffee Herrdegen",
+    "adresse": "E 2, 8, 68159 Mannheim",
+    "hinweis": "Sa 8:30–16:00 Uhr (So/Mo/Feiertage Ruhetag), Tel. 0621 20185; Sitzbereich innen teilweise geöffnet, die Carl-Theodor-Stube im 1. OG bleibt bis auf Weiteres geschlossen. Alternative: Dolceamaro, Friedrichsplatz 13, 68165 Mannheim (Öffnungszeiten nicht geprüft)",
+    "quelle": "https://herrdegen.de/"
    },
    "bilder": [
     {
@@ -3848,24 +4187,41 @@ window.GUIDE_DATA = {
      "art": "location",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Kunsthalle_Mannheim%2C_Atrium_02.jpg",
      "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-wasserturm-kunsthalle-3.jpg",
+     "art": "cafe",
+     "quelle_url": "https://images.toubiz.de/image/big2/57939_04.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-wasserturm-kunsthalle-4.jpg",
+     "art": "cafe",
+     "quelle_url": "https://media.deutsche-handwerks-zeitung.de/uploads/2020/12/Tortenkreationen-aus-dem-Caf_-Herrdegen-in-Mannheim.jpg",
+     "vorhanden": true
     }
    ],
    "quellen": [
     "https://audiala.com/de/deutschland/mannheim/kunsthalle-mannheim",
     "https://www.kunstportal-bw.de/2025/11/24/ausstellungsprogramm-2026/",
-    "https://www.regioactive.de/ausstellung/radikal-real-nouveau-realisme-und-die-kunst-der-1960er-jahre-mannheim-kunsthalle-2026-09-06-V0L6G9fvrl"
+    "https://www.regioactive.de/ausstellung/radikal-real-nouveau-realisme-und-die-kunst-der-1960er-jahre-mannheim-kunsthalle-2026-09-06-V0L6G9fvrl",
+    "https://www.mvv.de/journalisten/pressemitteilungen/detail/wasserspiele-am-wasserturm-starten-an-gruendonnerstag-in-die-sommersaison",
+    "https://herrdegen.de/",
+    "https://www.mannheim.de/de/kultur-erleben/kulturdenkmale/wasserturm"
    ],
    "nicht_geprueft": [
     "Öffnungszeit und Eintrittspreis nicht auf kuma.art bestätigt (Bot-Check blockiert Abruf)",
     "Laufzeit „Von Dürer bis Piranesi“ bis 8.11.2026 nur aus Suchergebnis",
-    "Neue Ausstellung „TANZ!“ öffnet erst am 13.11.2026"
+    "Neue Ausstellung „TANZ!“ öffnet erst am 13.11.2026",
+    "Wasserspiele-Saisonende 4.10.2026 laut MVV-Pressemitteilung (Betreiber, im Auftrag der Stadt); die Stadtseite mannheim.de/…/wasserturm nennt dazu nichts",
+    "Herrdegen: Preise nicht geprüft; Google-Bewertung nicht eingetragen"
    ],
    "stand": "2026-10-29",
    "entfernung": {
     "km": 8.5,
     "min": 20,
     "route": "über B44",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   },
   {
@@ -3931,7 +4287,7 @@ window.GUIDE_DATA = {
     "km": 7.3,
     "min": 16,
     "route": "über B44",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   },
   {
@@ -3990,7 +4346,7 @@ window.GUIDE_DATA = {
     "km": 9.9,
     "min": 22,
     "route": "über B44",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   },
   {
@@ -4000,7 +4356,7 @@ window.GUIDE_DATA = {
    "beschreibung": "Einer der bedeutendsten Barockgärten Europas (ca. 72 ha) mit Moschee, Badhaus-Bereich, Apollotempel und Großem Weiher, im Herbstlaub. Bis 1.11. läuft die Outdoor-Ausstellung „Baustelle Artenvielfalt“ (16 Stationen) im Garten. Schlossinnenräume nur mit Führung (60 Min.).",
    "ablauf": [
     "12:30 Ankunft Schlossplatz, Kasse",
-    "12:30–13:00 Kaffee am Schlossplatz",
+    "12:30–13:00 Kaffee am Schlossplatz (WALZWERK ab 8:30 offen)",
     "13:00–16:00 Gartenrundgang (Parterre, Moschee 10–16 Uhr offen, Großer Weiher, Ausstellungsstationen)",
     "optional: Schlossführung 60 Min. (Uhrzeit vor Ort erfragen)",
     "16:30 letzter Einlass, 17:00 Garten schließt (vor Sonnenuntergang 17:05)"
@@ -4027,10 +4383,10 @@ window.GUIDE_DATA = {
    "kosten": "Garten 6 € p. P. (Winter ab 26.10.), Schloss mit 60-Min.-Führung + Garten 9 € p. P.",
    "veranstaltung": "Ausstellung „Klimawandel in historischen Gärten – Baustelle Artenvielfalt“ bis 1.11.2026 (im Garteneintritt)",
    "cafe_vorschlag": {
-    "name": "Kaffeehaus Schwetzingen",
-    "adresse": "Schloßplatz 3, 68723 Schwetzingen",
-    "hinweis": "laut Verzeichnis am Schlossplatz; Öffnungszeiten unklar. Alternative: Kurfürstenstube am Gartenausgang (Stand 2022: Di–So 11–18 Uhr)",
-    "quelle": "https://www.golocal.de/schwetzingen/kaffee/"
+    "name": "WALZWERK Café",
+    "adresse": "Carl-Theodor-Straße 1, 68723 Schwetzingen",
+    "hinweis": "direkt am Schlossplatz; Sa 8:30–1:00 Uhr, Küche täglich 11:30–22:00; Motorrad-Themen-Café mit US-Küche (Burger, Steaks, Frühstück bis 13 Uhr), kein klassisches Kuchencafé; Tel. 06202 9296070. Alternative: Kaffeehaus Schwetzingen, Schloßplatz 3 (Öffnungszeiten unklar)",
+    "quelle": "https://www.walzwerk-cafe.de/de/"
    },
    "bilder": [
     {
@@ -4044,25 +4400,40 @@ window.GUIDE_DATA = {
      "art": "location",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Schwetzingen_-_Schlossgarten_-_Gro%C3%9Fer_Weiher_-_Westende_mit_Br%C3%BCcke_im_Herbst_2.jpg",
      "vorhanden": true
+    },
+    {
+     "datei": "img/nm-schwetzingen-schlossgarten-3.jpg",
+     "art": "cafe",
+     "quelle_url": "https://www.walzwerk-cafe.de/de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-schwetzingen-schlossgarten-4.jpg",
+     "art": "cafe",
+     "quelle_url": "https://www.walzwerk-cafe.de/de/",
+     "vorhanden": true
     }
    ],
    "quellen": [
     "https://www.schloss-schwetzingen.de/besuchsinformation/oeffnungszeiten",
     "https://www.schloss-schwetzingen.de/besuchsinformation/preise",
     "https://www.schloss-schwetzingen.de/besuchsinformation/fuehrungen-veranstaltungen",
-    "https://www.museumspass.com/en/exhibition/climate-change-historic-gardens"
+    "https://www.museumspass.com/en/exhibition/climate-change-historic-gardens",
+    "https://www.walzwerk-cafe.de/de/"
    ],
    "nicht_geprueft": [
     "Gesperrte Teile des Englischen Gartens: auf der Öffnungszeiten-Seite kein Hinweis gefunden",
     "Uhrzeiten der Standardführung am Samstag",
-    "Café-Öffnungszeiten"
+    "Café-Öffnungszeiten",
+    "Winterzeiten (Garten 9–17, letzter Einlass 16:30, Moschee 10–16) am 29.10. erneut versucht zu prüfen: schloss-schwetzingen.de lieferte HTTP 429, nicht erneut bestätigt; Angaben decken sich mit der Fremdfassung und dem Stand vom Vormittag",
+    "WALZWERK: Kuchenangebot und Preise nicht geprüft; Google-Bewertung nicht eingetragen"
    ],
    "stand": "2026-10-29",
    "entfernung": {
     "km": 33.2,
     "min": 30,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   },
   {
@@ -4128,7 +4499,96 @@ window.GUIDE_DATA = {
     "km": 9.4,
     "min": 20,
     "route": "über B44",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   }
+  },
+  {
+   "slug": "ma-kaefertaler-wald-wolfsbau",
+   "titel": "Käfertaler Wald am Karlstern und Kaffee im Café Wolfsbau",
+   "region": "Mannheim",
+   "beschreibung": "Waldspaziergang im größten Waldgebiet Mannheims: Ausgangspunkt ist der Karlstern mit Pavillon, Wildgehege (Bisons, Damwild, Muffelwild, Wildschweine), Weiher mit Aussichtsplattform und acht markierten Rundwanderwegen (4,4–10,2 km). Danach Kaffee oder Kuchen im Café Wolfsbau an der Waldpforte. Das Café ist am Samstag 9–17 Uhr geöffnet, Mo/Di Ruhetag.",
+   "ablauf": [
+    "13:00 Karlstern, Parkplatz am Ende der Karlsternstraße",
+    "13:00–14:30 freie Runde um Weiher und Wildgehege (Länge nach Wunsch; markierte Rundwege ab 4,4 km)",
+    "ca. 14:45 kurze Autofahrt zur Waldpforte 81, Kaffee und Kuchen im Café Wolfsbau",
+    "bis 16:00 zurück zum Auto; Sonnenuntergang 17:05, das Café schließt um 17:00"
+   ],
+   "dauer": "ca. 3 h",
+   "start_adresse": "Karlstern, Karlsternstraße 130, 68305 Mannheim",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Karlstern%2C%20Karlsternstra%C3%9Fe%20130%2C%2068305%20Mannheim",
+   "weitere_links": [
+    {
+     "text": "Käfertaler Wald (Stadt Mannheim)",
+     "url": "https://www.mannheim.de/de/service-bieten/gruene-stadt/wald/kaefertaler-wald"
+    },
+    {
+     "text": "Käfertaler Wald (Visit Mannheim)",
+     "url": "https://www.visit-mannheim.de/erleben-entdecken/spazierwege-im-fruehling/kaefertaler-wald"
+    },
+    {
+     "text": "Café Wolfsbau",
+     "url": "https://www.cafewolfsbau.de/"
+    },
+    {
+     "text": "Café Wolfsbau in Maps",
+     "url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Wolfsbau%2C%20Waldpforte%2081%2C%2068305%20Mannheim"
+    }
+   ],
+   "oeffnung_31_10": "Wald öffentlich zugänglich. Café Wolfsbau: Mittwoch–Sonntag 9:00–17:00 Uhr (Samstag also 9–17), Montag und Dienstag Ruhetag; Frühstück 9:00–11:30, Mittagstisch 12:30–15:30, samstags Suppen-/Eintopf-Tag",
+   "oeffnung_quelle": "https://www.cafewolfsbau.de/kontakt/",
+   "kosten": "Wald frei; Kaffee und Kuchen nach Verzehr (Preise nicht geprüft)",
+   "veranstaltung": null,
+   "cafe_vorschlag": {
+    "name": "Café Wolfsbau",
+    "adresse": "Waldpforte 81, 68305 Mannheim",
+    "hinweis": "Sa 9–17 Uhr (Mo/Di Ruhetag); Reservierung ausschließlich telefonisch (0621 43706412) oder vor Ort",
+    "quelle": "https://www.cafewolfsbau.de/kontakt/"
+   },
+   "bilder": [
+    {
+     "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-1.jpg",
+     "art": "location",
+     "quelle_url": "https://www.mannheim.de/de/service-bieten/gruene-stadt/wald/kaefertaler-wald",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-2.jpg",
+     "art": "location",
+     "quelle_url": "https://www.komoot.com/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-3.jpg",
+     "art": "cafe",
+     "quelle_url": "https://www.cafewolfsbau.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-4.jpg",
+     "art": "cafe",
+     "quelle_url": "https://www.cafewolfsbau.de/",
+     "vorhanden": true
+    }
+   ],
+   "quellen": [
+    "https://www.mannheim.de/de/service-bieten/gruene-stadt/wald/kaefertaler-wald",
+    "https://www.visit-mannheim.de/erleben-entdecken/spazierwege-im-fruehling/kaefertaler-wald",
+    "https://www.cafewolfsbau.de/",
+    "https://www.cafewolfsbau.de/kontakt/"
+   ],
+   "nicht_geprueft": [
+    "Parkplatz Karlstern (Zahl/Kosten): Visit Mannheim nennt nur „ausreichend Parkplätze“; „ca. 350 kostenlose Stellplätze“ aus der Fremdfassung nicht bestätigt",
+    "Länge einer kurzen freien Runde nicht gemessen",
+    "Preise Café Wolfsbau nicht geprüft",
+    "Bildquellen: Wolfsbau-Fotos stammen aus Google-Maps-Gästefotos der Fremdfassung, Weiherfoto aus einem Komoot-Tourenfoto (quelle_url dort nur die Betreiber-/Portalseite)",
+    "Google-Bewertung nicht eingetragen"
+   ],
+   "stand": "2026-10-29",
+   "entfernung": {
+    "km": 4.2,
+    "min": 8,
+    "route": "",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   },
   {
@@ -4185,23 +4645,43 @@ window.GUIDE_DATA = {
      "art": "location",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Heidelberg_Philosophenweg_vom_Burgweg.jpg",
      "vorhanden": true
+    },
+    {
+     "datei": "img/nm-hd-philosophenweg-3.jpg",
+     "art": "cafe",
+     "quelle_url": "https://patisserie-sophie.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-hd-philosophenweg-4.jpg",
+     "art": "cafe",
+     "quelle_url": "https://patisserie-sophie.de/",
+     "vorhanden": true
     }
    ],
    "quellen": [
     "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83",
-    "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle"
+    "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle",
+    "https://patisserie-sophie.de/"
    ],
    "nicht_geprueft": [
     "Öffnungszeit Café Schafheutle nicht auf eigener Website geprüft (Website antwortete mit Fehler 429), Quelle ist speisekarte.de",
     "Gehzeiten geschätzt, nicht gemessen",
-    "Abstieg nach Sonnenuntergang in der Dämmerung – Weg ist befestigt, Beleuchtung nicht geprüft"
+    "Abstieg nach Sonnenuntergang in der Dämmerung – Weg ist befestigt, Beleuchtung nicht geprüft",
+    "Café-Vorschlag (Knösel/Sophie): Preise, Kuchenangebot und Tischverfügbarkeit nicht geprüft; Google-Bewertung nicht eingetragen"
    ],
    "stand": "2026-10-29",
+   "cafe_vorschlag": {
+    "name": "Pâtisserie Sophie",
+    "adresse": "Ladenburger Straße 10, 69120 Heidelberg",
+    "hinweis": "Neuenheim; Fr und Sa 9:30–17:30 Uhr (2026); Törtchen, Viennoiserie, Specialty Coffee, vor Ort oder to go; Tel. 06221 6736550",
+    "quelle": "https://patisserie-sophie.de/"
+   },
    "entfernung": {
     "km": 36.2,
     "min": 33,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   },
   {
@@ -4271,6 +4751,18 @@ window.GUIDE_DATA = {
      "art": "location",
      "quelle_url": "https://commons.wikimedia.org/wiki/File:Obere_Bergbahn_Heidelberg,_Bahn_in_der_Station_Königstuhl.jpg",
      "vorhanden": true
+    },
+    {
+     "datei": "img/nm-hd-schloss-koenigstuhl-3.jpg",
+     "art": "cafe",
+     "quelle_url": "https://www.cafeknoesel-hd.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-hd-schloss-koenigstuhl-4.jpg",
+     "art": "cafe",
+     "quelle_url": "https://www.cafeknoesel-hd.de/",
+     "vorhanden": true
     }
    ],
    "quellen": [
@@ -4281,19 +4773,28 @@ window.GUIDE_DATA = {
     "https://www.bergbahn-heidelberg.de/de/Kopfnavigation/Presse/Aktuelles/Heidelberger-Bergbahnen-stellen-auf-Winterfahrplan-um1_86123.html",
     "https://www.bergbahn-heidelberg.de/de/Kopfnavigation/Presse/Schlosstermine/Schlossfuehrungen-im-Oktober_86123.html",
     "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83",
-    "https://www.bergbahn-heidelberg.de/tarife"
+    "https://www.bergbahn-heidelberg.de/tarife",
+    "https://www.cafeknoesel-hd.de/"
    ],
    "nicht_geprueft": [
     "Tarifseite der Bergbahn nennt kein Jahr; Schlossticket 11 € bis 31.12.2026 ist auf der Schloss-Website bestätigt, Königstuhlticket 10 € nicht ausdrücklich für 2026",
     "Café oder Einkehr auf dem Königstuhl/Molkenkur nicht geprüft",
-    "Andrang am Samstag vor Allerheiligen (Herbstferien) – Wartezeit an der Bergbahn möglich"
+    "Andrang am Samstag vor Allerheiligen (Herbstferien) – Wartezeit an der Bergbahn möglich",
+    "Einkehr auf dem Königstuhl: Bergstube im Berggasthof (täglich ab 12 Uhr) siehe Eintrag hd-koenigstuhl-bergstube",
+    "Café-Vorschlag (Knösel/Sophie): Preise, Kuchenangebot und Tischverfügbarkeit nicht geprüft; Google-Bewertung nicht eingetragen"
    ],
    "stand": "2026-10-29",
+   "cafe_vorschlag": {
+    "name": "Café & Hotel Knösel",
+    "adresse": "Haspelgasse 20, 69117 Heidelberg",
+    "hinweis": "älteste Café Heidelbergs laut eigener Seite; täglich ab 9 Uhr, Küche bis 17 Uhr; Tel. 06221 7272754, Online-Reservierung auf der Website",
+    "quelle": "https://www.cafeknoesel-hd.de/"
+   },
    "entfernung": {
     "km": 37.5,
     "min": 37,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   },
   {
@@ -4360,14 +4861,21 @@ window.GUIDE_DATA = {
    "nicht_geprueft": [
     "Eintrittspreis Kurpfälzisches Museum (offizielle Preisliste nicht abrufbar)",
     "Enddatum der Ausstellung „Unschätzbar“ nicht genannt",
-    "Die Sonderausstellung „Lotte Hofmann Preis für Textilkunst 2026“ (18.10.2026–10.01.2027) ist in der Textilsammlung Max Berk (eigener Standort, Sa 13–18 Uhr), nicht im Hauptgebäude – Adresse nicht geprüft"
+    "Die Sonderausstellung „Lotte Hofmann Preis für Textilkunst 2026“ (18.10.2026–10.01.2027) ist in der Textilsammlung Max Berk (eigener Standort, Sa 13–18 Uhr), nicht im Hauptgebäude – Adresse nicht geprüft",
+    "Café-Vorschlag (Knösel/Sophie): Preise, Kuchenangebot und Tischverfügbarkeit nicht geprüft; Google-Bewertung nicht eingetragen"
    ],
    "stand": "2026-10-29",
+   "cafe_vorschlag": {
+    "name": "Café & Hotel Knösel",
+    "adresse": "Haspelgasse 20, 69117 Heidelberg",
+    "hinweis": "älteste Café Heidelbergs laut eigener Seite; täglich ab 9 Uhr, Küche bis 17 Uhr; Tel. 06221 7272754, Online-Reservierung auf der Website",
+    "quelle": "https://www.cafeknoesel-hd.de/"
+   },
    "entfernung": {
     "km": 36.4,
     "min": 33,
     "route": "über A6",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   },
   {
@@ -4434,14 +4942,21 @@ window.GUIDE_DATA = {
    "nicht_geprueft": [
     "Fußweg Museum–Altstadt (ca. 2 km) nicht gemessen",
     "Museum laut eigener Seite nicht barrierefrei",
-    "Inhaltlich anspruchsvoll (Psychiatriegeschichte) – Geschmackssache für einen Jubiläumstag"
+    "Inhaltlich anspruchsvoll (Psychiatriegeschichte) – Geschmackssache für einen Jubiläumstag",
+    "Café-Vorschlag (Knösel/Sophie): Preise, Kuchenangebot und Tischverfügbarkeit nicht geprüft; Google-Bewertung nicht eingetragen"
    ],
    "stand": "2026-10-29",
+   "cafe_vorschlag": {
+    "name": "Pâtisserie Sophie",
+    "adresse": "Ladenburger Straße 10, 69120 Heidelberg",
+    "hinweis": "Neuenheim; Fr und Sa 9:30–17:30 Uhr (2026); Törtchen, Viennoiserie, Specialty Coffee, vor Ort oder to go; Tel. 06221 6736550",
+    "quelle": "https://patisserie-sophie.de/"
+   },
    "entfernung": {
     "km": 35.3,
     "min": 30,
     "route": "über A6 und A656",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   },
   {
@@ -4527,7 +5042,7 @@ window.GUIDE_DATA = {
     "km": 18.2,
     "min": 26,
     "route": "über A659",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   },
   {
@@ -4598,7 +5113,173 @@ window.GUIDE_DATA = {
     "km": 18.3,
     "min": 26,
     "route": "über A659",
-    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'."
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   }
+  },
+  {
+   "slug": "hd-koenigstuhl-bergstube",
+   "titel": "Königstuhl: Waldrunde und Kaffeepause in der Bergstube",
+   "region": "Heidelberg",
+   "beschreibung": "Ruhige Alternative zur Altstadt: kurze Waldwege und Aussicht auf dem Königstuhl (ca. 570 m), anschließend Kaffee und Kuchen in der Bergstube des Berggasthofs. Anreise mit dem Auto bis zum Berggasthof; wer die Bergbahn nutzen will, findet das im Eintrag „Schloss mit Bergbahn bis zum Königstuhl“. Bei Regen oder Nebel wenig reizvoll.",
+   "ablauf": [
+    "12:30 Ankunft Berggasthof Königstuhl, Parken",
+    "12:45–14:15 kleine Waldrunde und Aussicht (frei gewählt, nicht vermessen)",
+    "14:15–15:30 Kaffee und Kuchen in der Bergstube (Küche 12–21 Uhr)",
+    "bis 16:00 zurück zum Auto; Sonnenuntergang 17:05"
+   ],
+   "dauer": "ca. 3–4 h",
+   "start_adresse": "Berggasthof Königstuhl, Königstuhl 2, 69117 Heidelberg",
+   "parken": {
+    "text": "Parkplätze in unmittelbarer Nähe; die Anfahrtsseite nennt „Parkgebühr“, das Winter-Magazin „kostenlose Parkplätze“ (beim Märchenparadies) – vor Ort prüfen",
+    "quelle": "https://gasthof-koenigstuhl.de/anfahrt/"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Berggasthof%20K%C3%B6nigstuhl%2C%20K%C3%B6nigstuhl%202%2C%2069117%20Heidelberg",
+   "weitere_links": [
+    {
+     "text": "Berggasthof Königstuhl: Kulinarik/Bergstube",
+     "url": "https://gasthof-koenigstuhl.de/kulinarik/"
+    },
+    {
+     "text": "Winterkarte Bergstube (PDF)",
+     "url": "https://gasthof-koenigstuhl.de/wp-content/uploads/2026/10/20261027_Magazin_Winter26_Screen.pdf"
+    },
+    {
+     "text": "Anfahrt",
+     "url": "https://gasthof-koenigstuhl.de/anfahrt/"
+    }
+   ],
+   "oeffnung_31_10": "Bergstube täglich ab 12:00 Uhr, Küche 12:00–21:00 Uhr; Waldwege frei zugänglich",
+   "kosten": "Wald frei; laut Winterkarte (Magazin 27.10.2026): Stück Blechkuchen 5,50 €, Stück Torte 7,50 €, Kaffee 3,30 € (Schreibweise im PDF mit Fußnotenziffer, Kaffeepreis daher leicht unsicher)",
+   "veranstaltung": null,
+   "cafe_vorschlag": {
+    "name": "Bergstube im Berggasthof Königstuhl",
+    "adresse": "Königstuhl 2, 69117 Heidelberg",
+    "hinweis": "täglich ab 12 Uhr, Küche bis 21 Uhr; Kuchenvitrine laut Karte; Reservierung telefonisch 06221 4160300 oder online über die Gastronomieseite (Verfügbarkeit nicht geprüft)",
+    "quelle": "https://gasthof-koenigstuhl.de/kulinarik/"
+   },
+   "bilder": [
+    {
+     "datei": "img/nm-hd-koenigstuhl-bergstube-1.jpg",
+     "art": "location",
+     "quelle_url": "https://gasthof-koenigstuhl.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-hd-koenigstuhl-bergstube-2.jpg",
+     "art": "cafe",
+     "quelle_url": "https://gasthof-koenigstuhl.de/kulinarik/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-hd-koenigstuhl-bergstube-3.jpg",
+     "art": "cafe",
+     "quelle_url": "https://gasthof-koenigstuhl.de/kulinarik/",
+     "vorhanden": true
+    }
+   ],
+   "quellen": [
+    "https://gasthof-koenigstuhl.de/kulinarik/",
+    "https://gasthof-koenigstuhl.de/anfahrt/",
+    "https://gasthof-koenigstuhl.de/wp-content/uploads/2026/10/20261027_Magazin_Winter26_Screen.pdf"
+   ],
+   "nicht_geprueft": [
+    "Länge/Verlauf der Waldrunde nicht geprüft (Planungsschätzung der Fremdfassung 1,5–3 km)",
+    "Parkgebühr widersprüchlich (Anfahrtsseite: Gebühr; Winter-Magazin: kostenlos)",
+    "Tischverfügbarkeit nicht geprüft; Google-Bewertung nicht eingetragen",
+    "Aussicht wetterabhängig"
+   ],
+   "stand": "2026-10-29",
+   "entfernung": {
+    "km": 41.9,
+    "min": 41,
+    "route": "über A6",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   }
+  },
+  {
+   "slug": "wh-hermannshof-schlosspark",
+   "titel": "Weinheim: Hermannshof, Schlosspark und Kaffee am Marktplatz",
+   "region": "Weinheim",
+   "beschreibung": "Staudengarten Hermannshof (Schau- und Sichtungsgarten) und der angrenzende Schlosspark mit altem Baumbestand, Teichbereich und Deutschlands größter Libanonzeder. Danach Kaffee im Café Florian/Flo am Marktplatz. Der Hermannshof ist täglich 10–18 Uhr geöffnet.",
+   "ablauf": [
+    "13:00–14:00 Hermannshof, Babostraße 5",
+    "14:00–15:00 Schlosspark und Gerberbachviertel",
+    "15:00–16:15 Kaffee im Flo (Café Florian), Marktplatz 8",
+    "ca. 16:30 Rückweg zum Auto; Sonnenuntergang 17:05"
+   ],
+   "dauer": "ca. 3–4 h",
+   "start_adresse": "Schau- und Sichtungsgarten Hermannshof, Babostraße 5, 69469 Weinheim",
+   "parken": {
+    "text": "nicht geprüft (Fremdfassung nennt Parkhäuser D1–D3, erste Stunde frei)",
+    "quelle": "https://www.weinheim.de/%2CLde/717765.html"
+   },
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Hermannshof%2C%20Babostra%C3%9Fe%205%2C%2069469%20Weinheim",
+   "weitere_links": [
+    {
+     "text": "Hermannshof",
+     "url": "https://sichtungsgarten-hermannshof.de/"
+    },
+    {
+     "text": "Schlosspark (Stadt Weinheim)",
+     "url": "https://www.weinheim.de/746773.html"
+    },
+    {
+     "text": "Flo / Café Florian",
+     "url": "https://www.flo-weinheim.de/"
+    }
+   ],
+   "oeffnung_31_10": "Hermannshof täglich (auch an Feiertagen) 10:00–18:00 Uhr, Winterpause erst 19.12.2026–10.1.2027; Schlosspark täglich rund um die Uhr, freitags und samstags nachts ab ca. 20 Uhr abgeschlossen; Flo Sa 9–1 Uhr (Mittwoch Ruhetag), Frühstück 9–12, Tapas & Restaurant 12–22 Uhr",
+   "kosten": "Schlosspark frei; Hermannshof-Eintritt nicht geprüft (Fremdfassung: kostenfrei); Kaffee/Kuchen nach Verzehr",
+   "veranstaltung": null,
+   "cafe_vorschlag": {
+    "name": "Flo / Café Florian",
+    "adresse": "Marktplatz 8, 69469 Weinheim",
+    "hinweis": "Sa 9–1 Uhr, Mi Ruhetag; Tel. 06201 69480",
+    "quelle": "https://www.flo-weinheim.de/"
+   },
+   "bilder": [
+    {
+     "datei": "img/nm-wh-hermannshof-schlosspark-1.jpg",
+     "art": "location",
+     "quelle_url": "https://sichtungsgarten-hermannshof.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-wh-hermannshof-schlosspark-2.jpg",
+     "art": "location",
+     "quelle_url": "https://www.weinheim.de/746773.html",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-wh-hermannshof-schlosspark-3.jpg",
+     "art": "cafe",
+     "quelle_url": "https://www.flo-weinheim.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-wh-hermannshof-schlosspark-4.jpg",
+     "art": "cafe",
+     "quelle_url": "https://www.flo-weinheim.de/",
+     "vorhanden": true
+    }
+   ],
+   "quellen": [
+    "https://sichtungsgarten-hermannshof.de/",
+    "https://www.weinheim.de/746773.html",
+    "https://www.flo-weinheim.de/"
+   ],
+   "nicht_geprueft": [
+    "Eintrittspreis Hermannshof (Preisseite nicht abrufbar)",
+    "Parken nicht geprüft",
+    "Flo: Preise und Kuchenangebot nicht geprüft; Online-Reservierung laut Fremdfassung offline, nur Telefon",
+    "Google-Bewertung nicht eingetragen"
+   ],
+   "stand": "2026-10-29",
+   "entfernung": {
+    "km": 18.3,
+    "min": 23,
+    "route": "über A659",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
    }
   }
  ],
@@ -4762,6 +5443,26 @@ window.GUIDE_DATA = {
    "datei_region": "Mannheim und Umgebung"
   },
   {
+   "titel": "Halloween – Das Familienfest im Luisenpark",
+   "ort": "Luisenpark Mannheim",
+   "adresse": "Theodor-Heuss-Anlage 2, 68165 Mannheim",
+   "uhrzeit": "17:00–21:00, Einlass ab 16:00, Kassenschluss 20:00",
+   "datum": "2026-10-31",
+   "preis": "13,50 € Erwachsene (Kinder 0–5 Jahre frei, nur mit Erwachsenenkarte)",
+   "tickets_url": "https://shop.luisenpark.de/categories/17",
+   "url": "https://www.mannheim.de/de/veranstaltung/halloween-das-familienfest",
+   "kategorie": "abends",
+   "beschreibung": "Gruselfest für Familien mit Kindern im dunklen Park: Kürbislichter, Burgspielplatz als „Friedhof“, Lasershow auf der Seebühne, Märchen- und Schattentheater, Kinderrockband, Clowns und Feuerjonglage. Ehrlich gesagt eher lebhaft und auf Kinder ausgerichtet, kein ruhiger Abend zu zweit; der Park ist tagsüber für den Aufbau geschlossen. Überschneidet sich mit dem Abendessen (17–20 Uhr).",
+   "quelle": "https://www.mannheim.de/de/veranstaltung/halloween-das-familienfest",
+   "stand": "2026-10-29",
+   "nicht_geprueft": [
+    "Preis 13,50 € nur für „Halloween Erwachsene*r“ im Luisenpark-Shop (shop.luisenpark.de/article/379) gelesen, nicht über den ganzen Bestellvorgang; mannheim.de nennt keinen Preis",
+    "ob Tickets noch verfügbar sind",
+    "Maximalandrang und Wartezeiten am Eingang"
+   ],
+   "datei_region": "Mannheim und Umgebung"
+  },
+  {
    "titel": "Wein & Delikatessen Montpellier – Verkostung mit Weinbar und Live-Musik (Django Mobil)",
    "ort": "Alter Karlstorbahnhof",
    "adresse": "Am Karlstor 1, 69117 Heidelberg",
@@ -4885,6 +5586,25 @@ window.GUIDE_DATA = {
    "beschreibung": "Einzige gefundene Veranstaltung in Weinheim am 31.10.; laute Metal-Show – nur der Vollständigkeit halber.",
    "quelle": "https://www.cafecentral.de/",
    "stand": "2026-10-29",
+   "datei_region": "Heidelberg und Umgebung"
+  },
+  {
+   "titel": "Marionettenoper: Mozarts „Die Zauberflöte“ (Collegium Musicum, Uni Heidelberg)",
+   "ort": "Pädagogische Hochschule Heidelberg, Mehrzweckhalle",
+   "adresse": "Keplerstraße 87, 69120 Heidelberg-Neuenheim",
+   "uhrzeit": "19:00 laut Veranstalterseite (Uni-Kalender: 20:00), Dauer ca. 120 Minuten",
+   "datum": "2026-10-31",
+   "preis": "Eintritt frei, Spenden willkommen",
+   "tickets_url": null,
+   "url": "https://www.uni-heidelberg.de/fakultaeten/philosophie/zegk/collegium_musicum/marionettenoper.html",
+   "kategorie": "abends",
+   "beschreibung": "Marionetten, Gesang und Klavierfassung der Zauberflöte, Wiederaufnahme nach 20 Jahren; neun Gesangssolisten. Keine Platzreservierung möglich, laut Veranstalter ausreichend Sitzplätze. Zugang auch von der Quinckestraße (neben Nr. 72), barrierefrei. Uhrzeit-Widerspruch: Die Seite der Marionettenoper nennt Sa 31.10. 19 Uhr (So 1.11. 16 Uhr), der Uni-Veranstaltungskalender Sa 20:00 (So 17:00). Die Veranstalterseite ist die Primärquelle; im Zweifel kurz per E-Mail nachfragen (marionettenoper@zegk.uni-heidelberg.de). Kollidiert bei 19 Uhr mit dem Abendessen.",
+   "quelle": "https://www.uni-heidelberg.de/fakultaeten/philosophie/zegk/collegium_musicum/marionettenoper.html; Kalender: https://www.uni-heidelberg.de/de/veranstaltungen/marionettenoper-die-zauberfloete-2026-10-31",
+   "stand": "2026-10-29",
+   "nicht_geprueft": [
+    "tatsächlicher Beginn (19:00 oder 20:00) – Quellen widersprechen sich, nicht per Rückfrage geklärt",
+    "Platzandrang bei freiem Eintritt ohne Reservierung"
+   ],
    "datei_region": "Heidelberg und Umgebung"
   }
  ]

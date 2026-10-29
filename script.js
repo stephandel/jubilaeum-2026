@@ -11,7 +11,7 @@
   var likes = {};
   var likesGeaendert = 0; // Zeitpunkt der letzten eigenen Stimme (damit das Nachsehen sie nicht gleich überschreibt)
   var ich = null;
-  var zustand = { sort: "auswahl", status: "alle", ort: "alle", maxMin: 0, nurFav: false };
+  var zustand = { sort: "auswahl", status: "alle", ort: "alle", maxMin: 0, nurFav: false, suche: "" };
 
   // ---------- Hilfen ----------
   function esc(s) {
@@ -66,6 +66,33 @@
     clearTimeout(toast._t);
     toast._t = setTimeout(function () { t.classList.remove("sichtbar"); }, 3200);
   }
+  // Suchtext vereinheitlichen: klein, ohne Akzente (Café = cafe), ß = ss
+  function norm(s) {
+    return String(s == null ? "" : s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss");
+  }
+  function passtZurSuche(teile) {
+    if (!zustand.suche) return true;
+    var heu = norm(teile.join(" "));
+    return zustand.suche.split(" ").every(function (w) { return heu.indexOf(w) >= 0; });
+  }
+  function sucheFeld() {
+    return '<div class="steuer-zeile suche"><label class="suche-feld"><span class="sr">Suchen nach Name, Ort, Küche oder Beschreibung</span>' +
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>' +
+      '<input type="search" id="f-suche" placeholder="Suchen: Name, Ort, Küche …" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"></label>' +
+      '<span class="hinweis" id="such-info" role="status"></span></div>';
+  }
+  function sucheInfo(n) {
+    var el = document.getElementById("such-info");
+    if (el) el.textContent = zustand.suche ? (n ? n + " Treffer" : "Keine Treffer") : "";
+  }
+  function sucheVerdrahten(zeichnen) {
+    var el = document.getElementById("f-suche");
+    if (!el) return;
+    el.addEventListener("input", function () {
+      zustand.suche = norm(el.value).replace(/\s+/g, " ").trim();
+      zeichnen();
+    });
+  }
   function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* privat-Modus: egal */ } }
 
@@ -76,10 +103,13 @@
     var platz = '<div class="platzhalter" aria-hidden="true"><span>' + esc(initialen(name)) + "</span></div>";
     if (!bs.length) return '<div class="bild">' + platz + "</div>";
     var h = '<div class="bild' + (bs[1] ? " zwei" : "") + '">' + platz +
-      '<img class="b1" src="' + esc(bs[0].datei) + '" alt="' + esc(bs[0].beschreibung || name) + '" loading="lazy" decoding="async">';
+      '<img class="b1" src="' + esc(bs[0].datei) + '" alt="' + esc(bs[0].beschreibung || name) + '" data-quelle="' + esc(bs[0].quelle_url || "") + '" data-art="' + esc(bs[0].art || "") + '" loading="lazy" decoding="async">';
     if (bs[1]) {
-      h += '<img class="b2" src="' + esc(bs[1].datei) + '" alt="' + esc(bs[1].beschreibung || name) + '" loading="lazy" decoding="async">' +
-        '<button type="button" class="bild-wechsel" aria-label="Zweites Bild zeigen" aria-pressed="false">' +
+      h += '<img class="b2" src="' + esc(bs[1].datei) + '" alt="' + esc(bs[1].beschreibung || name) + '" data-quelle="' + esc(bs[1].quelle_url || "") + '" data-art="' + esc(bs[1].art || "") + '" loading="lazy" decoding="async">';
+    }
+    h += '<button type="button" class="bild-gross" aria-label="Bild vergrößern: ' + esc(name) + '"></button>';
+    if (bs[1]) {
+      h += '<button type="button" class="bild-wechsel" aria-label="Zweites Bild zeigen" aria-pressed="false">' +
         '<img src="' + esc(bs[1].datei) + '" alt="" loading="lazy" decoding="async"></button>';
     }
     return h + "</div>";
@@ -140,6 +170,56 @@
     document.querySelectorAll(".likes").forEach(function (el) {
       el.innerHTML = likeInnen(el.dataset.key, el.dataset.label);
     });
+  }
+
+  // ---------- Kommentare ----------
+  var kommentare = {};
+  var kommOffen = {};     // Liste aufgeklappt je Eintrag
+  var kommSchreiben = {}; // Eingabefeld offen je Eintrag
+  function kommentarBar(key) {
+    return '<div class="komm" data-key="' + esc(key) + '">' + kommentarInnen(key) + "</div>";
+  }
+  function datumKurz(ms) {
+    var d = new Date(Number(ms));
+    if (isNaN(d)) return "";
+    return d.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" }) + ", " +
+      d.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
+  }
+  function kommentarInnen(key) {
+    var liste = kommentare[window.KommentarStore ? window.KommentarStore.schluessel(key) : key] || [];
+    var h = '<div class="komm-leiste"><button type="button" class="komm-knopf" data-komm="schreiben" aria-expanded="' + !!kommSchreiben[key] + '">' +
+      '<span aria-hidden="true">💬</span> Kommentieren</button>';
+    if (liste.length) {
+      h += '<button type="button" class="komm-mehr" data-komm="mehr" aria-expanded="' + !!kommOffen[key] + '">' +
+        (kommOffen[key] ? "weniger anzeigen" : liste.length + (liste.length === 1 ? " Kommentar" : " Kommentare") + " · mehr anzeigen") + "</button>";
+    }
+    h += "</div>";
+    if (liste.length && kommOffen[key]) {
+      h += '<ul class="komm-liste">' + liste.map(function (k) {
+        return '<li><span class="komm-kopf"><b>' + esc(NAMEN[k.by] || k.by) + "</b> · " + esc(datumKurz(k.at)) + "</span>" +
+          '<span class="komm-text">' + esc(k.text) + "</span>" +
+          (k.by === ich ? '<button type="button" class="komm-weg" data-komm="loeschen" data-id="' + esc(String(k.id)) + '">Löschen</button>' : "") +
+          "</li>";
+      }).join("") + "</ul>";
+    }
+    if (kommSchreiben[key]) {
+      h += '<div class="komm-form"><label class="sr" for="kt-' + esc(key) + '">Kommentar</label>' +
+        '<textarea id="kt-' + esc(key) + '" maxlength="500" rows="2" placeholder="Was meinst du dazu?"></textarea>' +
+        '<div class="komm-knoepfe"><button type="button" class="komm-senden" data-komm="senden">Speichern</button>' +
+        '<button type="button" class="komm-abbrechen" data-komm="abbrechen">Abbrechen</button></div></div>';
+    }
+    return h;
+  }
+  function kommentareAktualisieren() {
+    document.querySelectorAll(".komm").forEach(function (el) {
+      if (kommSchreiben[el.dataset.key]) return; // nicht unter den Fingern wegzeichnen, während geschrieben wird
+      el.innerHTML = kommentarInnen(el.dataset.key);
+    });
+  }
+  function kommEinsZeichnen(el) {
+    el.innerHTML = kommentarInnen(el.dataset.key);
+    var ta = el.querySelector("textarea");
+    if (ta) ta.focus();
   }
 
   function nichtGeprueftKasten(liste) {
@@ -302,7 +382,7 @@
       '<p class="fakten">' + bewertungHtml(r) + '<span class="trenn" aria-hidden="true">·</span>' + entfHtml(r) + "</p>" +
       preisZeile(r) +
       '<div class="status-zeile">' + statusHtml(r) + "</div>" +
-      likeBar(key, r.name) +
+      likeBar(key, r.name) + kommentarBar(key) +
       linkLeiste(r) +
       "</div>" +
       '<details class="mehr"><summary>Details, Preisbeispiele &amp; Reservierung</summary><div class="mehr-innen">' +
@@ -351,6 +431,7 @@
       if (zustand.ort !== "alle" && r.ort_basis !== zustand.ort) return false;
       if (zustand.maxMin && !(r.entfernung && r.entfernung.min != null && r.entfernung.min <= zustand.maxMin)) return false;
       if (zustand.nurFav && !istFavorit("r:" + r.slug)) return false;
+      if (!passtZurSuche([r.name, r.ort, r.ort_basis, r.ort_kicker, r.kueche, r.beschreibung])) return false;
       return true;
     });
   }
@@ -374,6 +455,7 @@
 
     h += '<section class="block" aria-labelledby="ueb-titel"><h2 id="ueb-titel">Übersicht</h2>' +
       '<div class="steuer glas-leicht">' +
+      sucheFeld() +
       '<div class="steuer-zeile" role="group" aria-label="Sortieren nach"><span class="steuer-label">Sortieren</span>' +
       [["auswahl", "Auswahl"], ["bewertung", "Bewertung"], ["preis", "Preis"], ["entfernung", "Entfernung"], ["status", "Status"]].map(function (x) {
         return '<button type="button" class="chip sort" data-sort="' + x[0] + '" aria-pressed="' + (zustand.sort === x[0]) + '">' + x[1] + "</button>";
@@ -414,7 +496,8 @@
           '<td data-label="Likes">' + likeBar("r:" + r.slug, r.name) + "</td></tr>";
       }).join("");
       tab += "</tbody></table></div>";
-      if (!gefiltert.length) tab = leer("Kein Restaurant passt zu diesen Filtern.");
+      sucheInfo(gefiltert.length);
+      if (!gefiltert.length) tab = leer(zustand.suche ? "Keine Treffer für diese Suche und Filter." : "Kein Restaurant passt zu diesen Filtern.");
       document.getElementById("uebersicht").innerHTML = tab;
       var ka = gefiltert.filter(function (r) { return !r.zusatz; });
       var kz = gefiltert.filter(function (r) { return r.zusatz; });
@@ -435,6 +518,7 @@
     document.getElementById("f-ort").addEventListener("change", function (e) { zustand.ort = e.target.value; zeichnen(); });
     document.getElementById("f-min").addEventListener("change", function (e) { zustand.maxMin = Number(e.target.value); zeichnen(); });
     document.getElementById("f-fav").addEventListener("change", function (e) { zustand.nurFav = e.target.checked; zeichnen(); });
+    sucheVerdrahten(zeichnen);
   }
 
   function leer(text) {
@@ -482,7 +566,7 @@
       '<p class="fakten"><span>Dauer: ' + oderNG(n.dauer) + '</span><span class="trenn" aria-hidden="true">·</span>' + entfHtml(n) + "</p>" +
       '<p class="kosten"><b>Kosten:</b> ' + oderNG(n.kosten) + "</p>" +
       (n.veranstaltung ? '<p class="tag-zeile"><span class="tag event">Veranstaltung</span> ' + esc(n.veranstaltung) + "</p>" : "") +
-      likeBar(key, n.titel) +
+      likeBar(key, n.titel) + kommentarBar(key) +
       '<p class="linkleiste">' + [link(n.maps_url, "Google Maps ↗"), link(routeUrl(n.start_adresse), "Autoroute ↗")].filter(Boolean).join('<span aria-hidden="true"> · </span>') + "</p>" +
       "</div>" +
       '<details class="mehr"><summary>Ablauf, Café &amp; Details</summary><div class="mehr-innen">' +
@@ -509,7 +593,7 @@
       '<p class="event-ort">' + oderNG(v.ort) + (v.adresse ? " · " + esc(v.adresse) : "") + "</p>" +
       "<p><b>Preis:</b> " + oderNG(v.preis) + "</p>" +
       (v.beschreibung ? '<p class="beschreibung">' + esc(v.beschreibung) + "</p>" : "") +
-      likeBar(key, v.titel) +
+      likeBar(key, v.titel) + kommentarBar(key) +
       '<p class="linkleiste">' + [link(v.tickets_url, "Tickets ↗"), link(v.url, "Infos ↗"), link(routeUrl(v.adresse), "Autoroute ↗")].filter(Boolean).join('<span aria-hidden="true"> · </span>') + "</p>" +
       nichtGeprueftKasten(v.nicht_geprueft) +
       '<p class="stand">Stand ' + STAND + " · Quelle: " + (link(v.quelle, "Veranstalter ↗") || esc(v.quelle || NG)) + "</p>" +
@@ -522,7 +606,7 @@
     var h = '<section class="hero klein"><p class="hero-label">Bevor es zum Essen geht</p><h1>Nachmittag</h1>' +
       '<p class="hero-unter">Ein paar ruhige Stunden zu zweit.</p></section>' + kopfzeile() +
       '<p class="hinweiszeile">Recherchestand: ' + STAND + ". Öffnungszeiten und Preise bitte am Tag selbst kurz prüfen.</p>" +
-      '<div class="steuer glas-leicht"><div class="steuer-zeile"><label class="check"><input type="checkbox" id="f-fav"> nur Favoriten</label>' +
+      '<div class="steuer glas-leicht">' + sucheFeld() + '<div class="steuer-zeile"><label class="check"><input type="checkbox" id="f-fav"> nur Favoriten</label>' +
       '<span class="steuer-label">Springen:</span>' +
       REGIONEN.concat(["Abends"]).map(function (r) { return '<a class="chip" href="#g-' + slugify(r) + '">' + r + "</a>"; }).join("") +
       "</div></div><div id=\"nm-inhalt\"></div>" + erklaerungKurz();
@@ -533,24 +617,38 @@
       var out = "";
       var regionen = REGIONEN.slice();
       ns.forEach(function (n) { if (n.region && regionen.indexOf(n.region) < 0) regionen.push(n.region); });
+      var treffer = 0;
+      var suchtext = function (n) { return [n.titel, n.region, n.beschreibung, n.start_adresse, n.veranstaltung, (n.ablauf || []).join(" "), n.cafe && n.cafe.name, n.cafe_vorschlag && n.cafe_vorschlag.name]; };
+      var vsuch = function (v) { return [v.titel, v.ort, v.adresse, v.beschreibung]; };
       regionen.forEach(function (reg) {
-        var liste = ns.filter(function (n) { return n.region === reg && (!fav || istFavorit("n:" + n.slug)); });
+        var liste = ns.filter(function (n) { return n.region === reg && (!fav || istFavorit("n:" + n.slug)) && passtZurSuche(suchtext(n)); });
+        treffer += liste.length;
+        if (zustand.suche && !liste.length) return;
         out += '<section class="block" id="g-' + slugify(reg) + '" aria-labelledby="h-' + slugify(reg) + '"><h2 id="h-' + slugify(reg) + '">' + esc(reg) + "</h2>" +
           (liste.length ? '<div class="karten">' + liste.map(nachmittagKarte).join("") + "</div>" : leer(fav ? "Hier ist noch nichts favorisiert." : "Für diese Region liegt keine Option vor.")) +
           "</section>";
       });
-      var nach = vs.filter(function (v) { return v.kategorie === "nachmittag" && (!fav || istFavorit("v:" + slugify(v.titel + "-" + v.ort))); });
-      var abends = vs.filter(function (v) { return v.kategorie !== "nachmittag" && (!fav || istFavorit("v:" + slugify(v.titel + "-" + v.ort))); });
-      out += '<section class="block" aria-labelledby="h-vnm"><h2 id="h-vnm">Veranstaltungen am Nachmittag</h2>' +
-        (nach.length ? '<ul class="events">' + nach.map(veranstaltungZeile).join("") + "</ul>" : leer("Keine Einträge.")) + "</section>";
-      out += '<section class="block" id="g-abends" aria-labelledby="h-abends"><h2 id="h-abends">Abends</h2>' +
-        '<p class="unterzeile">Achtung: Viele Termine überschneiden sich mit dem Abendessen (17–20 Uhr).</p>' +
-        (abends.length ? '<ul class="events">' + abends.map(veranstaltungZeile).join("") + "</ul>" : leer("Keine Einträge.")) + "</section>";
+      var vok = function (v) { return (!fav || istFavorit("v:" + slugify(v.titel + "-" + v.ort))) && passtZurSuche(vsuch(v)); };
+      var nach = vs.filter(function (v) { return v.kategorie === "nachmittag" && vok(v); });
+      var abends = vs.filter(function (v) { return v.kategorie !== "nachmittag" && vok(v); });
+      treffer += nach.length + abends.length;
+      if (!zustand.suche || nach.length) {
+        out += '<section class="block" aria-labelledby="h-vnm"><h2 id="h-vnm">Veranstaltungen am Nachmittag</h2>' +
+          (nach.length ? '<ul class="events">' + nach.map(veranstaltungZeile).join("") + "</ul>" : leer("Keine Einträge.")) + "</section>";
+      }
+      if (!zustand.suche || abends.length) {
+        out += '<section class="block" id="g-abends" aria-labelledby="h-abends"><h2 id="h-abends">Abends</h2>' +
+          '<p class="unterzeile">Achtung: Viele Termine überschneiden sich mit dem Abendessen (17–20 Uhr).</p>' +
+          (abends.length ? '<ul class="events">' + abends.map(veranstaltungZeile).join("") + "</ul>" : leer("Keine Einträge.")) + "</section>";
+      }
+      sucheInfo(treffer);
+      if (zustand.suche && !treffer) out = leer("Keine Treffer für diese Suche.");
       document.getElementById("nm-inhalt").innerHTML = out;
     }
     zeichnen();
     seiteNachmittag.zeichnen = zeichnen;
     document.getElementById("f-fav").addEventListener("change", function (e) { zustand.nurFav = e.target.checked; zeichnen(); });
+    sucheVerdrahten(zeichnen);
   }
 
   function erklaerungKurz() {
@@ -579,7 +677,7 @@
       (c.bewertung_hinweis ? '<p class="hinweis klein">' + esc(c.bewertung_hinweis) + "</p>" : "") +
       '<p class="kosten"><b>Preise:</b> ' + oderNG(c.preisniveau) + "</p>" +
       '<p class="kosten"><b>Samstag:</b> ' + oderNG(c.oeffnung_samstag) + "</p>" +
-      likeBar(key, c.name) +
+      likeBar(key, c.name) + kommentarBar(key) +
       linkLeiste(c) +
       "</div>" +
       '<details class="mehr"><summary>Details</summary><div class="mehr-innen">' +
@@ -599,16 +697,20 @@
     var h = '<section class="hero klein"><p class="hero-label">Etwas Süßes vorher</p><h1>Cafés</h1>' +
       '<p class="hero-unter">Pâtisserien und Cafés für den Nachmittag.</p></section>' + kopfzeile() +
       '<p class="hinweiszeile">Recherchestand: ' + STAND + ". Wunsch war eine Google-Bewertung über 4,7 – Ausnahmen sind gekennzeichnet.</p>" +
-      '<div class="steuer glas-leicht"><div class="steuer-zeile"><label class="check"><input type="checkbox" id="f-fav"> nur Favoriten</label></div></div>' +
+      '<div class="steuer glas-leicht">' + sucheFeld() + '<div class="steuer-zeile"><label class="check"><input type="checkbox" id="f-fav"> nur Favoriten</label></div></div>' +
       '<section class="block"><div class="karten" id="karten-cafes"></div></section>' + erklaerungKurz();
     app.innerHTML = h;
     function zeichnen() {
-      var liste = cs.filter(function (c) { return !zustand.nurFav || istFavorit("c:" + c.slug); });
-      document.getElementById("karten-cafes").innerHTML = liste.length ? liste.map(cafeKarte).join("") : leer("Noch keine Favoriten.");
+      var liste = cs.filter(function (c) {
+        return (!zustand.nurFav || istFavorit("c:" + c.slug)) && passtZurSuche([c.name, c.ort, c.ort_kicker, c.spezialitaet, c.beschreibung]);
+      });
+      sucheInfo(liste.length);
+      document.getElementById("karten-cafes").innerHTML = liste.length ? liste.map(cafeKarte).join("") : leer(zustand.suche ? "Keine Treffer für diese Suche." : "Noch keine Favoriten.");
     }
     zeichnen();
     seiteCafes.zeichnen = zeichnen;
     document.getElementById("f-fav").addEventListener("change", function (e) { zustand.nurFav = e.target.checked; zeichnen(); });
+    sucheVerdrahten(zeichnen);
   }
 
   // ---------- Kopfzeile: Ich bin, Thema ----------
@@ -617,6 +719,7 @@
     if (ich) lsSet("jg-ich", ich);
     document.querySelectorAll(".ichbin .seg").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.person === ich)); });
     likesAktualisieren();
+    kommentareAktualisieren();
   }
 
   var THEMEN = ["auto", "light", "dark"];
@@ -657,6 +760,30 @@
       return;
     }
 
+    var kb = ev.target.closest("[data-komm]");
+    if (kb) {
+      var kel = kb.closest(".komm"), kkey = kel.dataset.key, akt2 = kb.dataset.komm;
+      if (akt2 === "mehr") { kommOffen[kkey] = !kommOffen[kkey]; kommEinsZeichnen(kel); return; }
+      if (akt2 === "abbrechen") { delete kommSchreiben[kkey]; kommEinsZeichnen(kel); return; }
+      if (!ich) { toast("Bitte oben zuerst wählen: Ich bin Stephan oder Bilgen."); return; }
+      if (akt2 === "schreiben") { kommSchreiben[kkey] = !kommSchreiben[kkey]; kommEinsZeichnen(kel); return; }
+      var fertig = function (obj) { kommentare = obj || {}; kommentareAktualisieren(); kommEinsZeichnen(kel); };
+      if (akt2 === "senden") {
+        var txt = (kel.querySelector("textarea").value || "").trim();
+        if (!txt) { toast("Bitte erst etwas schreiben."); return; }
+        kb.disabled = true;
+        window.KommentarStore.add(kkey, txt, ich).then(function (obj) {
+          delete kommSchreiben[kkey]; kommOffen[kkey] = true; fertig(obj);
+        }).catch(function () { kb.disabled = false; toast("Speichern hat nicht geklappt – bitte noch einmal versuchen."); });
+        return;
+      }
+      if (akt2 === "loeschen") {
+        window.KommentarStore.remove(kkey, Number(kb.dataset.id), ich).then(fertig)
+          .catch(function () { toast("Löschen hat nicht geklappt."); });
+        return;
+      }
+    }
+
     var lb = ev.target.closest(".like");
     if (lb) {
       if (!ich) {
@@ -692,8 +819,94 @@
     }
   }, true);
 
+  // ---------- Schriftgröße ----------
+  var SCHRIFT_STUFEN = [90, 100, 110, 120, 130];
+  function schriftSetzen(pz, meldung) {
+    if (SCHRIFT_STUFEN.indexOf(pz) < 0) pz = 100;
+    document.documentElement.style.setProperty("--schrift", String(pz / 100));
+    lsSet("jg-schrift", String(pz));
+    var kl = document.getElementById("schrift-klein"), gr = document.getElementById("schrift-gross");
+    if (kl) kl.disabled = pz <= SCHRIFT_STUFEN[0];
+    if (gr) gr.disabled = pz >= SCHRIFT_STUFEN[SCHRIFT_STUFEN.length - 1];
+    if (meldung) toast("Schriftgröße " + pz + " %");
+    return pz;
+  }
+  var schriftAkt = 100;
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest("#schrift-klein, #schrift-gross");
+    if (!b) return;
+    var i = SCHRIFT_STUFEN.indexOf(schriftAkt) + (b.id === "schrift-gross" ? 1 : -1);
+    i = Math.max(0, Math.min(SCHRIFT_STUFEN.length - 1, i));
+    schriftAkt = schriftSetzen(SCHRIFT_STUFEN[i], true);
+  });
+
+  // ---------- Bild vergrößern (Lightbox) ----------
+  var lbOffen = null; // { el, zurueck }
+  function lbBauen() {
+    var el = document.createElement("div");
+    el.className = "lightbox";
+    el.id = "lightbox";
+    el.hidden = true;
+    el.setAttribute("role", "dialog");
+    el.setAttribute("aria-modal", "true");
+    el.setAttribute("aria-label", "Bild vergrößert");
+    el.innerHTML = '<button type="button" class="lb-zu" aria-label="Bild schließen">✕</button>' +
+      '<figure class="lb-fig"><img class="lb-bild" alt=""><figcaption class="lb-text"></figcaption></figure>';
+    document.body.appendChild(el);
+    return el;
+  }
+  function lbOeffnen(knopf) {
+    var box = knopf.closest(".bild");
+    if (!box) return;
+    var img = box.classList.contains("zeige2") && box.querySelector("img.b2") ? box.querySelector("img.b2") : box.querySelector("img.b1");
+    if (!img || img.classList.contains("kaputt")) return;
+    var el = document.getElementById("lightbox") || lbBauen();
+    var gross = el.querySelector(".lb-bild");
+    gross.src = img.currentSrc || img.src;
+    gross.alt = img.alt;
+    var text = '<span>' + esc(img.alt) + "</span>";
+    var q = sicherUrl(img.dataset.quelle);
+    if (q) {
+      var host = q.replace(/^https?:\/\//i, "").split("/")[0];
+      text += ' · Quelle: <a href="' + esc(q) + '" target="_blank" rel="noopener noreferrer">' + esc(host) + " ↗</a>";
+    }
+    el.querySelector(".lb-text").innerHTML = text;
+    el.hidden = false;
+    document.body.classList.add("lb-offen");
+    lbOffen = { el: el, zurueck: knopf };
+    el.querySelector(".lb-zu").focus();
+  }
+  function lbSchliessen() {
+    if (!lbOffen) return;
+    var o = lbOffen;
+    lbOffen = null;
+    o.el.hidden = true;
+    o.el.querySelector(".lb-bild").removeAttribute("src");
+    document.body.classList.remove("lb-offen");
+    if (o.zurueck && document.contains(o.zurueck)) o.zurueck.focus();
+  }
+  document.addEventListener("click", function (ev) {
+    var k = ev.target.closest(".bild-gross");
+    if (k) { lbOeffnen(k); return; }
+    if (!lbOffen) return;
+    // X oder Klick neben dem Bild schließt; Klick auf Bild oder Quellenlink nicht
+    if (ev.target.closest(".lb-zu") || ev.target === lbOffen.el || ev.target.classList.contains("lb-fig")) lbSchliessen();
+  });
+  document.addEventListener("keydown", function (ev) {
+    if (!lbOffen) return;
+    if (ev.key === "Escape") { ev.preventDefault(); lbSchliessen(); return; }
+    if (ev.key === "Tab") {
+      var fo = Array.prototype.slice.call(lbOffen.el.querySelectorAll("button, a[href]"));
+      if (!fo.length) return;
+      var i = fo.indexOf(document.activeElement);
+      ev.preventDefault();
+      fo[(i + (ev.shiftKey ? -1 : 1) + fo.length) % fo.length].focus();
+    }
+  });
+
   // ---------- Start ----------
   themaSetzen(lsGet("jg-theme") || "auto");
+  schriftAkt = schriftSetzen(Number(lsGet("jg-schrift")) || 100, false);
   ich = lsGet("jg-ich");
   ichSetzen(ich);
 
@@ -725,8 +938,16 @@
     .then(function () {
       document.body.classList.remove("likes-laden");
       likesAktualisieren();
+      var kommLaden = function () {
+        if (!window.KommentarStore) return;
+        window.KommentarStore.load().then(function (obj) {
+          if (obj && JSON.stringify(obj) !== JSON.stringify(kommentare)) { kommentare = obj; kommentareAktualisieren(); }
+        }).catch(function () {});
+      };
+      kommLaden();
       // Gemeinsamer Stand: alle 20 s nachsehen, ob die andere Person abgestimmt hat (nur bei sichtbarer Seite)
       if (window.LikeStore.online) {
+        setInterval(function () { if (!document.hidden) kommLaden(); }, 20000);
         var nachsehen = function () {
           if (document.hidden || Date.now() - likesGeaendert < 8000) return;
           window.LikeStore.load().then(function (obj) {
