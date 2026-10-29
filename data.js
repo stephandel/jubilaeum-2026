@@ -1123,7 +1123,7 @@ window.GUIDE_DATA = {
     "url": "https://services.gastronovi.com/restaurants/86279/reservierung/widget?companyRoute=1",
     "verfuegbar_31_10": "nein",
     "freie_zeiten": [],
-    "hinweis": "gastronovi-Widget im Browser geprüft (29.10., ca. 14:15 Uhr): 19:00 Uhr für 2 Personen „leider nicht verfügbar“; die angezeigte Alternativliste ist eine Standardliste, nicht bestätigt. Einlass abends nur 18:30–20:00. Bitte anrufen: 0621 14397.",
+    "hinweis": "Ausgebucht am 31.10. – von Stephan bestätigt (29.10. abends). Vorher gastronovi-Widget (14:15 Uhr): 19:00 Uhr für 2 Personen „leider nicht verfügbar“. Einlass abends nur 18:30–20:00. Telefon 0621 14397.",
     "stand": "2026-10-29"
    },
    "parken": {
