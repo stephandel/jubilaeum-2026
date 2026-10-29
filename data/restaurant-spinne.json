@@ -162,18 +162,27 @@
   },
   "bilder": [
     {
+      "datei": "img/spinne-4.jpg",
+      "art": "aussen",
+      "beschreibung": "Terrasse im Innenhof am Abend",
+      "quelle_url": "https://static.wixstatic.com/media/aefe10_6ce8349e25944ad9919f0dab26e7cf61~mv2_d_2903_1594_s_2.jpg"
+    },
+    {
       "datei": "img/spinne-1.jpg",
-      "art": "location",
+      "art": "innen",
+      "beschreibung": "Gewölbekeller mit langer Tafel",
       "quelle_url": "https://static.wixstatic.com/media/aefe10_70aba0f0215d4d1abd1208f0d4876434~mv2.jpg"
     },
     {
       "datei": "img/spinne-2.jpg",
       "art": "gericht",
+      "beschreibung": "Geschmorter Rinderbacken auf Püree",
       "quelle_url": "https://static.wixstatic.com/media/aefe10_9f2321ac9d284ed0814ce8b7f08bd498~mv2.jpg"
     },
     {
       "datei": "img/spinne-3.jpg",
       "art": "gericht",
+      "beschreibung": "Dessert mit Beeren und Schokolade",
       "quelle_url": "https://static.wixstatic.com/media/aefe10_15c1488d33b84fd29f680659d130d713~mv2.jpg"
     }
   ],

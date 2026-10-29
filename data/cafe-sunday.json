@@ -20,13 +20,21 @@
   },
   "bilder": [
     {
+      "datei": "img/cafe-sunday-3.jpg",
+      "art": "aussen",
+      "beschreibung": "Aufsteller vor dem Café auf der Straße",
+      "quelle_url": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/"
+    },
+    {
       "datei": "img/cafe-sunday-1.jpg",
-      "art": "location",
+      "art": "innen",
+      "beschreibung": "Gastraum mit Kuchentheke",
       "quelle_url": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/"
     },
     {
       "datei": "img/cafe-sunday-2.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Zitronen- und Himbeertorte",
       "quelle_url": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/"
     }
   ],

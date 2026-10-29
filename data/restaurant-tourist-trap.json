@@ -207,18 +207,27 @@
   },
   "bilder": [
     {
-      "datei": "img/tourist-trap-1.webp",
-      "art": "location",
-      "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-mannheim-schiff-neckar.webp"
+      "datei": "img/tourist-trap-4.jpg",
+      "art": "aussen",
+      "beschreibung": "Museumsschiff am Neckarufer",
+      "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-schiff-scaled-e1746002498976.jpg"
+    },
+    {
+      "datei": "img/tourist-trap-5.jpg",
+      "art": "innen",
+      "beschreibung": "Sitzbank mit Kissen und Vasen am Fenster",
+      "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-restaurant.jpg"
     },
     {
       "datei": "img/tourist-trap-2.webp",
       "art": "gericht",
+      "beschreibung": "Menügang auf gedecktem Tisch",
       "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-mannheim-Menue-Interior.webp"
     },
     {
       "datei": "img/tourist-trap-3.webp",
       "art": "gericht",
+      "beschreibung": "Menügang auf gemustertem Teller",
       "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-mannheim-Menue.webp"
     }
   ],

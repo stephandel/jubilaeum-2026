@@ -1,462 +1,536 @@
 [
- {
-  "slug": "nm-ma-barockschloss",
-  "titel": "Barockschloss Mannheim und Spaziergang zum Rhein",
-  "region": "Mannheim",
-  "beschreibung": "Rundgang durch die Prunkräume einer der größten Barockresidenzen Europas (Rittersaal, Treppenhaus), danach durch den Schlossgarten an den Rhein und am Ufer entlang Richtung Stephanienufer. Bei Sonne gutes Licht am Rhein zum Sonnenuntergang (ca. 17:05).",
-  "ablauf": [
-   "13:00 Ankunft Barockschloss, Besuchereingang Mittelbau (Kasse)",
-   "13:00–14:30 Schlossmuseum (selbstständig, oder mit Führung)",
-   "14:30–15:30 Spaziergang Schlossgarten → Rheinufer/Rheinpromenade Richtung Stephanienufer",
-   "15:30–16:30 Kaffee-Stopp in der Innenstadt (z. B. Friedrichsplatz)",
-   "16:30–17:15 Bummel Wasserturm/Augustaanlage, Sonnenuntergang 17:05",
-   "danach Weiterfahrt zum Abendessen"
-  ],
-  "dauer": "ca. 4 h (Museum 1,5 h)",
-  "start_adresse": "Barockschloss Mannheim, Bismarckstraße, 68161 Mannheim",
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Barockschloss%20Mannheim%2C%20Bismarckstra%C3%9Fe%2C%2068161%20Mannheim",
-  "weitere_links": [
-   {
-    "text": "Öffnungszeiten",
-    "url": "https://www.schloss-mannheim.de/besuchsinformation/oeffnungszeiten"
-   },
-   {
-    "text": "Preise",
-    "url": "https://www.schloss-mannheim.de/besuchsinformation/preise"
-   },
-   {
-    "text": "Führungen & Veranstaltungen",
-    "url": "https://www.schloss-mannheim.de/besuchsinformation"
-   }
-  ],
-  "oeffnung_31_10": "Sa 10:00–17:00, letzter Einlass 16:00 (ganzjährig ab 1.2.2026). Hinweis: Bei Veranstaltungen können Treppenhaus und Rittersaal gesperrt sein; Baustelle im Ehrenhof, Schloss bleibt geöffnet.",
-  "oeffnung_quelle": "https://www.schloss-mannheim.de/besuchsinformation/oeffnungszeiten",
-  "kosten": "Schloss 11 € p. P., mit Führung 13 € p. P. (zus. 22–26 €); Kombiticket mit Schwetzingen (18 €) nur bis 25.10. einlösbar",
-  "veranstaltung": null,
-  "cafe_vorschlag": {
-   "name": "Dolceamaro",
-   "adresse": "Friedrichsplatz 13, 68165 Mannheim",
-   "hinweis": "Café mit Blick auf den Wasserturm; Öffnungszeiten nicht geprüft",
-   "quelle": "https://www.mannheim24.de/mannheim/kaffee-und-kuchen-mannheim-besten-cafes-wochenende-sonntag-93099003.html"
+  {
+    "slug": "nm-ma-barockschloss",
+    "titel": "Barockschloss Mannheim und Spaziergang zum Rhein",
+    "region": "Mannheim",
+    "beschreibung": "Rundgang durch die Prunkräume einer der größten Barockresidenzen Europas (Rittersaal, Treppenhaus), danach durch den Schlossgarten an den Rhein und am Ufer entlang Richtung Stephanienufer. Bei Sonne gutes Licht am Rhein zum Sonnenuntergang (ca. 17:05).",
+    "ablauf": [
+      "13:00 Ankunft Barockschloss, Besuchereingang Mittelbau (Kasse)",
+      "13:00–14:30 Schlossmuseum (selbstständig, oder mit Führung)",
+      "14:30–15:30 Spaziergang Schlossgarten → Rheinufer/Rheinpromenade Richtung Stephanienufer",
+      "15:30–16:30 Kaffee-Stopp in der Innenstadt (z. B. Friedrichsplatz)",
+      "16:30–17:15 Bummel Wasserturm/Augustaanlage, Sonnenuntergang 17:05",
+      "danach Weiterfahrt zum Abendessen"
+    ],
+    "dauer": "ca. 4 h (Museum 1,5 h)",
+    "start_adresse": "Barockschloss Mannheim, Bismarckstraße, 68161 Mannheim",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Barockschloss%20Mannheim%2C%20Bismarckstra%C3%9Fe%2C%2068161%20Mannheim",
+    "weitere_links": [
+      {
+        "text": "Öffnungszeiten",
+        "url": "https://www.schloss-mannheim.de/besuchsinformation/oeffnungszeiten"
+      },
+      {
+        "text": "Preise",
+        "url": "https://www.schloss-mannheim.de/besuchsinformation/preise"
+      },
+      {
+        "text": "Führungen & Veranstaltungen",
+        "url": "https://www.schloss-mannheim.de/besuchsinformation"
+      }
+    ],
+    "oeffnung_31_10": "Sa 10:00–17:00, letzter Einlass 16:00 (ganzjährig ab 1.2.2026). Hinweis: Bei Veranstaltungen können Treppenhaus und Rittersaal gesperrt sein; Baustelle im Ehrenhof, Schloss bleibt geöffnet.",
+    "oeffnung_quelle": "https://www.schloss-mannheim.de/besuchsinformation/oeffnungszeiten",
+    "kosten": "Schloss 11 € p. P., mit Führung 13 € p. P. (zus. 22–26 €); Kombiticket mit Schwetzingen (18 €) nur bis 25.10. einlösbar",
+    "veranstaltung": null,
+    "cafe_vorschlag": {
+      "name": "Dolceamaro",
+      "adresse": "Friedrichsplatz 13, 68165 Mannheim",
+      "hinweis": "Café mit Blick auf den Wasserturm; Öffnungszeiten nicht geprüft",
+      "quelle": "https://www.mannheim24.de/mannheim/kaffee-und-kuchen-mannheim-besten-cafes-wochenende-sonntag-93099003.html"
+    },
+    "bilder": [
+      {
+        "datei": "img/nm-ma-barockschloss-1.jpg",
+        "art": "aussen",
+        "beschreibung": "Mannheimer Barockschloss, Ehrenhof mit Denkmal",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim_-_Barockschloss_%281%29.jpg"
+      },
+      {
+        "datei": "img/nm-ma-barockschloss-3.jpg",
+        "art": "innen",
+        "beschreibung": "Deckengemälde in der Schlosskirche des Mannheimer Schlosses",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Deckengemaelde_Schlosskirche_Mannheimer_Schloss.jpg"
+      },
+      {
+        "datei": "img/nm-ma-barockschloss-4.jpg",
+        "art": "cafe",
+        "beschreibung": "Café Dolceamaro am Friedrichsplatz (Ecke Elisabethstraße)",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Dolceamaro_Mannheim_Friedrichsplatz.jpg"
+      },
+      {
+        "datei": "img/nm-ma-barockschloss-2.jpg",
+        "art": "aussen",
+        "beschreibung": "Stephanienufer am Rhein, kleine Kiesbucht",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Stephanienufer_Mannheim_Bucht.jpg"
+      }
+    ],
+    "quellen": [
+      "https://www.schloss-mannheim.de/besuchsinformation/oeffnungszeiten",
+      "https://www.schloss-mannheim.de/besuchsinformation/preise"
+    ],
+    "nicht_geprueft": [
+      "Ob am 31.10. eine Veranstaltung Treppenhaus/Rittersaal sperrt – Schlosskasse +49 621 2922891",
+      "Uhrzeiten der regulären Führungen am Samstag",
+      "Café Dolceamaro: Öffnungszeiten und Bewertung",
+      "Bildnachweis 2 zeigt Stephanienufer (Teil des Spaziergangs), nicht das Schloss"
+    ],
+    "stand": "2026-10-29"
   },
-  "bilder": [
-   {
-    "datei": "img/nm-ma-barockschloss-1.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim_-_Barockschloss_%281%29.jpg"
-   },
-   {
-    "datei": "img/nm-ma-barockschloss-2.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:Stephanienufer_Mannheim_Bucht.jpg"
-   }
-  ],
-  "quellen": [
-   "https://www.schloss-mannheim.de/besuchsinformation/oeffnungszeiten",
-   "https://www.schloss-mannheim.de/besuchsinformation/preise"
-  ],
-  "nicht_geprueft": [
-   "Ob am 31.10. eine Veranstaltung Treppenhaus/Rittersaal sperrt – Schlosskasse +49 621 2922891",
-   "Uhrzeiten der regulären Führungen am Samstag",
-   "Café Dolceamaro: Öffnungszeiten und Bewertung",
-   "Bildnachweis 2 zeigt Stephanienufer (Teil des Spaziergangs), nicht das Schloss"
-  ],
-  "stand": "2026-10-29"
- },
- {
-  "slug": "nm-ma-wasserturm-kunsthalle",
-  "titel": "Kunsthalle Mannheim, Wasserturm und Augustaanlage",
-  "region": "Mannheim",
-  "beschreibung": "Kunsthalle am Friedrichsplatz mit Sammlung (Moderne) und der Grafik-Schau „Von Dürer bis Piranesi“ (bis 8.11.2026); die große Sonderausstellung „RADIKAL. REAL.“ ist bereits am 11.10. zu Ende. Danach Jugendstil-Anlage am Wasserturm und Spaziergang über die Augustaanlage. Atrium mit Shop und Gastronomie ist frei zugänglich. Hinweis: Die Wasserspiele am Wasserturm sind außer Betrieb, die Saison 2026 endete am Sonntag, 4.10.2026 (kein Fontänenspiel am 31.10.).",
-  "ablauf": [
-   "13:00 Kunsthalle, Eingang Friedrichsplatz",
-   "13:00–15:00 Sammlung + „Von Dürer bis Piranesi“",
-   "14:30–15:45 Torte und Kaffee bei Herrdegen (E 2, 8; geöffnet bis 16:00) oder am Friedrichsplatz",
-   "16:00–17:15 Spaziergang Wasserturm → Augustaanlage und zurück, Sonnenuntergang 17:05 (Fontänen sind außer Betrieb)"
-  ],
-  "dauer": "ca. 4 h",
-  "start_adresse": "Kunsthalle Mannheim, Friedrichsplatz 4, 68165 Mannheim",
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Kunsthalle%20Mannheim%2C%20Friedrichsplatz%204%2C%2068165%20Mannheim",
-  "weitere_links": [
-   {
-    "text": "Kunsthalle Mannheim (kuma.art)",
-    "url": "https://www.kuma.art/de"
-   },
-   {
-    "text": "Ausstellungsprogramm 2026",
-    "url": "https://www.kunstportal-bw.de/2025/11/24/ausstellungsprogramm-2026/"
-   }
-  ],
-  "oeffnung_31_10": "vermutlich Sa 10:00–18:00 (Di, Do–So 10–18, Mi 10–20) – nur aus Drittquelle (audiala.com, Stand April 2026), offizielle Seite per Bot-Sperre nicht lesbar",
-  "oeffnung_quelle": "https://audiala.com/de/deutschland/mannheim/kunsthalle-mannheim",
-  "kosten": "vermutlich 14 € p. P. (Drittquelle, nicht offiziell geprüft); Atrium frei",
-  "veranstaltung": null,
-  "cafe_vorschlag": {
-   "name": "Konditorei & Kaffee Herrdegen",
-   "adresse": "E 2, 8, 68159 Mannheim",
-   "hinweis": "Sa 8:30–16:00 Uhr (So/Mo/Feiertage Ruhetag), Tel. 0621 20185; Sitzbereich innen teilweise geöffnet, die Carl-Theodor-Stube im 1. OG bleibt bis auf Weiteres geschlossen. Alternative: Dolceamaro, Friedrichsplatz 13, 68165 Mannheim (Öffnungszeiten nicht geprüft)",
-   "quelle": "https://herrdegen.de/"
+  {
+    "slug": "nm-ma-wasserturm-kunsthalle",
+    "titel": "Kunsthalle Mannheim, Wasserturm und Augustaanlage",
+    "region": "Mannheim",
+    "beschreibung": "Kunsthalle am Friedrichsplatz mit Sammlung (Moderne) und der Grafik-Schau „Von Dürer bis Piranesi“ (bis 8.11.2026); die große Sonderausstellung „RADIKAL. REAL.“ ist bereits am 11.10. zu Ende. Danach Jugendstil-Anlage am Wasserturm und Spaziergang über die Augustaanlage. Atrium mit Shop und Gastronomie ist frei zugänglich. Hinweis: Die Wasserspiele am Wasserturm sind außer Betrieb, die Saison 2026 endete am Sonntag, 4.10.2026 (kein Fontänenspiel am 31.10.).",
+    "ablauf": [
+      "13:00 Kunsthalle, Eingang Friedrichsplatz",
+      "13:00–15:00 Sammlung + „Von Dürer bis Piranesi“",
+      "14:30–15:45 Torte und Kaffee bei Herrdegen (E 2, 8; geöffnet bis 16:00) oder am Friedrichsplatz",
+      "16:00–17:15 Spaziergang Wasserturm → Augustaanlage und zurück, Sonnenuntergang 17:05 (Fontänen sind außer Betrieb)"
+    ],
+    "dauer": "ca. 4 h",
+    "start_adresse": "Kunsthalle Mannheim, Friedrichsplatz 4, 68165 Mannheim",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Kunsthalle%20Mannheim%2C%20Friedrichsplatz%204%2C%2068165%20Mannheim",
+    "weitere_links": [
+      {
+        "text": "Kunsthalle Mannheim (kuma.art)",
+        "url": "https://www.kuma.art/de"
+      },
+      {
+        "text": "Ausstellungsprogramm 2026",
+        "url": "https://www.kunstportal-bw.de/2025/11/24/ausstellungsprogramm-2026/"
+      }
+    ],
+    "oeffnung_31_10": "vermutlich Sa 10:00–18:00 (Di, Do–So 10–18, Mi 10–20) – nur aus Drittquelle (audiala.com, Stand April 2026), offizielle Seite per Bot-Sperre nicht lesbar",
+    "oeffnung_quelle": "https://audiala.com/de/deutschland/mannheim/kunsthalle-mannheim",
+    "kosten": "vermutlich 14 € p. P. (Drittquelle, nicht offiziell geprüft); Atrium frei",
+    "veranstaltung": null,
+    "cafe_vorschlag": {
+      "name": "Konditorei & Kaffee Herrdegen",
+      "adresse": "E 2, 8, 68159 Mannheim",
+      "hinweis": "Sa 8:30–16:00 Uhr (So/Mo/Feiertage Ruhetag), Tel. 0621 20185; Sitzbereich innen teilweise geöffnet, die Carl-Theodor-Stube im 1. OG bleibt bis auf Weiteres geschlossen. Alternative: Dolceamaro, Friedrichsplatz 13, 68165 Mannheim (Öffnungszeiten nicht geprüft)",
+      "quelle": "https://herrdegen.de/"
+    },
+    "bilder": [
+      {
+        "datei": "img/nm-ma-wasserturm-kunsthalle-1.jpg",
+        "art": "aussen",
+        "beschreibung": "Wasserturm Mannheim mit Anlagen am Friedrichsplatz",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:2026-07-11_Wasserturm_Mannheim_Friedrichsplatz_%28Z5-1322M%29_by_Achim_Lammerts.jpg"
+      },
+      {
+        "datei": "img/nm-ma-wasserturm-kunsthalle-2.jpg",
+        "art": "innen",
+        "beschreibung": "Atrium der Kunsthalle Mannheim",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Kunsthalle_Mannheim%2C_Atrium_02.jpg"
+      },
+      {
+        "datei": "img/nm-ma-wasserturm-kunsthalle-3.jpg",
+        "art": "cafe",
+        "beschreibung": "Konditorei Herrdegen von außen",
+        "quelle_url": "https://images.toubiz.de/image/big2/57939_04.jpg"
+      },
+      {
+        "datei": "img/nm-ma-wasserturm-kunsthalle-4.jpg",
+        "art": "cafe",
+        "beschreibung": "Torten aus der Konditorei Herrdegen",
+        "quelle_url": "https://media.deutsche-handwerks-zeitung.de/uploads/2020/12/Tortenkreationen-aus-dem-Caf_-Herrdegen-in-Mannheim.jpg"
+      }
+    ],
+    "quellen": [
+      "https://audiala.com/de/deutschland/mannheim/kunsthalle-mannheim",
+      "https://www.kunstportal-bw.de/2025/11/24/ausstellungsprogramm-2026/",
+      "https://www.regioactive.de/ausstellung/radikal-real-nouveau-realisme-und-die-kunst-der-1960er-jahre-mannheim-kunsthalle-2026-09-06-V0L6G9fvrl",
+      "https://www.mvv.de/journalisten/pressemitteilungen/detail/wasserspiele-am-wasserturm-starten-an-gruendonnerstag-in-die-sommersaison",
+      "https://herrdegen.de/",
+      "https://www.mannheim.de/de/kultur-erleben/kulturdenkmale/wasserturm"
+    ],
+    "nicht_geprueft": [
+      "Öffnungszeit und Eintrittspreis nicht auf kuma.art bestätigt (Bot-Check blockiert Abruf)",
+      "Laufzeit „Von Dürer bis Piranesi“ bis 8.11.2026 nur aus Suchergebnis",
+      "Neue Ausstellung „TANZ!“ öffnet erst am 13.11.2026",
+      "Wasserspiele-Saisonende 4.10.2026 laut MVV-Pressemitteilung (Betreiber, im Auftrag der Stadt); die Stadtseite mannheim.de/…/wasserturm nennt dazu nichts",
+      "Herrdegen: Preise nicht geprüft; Google-Bewertung nicht eingetragen"
+    ],
+    "stand": "2026-10-29"
   },
-  "bilder": [
-   {
-    "datei": "img/nm-ma-wasserturm-kunsthalle-1.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:2026-07-11_Wasserturm_Mannheim_Friedrichsplatz_%28Z5-1322M%29_by_Achim_Lammerts.jpg"
-   },
-   {
-    "datei": "img/nm-ma-wasserturm-kunsthalle-2.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:Kunsthalle_Mannheim%2C_Atrium_02.jpg"
-   },
-   {
-    "datei": "img/nm-ma-wasserturm-kunsthalle-3.jpg",
-    "art": "cafe",
-    "quelle_url": "https://images.toubiz.de/image/big2/57939_04.jpg"
-   },
-   {
-    "datei": "img/nm-ma-wasserturm-kunsthalle-4.jpg",
-    "art": "cafe",
-    "quelle_url": "https://media.deutsche-handwerks-zeitung.de/uploads/2020/12/Tortenkreationen-aus-dem-Caf_-Herrdegen-in-Mannheim.jpg"
-   }
-  ],
-  "quellen": [
-   "https://audiala.com/de/deutschland/mannheim/kunsthalle-mannheim",
-   "https://www.kunstportal-bw.de/2025/11/24/ausstellungsprogramm-2026/",
-   "https://www.regioactive.de/ausstellung/radikal-real-nouveau-realisme-und-die-kunst-der-1960er-jahre-mannheim-kunsthalle-2026-09-06-V0L6G9fvrl",
-   "https://www.mvv.de/journalisten/pressemitteilungen/detail/wasserspiele-am-wasserturm-starten-an-gruendonnerstag-in-die-sommersaison",
-   "https://herrdegen.de/",
-   "https://www.mannheim.de/de/kultur-erleben/kulturdenkmale/wasserturm"
-  ],
-  "nicht_geprueft": [
-   "Öffnungszeit und Eintrittspreis nicht auf kuma.art bestätigt (Bot-Check blockiert Abruf)",
-   "Laufzeit „Von Dürer bis Piranesi“ bis 8.11.2026 nur aus Suchergebnis",
-   "Neue Ausstellung „TANZ!“ öffnet erst am 13.11.2026",
-   "Wasserspiele-Saisonende 4.10.2026 laut MVV-Pressemitteilung (Betreiber, im Auftrag der Stadt); die Stadtseite mannheim.de/…/wasserturm nennt dazu nichts",
-   "Herrdegen: Preise nicht geprüft; Google-Bewertung nicht eingetragen"
-  ],
-  "stand": "2026-10-29"
- },
- {
-  "slug": "nm-ma-rem-jungbusch",
-  "titel": "REM: Leonardo da Vinci – Erfindungen erleben, dann Quadrate und Jungbusch",
-  "region": "Mannheim",
-  "beschreibung": "Neue Mitmach-Ausstellung der Reiss-Engelhorn-Museen mit nachgebauten Erfindungen Leonardos (seit 11.10.2026, bis 30.5.2027) im Museum Weltkulturen D5; parallel Sonderausstellung „Schamanen Sibiriens“. Danach kurzer Weg durch die Quadrate zum Jungbusch (Hafenviertel, Verbindungskanal) mit Cafés.",
-  "ablauf": [
-   "13:00 Museum Weltkulturen D5",
-   "13:00–15:00 Ausstellung Leonardo da Vinci",
-   "15:00–15:30 Spaziergang über Zeughaus C5 zum Jungbusch/Verbindungskanal",
-   "15:30–16:30 Kaffee",
-   "16:30–17:15 Spaziergang am Verbindungskanal/Neckarufer zum Sonnenuntergang"
-  ],
-  "dauer": "ca. 4 h",
-  "start_adresse": "Reiss-Engelhorn-Museen, Museum Weltkulturen D5, 68159 Mannheim",
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Museum%20Weltkulturen%20D5%2C%2068159%20Mannheim",
-  "weitere_links": [
-   {
-    "text": "Reiss-Engelhorn-Museen",
-    "url": "https://www.rem-mannheim.de/"
-   },
-   {
-    "text": "Ausstellungseintrag Leonardo (museumspass)",
-    "url": "https://www.museumspass.com/en/exhibition/leonardo-da-vinci-experience-inventions"
-   }
-  ],
-  "oeffnung_31_10": "Di–So 10:00–17:00 (Schließtage nur 24./25./31.12. u. a.)",
-  "oeffnung_quelle": "https://www.rem-mannheim.de/",
-  "kosten": null,
-  "veranstaltung": null,
-  "cafe_vorschlag": {
-   "name": "Café Brue",
-   "adresse": "Q7 27, 68161 Mannheim",
-   "hinweis": "Mo–Sa 10–19 Uhr laut Drittquelle; liegt eher Richtung Innenstadt, Jungbusch-Café (z. B. Patina) Adresse nicht geprüft",
-   "quelle": "https://www.mannheim24.de/mannheim/kaffee-und-kuchen-mannheim-besten-cafes-wochenende-sonntag-93099003.html"
+  {
+    "slug": "nm-ma-rem-jungbusch",
+    "titel": "REM: Leonardo da Vinci – Erfindungen erleben, dann Quadrate und Jungbusch",
+    "region": "Mannheim",
+    "beschreibung": "Neue Mitmach-Ausstellung der Reiss-Engelhorn-Museen mit nachgebauten Erfindungen Leonardos (seit 11.10.2026, bis 30.5.2027) im Museum Weltkulturen D5; parallel Sonderausstellung „Schamanen Sibiriens“. Danach kurzer Weg durch die Quadrate zum Jungbusch (Hafenviertel, Verbindungskanal) mit Cafés.",
+    "ablauf": [
+      "13:00 Museum Weltkulturen D5",
+      "13:00–15:00 Ausstellung Leonardo da Vinci",
+      "15:00–15:30 Spaziergang über Zeughaus C5 zum Jungbusch/Verbindungskanal",
+      "15:30–16:30 Kaffee",
+      "16:30–17:15 Spaziergang am Verbindungskanal/Neckarufer zum Sonnenuntergang"
+    ],
+    "dauer": "ca. 4 h",
+    "start_adresse": "Reiss-Engelhorn-Museen, Museum Weltkulturen D5, 68159 Mannheim",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Museum%20Weltkulturen%20D5%2C%2068159%20Mannheim",
+    "weitere_links": [
+      {
+        "text": "Reiss-Engelhorn-Museen",
+        "url": "https://www.rem-mannheim.de/"
+      },
+      {
+        "text": "Ausstellungseintrag Leonardo (museumspass)",
+        "url": "https://www.museumspass.com/en/exhibition/leonardo-da-vinci-experience-inventions"
+      }
+    ],
+    "oeffnung_31_10": "Di–So 10:00–17:00 (Schließtage nur 24./25./31.12. u. a.)",
+    "oeffnung_quelle": "https://www.rem-mannheim.de/",
+    "kosten": null,
+    "veranstaltung": null,
+    "cafe_vorschlag": {
+      "name": "Café Brue",
+      "adresse": "Q7 27, 68161 Mannheim",
+      "hinweis": "Mo–Sa 10–19 Uhr laut Drittquelle; liegt eher Richtung Innenstadt, Jungbusch-Café (z. B. Patina) Adresse nicht geprüft",
+      "quelle": "https://www.mannheim24.de/mannheim/kaffee-und-kuchen-mannheim-besten-cafes-wochenende-sonntag-93099003.html"
+    },
+    "bilder": [
+      {
+        "datei": "img/nm-ma-rem-jungbusch-2.jpg",
+        "art": "aussen",
+        "beschreibung": "Museum der Weltkulturen (REM) in C 5",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:REM-D5.jpg"
+      },
+      {
+        "datei": "img/nm-ma-rem-jungbusch-3.jpg",
+        "art": "innen",
+        "beschreibung": "Musikinstrumente-Abteilung im Zeughaus der Reiss-Engelhorn-Museen",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Reiss-Engelhorn-Museen_Zeughaus_Musikinstrumentenabteilung.jpg"
+      },
+      {
+        "datei": "img/nm-ma-rem-jungbusch-4.jpg",
+        "art": "cafe",
+        "beschreibung": "Gäste im Innenraum des Café Brue",
+        "quelle_url": "https://cafebrue.de/"
+      },
+      {
+        "datei": "img/nm-ma-rem-jungbusch-5.jpg",
+        "art": "cafe",
+        "beschreibung": "Cappuccino mit Latte-Art im Café Brue",
+        "quelle_url": "https://cafebrue.de/"
+      },
+      {
+        "datei": "img/nm-ma-rem-jungbusch-1.jpg",
+        "art": "aussen",
+        "beschreibung": "Tor und Fassade in Mannheim (Quadrate/Jungbusch-Route)",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim_-_Museum_Zeughaus.jpg"
+      }
+    ],
+    "quellen": [
+      "https://www.rem-mannheim.de/",
+      "https://www.museumspass.com/en/exhibition/leonardo-da-vinci-experience-inventions"
+    ],
+    "nicht_geprueft": [
+      "Eintrittspreis Leonardo-Ausstellung (REM-Seite nennt keinen Preis)",
+      "Ausstellung ist stark auf Mitmachen ausgelegt – auch für Familien; am Samstag evtl. voll",
+      "Café-Öffnungszeiten am 31.10."
+    ],
+    "stand": "2026-10-29"
   },
-  "bilder": [
-   {
-    "datei": "img/nm-ma-rem-jungbusch-1.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim_-_Museum_Zeughaus.jpg"
-   },
-   {
-    "datei": "img/nm-ma-rem-jungbusch-2.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:REM-D5.jpg"
-   }
-  ],
-  "quellen": [
-   "https://www.rem-mannheim.de/",
-   "https://www.museumspass.com/en/exhibition/leonardo-da-vinci-experience-inventions"
-  ],
-  "nicht_geprueft": [
-   "Eintrittspreis Leonardo-Ausstellung (REM-Seite nennt keinen Preis)",
-   "Ausstellung ist stark auf Mitmachen ausgelegt – auch für Familien; am Samstag evtl. voll",
-   "Café-Öffnungszeiten am 31.10."
-  ],
-  "stand": "2026-10-29"
- },
- {
-  "slug": "nm-ma-rhein-reissinsel",
-  "titel": "Rheinspaziergang: Stephanienufer und Waldpark Reißinsel",
-  "region": "Mannheim",
-  "beschreibung": "Reiner Draußen-Nachmittag: Uferpromenade Stephanienufer mit Blick auf den Rhein, weiter durch den Waldpark und das Naturschutzgebiet Reißinsel (Auwald, Wege um die Insel). Kostenlos, ideal bei Sonne; Sonnenuntergang über dem Rhein gegen 17:05.",
-  "ablauf": [
-   "13:30 Start Stephanienufer (Parken am Ufer)",
-   "13:30–15:30 Rundweg Waldpark/Reißinsel (ca. 6–7 km, eben)",
-   "15:30–16:30 Kaffee in Lindenhof (Meerwiesenstraße)",
-   "16:30–17:15 zurück ans Stephanienufer zum Sonnenuntergang"
-  ],
-  "dauer": "ca. 3,5–4 h",
-  "start_adresse": "Stephanienufer, 68163 Mannheim",
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Stephanienufer%2C%2068163%20Mannheim",
-  "weitere_links": [
-   {
-    "text": "Wikipedia Reißinsel",
-    "url": "https://de.wikipedia.org/wiki/Rei%C3%9Finsel"
-   }
-  ],
-  "oeffnung_31_10": "öffentlich, ganztägig frei zugänglich",
-  "oeffnung_quelle": null,
-  "kosten": "kostenlos",
-  "veranstaltung": null,
-  "cafe_vorschlag": {
-   "name": "Café Meerwiesen",
-   "adresse": "Meerwiesenstraße 1, 68163 Mannheim",
-   "hinweis": "Öffnungszeiten nicht geprüft",
-   "quelle": "https://www.mannheim24.de/mannheim/kaffee-und-kuchen-mannheim-besten-cafes-wochenende-sonntag-93099003.html"
+  {
+    "slug": "nm-ma-rhein-reissinsel",
+    "titel": "Rheinspaziergang: Stephanienufer und Waldpark Reißinsel",
+    "region": "Mannheim",
+    "beschreibung": "Reiner Draußen-Nachmittag: Uferpromenade Stephanienufer mit Blick auf den Rhein, weiter durch den Waldpark und das Naturschutzgebiet Reißinsel (Auwald, Wege um die Insel). Kostenlos, ideal bei Sonne; Sonnenuntergang über dem Rhein gegen 17:05.",
+    "ablauf": [
+      "13:30 Start Stephanienufer (Parken am Ufer)",
+      "13:30–15:30 Rundweg Waldpark/Reißinsel (ca. 6–7 km, eben)",
+      "15:30–16:30 Kaffee in Lindenhof (Meerwiesenstraße)",
+      "16:30–17:15 zurück ans Stephanienufer zum Sonnenuntergang"
+    ],
+    "dauer": "ca. 3,5–4 h",
+    "start_adresse": "Stephanienufer, 68163 Mannheim",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Stephanienufer%2C%2068163%20Mannheim",
+    "weitere_links": [
+      {
+        "text": "Wikipedia Reißinsel",
+        "url": "https://de.wikipedia.org/wiki/Rei%C3%9Finsel"
+      }
+    ],
+    "oeffnung_31_10": "öffentlich, ganztägig frei zugänglich",
+    "oeffnung_quelle": null,
+    "kosten": "kostenlos",
+    "veranstaltung": null,
+    "cafe_vorschlag": {
+      "name": "Café Meerwiesen",
+      "adresse": "Meerwiesenstraße 1, 68163 Mannheim",
+      "hinweis": "Öffnungszeiten nicht geprüft",
+      "quelle": "https://www.mannheim24.de/mannheim/kaffee-und-kuchen-mannheim-besten-cafes-wochenende-sonntag-93099003.html"
+    },
+    "bilder": [
+      {
+        "datei": "img/nm-ma-rhein-reissinsel-1.jpg",
+        "art": "aussen",
+        "beschreibung": "Stephanienufer mit schattigen Bäumen und Rheinblick",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Stephanienufer_in_Mannheim.jpg"
+      },
+      {
+        "datei": "img/nm-ma-rhein-reissinsel-2.jpg",
+        "art": "innen",
+        "beschreibung": "Spazierpfad durch den Waldpark Reißinsel (Detail)",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Spazierpfad_%28Rei%C3%9Finsel_Mannheim%29.jpg"
+      },
+      {
+        "datei": "img/nm-ma-rhein-reissinsel-3.jpg",
+        "art": "cafe",
+        "beschreibung": "Gastraum des Café Meerwiesen",
+        "quelle_url": "https://www.mannheim24.de/mannheim/kaffee-und-kuchen-mannheim-besten-cafes-wochenende-sonntag-93099003.html"
+      },
+      {
+        "datei": "img/nm-ma-rhein-reissinsel-4.jpg",
+        "art": "cafe",
+        "beschreibung": "Kuchenpause im Café Meerwiesen",
+        "quelle_url": "https://www.mannheim24.de/mannheim/kaffee-und-kuchen-mannheim-besten-cafes-wochenende-sonntag-93099003.html"
+      }
+    ],
+    "quellen": [
+      "https://de.wikipedia.org/wiki/Rei%C3%9Finsel"
+    ],
+    "nicht_geprueft": [
+      "Weglänge 6–7 km ist Schätzung, nicht gemessen",
+      "Café Meerwiesen: Öffnungszeiten/Bewertung"
+    ],
+    "stand": "2026-10-29"
   },
-  "bilder": [
-   {
-    "datei": "img/nm-ma-rhein-reissinsel-1.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:Stephanienufer_in_Mannheim.jpg"
-   },
-   {
-    "datei": "img/nm-ma-rhein-reissinsel-2.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:Spazierpfad_%28Rei%C3%9Finsel_Mannheim%29.jpg"
-   }
-  ],
-  "quellen": [
-   "https://de.wikipedia.org/wiki/Rei%C3%9Finsel"
-  ],
-  "nicht_geprueft": [
-   "Weglänge 6–7 km ist Schätzung, nicht gemessen",
-   "Café Meerwiesen: Öffnungszeiten/Bewertung"
-  ],
-  "stand": "2026-10-29"
- },
- {
-  "slug": "nm-schwetzingen-schlossgarten",
-  "titel": "Schloss und Schlossgarten Schwetzingen im Herbst",
-  "region": "Schwetzingen",
-  "beschreibung": "Einer der bedeutendsten Barockgärten Europas (ca. 72 ha) mit Moschee, Badhaus-Bereich, Apollotempel und Großem Weiher, im Herbstlaub. Bis 1.11. läuft die Outdoor-Ausstellung „Baustelle Artenvielfalt“ (16 Stationen) im Garten. Schlossinnenräume nur mit Führung (60 Min.).",
-  "ablauf": [
-   "12:30 Ankunft Schlossplatz, Kasse",
-   "12:30–13:00 Kaffee am Schlossplatz (WALZWERK ab 8:30 offen)",
-   "13:00–16:00 Gartenrundgang (Parterre, Moschee 10–16 Uhr offen, Großer Weiher, Ausstellungsstationen)",
-   "optional: Schlossführung 60 Min. (Uhrzeit vor Ort erfragen)",
-   "16:30 letzter Einlass, 17:00 Garten schließt (vor Sonnenuntergang 17:05)"
-  ],
-  "dauer": "ca. 4 h",
-  "start_adresse": "Schloss Schwetzingen, Schloss Mittelbau, 68723 Schwetzingen",
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Schloss%20Schwetzingen%2C%20Schloss%20Mittelbau%2C%2068723%20Schwetzingen",
-  "weitere_links": [
-   {
-    "text": "Öffnungszeiten",
-    "url": "https://www.schloss-schwetzingen.de/besuchsinformation/oeffnungszeiten"
-   },
-   {
-    "text": "Preise",
-    "url": "https://www.schloss-schwetzingen.de/besuchsinformation/preise"
-   },
-   {
-    "text": "Führungen & Veranstaltungen",
-    "url": "https://www.schloss-schwetzingen.de/besuchsinformation/fuehrungen-veranstaltungen"
-   }
-  ],
-  "oeffnung_31_10": "Winterzeit ab 25.10.: Garten 9:00–17:00, letzter Einlass 16:30, Kasse 9:00–16:30; Moschee, Orangerie, Gartenkunst-Ausstellung 10–16 Uhr; Badhaus geschlossen; Schloss nur mit Führung",
-  "oeffnung_quelle": "https://www.schloss-schwetzingen.de/besuchsinformation/oeffnungszeiten",
-  "kosten": "Garten 6 € p. P. (Winter ab 26.10.), Schloss mit 60-Min.-Führung + Garten 9 € p. P.",
-  "veranstaltung": "Ausstellung „Klimawandel in historischen Gärten – Baustelle Artenvielfalt“ bis 1.11.2026 (im Garteneintritt)",
-  "cafe_vorschlag": {
-   "name": "WALZWERK Café",
-   "adresse": "Carl-Theodor-Straße 1, 68723 Schwetzingen",
-   "hinweis": "direkt am Schlossplatz; Sa 8:30–1:00 Uhr, Küche täglich 11:30–22:00; Motorrad-Themen-Café mit US-Küche (Burger, Steaks, Frühstück bis 13 Uhr), kein klassisches Kuchencafé; Tel. 06202 9296070. Alternative: Kaffeehaus Schwetzingen, Schloßplatz 3 (Öffnungszeiten unklar)",
-   "quelle": "https://www.walzwerk-cafe.de/de/"
+  {
+    "slug": "nm-schwetzingen-schlossgarten",
+    "titel": "Schloss und Schlossgarten Schwetzingen im Herbst",
+    "region": "Schwetzingen",
+    "beschreibung": "Einer der bedeutendsten Barockgärten Europas (ca. 72 ha) mit Moschee, Badhaus-Bereich, Apollotempel und Großem Weiher, im Herbstlaub. Bis 1.11. läuft die Outdoor-Ausstellung „Baustelle Artenvielfalt“ (16 Stationen) im Garten. Schlossinnenräume nur mit Führung (60 Min.).",
+    "ablauf": [
+      "12:30 Ankunft Schlossplatz, Kasse",
+      "12:30–13:00 Kaffee am Schlossplatz (WALZWERK ab 8:30 offen)",
+      "13:00–16:00 Gartenrundgang (Parterre, Moschee 10–16 Uhr offen, Großer Weiher, Ausstellungsstationen)",
+      "optional: Schlossführung 60 Min. (Uhrzeit vor Ort erfragen)",
+      "16:30 letzter Einlass, 17:00 Garten schließt (vor Sonnenuntergang 17:05)"
+    ],
+    "dauer": "ca. 4 h",
+    "start_adresse": "Schloss Schwetzingen, Schloss Mittelbau, 68723 Schwetzingen",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Schloss%20Schwetzingen%2C%20Schloss%20Mittelbau%2C%2068723%20Schwetzingen",
+    "weitere_links": [
+      {
+        "text": "Öffnungszeiten",
+        "url": "https://www.schloss-schwetzingen.de/besuchsinformation/oeffnungszeiten"
+      },
+      {
+        "text": "Preise",
+        "url": "https://www.schloss-schwetzingen.de/besuchsinformation/preise"
+      },
+      {
+        "text": "Führungen & Veranstaltungen",
+        "url": "https://www.schloss-schwetzingen.de/besuchsinformation/fuehrungen-veranstaltungen"
+      }
+    ],
+    "oeffnung_31_10": "Winterzeit ab 25.10.: Garten 9:00–17:00, letzter Einlass 16:30, Kasse 9:00–16:30; Moschee, Orangerie, Gartenkunst-Ausstellung 10–16 Uhr; Badhaus geschlossen; Schloss nur mit Führung",
+    "oeffnung_quelle": "https://www.schloss-schwetzingen.de/besuchsinformation/oeffnungszeiten",
+    "kosten": "Garten 6 € p. P. (Winter ab 26.10.), Schloss mit 60-Min.-Führung + Garten 9 € p. P.",
+    "veranstaltung": "Ausstellung „Klimawandel in historischen Gärten – Baustelle Artenvielfalt“ bis 1.11.2026 (im Garteneintritt)",
+    "cafe_vorschlag": {
+      "name": "WALZWERK Café",
+      "adresse": "Carl-Theodor-Straße 1, 68723 Schwetzingen",
+      "hinweis": "direkt am Schlossplatz; Sa 8:30–1:00 Uhr, Küche täglich 11:30–22:00; Motorrad-Themen-Café mit US-Küche (Burger, Steaks, Frühstück bis 13 Uhr), kein klassisches Kuchencafé; Tel. 06202 9296070. Alternative: Kaffeehaus Schwetzingen, Schloßplatz 3 (Öffnungszeiten unklar)",
+      "quelle": "https://www.walzwerk-cafe.de/de/"
+    },
+    "bilder": [
+      {
+        "datei": "img/nm-schwetzingen-schlossgarten-1.jpg",
+        "art": "aussen",
+        "beschreibung": "Gartenmoschee im Schwetzinger Schlossgarten über dem Spiegelweiher",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Schwetzingen_-_Schlossgarten_-_Moschee_-_Ansicht_%C3%BCber_den_Moscheeweiher_im_Herbst_1.jpg"
+      },
+      {
+        "datei": "img/nm-schwetzingen-schlossgarten-2.jpg",
+        "art": "innen",
+        "beschreibung": "Herbstliche Spiegelung im Großen Weiher des Schlossgartens (Garten-Detail)",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Schwetzingen_-_Schlossgarten_-_Gro%C3%9Fer_Weiher_-_Westende_mit_Br%C3%BCcke_im_Herbst_2.jpg"
+      },
+      {
+        "datei": "img/nm-schwetzingen-schlossgarten-3.jpg",
+        "art": "cafe",
+        "beschreibung": "WALZWERK Café, Fassade am Schlossplatz",
+        "quelle_url": "https://www.walzwerk-cafe.de/de/"
+      },
+      {
+        "datei": "img/nm-schwetzingen-schlossgarten-4.jpg",
+        "art": "cafe",
+        "beschreibung": "Innenraum des WALZWERK Café",
+        "quelle_url": "https://www.walzwerk-cafe.de/de/"
+      }
+    ],
+    "quellen": [
+      "https://www.schloss-schwetzingen.de/besuchsinformation/oeffnungszeiten",
+      "https://www.schloss-schwetzingen.de/besuchsinformation/preise",
+      "https://www.schloss-schwetzingen.de/besuchsinformation/fuehrungen-veranstaltungen",
+      "https://www.museumspass.com/en/exhibition/climate-change-historic-gardens",
+      "https://www.walzwerk-cafe.de/de/"
+    ],
+    "nicht_geprueft": [
+      "Gesperrte Teile des Englischen Gartens: auf der Öffnungszeiten-Seite kein Hinweis gefunden",
+      "Uhrzeiten der Standardführung am Samstag",
+      "Café-Öffnungszeiten",
+      "Winterzeiten (Garten 9–17, letzter Einlass 16:30, Moschee 10–16) am 29.10. erneut versucht zu prüfen: schloss-schwetzingen.de lieferte HTTP 429, nicht erneut bestätigt; Angaben decken sich mit der Fremdfassung und dem Stand vom Vormittag",
+      "WALZWERK: Kuchenangebot und Preise nicht geprüft; Google-Bewertung nicht eingetragen"
+    ],
+    "stand": "2026-10-29"
   },
-  "bilder": [
-   {
-    "datei": "img/nm-schwetzingen-schlossgarten-1.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:Schwetzingen_-_Schlossgarten_-_Moschee_-_Ansicht_%C3%BCber_den_Moscheeweiher_im_Herbst_1.jpg"
-   },
-   {
-    "datei": "img/nm-schwetzingen-schlossgarten-2.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:Schwetzingen_-_Schlossgarten_-_Gro%C3%9Fer_Weiher_-_Westende_mit_Br%C3%BCcke_im_Herbst_2.jpg"
-   },
-   {
-    "datei": "img/nm-schwetzingen-schlossgarten-3.jpg",
-    "art": "cafe",
-    "quelle_url": "https://www.walzwerk-cafe.de/de/"
-   },
-   {
-    "datei": "img/nm-schwetzingen-schlossgarten-4.jpg",
-    "art": "cafe",
-    "quelle_url": "https://www.walzwerk-cafe.de/de/"
-   }
-  ],
-  "quellen": [
-   "https://www.schloss-schwetzingen.de/besuchsinformation/oeffnungszeiten",
-   "https://www.schloss-schwetzingen.de/besuchsinformation/preise",
-   "https://www.schloss-schwetzingen.de/besuchsinformation/fuehrungen-veranstaltungen",
-   "https://www.museumspass.com/en/exhibition/climate-change-historic-gardens",
-   "https://www.walzwerk-cafe.de/de/"
-  ],
-  "nicht_geprueft": [
-   "Gesperrte Teile des Englischen Gartens: auf der Öffnungszeiten-Seite kein Hinweis gefunden",
-   "Uhrzeiten der Standardführung am Samstag",
-   "Café-Öffnungszeiten",
-   "Winterzeiten (Garten 9–17, letzter Einlass 16:30, Moschee 10–16) am 29.10. erneut versucht zu prüfen: schloss-schwetzingen.de lieferte HTTP 429, nicht erneut bestätigt; Angaben decken sich mit der Fremdfassung und dem Stand vom Vormittag",
-   "WALZWERK: Kuchenangebot und Preise nicht geprüft; Google-Bewertung nicht eingetragen"
-  ],
-  "stand": "2026-10-29"
- },
- {
-  "slug": "nm-lu-ebertpark-hack",
-  "titel": "Ludwigshafen: Wilhelm-Hack-Museum (samstags frei) und Ebertpark",
-  "region": "Ludwigshafen",
-  "beschreibung": "Museum für moderne und zeitgenössische Kunst mit Miró-Keramikfassade; samstags ist der Eintritt frei. Neu: „André Wischnewski. Please Take Note“ (24.10.2026–24.1.2027). Danach Ebertpark (Gartendenkmal der 1920er) – passt, wenn das Abendessen im Turmrestaurant am Ebertpark ist.",
-  "ablauf": [
-   "13:00 Wilhelm-Hack-Museum",
-   "13:00–14:30 Ausstellung und Sammlung",
-   "14:30–15:30 Kaffee",
-   "15:45 Fahrt zum Ebertpark (ca. 2,5 km)",
-   "16:00–17:15 Spaziergang Ebertpark, Sonnenuntergang 17:05",
-   "danach Abendessen in der Nähe"
-  ],
-  "dauer": "ca. 4 h",
-  "start_adresse": "Wilhelm-Hack-Museum, Berliner Straße 23, 67059 Ludwigshafen am Rhein",
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Wilhelm-Hack-Museum%2C%20Berliner%20Stra%C3%9Fe%2023%2C%2067059%20Ludwigshafen%20am%20Rhein",
-  "weitere_links": [
-   {
-    "text": "Tickets & Öffnungszeiten",
-    "url": "https://www.wilhelmhack.museum/de/besuch/tickets-und-oeffnungszeiten"
-   },
-   {
-    "text": "Aktuelle Ausstellungen",
-    "url": "https://www.wilhelmhack.museum/de/ausstellungen/aktuelle-ausstellungen"
-   },
-   {
-    "text": "Ebertpark (Maps)",
-    "url": "https://www.google.com/maps/search/?api=1&query=Ebertpark%2C%20Ludwigshafen%20am%20Rhein"
-   }
-  ],
-  "oeffnung_31_10": "Sa 10:00–18:00 (Di/Mi/Fr 11–18, Do 11–20)",
-  "oeffnung_quelle": "https://www.wilhelmhack.museum/de/besuch/tickets-und-oeffnungszeiten",
-  "kosten": "Museum samstags frei (sonst 10 €); Ebertpark frei",
-  "veranstaltung": null,
-  "cafe_vorschlag": null,
-  "bilder": [
-   {
-    "datei": "img/nm-lu-ebertpark-hack-1.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:Ludwigshafen-Ebertpark-06-Trauerweide-2008-gje.jpg"
-   },
-   {
-    "datei": "img/nm-lu-ebertpark-hack-2.jpg",
-    "art": "location",
-    "quelle_url": "https://commons.wikimedia.org/wiki/File:Wilhelm-Hack-Museum_in_Ludwigshafen.jpg"
-   }
-  ],
-  "quellen": [
-   "https://www.wilhelmhack.museum/de/besuch/tickets-und-oeffnungszeiten",
-   "https://www.wilhelmhack.museum/de/ausstellungen/aktuelle-ausstellungen"
-  ],
-  "nicht_geprueft": [
-   "Café-Stopp in Ludwigshafen nicht recherchiert",
-   "Entfernung Museum–Ebertpark geschätzt",
-   "Ebertpark-Bild von 2008"
-  ],
-  "stand": "2026-10-29"
- },
- {
-  "slug": "ma-kaefertaler-wald-wolfsbau",
-  "titel": "Käfertaler Wald am Karlstern und Kaffee im Café Wolfsbau",
-  "region": "Mannheim",
-  "beschreibung": "Waldspaziergang im größten Waldgebiet Mannheims: Ausgangspunkt ist der Karlstern mit Pavillon, Wildgehege (Bisons, Damwild, Muffelwild, Wildschweine), Weiher mit Aussichtsplattform und acht markierten Rundwanderwegen (4,4–10,2 km). Danach Kaffee oder Kuchen im Café Wolfsbau an der Waldpforte. Das Café ist am Samstag 9–17 Uhr geöffnet, Mo/Di Ruhetag.",
-  "ablauf": [
-   "13:00 Karlstern, Parkplatz am Ende der Karlsternstraße",
-   "13:00–14:30 freie Runde um Weiher und Wildgehege (Länge nach Wunsch; markierte Rundwege ab 4,4 km)",
-   "ca. 14:45 kurze Autofahrt zur Waldpforte 81, Kaffee und Kuchen im Café Wolfsbau",
-   "bis 16:00 zurück zum Auto; Sonnenuntergang 17:05, das Café schließt um 17:00"
-  ],
-  "dauer": "ca. 3 h",
-  "start_adresse": "Karlstern, Karlsternstraße 130, 68305 Mannheim",
-  "maps_url": "https://www.google.com/maps/search/?api=1&query=Karlstern%2C%20Karlsternstra%C3%9Fe%20130%2C%2068305%20Mannheim",
-  "weitere_links": [
-   {
-    "text": "Käfertaler Wald (Stadt Mannheim)",
-    "url": "https://www.mannheim.de/de/service-bieten/gruene-stadt/wald/kaefertaler-wald"
-   },
-   {
-    "text": "Käfertaler Wald (Visit Mannheim)",
-    "url": "https://www.visit-mannheim.de/erleben-entdecken/spazierwege-im-fruehling/kaefertaler-wald"
-   },
-   {
-    "text": "Café Wolfsbau",
-    "url": "https://www.cafewolfsbau.de/"
-   },
-   {
-    "text": "Café Wolfsbau in Maps",
-    "url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Wolfsbau%2C%20Waldpforte%2081%2C%2068305%20Mannheim"
-   }
-  ],
-  "oeffnung_31_10": "Wald öffentlich zugänglich. Café Wolfsbau: Mittwoch–Sonntag 9:00–17:00 Uhr (Samstag also 9–17), Montag und Dienstag Ruhetag; Frühstück 9:00–11:30, Mittagstisch 12:30–15:30, samstags Suppen-/Eintopf-Tag",
-  "oeffnung_quelle": "https://www.cafewolfsbau.de/kontakt/",
-  "kosten": "Wald frei; Kaffee und Kuchen nach Verzehr (Preise nicht geprüft)",
-  "veranstaltung": null,
-  "cafe_vorschlag": {
-   "name": "Café Wolfsbau",
-   "adresse": "Waldpforte 81, 68305 Mannheim",
-   "hinweis": "Sa 9–17 Uhr (Mo/Di Ruhetag); Reservierung ausschließlich telefonisch (0621 43706412) oder vor Ort",
-   "quelle": "https://www.cafewolfsbau.de/kontakt/"
+  {
+    "slug": "nm-lu-ebertpark-hack",
+    "titel": "Ludwigshafen: Wilhelm-Hack-Museum (samstags frei) und Ebertpark",
+    "region": "Ludwigshafen",
+    "beschreibung": "Museum für moderne und zeitgenössische Kunst mit Miró-Keramikfassade; samstags ist der Eintritt frei. Neu: „André Wischnewski. Please Take Note“ (24.10.2026–24.1.2027). Danach Ebertpark (Gartendenkmal der 1920er) – passt, wenn das Abendessen im Turmrestaurant am Ebertpark ist.",
+    "ablauf": [
+      "13:00 Wilhelm-Hack-Museum",
+      "13:00–14:30 Ausstellung und Sammlung",
+      "14:30–15:30 Kaffee",
+      "15:45 Fahrt zum Ebertpark (ca. 2,5 km)",
+      "16:00–17:15 Spaziergang Ebertpark, Sonnenuntergang 17:05",
+      "danach Abendessen in der Nähe"
+    ],
+    "dauer": "ca. 4 h",
+    "start_adresse": "Wilhelm-Hack-Museum, Berliner Straße 23, 67059 Ludwigshafen am Rhein",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Wilhelm-Hack-Museum%2C%20Berliner%20Stra%C3%9Fe%2023%2C%2067059%20Ludwigshafen%20am%20Rhein",
+    "weitere_links": [
+      {
+        "text": "Tickets & Öffnungszeiten",
+        "url": "https://www.wilhelmhack.museum/de/besuch/tickets-und-oeffnungszeiten"
+      },
+      {
+        "text": "Aktuelle Ausstellungen",
+        "url": "https://www.wilhelmhack.museum/de/ausstellungen/aktuelle-ausstellungen"
+      },
+      {
+        "text": "Ebertpark (Maps)",
+        "url": "https://www.google.com/maps/search/?api=1&query=Ebertpark%2C%20Ludwigshafen%20am%20Rhein"
+      }
+    ],
+    "oeffnung_31_10": "Sa 10:00–18:00 (Di/Mi/Fr 11–18, Do 11–20)",
+    "oeffnung_quelle": "https://www.wilhelmhack.museum/de/besuch/tickets-und-oeffnungszeiten",
+    "kosten": "Museum samstags frei (sonst 10 €); Ebertpark frei",
+    "veranstaltung": null,
+    "cafe_vorschlag": null,
+    "bilder": [
+      {
+        "datei": "img/nm-lu-ebertpark-hack-2.jpg",
+        "art": "aussen",
+        "beschreibung": "Wilhelm-Hack-Museum Ludwigshafen mit Mosaikfassade",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Wilhelm-Hack-Museum_in_Ludwigshafen.jpg"
+      },
+      {
+        "datei": "img/nm-lu-ebertpark-hack-3.jpg",
+        "art": "innen",
+        "beschreibung": "Entree des Wilhelm-Hack-Museums mit Farbwand",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Ludwigshafen-Wilhelm-Hack-Museum-10-Entree-2026-gje.jpg"
+      },
+      {
+        "datei": "img/nm-lu-ebertpark-hack-4.jpg",
+        "art": "cafe",
+        "beschreibung": "Gastraum im Ebertpark (Café-Restaurant)",
+        "quelle_url": "Sammlung Stephan (Fremdbild, Quelle nicht einzeln dokumentiert)"
+      },
+      {
+        "datei": "img/nm-lu-ebertpark-hack-1.jpg",
+        "art": "aussen",
+        "beschreibung": "Ebertpark mit Teich und Trauerweiden",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Ludwigshafen-Ebertpark-06-Trauerweide-2008-gje.jpg"
+      }
+    ],
+    "quellen": [
+      "https://www.wilhelmhack.museum/de/besuch/tickets-und-oeffnungszeiten",
+      "https://www.wilhelmhack.museum/de/ausstellungen/aktuelle-ausstellungen"
+    ],
+    "nicht_geprueft": [
+      "Café-Stopp in Ludwigshafen nicht recherchiert",
+      "Entfernung Museum–Ebertpark geschätzt",
+      "Ebertpark-Bild von 2008"
+    ],
+    "stand": "2026-10-29"
   },
-  "bilder": [
-   {
-    "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-1.jpg",
-    "art": "location",
-    "quelle_url": "https://www.mannheim.de/de/service-bieten/gruene-stadt/wald/kaefertaler-wald"
-   },
-   {
-    "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-2.jpg",
-    "art": "location",
-    "quelle_url": "https://www.komoot.com/"
-   },
-   {
-    "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-3.jpg",
-    "art": "cafe",
-    "quelle_url": "https://www.cafewolfsbau.de/"
-   },
-   {
-    "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-4.jpg",
-    "art": "cafe",
-    "quelle_url": "https://www.cafewolfsbau.de/"
-   }
-  ],
-  "quellen": [
-   "https://www.mannheim.de/de/service-bieten/gruene-stadt/wald/kaefertaler-wald",
-   "https://www.visit-mannheim.de/erleben-entdecken/spazierwege-im-fruehling/kaefertaler-wald",
-   "https://www.cafewolfsbau.de/",
-   "https://www.cafewolfsbau.de/kontakt/"
-  ],
-  "nicht_geprueft": [
-   "Parkplatz Karlstern (Zahl/Kosten): Visit Mannheim nennt nur „ausreichend Parkplätze“; „ca. 350 kostenlose Stellplätze“ aus der Fremdfassung nicht bestätigt",
-   "Länge einer kurzen freien Runde nicht gemessen",
-   "Preise Café Wolfsbau nicht geprüft",
-   "Bildquellen: Wolfsbau-Fotos stammen aus Google-Maps-Gästefotos der Fremdfassung, Weiherfoto aus einem Komoot-Tourenfoto (quelle_url dort nur die Betreiber-/Portalseite)",
-   "Google-Bewertung nicht eingetragen"
-  ],
-  "stand": "2026-10-29"
- }
+  {
+    "slug": "ma-kaefertaler-wald-wolfsbau",
+    "titel": "Käfertaler Wald am Karlstern und Kaffee im Café Wolfsbau",
+    "region": "Mannheim",
+    "beschreibung": "Waldspaziergang im größten Waldgebiet Mannheims: Ausgangspunkt ist der Karlstern mit Pavillon, Wildgehege (Bisons, Damwild, Muffelwild, Wildschweine), Weiher mit Aussichtsplattform und acht markierten Rundwanderwegen (4,4–10,2 km). Danach Kaffee oder Kuchen im Café Wolfsbau an der Waldpforte. Das Café ist am Samstag 9–17 Uhr geöffnet, Mo/Di Ruhetag.",
+    "ablauf": [
+      "13:00 Karlstern, Parkplatz am Ende der Karlsternstraße",
+      "13:00–14:30 freie Runde um Weiher und Wildgehege (Länge nach Wunsch; markierte Rundwege ab 4,4 km)",
+      "ca. 14:45 kurze Autofahrt zur Waldpforte 81, Kaffee und Kuchen im Café Wolfsbau",
+      "bis 16:00 zurück zum Auto; Sonnenuntergang 17:05, das Café schließt um 17:00"
+    ],
+    "dauer": "ca. 3 h",
+    "start_adresse": "Karlstern, Karlsternstraße 130, 68305 Mannheim",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Karlstern%2C%20Karlsternstra%C3%9Fe%20130%2C%2068305%20Mannheim",
+    "weitere_links": [
+      {
+        "text": "Käfertaler Wald (Stadt Mannheim)",
+        "url": "https://www.mannheim.de/de/service-bieten/gruene-stadt/wald/kaefertaler-wald"
+      },
+      {
+        "text": "Käfertaler Wald (Visit Mannheim)",
+        "url": "https://www.visit-mannheim.de/erleben-entdecken/spazierwege-im-fruehling/kaefertaler-wald"
+      },
+      {
+        "text": "Café Wolfsbau",
+        "url": "https://www.cafewolfsbau.de/"
+      },
+      {
+        "text": "Café Wolfsbau in Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Wolfsbau%2C%20Waldpforte%2081%2C%2068305%20Mannheim"
+      }
+    ],
+    "oeffnung_31_10": "Wald öffentlich zugänglich. Café Wolfsbau: Mittwoch–Sonntag 9:00–17:00 Uhr (Samstag also 9–17), Montag und Dienstag Ruhetag. (Wechselnder Mittagstisch laut Website momentan nur sonntags.)",
+    "oeffnung_quelle": "https://www.cafewolfsbau.de/kontakt/",
+    "kosten": "Wald frei; Kaffee und Kuchen nach Verzehr (Preise nicht geprüft)",
+    "veranstaltung": null,
+    "cafe_vorschlag": {
+      "name": "Café Wolfsbau",
+      "adresse": "Waldpforte 81, 68305 Mannheim",
+      "hinweis": "Sa 9–17 Uhr (Mo/Di Ruhetag); Reservierung ausschließlich telefonisch (0621 43706412) oder vor Ort",
+      "quelle": "https://www.cafewolfsbau.de/kontakt/"
+    },
+    "bilder": [
+      {
+        "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-1.jpg",
+        "art": "aussen",
+        "beschreibung": "Karlstern-Pavillon im Käfertaler Wald",
+        "quelle_url": "https://www.mannheim.de/de/service-bieten/gruene-stadt/wald/kaefertaler-wald"
+      },
+      {
+        "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-2.jpg",
+        "art": "innen",
+        "beschreibung": "Karlsternweiher im Käfertaler Wald (Detail)",
+        "quelle_url": "https://www.komoot.com/"
+      },
+      {
+        "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-3.jpg",
+        "art": "cafe",
+        "beschreibung": "Gastraum im Café Wolfsbau",
+        "quelle_url": "https://www.cafewolfsbau.de/"
+      },
+      {
+        "datei": "img/nm-ma-kaefertaler-wald-wolfsbau-4.jpg",
+        "art": "cafe",
+        "beschreibung": "Kuchen und Heißgetränk im Café Wolfsbau",
+        "quelle_url": "https://www.cafewolfsbau.de/"
+      }
+    ],
+    "quellen": [
+      "https://www.mannheim.de/de/service-bieten/gruene-stadt/wald/kaefertaler-wald",
+      "https://www.visit-mannheim.de/erleben-entdecken/spazierwege-im-fruehling/kaefertaler-wald",
+      "https://www.cafewolfsbau.de/",
+      "https://www.cafewolfsbau.de/kontakt/"
+    ],
+    "nicht_geprueft": [
+      "Parkplatz Karlstern (Zahl/Kosten): Visit Mannheim nennt nur „ausreichend Parkplätze“; „ca. 350 kostenlose Stellplätze“ aus der Fremdfassung nicht bestätigt",
+      "Länge einer kurzen freien Runde nicht gemessen",
+      "Preise Café Wolfsbau nicht geprüft",
+      "Bildquellen: Wolfsbau-Fotos stammen aus Google-Maps-Gästefotos der Fremdfassung, Weiherfoto aus einem Komoot-Tourenfoto (quelle_url dort nur die Betreiber-/Portalseite)",
+      "Google-Bewertung nicht eingetragen"
+    ],
+    "stand": "2026-10-29"
+  }
 ]

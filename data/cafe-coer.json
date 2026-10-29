@@ -25,18 +25,33 @@
   "bilder": [
     {
       "datei": "img/cafe-coer-1.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Zitrus-Tartelette mit Orange",
       "quelle_url": "https://cdn.sanity.io/images/oypifleg/production/b3c3efe6463a381f5af5fbb8d56819f5b802bed3-4499x3892.jpg"
     },
     {
       "datei": "img/cafe-coer-2.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Canelé auf Teller",
       "quelle_url": "https://cdn.sanity.io/images/oypifleg/production/0c7323e10739156c864a9c235cd64f27ac05dc45-4000x4000.jpg"
     },
     {
       "datei": "img/cafe-coer-3.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Choux mit Sahnehaube",
       "quelle_url": "https://cdn.sanity.io/images/oypifleg/production/990607af8869abf2015315e9a135154644a3e31d-2304x3456.jpg"
+    },
+    {
+      "datei": "img/cafe-coer-4.jpg",
+      "art": "gericht",
+      "beschreibung": "Schoko-Éclair mit Blattgold",
+      "quelle_url": "https://www.patisserie-coer.de/kontakt"
+    },
+    {
+      "datei": "img/cafe-coer-5.jpg",
+      "art": "gericht",
+      "beschreibung": "Rosa Törtchen mit Blüten",
+      "quelle_url": "https://www.patisserie-coer.de/events"
     }
   ],
   "quellen": [

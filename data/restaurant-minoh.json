@@ -139,9 +139,21 @@
   "bilder": [
     {
       "datei": "img/minoh-1.jpg",
-      "art": "location",
+      "art": "aussen",
       "beschreibung": "Eingang des Restaurants bei der Eröffnung (Foto: Stephanie Bach, mannheim24)",
       "quelle_url": "https://www.mannheim24.de/assets/images/40/16/40016659-eingangsbereich-neueroeffneten-restaurants-minoh-mannheim-asiatisch-2x6h8uHfcjfe.jpg"
+    },
+    {
+      "datei": "img/minoh-2.jpg",
+      "art": "innen",
+      "beschreibung": "Gastraum mit Holzwänden und Theke (Gäste-Fotocollage)",
+      "quelle_url": "https://restaurantguru.com/Minoh-Mannheim"
+    },
+    {
+      "datei": "img/minoh-3.jpg",
+      "art": "gericht",
+      "beschreibung": "Reis- und Nudelgerichte (Gäste-Fotocollage)",
+      "quelle_url": "https://restaurantguru.com/Minoh-Mannheim"
     }
   ],
   "quellen": [

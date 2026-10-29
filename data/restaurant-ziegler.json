@@ -174,12 +174,14 @@
   "bilder": [
     {
       "datei": "img/ziegler-1.jpg",
-      "art": "location",
+      "art": "innen",
+      "beschreibung": "Gedeckter Tisch mit Gläsern im Gastraum",
       "quelle_url": "https://static.wixstatic.com/media/202473_eac717ea1cd5440abccdc9d3f525208e~mv2.png"
     },
     {
       "datei": "img/ziegler-2.jpg",
       "art": "gericht",
+      "beschreibung": "Lachs mit grüner Sauce, von oben",
       "quelle_url": "https://static.wixstatic.com/media/202473_9296e3f54022463687ce096e90ea3444~mv2.jpg"
     }
   ],

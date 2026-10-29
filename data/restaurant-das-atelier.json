@@ -185,21 +185,21 @@
   "bilder": [
     {
       "datei": "img/das-atelier-1.jpg",
-      "art": "location",
+      "art": "aussen",
       "beschreibung": "Schaufenster mit Schriftzug und Sitzbank vor dem Eingang",
       "quelle_url": "https://dasatelierma.de/wp-content/uploads/2025/05/Das-Atelier-Mannheim-Restaurant-square.jpg"
+    },
+    {
+      "datei": "img/das-atelier-3.jpg",
+      "art": "innen",
+      "beschreibung": "Gastraum und Küche (schwarz-weiß)",
+      "quelle_url": "https://dasatelierma.de/wp-content/uploads/2025/05/Das-Atelier-Mannheim-Cooking.jpg"
     },
     {
       "datei": "img/das-atelier-2.jpg",
       "art": "gericht",
       "beschreibung": "Fleischgericht auf Püree, daneben Fensterfront",
       "quelle_url": "https://dasatelierma.de/wp-content/uploads/2025/05/Das-Atelier-Mannheim-Header-01.jpg"
-    },
-    {
-      "datei": "img/das-atelier-3.jpg",
-      "art": "location",
-      "beschreibung": "Gastraum und Küche (schwarz-weiß)",
-      "quelle_url": "https://dasatelierma.de/wp-content/uploads/2025/05/Das-Atelier-Mannheim-Cooking.jpg"
     }
   ],
   "quellen": [

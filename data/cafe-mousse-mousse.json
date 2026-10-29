@@ -19,14 +19,28 @@
   "parken": null,
   "bilder": [
     {
-      "datei": "img/cafe-mousse-mousse-1.jpg",
-      "art": "cafe",
-      "quelle_url": "https://primary.jwwb.nl/public/o/z/j/temp-roftsigprpstlughycta/cafe-high.jpg"
+      "datei": "img/cafe-mousse-mousse-3.jpg",
+      "art": "innen",
+      "beschreibung": "Gastraum mit Mousse-Mousse-Schriftzug",
+      "quelle_url": "https://www.moussemousse-patisseriemoderneheidelberg.de/"
+    },
+    {
+      "datei": "img/cafe-mousse-mousse-4.jpg",
+      "art": "gericht",
+      "beschreibung": "Éclairs aus der Produktgalerie",
+      "quelle_url": "https://www.moussemousse-patisseriemoderneheidelberg.de/"
     },
     {
       "datei": "img/cafe-mousse-mousse-2.png",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Glutenfreie Törtchen in der Vitrine",
       "quelle_url": "https://primary.jwwb.nl/public/o/z/j/temp-roftsigprpstlughycta/gallery1-high-iu2tiv.png"
+    },
+    {
+      "datei": "img/cafe-mousse-mousse-1.jpg",
+      "art": "gericht",
+      "beschreibung": "Cappuccino mit Kaffeebohnen",
+      "quelle_url": "https://primary.jwwb.nl/public/o/z/j/temp-roftsigprpstlughycta/cafe-high.jpg"
     }
   ],
   "quellen": [

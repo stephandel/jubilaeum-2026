@@ -153,19 +153,22 @@
   },
   "bilder": [
     {
+      "datei": "img/bistronauten-3.jpg",
+      "art": "aussen",
+      "beschreibung": "Haus der Bistronauten am Abend",
+      "quelle_url": "https://www.bistronauten.de/images/7.Gebaeude.jpg"
+    },
+    {
       "datei": "img/bistronauten-1.jpg",
-      "art": "location",
+      "art": "innen",
+      "beschreibung": "Gastraum mit Theke",
       "quelle_url": "https://www.bistronauten.de/images/2.Theke.jpg"
     },
     {
       "datei": "img/bistronauten-2.jpg",
       "art": "gericht",
+      "beschreibung": "Gericht wird mit Sauce angerichtet",
       "quelle_url": "https://www.bistronauten.de/images/4.2.Loeffel_drip.jpg"
-    },
-    {
-      "datei": "img/bistronauten-3.jpg",
-      "art": "location",
-      "quelle_url": "https://www.bistronauten.de/images/7.Gebaeude.jpg"
     }
   ],
   "quellen": [

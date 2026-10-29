@@ -19,19 +19,28 @@
   "parken": null,
   "bilder": [
     {
-      "datei": "img/cafe-pastry-poets-1.jpg",
-      "art": "team",
-      "quelle_url": "https://pastry-poets.de/wp-content/uploads/2024/09/IMG_60451-scaled.jpg"
-    },
-    {
       "datei": "img/cafe-pastry-poets-2.jpg",
-      "art": "produkt",
-      "quelle_url": "https://pastry-poets.de/wp-content/uploads/elementor/thumbs/IMG_0335-qpuj53eyrfni76zq46d4bp1grc46ntc96uv2fxhbxc.jpg"
+      "art": "gericht",
+      "beschreibung": "Schoko-Törtchen mit Haselnuss und Blaubeeren",
+      "quelle_url": "https://pastry-poets.de/"
     },
     {
       "datei": "img/cafe-pastry-poets-3.jpg",
-      "art": "produkt",
-      "quelle_url": "https://pastry-poets.de/wp-content/uploads/elementor/thumbs/EAXM8130-scaled-qpuj8hlzfwas4i28an6mbu7dzfdwggtczno6twg5gg.jpeg"
+      "art": "gericht",
+      "beschreibung": "Macarons und Kleingebäck",
+      "quelle_url": "https://pastry-poets.de/"
+    },
+    {
+      "datei": "img/cafe-pastry-poets-4.jpg",
+      "art": "gericht",
+      "beschreibung": "Croissants",
+      "quelle_url": "https://pastry-poets.de/"
+    },
+    {
+      "datei": "img/cafe-pastry-poets-1.jpg",
+      "art": "team",
+      "beschreibung": "Pâtissière",
+      "quelle_url": "https://pastry-poets.de/wp-content/uploads/2024/09/IMG_60451-scaled.jpg"
     }
   ],
   "quellen": [

@@ -2,24 +2,21 @@
   "slug": "das-atelier",
   "name": "Das Atelier",
   "telefon": "+49 174 6086339",
-  "email": null,
-  "website": null,
-  "oeffnung_samstag": "17:00–00:00",
-  "oeffnung_hinweis": "Angabe nur aus Schlemmer Atlas (Di–Do + So 17–23 Uhr, Fr+Sa 17–24 Uhr), keine eigene Website gefunden; Ruhetag/Betriebsferien nicht prüfbar",
-  "oeffnung_quelle": "https://www.schlemmer-atlas.de/restaurants/deutschland/mannheim/das-atelier/",
+  "email": "service@dasatelierma.de",
+  "website": "https://dasatelierma.de/",
+  "oeffnung_samstag": "17:00–24:00",
+  "oeffnung_hinweis": "Laut eigener Website: Mo geschlossen, Di–Do 17–23, Fr und Sa 17–24, So 17–23 Uhr. Keine Hinweise auf Schließung am 31.10.",
+  "oeffnung_quelle": "https://dasatelierma.de/",
   "reservierung": {
     "art": "telefon",
     "tool": null,
-    "url": null,
+    "url": "https://dasatelierma.de/#Reservieren",
     "verfuegbar_31_10": "unbekannt",
     "freie_zeiten": [],
-    "hinweis": "Keine Website und kein Online-Tool gefunden – online nicht prüfbar – bitte anrufen: +49 174 6086339 (Mobilnummer laut Schlemmer Atlas)",
+    "hinweis": "Kein Online-Buchungssystem mit Live-Verfügbarkeit. Reservierung telefonisch (+49 174 6086339), per E-Mail (service@dasatelierma.de) oder über das Kontaktformular der Website – das ist zunächst eine Anfrage.",
     "stand": "2026-10-29"
   },
   "nicht_geprueft": [
-    "Eigene Website nicht gefunden",
-    "Telefonnummer und Öffnungszeiten nur aus Schlemmer Atlas, nicht vom Betrieb bestätigt",
-    "Trip.com nennt für G7 17 ein Lokal 'Gluck & Verstand' (Tel. +49 621 44588753) – möglicher Betreiberwechsel, ungeklärt",
-    "E-Mail unbekannt"
+    "Freie Tische am 31.10. (nur telefonisch/per Anfrage)"
   ]
 }

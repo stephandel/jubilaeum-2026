@@ -155,13 +155,13 @@
   "bilder": [
     {
       "datei": "img/grenzhof-1.jpg",
-      "art": "location",
+      "art": "aussen",
       "beschreibung": "Fassade Hotel & Restaurant",
       "quelle_url": "https://www.grenzhof.de/wp-content/uploads/2023/06/GRENZHOF-Hotel-Restaurant-Fassade.jpg"
     },
     {
       "datei": "img/grenzhof-2.jpg",
-      "art": "gastraum",
+      "art": "innen",
       "beschreibung": "Gastraum Gutsstube",
       "quelle_url": "https://www.grenzhof.de/wp-content/uploads/2024/09/2024-05-22_Fine-Dine_Grenzhof-HeidelbergDSCF4588.jpg"
     },

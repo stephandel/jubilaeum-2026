@@ -148,15 +148,9 @@
     "url": "https://services.gastronovi.com/restaurants/123465/reservation/widget/referral?embed=1",
     "verfuegbar_31_10": "ja",
     "freie_zeiten": [
-      "18:30",
-      "18:45",
-      "19:00",
-      "19:15",
-      "19:30",
-      "19:45",
-      "20:00"
+      "19:00"
     ],
-    "hinweis": "gastronovi-Widget im Browser geprüft (29.10., ca. 14:40 Uhr), 2 Personen: Zeitfenster 18:30–21:00 wählbar; 19:00 führte bis zur Eingabe der persönlichen Daten (frei). Nichts eingegeben, nicht gebucht. Nur 19:00 wirklich bis zum Ende geprüft.",
+    "hinweis": "gastronovi-Widget im Browser geprüft (29.10., ca. 14:40 Uhr), 2 Personen: 19:00 führte bis zur Eingabe der persönlichen Daten, also frei (nichts eingegeben, nicht gebucht). Andere Uhrzeiten zeigt das Widget als Standardliste – die sagt nichts über echte Verfügbarkeit.",
     "stand": "2026-10-29"
   },
   "parken": {
@@ -166,18 +160,27 @@
   },
   "bilder": [
     {
+      "datei": "img/atable-4.jpg",
+      "art": "aussen",
+      "beschreibung": "Amtshaus in der Hauptstraße von Freinsheim, Fassade mit Fensterläden",
+      "quelle_url": "https://commons.wikimedia.org/wiki/File:Hauptstra%C3%9Fe_29_Freinsheim.jpg"
+    },
+    {
       "datei": "img/atable-1.jpg",
-      "art": "location",
+      "art": "innen",
+      "beschreibung": "Gewölberaum mit eingedeckten Tischen",
       "quelle_url": "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/atable_raeume/Atable_21-06-14_web_2192.jpg"
     },
     {
       "datei": "img/atable-2.jpg",
       "art": "gericht",
+      "beschreibung": "Pasta-Gericht mit Trüffel",
       "quelle_url": "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/atable_kueche/Atable_21-06-14_web_2572.jpg"
     },
     {
       "datei": "img/atable-3.jpg",
       "art": "gericht",
+      "beschreibung": "Dessert auf rotem Teller",
       "quelle_url": "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/atable_kueche/Atable_21-06-14_web_2677.jpg"
     }
   ],

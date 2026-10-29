@@ -20,13 +20,39 @@
   },
   "bilder": [
     {
-      "datei": "img/cafe-panno-1.jpg",
-      "art": "location",
-      "quelle_url": "https://www.google.com/maps/place/Caf%C3%A9+Panno/"
+      "datei": "img/cafe-panno-3.jpg",
+      "art": "aussen",
+      "beschreibung": "Eingang mit Panno-Schriftzug und Aufsteller",
+      "quelle_url": "https://panno-heidelberg.de/"
+    },
+    {
+      "datei": "img/cafe-panno-4.jpg",
+      "art": "innen",
+      "beschreibung": "Theke vor gelber Wand",
+      "quelle_url": "https://panno-heidelberg.de/"
     },
     {
       "datei": "img/cafe-panno-2.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Kaffee mit Keks",
+      "quelle_url": "https://www.google.com/maps/place/Caf%C3%A9+Panno/"
+    },
+    {
+      "datei": "img/cafe-panno-5.jpg",
+      "art": "gericht",
+      "beschreibung": "Matcha-Erdbeer-Drinks",
+      "quelle_url": "https://panno-heidelberg.de/"
+    },
+    {
+      "datei": "img/cafe-panno-6.jpg",
+      "art": "gericht",
+      "beschreibung": "Latte Art",
+      "quelle_url": "https://panno-heidelberg.de/"
+    },
+    {
+      "datei": "img/cafe-panno-1.jpg",
+      "art": "innen",
+      "beschreibung": "Blick ins Café durch den Spiegel",
       "quelle_url": "https://www.google.com/maps/place/Caf%C3%A9+Panno/"
     }
   ],

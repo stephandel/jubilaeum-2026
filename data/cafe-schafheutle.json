@@ -20,19 +20,22 @@
   "parken": null,
   "bilder": [
     {
+      "datei": "img/cafe-schafheutle-3.jpg",
+      "art": "aussen",
+      "beschreibung": "Historische Außenansicht des Theater-Cafés (Schwarzweiß)",
+      "quelle_url": "https://cafe-schafheutle.de/cdn/shop/files/cafe_front_1500x1500.jpg"
+    },
+    {
       "datei": "img/cafe-schafheutle-1.jpg",
-      "art": "location",
+      "art": "innen",
+      "beschreibung": "Gastraum mit Sitzbank",
       "quelle_url": "https://cafe-schafheutle.de/cdn/shop/files/interior_dark_1600x.jpg"
     },
     {
       "datei": "img/cafe-schafheutle-2.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Himbeer-Kiwi-Torte",
       "quelle_url": "https://cafe-schafheutle.de/cdn/shop/files/fruchtkuchen.jpg"
-    },
-    {
-      "datei": "img/cafe-schafheutle-3.jpg",
-      "art": "location",
-      "quelle_url": "https://cafe-schafheutle.de/cdn/shop/files/cafe_front_1500x1500.jpg"
     }
   ],
   "quellen": [

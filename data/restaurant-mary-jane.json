@@ -85,7 +85,7 @@
   "bilder": [
     {
       "datei": "img/mary-jane-1.webp",
-      "art": "location",
+      "art": "innen",
       "beschreibung": "Gastraum mit langer Tafel, abends",
       "quelle_url": "https://mary-jane.space/build/assets/mobile-space-02-wWSoi4OM.webp"
     },
@@ -100,6 +100,12 @@
       "art": "gericht",
       "beschreibung": "Gang im Ringteller",
       "quelle_url": "https://mary-jane.space/build/assets/mobile-home-03-CS7YMGyS.webp"
+    },
+    {
+      "datei": "img/mary-jane-4.webp",
+      "art": "gericht",
+      "beschreibung": "Lammrücken mit Gemüse und Sauce",
+      "quelle_url": "https://mary-jane.space/build/assets/desktop-faq-01-CiGzEfka.webp"
     }
   ],
   "quellen": [

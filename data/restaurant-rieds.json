@@ -214,9 +214,15 @@
   "bilder": [
     {
       "datei": "img/rieds-1.jpg",
-      "art": "location",
+      "art": "innen",
       "beschreibung": "Gastraum am Abend",
       "quelle_url": "https://rieds-restaurant.de/assets/682c167382.jpg"
+    },
+    {
+      "datei": "img/rieds-3.jpg",
+      "art": "innen",
+      "beschreibung": "Eingedeckter Gastraum",
+      "quelle_url": "https://rieds-restaurant.de/assets/41650d1358.jpg"
     },
     {
       "datei": "img/rieds-2.jpg",
@@ -225,10 +231,16 @@
       "quelle_url": "https://rieds-restaurant.de/assets/4b0df2c391.jpg"
     },
     {
-      "datei": "img/rieds-3.jpg",
-      "art": "location",
-      "beschreibung": "Eingedeckter Gastraum",
-      "quelle_url": "https://rieds-restaurant.de/assets/41650d1358.jpg"
+      "datei": "img/rieds-4.jpg",
+      "art": "gericht",
+      "beschreibung": "Dessert mit Eis und Karamell",
+      "quelle_url": "https://rieds-restaurant.de/assets/1269d6a9b8.jpg"
+    },
+    {
+      "datei": "img/rieds-5.jpg",
+      "art": "gericht",
+      "beschreibung": "Fisch auf Schaum mit Gemüse",
+      "quelle_url": "https://rieds-restaurant.de/assets/8f002741de.jpg"
     }
   ],
   "quellen": [

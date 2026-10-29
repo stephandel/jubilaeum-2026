@@ -17,12 +17,14 @@
   "bilder": [
     {
       "datei": "img/cafe-blum-1.jpg",
-      "art": "location",
+      "art": "innen",
+      "beschreibung": "Gastraum mit blauer und gelber Wand und Holztischen",
       "quelle_url": "https://www.google.com/maps/place/Blum+Caf%C3%A9/"
     },
     {
       "datei": "img/cafe-blum-2.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Kuchen- und Gebäcktheke",
       "quelle_url": "https://www.google.com/maps/place/Blum+Caf%C3%A9/"
     }
   ],

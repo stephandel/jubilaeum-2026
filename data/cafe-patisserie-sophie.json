@@ -21,12 +21,20 @@
   "bilder": [
     {
       "datei": "img/cafe-patisserie-sophie-1.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Törtchen-Auslage",
+      "quelle_url": "https://patisserie-sophie.de/"
+    },
+    {
+      "datei": "img/cafe-patisserie-sophie-3.jpg",
+      "art": "gericht",
+      "beschreibung": "Croissant",
       "quelle_url": "https://patisserie-sophie.de/"
     },
     {
       "datei": "img/cafe-patisserie-sophie-2.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Cappuccino mit Herz",
       "quelle_url": "https://patisserie-sophie.de/"
     }
   ],

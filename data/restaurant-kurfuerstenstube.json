@@ -179,13 +179,21 @@
   },
   "bilder": [
     {
+      "datei": "img/kurfuerstenstube-3.jpg",
+      "art": "aussen",
+      "beschreibung": "Hotel Der Europäische Hof, Eingang und Innenhof",
+      "quelle_url": "https://www.europaeischerhof.com/wp-content/uploads/2024/12/luxus-hotel-europaeischer-hof-heidelberg-aussenansicht_300dpi-Kopie.jpg"
+    },
+    {
       "datei": "img/kurfuerstenstube-1.jpg",
-      "art": "location",
+      "art": "innen",
+      "beschreibung": "Holzgetäfelter Gourmet-Saal mit Servierwagen",
       "quelle_url": "https://www.europaeischerhof.com/wp-content/uploads/2026/10/Luxus-Hotel-Europaeischer-Hof-Heidelberg-Die_Kurfuerstenstube_Michelin-2026-01.webp"
     },
     {
       "datei": "img/kurfuerstenstube-2.jpg",
       "art": "gericht",
+      "beschreibung": "Zwischengang mit Fisch auf schwarzem Reis",
       "quelle_url": "https://www.europaeischerhof.com/wp-content/uploads/2024/12/Food_Zwischengang-1.jpg"
     }
   ],

@@ -21,12 +21,14 @@
   "bilder": [
     {
       "datei": "img/cafe-frankys-farm-1.jpg",
-      "art": "location",
+      "art": "aussen",
+      "beschreibung": "Schaufensterfront in G7 mit Lampen",
       "quelle_url": "https://www.google.com/maps/place/Franky%E2%80%98s+Farm+(Coffee+%26+Cheesecake)/"
     },
     {
       "datei": "img/cafe-frankys-farm-2.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Pistazen-Kuchen mit Eiskaffee",
       "quelle_url": "https://www.google.com/maps/place/Franky%E2%80%98s+Farm+(Coffee+%26+Cheesecake)/"
     }
   ],

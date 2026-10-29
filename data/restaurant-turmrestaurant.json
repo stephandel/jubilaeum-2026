@@ -194,13 +194,13 @@
   "bilder": [
     {
       "datei": "img/turmrestaurant-1.jpg",
-      "art": "location",
+      "art": "aussen",
       "beschreibung": "Turmbau im Ebertpark mit Brunnen",
       "quelle_url": "https://www.turm.restaurant/images/1200/15072782/turmrestaurant-is-02.jpg"
     },
     {
       "datei": "img/turmrestaurant-2.jpg",
-      "art": "gastraum",
+      "art": "innen",
       "beschreibung": "Gastraum Restaurant",
       "quelle_url": "https://www.turm.restaurant/images/1024/22342573/restaurant-1R-EDCw-GoDOtBmUAwET6Q.jpg"
     },

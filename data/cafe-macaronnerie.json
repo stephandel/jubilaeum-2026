@@ -1,7 +1,7 @@
 {
   "slug": "macaronnerie",
   "name": "Macaronnerie Heidelberg",
-  "adresse": "Sofienstraße 23, 69115 Heidelberg",
+  "adresse": "Sofienstraße 23, 69117 Heidelberg",
   "ort": "Heidelberg",
   "telefon": "+49 6221 1866935",
   "email": null,
@@ -20,9 +20,28 @@
   "parken": null,
   "bilder": [
     {
+      "datei": "img/cafe-macaronnerie-2.jpg",
+      "art": "aussen",
+      "beschreibung": "Ladenfront in der Heidelberger Altstadt",
+      "quelle_url": "https://www.macarons-heidelberg.de/"
+    },
+    {
+      "datei": "img/cafe-macaronnerie-3.jpg",
+      "art": "innen",
+      "beschreibung": "Blick durch das Schaufenster in den Laden",
+      "quelle_url": "https://www.macarons-heidelberg.de/wp-content/uploads/2021/02/Macaronnerie-vitrine.jpg"
+    },
+    {
       "datei": "img/cafe-macaronnerie-1.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Macarons in der Auslage",
       "quelle_url": "https://www.macarons-heidelberg.de/wp-content/uploads/2021/02/macaronnerie-heidelberg.jpg"
+    },
+    {
+      "datei": "img/cafe-macaronnerie-4.jpg",
+      "art": "gericht",
+      "beschreibung": "Pâtisserie-Auswahl",
+      "quelle_url": "https://www.macarons-heidelberg.de/wp-content/uploads/2023/01/patisserie.jpg"
     }
   ],
   "quellen": [

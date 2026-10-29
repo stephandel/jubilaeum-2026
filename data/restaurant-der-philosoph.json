@@ -178,17 +178,20 @@
   "bilder": [
     {
       "datei": "img/der-philosoph-1.webp",
-      "art": "location",
+      "art": "innen",
+      "beschreibung": "Gastraum mit rotem Samt und gedeckten Tischen",
       "quelle_url": "https://restaurant-philosoph.de/assets/media/restaurant-1-c2.webp"
     },
     {
       "datei": "img/der-philosoph-2.webp",
       "art": "gericht",
+      "beschreibung": "Lammgericht mit Sauce",
       "quelle_url": "https://restaurant-philosoph.de/assets/media/lammgericht.webp"
     },
     {
       "datei": "img/der-philosoph-3.webp",
       "art": "gericht",
+      "beschreibung": "Fischgericht auf Trüffelrisotto",
       "quelle_url": "https://restaurant-philosoph.de/assets/media/fischgericht.webp"
     }
   ],

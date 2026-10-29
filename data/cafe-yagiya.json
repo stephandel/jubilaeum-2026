@@ -19,19 +19,34 @@
   "parken": null,
   "bilder": [
     {
+      "datei": "img/cafe-yagiya-4.jpg",
+      "art": "aussen",
+      "beschreibung": "Hauseingang mit Kreidetafel und YagiYa-Schild",
+      "quelle_url": "https://www.mawayoflife.de/"
+    },
+    {
       "datei": "img/cafe-yagiya-1.jpg",
-      "art": "location",
+      "art": "aussen",
+      "beschreibung": "Open-Schild an der Tür",
       "quelle_url": "https://www.mawayoflife.de/wp-content/uploads/2019/06/mawayXyagiya1.jpg"
     },
     {
       "datei": "img/cafe-yagiya-2.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Japanische Schoko-Törtchen",
       "quelle_url": "https://www.mawayoflife.de/wp-content/uploads/2019/06/mawayXyagiya11.jpg"
     },
     {
       "datei": "img/cafe-yagiya-3.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Törtchen und Erdbeer-Shortcake",
       "quelle_url": "https://www.mawayoflife.de/wp-content/uploads/2019/06/mawayXyagiya13.jpg"
+    },
+    {
+      "datei": "img/cafe-yagiya-5.jpg",
+      "art": "gericht",
+      "beschreibung": "Matcha-Rolle und Windbeutel",
+      "quelle_url": "https://www.instagram.com/yagiya.yagiya/"
     }
   ],
   "quellen": [

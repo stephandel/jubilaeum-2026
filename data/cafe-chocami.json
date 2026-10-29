@@ -20,17 +20,20 @@
   "bilder": [
     {
       "datei": "img/cafe-chocami-1.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Zweistöckige Torte mit Macarons und Beeren",
       "quelle_url": "https://chocami.de/wp-content/uploads/2025/07/IMG_20250919_132717.jpg"
     },
     {
       "datei": "img/cafe-chocami-2.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Torte mit Eistüte aus Waffel und Beeren",
       "quelle_url": "https://chocami.de/wp-content/uploads/2025/07/IMG_20250919_132736.jpg"
     },
     {
       "datei": "img/cafe-chocami-3.jpg",
-      "art": "produkt",
+      "art": "gericht",
+      "beschreibung": "Schokoladen-Törtchen im Halloween-Look",
       "quelle_url": "https://chocami.de/wp-content/uploads/2026/10/Halloween-Toertchen-2026.jpeg"
     }
   ],
