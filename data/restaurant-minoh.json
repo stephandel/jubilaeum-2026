@@ -6,7 +6,7 @@
   "telefon": "+49 160 3008843",
   "email": null,
   "website": null,
-  "speisekarte_url": null,
+  "speisekarte_url": "https://www.google.com/maps/place/Minoh/@49.482716,8.4723939,17z/data=!4m7!3m6!1s0x4797cd25e2a08f49:0xf6f7809cdf633db2!8m2!3d49.482716!4d8.4723939!10e9!16s%2Fg%2F11xzzytk3z?hl=de",
   "maps_url": "https://maps.app.goo.gl/AKGynxEHiu1aYF1U6",
   "google_bewertung": 4.9,
   "google_anzahl": 432,
@@ -14,10 +14,119 @@
   "kueche": "japanisch, „Hot Teppan“ (Fleisch, Fisch, Gemüse auf heißer Eisenplatte), dazu Donburi/Katsu",
   "beschreibung": "Kleines japanisches Lokal in M7, eröffnet Anfang Oktober 2025 in den Räumen des früheren „Ting Ting“. Schwerpunkt sind Teppan-Gerichte, die auf einer heißen Metallplatte serviert werden; Gäste loben vor allem Service und hausgemachte Getränke. Eher lässig-modern als festlich.",
   "stephans_preisangabe": "10–20 €",
-  "preis_pro_person_korrigiert": "Hauptgerichte 11,90–27,80 € laut Presse (Okt. 2025); Gesamtpreis p. P. mit Getränken nicht belegbar",
-  "preis_abweichung": "Stephans 10–20 € liegt am unteren Rand: teurere Hauptgerichte bis 27,80 € (Stand Eröffnung). Aktuelle Karte nicht online.",
-  "preisbeispiele": [],
-  "preisbeispiele_hinweis": "Keine Preisbeispiele möglich: keine eigene Website, keine offizielle Karte online. Nur Nutzerfotos der Karte auf Restaurant Guru (nicht ausgewertet).",
+  "preis_pro_person_korrigiert": "Hauptgerichte 12,90–18,90 €, Vorspeisen 5,50–8,80 €; mit Wasser und Saft ca. 20–30 € p. P. (Google-Maps-Karte, Stand 29.10.2026)",
+  "preis_abweichung": "Stephans 10–20 € passt für das Hauptgericht allein; mit Vorspeise und Getränken eher 20–30 € p. P. Auf der Google-Karte stehen weder Wein noch Kaffee/Tee, nur alkoholfreie Getränke (3,00–5,50 €).",
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: 2 Katsu-Hauptgerichte + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Tonkatsu (paniertes Schweinekotelett, Reis, Misosuppe, Beilage)",
+          "preis": 18.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Jumbo Ebi Katsu (Garnelen, Reis, Misosuppe, Beilage)",
+          "preis": 17.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Black Forest Still (Wasser), Karte nennt 0,25 l/0,5 l ohne getrennte Preise",
+          "preis": 3.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Apfelsaft",
+          "preis": 3.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Glas Wein – nicht auf der Google-Karte (nur alkoholfreie Getränke gelistet)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee/Kaffee – nicht auf der Google-Karte",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 46.7
+    },
+    {
+      "titel": "Beispiel 2: 2 Vorspeisen + 2 Hauptgerichte + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Misosuppe",
+          "preis": 6.8,
+          "anzahl": 1
+        },
+        {
+          "text": "Garnelen (Vorspeise, cremige Sesamsoße)",
+          "preis": 8.8,
+          "anzahl": 1
+        },
+        {
+          "text": "Katsudon (Schweinefilet-Katsu mit Ei auf Reis)",
+          "preis": 15.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Tori Katsu (Hähnchen, Reis, Misosuppe, Beilage)",
+          "preis": 16.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Black Forest Still (Wasser), Karte nennt 0,25 l/0,5 l ohne getrennte Preise",
+          "preis": 3.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Apfelsaft",
+          "preis": 3.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Glas Wein – nicht auf der Google-Karte (nur alkoholfreie Getränke gelistet)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee/Kaffee – nicht auf der Google-Karte",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 58.3
+    },
+    {
+      "titel": "Beispiel 3: 2 Donburi + hausgemachte Limonaden (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Oyakodon (Hähnchen, Zwiebeln, Ei auf Reis)",
+          "preis": 12.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Tofu Katsudon (vegetarisch)",
+          "preis": 12.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Black Forest Still (Wasser), Karte nennt 0,25 l/0,5 l ohne getrennte Preise",
+          "preis": 3.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Hausgemachte Limonade 0,45 l (z. B. Peach Oolong, Kumquat Ingwer)",
+          "preis": 5.5,
+          "anzahl": 2
+        }
+      ],
+      "summe": 42.8
+    }
+  ],
+  "preisbeispiele_hinweis": "Preise aus der Speisekarte bei Google Maps (Reiter „Speisekarte“, 29.10.2026 abends ausgelesen): Katsu 16,90–18,90 €, Donburi 12,90–15,90 €, Vorspeisen 5,50–8,80 €, Wasser 3,00 €, Säfte 3,90 €, hausgemachte Limonaden 5,50 €. Wein, Tee und Kaffee stehen nicht auf dieser Karte – ob es sie gibt, bitte vor Ort fragen. Teppan-Gerichte aus der Presse fehlen auf der Google-Karte.",
   "oeffnung_samstag": "11:30–22:00",
   "oeffnung_hinweis": "Nur aus Portalen (Restaurant Guru, coolibri, gastroguide, neueroeffnung.info) – täglich 11:30–22:00, keine offizielle Quelle.",
   "oeffnung_quelle": "https://www.gastroguide.de/restaurant/297597/minoh/mannheim/oeffnungszeiten",
@@ -36,6 +145,7 @@
     }
   ],
   "quellen": [
+    "https://www.google.com/maps/place/Minoh/@49.482716,8.4723939,17z/data=!4m7!3m6!1s0x4797cd25e2a08f49:0xf6f7809cdf633db2!8m2!3d49.482716!4d8.4723939!10e9!16s%2Fg%2F11xzzytk3z?hl=de",
     "https://www.mannheim24.de/mannheim/neueroeffnung-mannheim-restaurant-minoh-foodtrend-m7-restaurant-93977427.html",
     "https://restaurantguru.com/Minoh-Mannheim",
     "https://coolibri.de/restaurant/minoh-mannheim/",
@@ -44,12 +154,10 @@
     "https://parken-mannheim.de/en/parking/n7-parkhaus/"
   ],
   "nicht_geprueft": [
-    "Keine Website und keine offizielle Speisekarte gefunden – keine Preisbeispiele",
-    "Getränkepreise unbekannt",
+    "Speisekarte nur von Google Maps (von Google/Nutzern gepflegt, kein Datum); Wein, Tee, Kaffee und Teppan-Gerichte dort nicht gelistet",
     "Öffnungszeiten nur aus Portalen",
     "Telefonnummer (Mobilnummer) nur aus Portalen",
     "Nur 1 Bild: kein Gerichtsfoto aus zulässiger Quelle gefunden (Facebook-Seite ohne Login nicht lesbar)",
-    "Google-Bewertung nicht live geprüft",
     "Fußweg Parkhaus N7 → M7 nicht gemessen"
   ],
   "stand": "2026-10-29"

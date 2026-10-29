@@ -146,14 +146,13 @@
     "art": "online",
     "tool": "Wix Table Reservations (Anfrageformular auf der Website)",
     "url": "https://www.restaurant-spinne.de/reservations",
-    "verfuegbar_31_10": "unbekannt",
+    "verfuegbar_31_10": "ja",
     "freie_zeiten": [
       "17:00",
-      "18:00",
       "19:00",
       "20:00"
     ],
-    "hinweis": "Anfrageformular auf der Website (29.10., ca. 14:45 Uhr): Zeitfenster 17/18/19/20 Uhr wählbar, aber keine Live-Verfügbarkeit – das Haus bestätigt die Anfrage. Nichts abgeschickt. Bitte anrufen: 06321 9597799.",
+    "hinweis": "Anfrageformular auf der Website (Stephans Bildschirmfoto, 29.10. abends), 31.10., 2 Personen: 17:00, 19:00 und 20:00 wählbar, 18:00 ausgegraut. Es ist eine Anfrage, keine feste Buchung – das Haus bestätigt. Nichts abgeschickt. Telefon: 06321 9597799.",
     "stand": "2026-10-29"
   },
   "parken": {
