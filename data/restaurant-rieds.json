@@ -1,0 +1,245 @@
+{
+  "slug": "rieds",
+  "name": "Rieds Restaurant",
+  "adresse": "Vangerowstraße 4, 69115 Heidelberg",
+  "ort": "Heidelberg",
+  "telefon": "+49 6221 7146140",
+  "email": "info@rieds-restaurant.de",
+  "website": "https://rieds-restaurant.de/",
+  "speisekarte_url": "https://rieds-restaurant.de/#abend",
+  "maps_url": "https://maps.app.goo.gl/SLxSHvnsCEKottSt7",
+  "google_bewertung": 4.8,
+  "google_anzahl": 73,
+  "google_quelle": "Stephans Tabelle (nicht live geprüft)",
+  "kueche": "modern interpretierte gutbürgerliche Küche mit internationalen Akzenten (Bistro-Stil)",
+  "beschreibung": "Seit April 2026 geöffnetes Restaurant direkt neben dem Thermalbad in Bergheim, Küchenchef Daniel Habicht. Kleine saisonale Abendkarte mit je zwei bis drei Gerichten pro Gang; Klassiker ist der Zwiebelrostbraten. Selbstbeschreibung: „Gutbürgerlich. Nur lauter.“ – eher lockeres Bistro als steifes Gourmetlokal.",
+  "stephans_preisangabe": "30–60 €",
+  "preis_pro_person_korrigiert": "Hauptgang 27–36 €; Hauptgang + Dessert ca. 45–55 €, drei Gänge ca. 60–80 € pro Person, jeweils ohne Getränke",
+  "preis_abweichung": "Stephans 30–60 € trifft Hauptgang bzw. Hauptgang + Dessert ohne Getränke. Mit Vorspeise und Getränken eher 70–90 € pro Person. Einordnung „Gourmet“: Haus selbst nennt sich gutbürgerlich-modern.",
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: 2 Hauptgerichte + 2 Desserts + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Zwiebelrostbraten",
+          "preis": 36.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Loup de Mer",
+          "preis": 33.0,
+          "anzahl": 1
+        },
+        {
+          "text": "English Tea Cake",
+          "preis": 18.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Sellerie-Vanille-Creme",
+          "preis": 15.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser – Preis nicht online",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Glas Wein – Preis nicht online",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Frisch gepresster Orangensaft 0,2 l (Brunchkarte)",
+          "preis": 5.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee – Preis nicht online",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Cappuccino (Brunchkarte)",
+          "preis": 4.2,
+          "anzahl": 1
+        }
+      ],
+      "summe": 111.7
+    },
+    {
+      "titel": "Beispiel 2: Vorspeise + Hauptgang + Dessert je Person + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Pâté en Croûte von der Ente",
+          "preis": 25.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Karottentatar",
+          "preis": 21.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Zwiebelrostbraten",
+          "preis": 36.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Gebackene Aubergine",
+          "preis": 27.0,
+          "anzahl": 1
+        },
+        {
+          "text": "English Tea Cake",
+          "preis": 18.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Sellerie-Vanille-Creme",
+          "preis": 15.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser – Preis nicht online",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Glas Wein – Preis nicht online",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Frisch gepresster Orangensaft 0,2 l (Brunchkarte)",
+          "preis": 5.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee – Preis nicht online",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Cappuccino (Brunchkarte)",
+          "preis": 4.2,
+          "anzahl": 1
+        }
+      ],
+      "summe": 151.7
+    },
+    {
+      "titel": "Beispiel 3: 4 Gänge je Person (mit Zwischengang) + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Pâté en Croûte von der Ente",
+          "preis": 25.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Karottentatar",
+          "preis": 21.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Maronen-Kokos-Suppe",
+          "preis": 18.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Iberico-Schweinebäckchen",
+          "preis": 24.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Zwiebelrostbraten",
+          "preis": 36.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Loup de Mer",
+          "preis": 33.0,
+          "anzahl": 1
+        },
+        {
+          "text": "English Tea Cake",
+          "preis": 18.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Sellerie-Vanille-Creme",
+          "preis": 15.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser – Preis nicht online",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Glas Wein – Preis nicht online",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Frisch gepresster Orangensaft 0,2 l (Brunchkarte)",
+          "preis": 5.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee – Preis nicht online",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Cappuccino (Brunchkarte)",
+          "preis": 4.2,
+          "anzahl": 1
+        }
+      ],
+      "summe": 199.7
+    }
+  ],
+  "preisbeispiele_hinweis": "Speisenpreise aus der aktuellen Abendkarte der Website. Getränkekarte für abends nicht online; Saft und Cappuccino aus der Brunchkarte. Wasser, Wein und Tee fehlen in den Summen (realistisch zusätzlich ca. 20–25 €, geschätzt, nicht belegt).",
+  "oeffnung_samstag": "Abendküche 17:30–22:30 (Brunch 11:00–14:00)",
+  "oeffnung_hinweis": "Montag Ruhetag. Sonntag 1.11. (Allerheiligen) statt Brunch „Secret Brunch“ 11:30–15:00 – betrifft Samstag nicht.",
+  "oeffnung_quelle": "https://rieds-restaurant.de/#kontakt",
+  "reservierung": null,
+  "parken": {
+    "text": "Laut Restaurant kostenpflichtige Parkplätze direkt vor der Tür (Parkplatz Thermalbad, Vangerowstraße 4). Laut Nutzerportal park4night ca. 20 Plätze, 1 € je 20 Min. (Angabe von 2023, nicht offiziell). Fußweg: unmittelbar vor dem Restaurant.",
+    "parkopedia_url": "https://www.parkopedia.de/parken/vangerowstra%C3%9Fe_heidelberg/",
+    "quelle": "https://rieds-restaurant.de/#kontakt; https://park4night.com/de/place/395078"
+  },
+  "bilder": [
+    {
+      "datei": "img/rieds-1.jpg",
+      "art": "location",
+      "beschreibung": "Gastraum am Abend",
+      "quelle_url": "https://rieds-restaurant.de/assets/682c167382.jpg"
+    },
+    {
+      "datei": "img/rieds-2.jpg",
+      "art": "gericht",
+      "beschreibung": "Zwiebelrostbraten mit Spitzkohl und Kartoffelgratin",
+      "quelle_url": "https://rieds-restaurant.de/assets/4b0df2c391.jpg"
+    },
+    {
+      "datei": "img/rieds-3.jpg",
+      "art": "location",
+      "beschreibung": "Eingedeckter Gastraum",
+      "quelle_url": "https://rieds-restaurant.de/assets/41650d1358.jpg"
+    }
+  ],
+  "quellen": [
+    "https://rieds-restaurant.de/",
+    "https://rieds-restaurant.de/brunch",
+    "https://park4night.com/de/place/395078"
+  ],
+  "nicht_geprueft": [
+    "Getränkepreise abends (Wasser, Wein, Tee) – nicht online",
+    "Aktueller Parktarif am Thermalbad und ob abends gebührenpflichtig",
+    "Google-Bewertung nicht live geprüft (Stephans Tabelle)"
+  ],
+  "stand": "2026-10-29"
+}

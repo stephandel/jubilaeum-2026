@@ -1,0 +1,241 @@
+{
+  "slug": "tourist-trap",
+  "name": "The Tourist Trap",
+  "adresse": "Neckarvorlandstraße 2a, 68159 Mannheim",
+  "ort": "Mannheim (Jungbusch)",
+  "telefon": "+49 621 63742080",
+  "email": null,
+  "website": "https://the-tourist-trap.de/",
+  "speisekarte_url": "https://the-tourist-trap.de/#menue",
+  "maps_url": "https://maps.app.goo.gl/AKqbEEjGNiqnMvZ79",
+  "google_bewertung": 4.6,
+  "google_anzahl": 140,
+  "google_quelle": "Stephans Tabelle (nicht live geprüft)",
+  "kueche": "Casual Fine Dining, kreative saisonale Küche (Dennis Maier), 1 Michelin-Stern 2026",
+  "beschreibung": "Restaurant auf dem Oberdeck des historischen Museumsschiffs am Neckarufer, Küchenchef Dennis Maier. Bewusst lockeres Fine Dining mit 7-Gänge-Menüs (Fisch & Fleisch oder vegetarisch/vegan) und einer „Munchies“-Karte mit kleinen Gerichten. Laut Website mit einem Stern im Guide Michelin 2026 ausgezeichnet.",
+  "stephans_preisangabe": "<100 €",
+  "preis_pro_person_korrigiert": "Samstag (Main Season): 7-Gänge-Menü inkl. Aperitif 170 € (Fisch & Fleisch) bzw. 130 € (vegetarisch/vegan) p. P., ohne Getränke; Munchies 6–30 € pro Teller",
+  "preis_abweichung": "Stephans Angabe <100 € stimmt nicht für das Menü: Am Samstag kostet es 130–170 € p. P. Unter 100 € ginge mit der Munchies-Karte (kleine Gerichte) oder sonntags (Easy Sunday 79 €).",
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: Menü Fisch & Fleisch (Main Season) × 2 + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "7-Gänge-Menü Fisch & Fleisch inkl. Aperitif (Hamachi, Muschel, Lachs, Papada, Lamm, Zitrus, Call Me Pear)",
+          "preis": 170.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser (2 ×)",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 340.0,
+      "summe_hinweis": "Summe ohne Getränkeprofil – Getränkepreise sind online nicht veröffentlicht; realistisch zusätzlich ca. 30–50 € (Schätzung, nicht belegt). Weinbegleitung: Preis nicht online."
+    },
+    {
+      "titel": "Beispiel 2: Menü vegetarisch/vegan (Main Season) × 2 + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "7-Gänge-Menü Vegetarisch & Vegan inkl. Aperitif",
+          "preis": 130.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser (2 ×)",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 260.0,
+      "summe_hinweis": "Summe ohne Getränkeprofil – Getränkepreise sind online nicht veröffentlicht; realistisch zusätzlich ca. 30–50 € (Schätzung, nicht belegt)."
+    },
+    {
+      "titel": "Beispiel 3: Gemischt – 1 × Fisch & Fleisch, 1 × vegetarisch + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "7-Gänge-Menü Fisch & Fleisch",
+          "preis": 170.0,
+          "anzahl": 1
+        },
+        {
+          "text": "7-Gänge-Menü Vegetarisch & Vegan",
+          "preis": 130.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser (2 ×)",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 300.0,
+      "summe_hinweis": "Summe ohne Getränkeprofil – Getränkepreise sind online nicht veröffentlicht; realistisch zusätzlich ca. 30–50 € (Schätzung, nicht belegt)."
+    },
+    {
+      "titel": "Variante günstig: Munchies-Karte (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Believe in Beef – Beef Tatar / Topinambur / Senfkorn-Kaviar",
+          "preis": 17.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Proud Trout – Lachsforelle roh mariniert",
+          "preis": 16.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Rib Trip – Pulled Short Rib / Kartoffel-Espuma",
+          "preis": 18.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Leek Peak – geschmorter Lauch / Ponzu",
+          "preis": 15.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Bobo's Sauerteigbrot (3 Scheiben)",
+          "preis": 5.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Cereale Milk Panna Cotta",
+          "preis": 9.9,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser (2 ×)",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 94.4,
+      "summe_hinweis": "Summe ohne Getränkeprofil – Getränkepreise sind online nicht veröffentlicht; realistisch zusätzlich ca. 30–50 € (Schätzung, nicht belegt). Ob die Munchies-Karte samstagabends als Abendessen buchbar ist, nicht geprüft."
+    }
+  ],
+  "oeffnung_samstag": "ab 18:00 (Schlusszeit nicht angegeben)",
+  "oeffnung_hinweis": "Mi–Fr ab 18 Uhr (Kopfzeile der Website nennt Mi–Fr ab 17:30), Sa ab 18 Uhr, So ab 13 Uhr, Mo & Di Ruhetag. Samstag ist ohnehin „Main Season“ (auch vor Feiertagen) – Allerheiligen ändert am Preis nichts. Website: „Menüs und Preise können sich saisonal ändern“; Mehrwertsteuer-Angabe widersprüchlich (19 % bzw. 7 %), Preise gleich.",
+  "oeffnung_quelle": "https://the-tourist-trap.de/#contact",
+  "reservierung": null,
+  "parken": {
+    "text": "MVV-Parkplatz direkt am Anleger (am Fuß des MVV-Hochhauses): laut Restaurant Mi–Fr ab 18 Uhr, Sa & So ganztägig nutzbar. Parkscheibenpflicht laut Parkopedia-Snippet (nicht geprüft). Alternative: Parkhaus MVV-Hochhaus, Luisenring 49 (Drittanbieter-Angabe). Straßenbahn Linie 2, Haltestelle Kurpfalzbrücke, ca. 3 Min. zu Fuß.",
+    "parkopedia_url": null,
+    "quelle": "https://the-tourist-trap.de/#contact; https://www.viamichelin.es/mapas-planos/restaurantes/poi/mannheim-68159-316e6692"
+  },
+  "bilder": [
+    {
+      "datei": "img/tourist-trap-1.webp",
+      "art": "location",
+      "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-mannheim-schiff-neckar.webp"
+    },
+    {
+      "datei": "img/tourist-trap-2.webp",
+      "art": "gericht",
+      "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-mannheim-Menue-Interior.webp"
+    },
+    {
+      "datei": "img/tourist-trap-3.webp",
+      "art": "gericht",
+      "quelle_url": "https://the-tourist-trap.de/wp-content/uploads/the-tourist-trap-mannheim-Menue.webp"
+    }
+  ],
+  "quellen": [
+    "https://the-tourist-trap.de/",
+    "https://the-tourist-trap.de/#menue",
+    "https://guide.michelin.com/de/de/baden-wurttemberg/mannheim/restaurant/the-tourist-trap",
+    "https://www.schlemmer-atlas.de/restaurants/deutschland/mannheim/the-tourist-trap/"
+  ],
+  "nicht_geprueft": [
+    "Getränkepreise und Weinbegleitung – keine Getränkekarte online",
+    "Schlusszeit am Samstag",
+    "Menüfolge auf der Website (Hamachi/Pfirsich, Birne …) könnte saisonal schon gewechselt haben",
+    "Parkscheibenpflicht/Gebühren MVV-Parkplatz",
+    "Kein Parkopedia-Eintrag gefunden",
+    "Google-Bewertung nicht live geprüft",
+    "Gerichtsfotos ohne Zuordnung zu einem bestimmten Gang"
+  ],
+  "stand": "2026-10-29"
+}

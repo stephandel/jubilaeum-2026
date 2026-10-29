@@ -1,0 +1,56 @@
+{
+  "slug": "minoh",
+  "name": "Minoh",
+  "adresse": "M7 13, 68161 Mannheim",
+  "ort": "Mannheim (Quadrate)",
+  "telefon": "+49 160 3008843",
+  "email": null,
+  "website": null,
+  "speisekarte_url": null,
+  "maps_url": "https://maps.app.goo.gl/AKGynxEHiu1aYF1U6",
+  "google_bewertung": 4.9,
+  "google_anzahl": 432,
+  "google_quelle": "Stephans Tabelle (nicht live geprüft); Restaurant Guru zeigt 4,9 bei 323 (älterer Stand)",
+  "kueche": "japanisch, „Hot Teppan“ (Fleisch, Fisch, Gemüse auf heißer Eisenplatte), dazu Donburi/Katsu",
+  "beschreibung": "Kleines japanisches Lokal in M7, eröffnet Anfang Oktober 2025 in den Räumen des früheren „Ting Ting“. Schwerpunkt sind Teppan-Gerichte, die auf einer heißen Metallplatte serviert werden; Gäste loben vor allem Service und hausgemachte Getränke. Eher lässig-modern als festlich.",
+  "stephans_preisangabe": "10–20 €",
+  "preis_pro_person_korrigiert": "Hauptgerichte 11,90–27,80 € laut Presse (Okt. 2025); Gesamtpreis p. P. mit Getränken nicht belegbar",
+  "preis_abweichung": "Stephans 10–20 € liegt am unteren Rand: teurere Hauptgerichte bis 27,80 € (Stand Eröffnung). Aktuelle Karte nicht online.",
+  "preisbeispiele": [],
+  "preisbeispiele_hinweis": "Keine Preisbeispiele möglich: keine eigene Website, keine offizielle Karte online. Nur Nutzerfotos der Karte auf Restaurant Guru (nicht ausgewertet).",
+  "oeffnung_samstag": "11:30–22:00",
+  "oeffnung_hinweis": "Nur aus Portalen (Restaurant Guru, coolibri, gastroguide, neueroeffnung.info) – täglich 11:30–22:00, keine offizielle Quelle.",
+  "oeffnung_quelle": "https://www.gastroguide.de/restaurant/297597/minoh/mannheim/oeffnungszeiten",
+  "reservierung": null,
+  "parken": {
+    "text": "Parkhaus N7 (Einfahrt Kunststraße, N7 7) im Nachbarquadrat, 501 Plätze, 24 h; Tag 2 €/1 h, 5 €/2 h, 8 €/3 h; ab 21 Uhr 1 €/h. Fußweg wenige Minuten (nicht gemessen). Alternative: Tiefgarage N7 Cineplex.",
+    "parkopedia_url": "https://www.parkopedia.de/parking/garage/n7_kunststrasse/68161/mannheim/",
+    "quelle": "https://parken-mannheim.de/en/parking/n7-parkhaus/"
+  },
+  "bilder": [
+    {
+      "datei": "img/minoh-1.jpg",
+      "art": "location",
+      "beschreibung": "Eingang des Restaurants bei der Eröffnung (Foto: Stephanie Bach, mannheim24)",
+      "quelle_url": "https://www.mannheim24.de/assets/images/40/16/40016659-eingangsbereich-neueroeffneten-restaurants-minoh-mannheim-asiatisch-2x6h8uHfcjfe.jpg"
+    }
+  ],
+  "quellen": [
+    "https://www.mannheim24.de/mannheim/neueroeffnung-mannheim-restaurant-minoh-foodtrend-m7-restaurant-93977427.html",
+    "https://restaurantguru.com/Minoh-Mannheim",
+    "https://coolibri.de/restaurant/minoh-mannheim/",
+    "https://www.gastroguide.de/restaurant/297597/minoh/mannheim/oeffnungszeiten",
+    "https://www.neueroeffnung.info/mannheim/minoh-restaurant",
+    "https://parken-mannheim.de/en/parking/n7-parkhaus/"
+  ],
+  "nicht_geprueft": [
+    "Keine Website und keine offizielle Speisekarte gefunden – keine Preisbeispiele",
+    "Getränkepreise unbekannt",
+    "Öffnungszeiten nur aus Portalen",
+    "Telefonnummer (Mobilnummer) nur aus Portalen",
+    "Nur 1 Bild: kein Gerichtsfoto aus zulässiger Quelle gefunden (Facebook-Seite ohne Login nicht lesbar)",
+    "Google-Bewertung nicht live geprüft",
+    "Fußweg Parkhaus N7 → M7 nicht gemessen"
+  ],
+  "stand": "2026-10-29"
+}

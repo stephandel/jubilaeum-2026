@@ -1,0 +1,50 @@
+{
+  "slug": "schafheutle",
+  "name": "Café Schafheutle",
+  "adresse": "Hauptstraße 94, 69117 Heidelberg",
+  "ort": "Heidelberg-Altstadt",
+  "telefon": "+49 6221 14680",
+  "email": null,
+  "website": "https://cafe-schafheutle.de/",
+  "speisekarte_url": "https://cdn.shopify.com/s/files/1/0954/2221/8504/files/Speisekarte_12_25_DEUTSCH.pdf",
+  "google_bewertung": 4.7,
+  "google_anzahl": 2066,
+  "google_quelle": "Stephans Tabelle vom 13.09.2026 (nicht live geprüft)",
+  "bewertung_hinweis": "Grenzfall: live 4,7 (29.10.2026), also nicht über 4,7 – als Ausweichoption aufgenommen.",
+  "spezialitaet": "Traditionskonditorei seit 1832: Torten, Patisserie, Pralinen (Valrhona), Baumkuchen; Kaffeehaus mit Garten",
+  "preisniveau": "Creme-/Sahnetorte & Patisserie 5,60 €, Obsttorte 5,50 €, Tasse Kaffee 3,60 €, Cappuccino 4,40 € (Karte 12/2025)",
+  "beschreibung": "Historisches Kaffeehaus mitten in der Heidelberger Altstadt mit eigener Konditorei und großer Kuchentheke. Klassischer als eine französische Pâtisserie, dafür mit Tischreservierung und viel Platz.",
+  "oeffnung_samstag": "09:30–18:00",
+  "oeffnung_hinweis": "Mo Ruhetag, Di–So 9:30–18 Uhr; Tischreservierung online möglich",
+  "oeffnung_quelle": "https://cafe-schafheutle.de/",
+  "parken": null,
+  "bilder": [
+    {
+      "datei": "img/cafe-schafheutle-1.jpg",
+      "art": "location",
+      "quelle_url": "https://cafe-schafheutle.de/cdn/shop/files/interior_dark_1600x.jpg"
+    },
+    {
+      "datei": "img/cafe-schafheutle-2.jpg",
+      "art": "produkt",
+      "quelle_url": "https://cafe-schafheutle.de/cdn/shop/files/fruchtkuchen.jpg"
+    },
+    {
+      "datei": "img/cafe-schafheutle-3.jpg",
+      "art": "location",
+      "quelle_url": "https://cafe-schafheutle.de/cdn/shop/files/cafe_front_1500x1500.jpg"
+    }
+  ],
+  "quellen": [
+    "https://cafe-schafheutle.de/",
+    "https://cafe-schafheutle.de/pages/kaffeehaus",
+    "https://cdn.shopify.com/s/files/1/0954/2221/8504/files/Speisekarte_12_25_DEUTSCH.pdf"
+  ],
+  "nicht_geprueft": [
+    "Google-Bewertung nur aus Stephans Tabelle",
+    "Preise aus Karte 12/2025 – evtl. leicht geändert",
+    "Parken nicht recherchiert"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Schafheutle%2C+Hauptstra%C3%9Fe+94%2C+69117+Heidelberg",
+  "stand": "2026-10-29"
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "doblers",
+  "name": "Dobler's Restaurant",
+  "telefon": "+49 621 14397",
+  "email": "info@doblers-restaurant.de",
+  "website": "https://doblers-restaurant.de/",
+  "oeffnung_samstag": "12:00–15:00 und 18:30–23:00 (Gäste-Einlass abends 18:30–20:00)",
+  "oeffnung_hinweis": "So+Mo geschlossen. Abends Ankunft nur 18:30–20:00, also kein 17-Uhr-Termin. No-Show wird mit mind. 80 € pro Person berechnet.",
+  "oeffnung_quelle": "https://doblers.de/",
+  "reservierung": {
+    "art": "online",
+    "tool": "gastronovi",
+    "url": "https://services.gastronovi.com/restaurants/86279/reservierung/widget?companyRoute=1",
+    "verfuegbar_31_10": "nein",
+    "freie_zeiten": [],
+    "hinweis": "gastronovi-Widget im Browser geprüft (29.10., ca. 14:15 Uhr): 19:00 Uhr für 2 Personen „leider nicht verfügbar“; die angezeigte Alternativliste ist eine Standardliste, nicht bestätigt. Einlass abends nur 18:30–20:00. Bitte anrufen: 0621 14397.",
+    "stand": "2026-10-29"
+  },
+  "nicht_geprueft": [
+    "Verfügbarkeit am 31.10. nicht selbst geprüft (Bot-Schutz)",
+    "Zwei E-Mail-Adressen auf der Website: info@doblers-restaurant.de und restaurant@doblers.de"
+  ]
+}

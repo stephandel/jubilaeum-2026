@@ -1,0 +1,190 @@
+{
+  "slug": "grenzhof",
+  "name": "Hotel & Restaurant Grenzhof – Restaurant Gutsstube",
+  "adresse": "Grenzhof 9, 69123 Heidelberg",
+  "ort": "Heidelberg-Grenzhof",
+  "telefon": "+49 6202 943-0",
+  "email": "welcome@grenzhof.de",
+  "website": "https://www.grenzhof.de/restaurant/",
+  "speisekarte_url": "https://www.grenzhof.de/speisekarte/",
+  "weinkarte_url": "https://www.grenzhof.de/wp-content/uploads/2026/07/Weinkarte-August-2026.pdf",
+  "maps_url": "https://maps.app.goo.gl/FCyi4B6uP2dAyo5s9",
+  "google_bewertung": 4.5,
+  "google_anzahl": 702,
+  "google_quelle": "Stephans Tabelle (nicht live geprüft)",
+  "kueche": "saisonale, moderne Küche mit regionalen Produkten (teils aus eigenem Gutsanbau); Michelin-Guide-gelistet (€€€)",
+  "beschreibung": "Restaurant „Gutsstube“ in einem historischen Gutshof-Hotel zwischen Heidelberg und Mannheim, 70 Plätze, weiß eingedeckte Tische im Landhausstil. Küchenchef Sebastian Andrée kocht ein saisonales Jahreszeitenmenü (3–6 Gänge) und à la carte, Gemüse und Kräuter kommen teils vom eigenen Gut. Gut geeignet für einen festlichen, aber unaufgeregten Abend.",
+  "stephans_preisangabe": "40–80 €",
+  "preis_pro_person_korrigiert": "ca. 75–130 € p. P. (zzgl. Tee/Kaffee) inkl. Getränke (Hauptgang 31–54 €, Menü 89–119 €)",
+  "preis_abweichung": "Stephans 40–80 € ist zu niedrig: schon Hauptgang + Dessert kostet 47–70 € ohne Getränke; Menü 3 Gänge 89 €, komplett (6 Gänge) 119 €.",
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: Hauptgang + Dessert + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Glasiertes Short Rib, Zuckermais, cremige Polenta",
+          "preis": 49.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Auf der Haut gebratenes Wolfsbarschfilet, Artischocke, Thymian-Gnocchi",
+          "preis": 48.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Topfenknödel – Pflaume – Salzkaramell",
+          "preis": 16.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Dunkle Schokolade – Brombeere – Haselnuss",
+          "preis": 16.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Teinacher Medium 0,75 l (Flasche, für beide)",
+          "preis": 7.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Grauburgunder Qw. trocken, Weingut Manz, 0,2 l",
+          "preis": 7.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Apfelsaft-Schorle 0,2 l",
+          "preis": 3.2,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee (Preis nicht online – Ronnefeldt laut Website)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee (Preis nicht online)",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 146.7
+    },
+    {
+      "titel": "Beispiel 2: Jahreszeitenmenü 3 Gänge + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Jahreszeitenmenü 3 Gänge",
+          "preis": 89.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Teinacher Medium 0,75 l (Flasche, für beide)",
+          "preis": 7.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Grauburgunder Qw. trocken, Weingut Manz, 0,2 l",
+          "preis": 7.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Apfelsaft-Schorle 0,2 l",
+          "preis": 3.2,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee (Preis nicht online – Ronnefeldt laut Website)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee (Preis nicht online)",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 195.7
+    },
+    {
+      "titel": "Beispiel 3: Jahreszeitenmenü komplett (6 Gänge) + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Jahreszeitenmenü komplett (Entenleber, Kürbis, Waller, Rehrücken, Rohmilchkäse, Weiße Schokolade)",
+          "preis": 119.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Teinacher Medium 0,75 l (Flasche, für beide)",
+          "preis": 7.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Grauburgunder Qw. trocken, Weingut Manz, 0,2 l",
+          "preis": 7.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Apfelsaft-Schorle 0,2 l",
+          "preis": 3.2,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee (Preis nicht online – Ronnefeldt laut Website)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee (Preis nicht online)",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 255.7
+    }
+  ],
+  "preisbeispiele_hinweis": "Summen ohne Tee und Kaffee (Preise nicht online). Eine feste Weinbegleitung zum Menü ist nicht ausgewiesen; offener Wein 0,1 l ab 6,00 €, 0,2 l ab 7,00 €.",
+  "oeffnung_samstag": "Abendkarte à la carte ab 18:00 (Footer: 18–21 Uhr); Café/Apéro-Lounge 14–18 Uhr",
+  "oeffnung_hinweis": "Nur Abendservice ab 18 Uhr, Reservierung laut Website erforderlich. Sonntag Ruhetag (1.11. betrifft den Samstag nicht). Martinsgans erst ab 11.11.",
+  "oeffnung_quelle": "https://www.grenzhof.de/restaurant/",
+  "reservierung": null,
+  "parken": {
+    "text": "Kostenfreie Parkplätze direkt vor dem Haus (eigener Hotelparkplatz), Fußweg ca. 1 Minute.",
+    "parkopedia_url": null,
+    "quelle": "https://www.grenzhof.de/ (Text zu Tagungen: „kostenfreien Parkmöglichkeiten direkt vor dem Haus“)"
+  },
+  "bilder": [
+    {
+      "datei": "img/grenzhof-1.jpg",
+      "art": "location",
+      "beschreibung": "Fassade Hotel & Restaurant",
+      "quelle_url": "https://www.grenzhof.de/wp-content/uploads/2023/06/GRENZHOF-Hotel-Restaurant-Fassade.jpg"
+    },
+    {
+      "datei": "img/grenzhof-2.jpg",
+      "art": "gastraum",
+      "beschreibung": "Gastraum Gutsstube",
+      "quelle_url": "https://www.grenzhof.de/wp-content/uploads/2024/09/2024-05-22_Fine-Dine_Grenzhof-HeidelbergDSCF4588.jpg"
+    },
+    {
+      "datei": "img/grenzhof-3.jpg",
+      "art": "gericht",
+      "beschreibung": "Gänsebraten (Werbebild des Hauses zum Gänseessen, vermutlich Stockfoto – Symbolbild)",
+      "quelle_url": "https://www.grenzhof.de/wp-content/uploads/2024/11/gaensefestessen.jpg"
+    }
+  ],
+  "quellen": [
+    "https://www.grenzhof.de/speisekarte/",
+    "https://www.grenzhof.de/restaurant/",
+    "https://www.grenzhof.de/wp-content/uploads/2026/07/Weinkarte-August-2026.pdf",
+    "https://www.grenzhof.de/",
+    "https://guide.michelin.com/ie/en/baden-wurttemberg/heidelberg/restaurant/gutsstube"
+  ],
+  "nicht_geprueft": [
+    "Google-Bewertung nicht live geprüft (Stephans Tabelle)",
+    "Tee- und Kaffeepreise nicht online (stehen weder in Speise- noch Weinkarte)",
+    "Michelin-Einstufung nur aus Suchergebnis-Snippet, Seite nicht selbst geöffnet",
+    "Kein echtes Gerichtsfoto auf der Website gefunden; Bild 3 ist ein Werbebild (Gans) und wohl Stockfoto",
+    "Speisekarte trägt „gültig ab August 2026“ – ob sie am 31.10. noch gilt, nicht bestätigt"
+  ],
+  "stand": "2026-10-29"
+}

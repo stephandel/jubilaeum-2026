@@ -1,0 +1,249 @@
+/* apple-ui/base.css — einmal pro App einbinden, Werte nur über Variablen nutzen */
+
+:root {
+  /* Schrift */
+  --font: -apple-system, "SF Pro Text", system-ui, sans-serif;
+  --fs-large-title: 2.125rem; /* 34 */
+  --fs-title1: 1.75rem;       /* 28 */
+  --fs-title2: 1.375rem;      /* 22 */
+  --fs-title3: 1.25rem;       /* 20 */
+  --fs-body: 1.0625rem;       /* 17 */
+  --fs-subhead: 0.9375rem;    /* 15 */
+  --fs-footnote: 0.8125rem;   /* 13 */
+  --fs-caption: 0.75rem;      /* 12 */
+
+  /* Abstände */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px;
+  --s5: 20px; --s6: 24px; --s8: 32px; --tap: 44px;
+  --rand: var(--s4);
+  --r-kachel: 16px; --r-button: 12px; --r-chip: 999px;
+
+  /* Systemfarben */
+  --blau: #007AFF; --gruen: #34C759; --orange: #FF9500;
+  --rot: #FF3B30; --gelb: #FFCC00; --indigo: #5856D6; --teal: #30B0C7;
+  --akzent: var(--blau);
+
+  /* Hell */
+  --bg: #F2F2F7;
+  --bg-2: #FFFFFF;
+  --label: #000000;
+  --label-2: rgba(60,60,67,.6);
+  --label-3: rgba(60,60,67,.3);
+  --trenner: rgba(60,60,67,.29);
+
+  --fuellung: rgba(120,120,128,.2);
+  --glas-bg: rgba(255,255,255,.7);
+  --glas-rand: rgba(255,255,255,.4);
+  --glas-schatten: 0 8px 32px rgba(0,0,0,.12);
+
+  /* Bewegung */
+  --ease: cubic-bezier(.32,.72,0,1);
+  --dauer: 280ms;
+
+  /* Safe Areas */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --bg-2: #1C1C1E;
+    --label: #FFFFFF;
+    --label-2: rgba(235,235,245,.6);
+    --label-3: rgba(235,235,245,.3);
+    --trenner: rgba(84,84,88,.6);
+    --fuellung: rgba(120,120,128,.36);
+    --glas-bg: rgba(28,28,30,.6);
+    --glas-rand: rgba(255,255,255,.15);
+    --glas-schatten: 0 8px 32px rgba(0,0,0,.5);
+    --blau: #0A84FF; --gruen: #30D158; --orange: #FF9F0A;
+    --rot: #FF453A; --gelb: #FFD60A; --indigo: #5E5CE6; --teal: #40C8E0;
+  }
+}
+
+@media (min-width: 768px) { :root { --rand: var(--s5); } }
+
+/* Grundlayout */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: var(--fs-body);
+  line-height: 1.35;
+  color: var(--label);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+button, input, select { font: inherit; color: inherit; }
+button { background: none; border: 0; padding: 0; cursor: pointer; }
+.zahlen { font-variant-numeric: tabular-nums; }
+
+/* Textstufen */
+.t-large-title { font-size: var(--fs-large-title); font-weight: 700; letter-spacing: .37px; }
+.t-title1   { font-size: var(--fs-title1); font-weight: 700; }
+.t-title2   { font-size: var(--fs-title2); font-weight: 700; }
+.t-title3   { font-size: var(--fs-title3); font-weight: 600; }
+.t-body     { font-size: var(--fs-body); }
+.t-subhead  { font-size: var(--fs-subhead); }
+.t-footnote { font-size: var(--fs-footnote); color: var(--label-2); }
+.t-caption  { font-size: var(--fs-caption); color: var(--label-2); text-transform: uppercase; letter-spacing: .06em; }
+
+/* Glas */
+.glas {
+  background: var(--glas-bg);
+  border: 1px solid var(--glas-rand);
+  box-shadow: var(--glas-schatten);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+}
+@supports not (backdrop-filter: blur(1px)) {
+  .glas { background: color-mix(in srgb, var(--bg-2) 92%, transparent); }
+}
+
+/* Bauteile */
+.kachel {
+  background: var(--bg-2);
+  border-radius: var(--r-kachel);
+  padding: var(--s4);
+}
+.kachel.glas { background: var(--glas-bg); }
+
+.button {
+  min-height: var(--tap);
+  padding: 0 var(--s5);
+  border-radius: var(--r-button);
+  background: var(--akzent);
+  color: #fff;
+  font-weight: 600;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: opacity var(--dauer) var(--ease), transform var(--dauer) var(--ease);
+}
+.button.leise { background: var(--fuellung); color: var(--akzent); }
+.button.rand  { background: none; border: 1px solid var(--trenner); color: var(--akzent); }
+
+.chip {
+  height: 32px; padding: 0 var(--s3);
+  border-radius: var(--r-chip);
+  background: var(--fuellung);
+  font-size: var(--fs-subhead); font-weight: 500;
+  display: inline-flex; align-items: center; gap: var(--s1);
+}
+.chip.aktiv { background: var(--akzent); color: #fff; }
+
+.tippbar:active, .button:active, .chip:active { opacity: .6; transform: scale(.97); }
+
+/* Titelzeile und Tab-Leiste */
+.titelzeile {
+  position: sticky; top: 0; z-index: 20;
+  padding: calc(var(--safe-top) + var(--s2)) var(--rand) var(--s2);
+  min-height: calc(var(--safe-top) + var(--tap));
+  display: flex; align-items: center; gap: var(--s3);
+}
+.tabbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+  display: flex;
+  padding: var(--s1) var(--safe-right) var(--safe-bottom) var(--safe-left);
+}
+.tabbar button {
+  flex: 1; min-height: calc(var(--tap) + 6px);
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  font-size: var(--fs-caption); font-weight: 500; color: var(--label-2); /* 12 px; Apple nutzt 10 pt, wir bleiben über dem 11-px-Minimum */
+}
+.tabbar button[aria-selected="true"] { color: var(--akzent); }
+.tabbar svg { width: 24px; height: 24px; }
+.inhalt { padding: 0 var(--rand) calc(var(--tap) + var(--safe-bottom) + var(--s6)); }
+
+/* Listen */
+.liste { background: var(--bg-2); border-radius: var(--r-kachel); overflow: hidden; }
+.liste > * {
+  min-height: var(--tap); padding: var(--s3) var(--s4);
+  display: flex; align-items: center; gap: var(--s3);
+}
+.liste > * + * { border-top: 1px solid var(--trenner); }
+
+/* Zustände */
+.skeleton {
+  background: linear-gradient(90deg, var(--fuellung) 25%, transparent 50%, var(--fuellung) 75%);
+  background-size: 200% 100%;
+  animation: skeleton 1.4s infinite linear;
+  border-radius: var(--s2);
+}
+@keyframes skeleton { to { background-position: -200% 0; } }
+.leer {
+  text-align: center; padding: var(--s8) var(--rand);
+  color: var(--label-2);
+}
+.leer svg { width: 48px; height: 48px; margin-bottom: var(--s3); }
+
+/* Bewegung */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+/* Fokus */
+:focus-visible { outline: 2px solid var(--akzent); outline-offset: 2px; border-radius: var(--r-button); }
+
+/* ===== iPad: ab 768 px (regular Breite), siehe module/ipad.md ===== */
+.seitenleiste { display: none; }
+.lesebreite { max-width: 680px; }
+@media (min-width: 768px) {
+  /* Tab-Leiste wandert nach oben in die Titelzeile, Symbol und Label nebeneinander */
+  .tabbar { position: sticky; top: 0; bottom: auto; padding: var(--s1) var(--rand); justify-content: center; gap: var(--s2); }
+  .tabbar button { flex: 0 0 auto; flex-direction: row; gap: var(--s2); min-height: var(--tap); padding: 0 var(--s3); font-size: var(--fs-subhead); border-radius: var(--r-button); }
+  .tabbar button[aria-selected="true"] { background: var(--fuellung); }
+  .tabbar svg { width: 20px; height: 20px; }
+  .inhalt { padding-bottom: var(--s6); }
+
+  /* Seitenleiste + Inhalt als Spalten */
+  .split { display: grid; grid-template-columns: var(--sl-breite, 280px) 1fr; min-height: 100dvh; }
+  .split.drei { grid-template-columns: var(--sl-breite, 260px) var(--liste-breite, 320px) 1fr; }
+  .split > * + * { border-left: 1px solid var(--trenner); }
+  .seitenleiste { display: block; position: sticky; top: 0; height: 100dvh; overflow-y: auto; padding: calc(var(--safe-top) + var(--s4)) var(--s3) var(--s4); }
+  .seitenleiste .gruppe { margin-bottom: var(--s5); }
+  .seitenleiste .gruppe > .t-caption { padding: 0 var(--s3) var(--s2); }
+  .seitenleiste a, .seitenleiste button {
+    display: flex; align-items: center; gap: var(--s3); width: 100%;
+    min-height: var(--tap); padding: 0 var(--s3); border-radius: var(--s2);
+    color: var(--label); text-decoration: none;
+  }
+  .seitenleiste svg { width: 20px; height: 20px; color: var(--akzent); flex: 0 0 auto; }
+  .seitenleiste [aria-current="page"], .seitenleiste [aria-selected="true"] { background: var(--fuellung); }
+}
+
+/* ===== Zeiger (Trackpad/Maus): Hover nur hier, siehe module/ipad.md Abschnitt 5 ===== */
+@media (hover: hover) and (pointer: fine) {
+  .tabbar button:hover, .chip:hover, .button.leise:hover, .seitenleiste a:hover, .seitenleiste button:hover { background: var(--fuellung); }
+  .button:hover { filter: brightness(1.08); }
+  .liste > *:hover, .kachel.tippbar:hover { background: color-mix(in srgb, var(--bg-2) 94%, var(--label)); }
+  a { cursor: pointer; }
+  button, .button, .chip { cursor: default; }   /* Mac-Konvention: Knöpfe behalten den Pfeil */
+  input, select, textarea { accent-color: var(--akzent); }
+}
+
+/* ===== Mac-Dichte: breites Fenster mit Zeiger, siehe module/mac.md ===== */
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  :root {
+    --fs-large-title: 1.625rem; /* 26 */
+    --fs-title1: 1.375rem;      /* 22 */
+    --fs-title2: 1.0625rem;     /* 17 */
+    --fs-title3: 0.9375rem;     /* 15 */
+    --fs-body: 0.8125rem;       /* 13 */
+    --fs-subhead: 0.6875rem;    /* 11 */
+    --fs-footnote: 0.625rem;    /* 10 */
+    --fs-caption: 0.625rem;     /* 10 */
+    --tap: 28px;
+    --r-kachel: 12px; --r-button: 6px;
+  }
+  body { line-height: 1.25; }
+  .kachel { padding: var(--s3); }
+  .glas { -webkit-backdrop-filter: blur(12px) saturate(160%); backdrop-filter: blur(12px) saturate(160%); }
+  .tippbar:active, .button:active, .chip:active { transform: none; opacity: .75; } /* kein Scale auf dem Mac */
+}
+/* Inaktives Fenster (JS setzt data-inaktiv auf <html>, wenn document.hasFocus() false ist) */
+:root[data-inaktiv] .glas { background: var(--bg-2); -webkit-backdrop-filter: none; backdrop-filter: none; }
+:root[data-inaktiv] { --akzent: var(--label-2); }

@@ -1,0 +1,209 @@
+{
+  "slug": "kurfuerstenstube",
+  "name": "Die Kurfürstenstube (Hotel Der Europäische Hof)",
+  "adresse": "Friedrich-Ebert-Anlage 1, 69117 Heidelberg",
+  "ort": "Heidelberg",
+  "telefon": "+49 6221 515-511",
+  "email": "f-b@europaeischerhof.com",
+  "website": "https://www.europaeischerhof.com/gourmet-restaurant-kurfuerstenstube-heidelberg/",
+  "speisekarte_url": "https://www.europaeischerhof.com/wp-content/uploads/2026/04/Kurfuerstenstube-ab-16.OKT_.26.pdf",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Die+Kurf%C3%BCrstenstube+Friedrich-Ebert-Anlage+1%2C+69117+Heidelberg",
+  "google_bewertung": 4.7,
+  "google_anzahl": 105,
+  "google_quelle": "Vorrecherche 29.10. (nicht live geprüft)",
+  "kueche": "klassisch-französisch geprägte Fine-Dining-Küche, saisonal",
+  "beschreibung": "Gourmetrestaurant im Fünf-Sterne-Hotel Der Europäische Hof am Rand der Heidelberger Altstadt, nur in der Wintersaison geöffnet. Historischer holzvertäfelter Gastraum von 1866 mit Intarsien; à la carte oder Menü mit 4 bis 6 Gängen, Weinbegleitung durch den Sommelier auf Wunsch. Im Guide Michelin 2026 empfohlen.",
+  "stephans_preisangabe": "Vorrecherche: Hauptgänge 45–65 €, Menüs 122–225 €",
+  "preis_pro_person_korrigiert": "Hauptgänge 45–60 €, Vorspeisen 18–44 €, Desserts 24 €; Menü 147 € (4 Gänge), 191 € (5 Gänge), 235 € (6 Gänge)",
+  "preis_abweichung": "Menüpreise laut aktueller Karte (gültig ab 16.10.2026) 147–235 €, nicht 122–225 €. Die Website nennt auch ein 3-Gang-Menü, dessen Preis steht aber nicht in der Karte.",
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: à la carte – Vorspeise/Suppe, Hauptgang, Dessert + Getränkeprofil (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Heimischer Feldsalat mit Kürbiskernöl-Vinaigrette",
+          "preis": 18.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Essenz von Steinpilzen mit Agnolotti",
+          "preis": 24.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Rosa gebratenes Dry-Aged-Rinderfilet mit Kalbsbries",
+          "preis": 60.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Filet vom Bretonischen Steinbutt",
+          "preis": 58.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Zwetschgenröster mit Tahiti-Vanille-Mousse",
+          "preis": 24.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Mousse von Valrhona Opalys mit Yuzu-Sorbet",
+          "preis": 24.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser (1 große Flasche)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Glas Weißburgunder Reserve, Balthasar Ress (0,1 l)",
+          "preis": 13.5,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 221.5,
+      "summe_hinweis": "Summe ohne: Wasser (1 große Flasche), 1 Saft/Schorle, 1 Tee, 1 Kaffee (Preise nicht online)."
+    },
+    {
+      "titel": "Beispiel 2: 4-Gang-Menü × 2 + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "4-Gang-Menü (ohne Ibérico und Garnele)",
+          "preis": 147.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser (1 große Flasche)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Glas Weißburgunder Reserve, Balthasar Ress (0,1 l)",
+          "preis": 13.5,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 307.5,
+      "summe_hinweis": "Summe ohne: Wasser (1 große Flasche), 1 Saft/Schorle, 1 Tee, 1 Kaffee (Preise nicht online)."
+    },
+    {
+      "titel": "Beispiel 3: 6-Gang-Menü × 2 + Getränkeprofil, Variante Weinbegleitung für 1 Person",
+      "positionen": [
+        {
+          "text": "6-Gang-Menü",
+          "preis": 235.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Weinbegleitung für 1 Person",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser (1 große Flasche)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 470.0,
+      "summe_hinweis": "Weinbegleitung wird angeboten, Preis ist online nicht genannt. Zum Vergleich: 5-Gang-Menü 191 € p. P. Summe ohne: Weinbegleitung für 1 Person, Wasser (1 große Flasche), 1 Saft/Schorle, 1 Tee, 1 Kaffee (Preise nicht online)."
+    }
+  ],
+  "oeffnung_samstag": "12:00–23:00, Speisenbestellung bis 21:00",
+  "oeffnung_hinweis": "Nur in den Wintermonaten geöffnet (im Sommer stattdessen das Sommerrestaurant). Die Winterkarte gilt laut Dateiname ab 16.10.2026, die Saison läuft also. Kein Feiertagshinweis zu Allerheiligen gefunden.",
+  "oeffnung_quelle": "https://www.europaeischerhof.com/gourmet-restaurant-kurfuerstenstube-heidelberg/",
+  "reservierung": {
+    "art": "online",
+    "tool": "OpenTable",
+    "url": "https://www.opentable.de/booking/restref/availability?lang=de-DE&restRef=252900&otSource=Restaurant%20website",
+    "verfuegbar_31_10": "ja",
+    "freie_zeiten": [
+      "18:30",
+      "18:45",
+      "19:15",
+      "19:30",
+      "19:45"
+    ],
+    "hinweis": "OpenTable im Browser geprüft (29.10., ca. 14:25 Uhr), 2 Personen, Wunschzeit 19:00: angebotene Zeiten 18:30, 18:45, 19:15, 19:30, 19:45. Nicht gebucht.",
+    "stand": "2026-10-29"
+  },
+  "parken": {
+    "text": "Öffentliches Parkhaus P5 direkt am Hotel (200 Plätze, durchgehend geöffnet, Einfahrtshöhe 1,90 m), Staffeltarif, Tagestarif 23 €; Hotelgäste können vorfahren (Parkservice).",
+    "parkopedia_url": null,
+    "quelle": "https://www.europaeischerhof.com/kontakt/ und https://www.europaeischerhof.com/ehh-faq/"
+  },
+  "bilder": [
+    {
+      "datei": "img/kurfuerstenstube-1.jpg",
+      "art": "location",
+      "quelle_url": "https://www.europaeischerhof.com/wp-content/uploads/2026/10/Luxus-Hotel-Europaeischer-Hof-Heidelberg-Die_Kurfuerstenstube_Michelin-2026-01.webp"
+    },
+    {
+      "datei": "img/kurfuerstenstube-2.jpg",
+      "art": "gericht",
+      "quelle_url": "https://www.europaeischerhof.com/wp-content/uploads/2024/12/Food_Zwischengang-1.jpg"
+    }
+  ],
+  "quellen": [
+    "https://www.europaeischerhof.com/gourmet-restaurant-kurfuerstenstube-heidelberg/",
+    "https://www.europaeischerhof.com/wp-content/uploads/2026/04/Kurfuerstenstube-ab-16.OKT_.26.pdf",
+    "https://www.europaeischerhof.com/ehh-faq/",
+    "https://www.europaeischerhof.com/kontakt/",
+    "https://guide.michelin.com/de/de/baden-wurttemberg/heidelberg/restaurant/die-kurfurstenstube",
+    "https://www.opentable.de/booking/restref/availability?lang=de-DE&restRef=252900&otSource=Restaurant%20website"
+  ],
+  "nicht_geprueft": [
+    "OpenTable-Verfügbarkeit 31.10. (Abruf blockiert) – nur Werte der Vorrecherche",
+    "Preise für Wasser, Saft, Tee, Kaffee (nicht in der Speisekarte; verlinkte Weinkarte-PDF liefert 404)",
+    "Preis der Weinbegleitung",
+    "Preis des 3-Gang-Menüs",
+    "Google-Bewertung (Vorrecherche-Wert übernommen)",
+    "Bild 2 (Gericht) ist ein Symbolbild der Hotelküche von 2024, kein Gericht der aktuellen Karte"
+  ],
+  "stand": "2026-10-29"
+}

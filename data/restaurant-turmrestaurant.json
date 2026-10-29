@@ -1,0 +1,229 @@
+{
+  "slug": "turmrestaurant",
+  "name": "Turmrestaurant im Ebertpark",
+  "adresse": "Erzbergerstraße 69, 67063 Ludwigshafen am Rhein",
+  "ort": "Ludwigshafen-Friesenheim",
+  "telefon": "+49 621 65714720",
+  "email": "info@turm.restaurant",
+  "website": "https://www.turm.restaurant/",
+  "speisekarte_url": "https://www.turm.restaurant/images/document/26525753/Speisekarte-Restaurant-GWMX8RL8aaDlSJzdplu0RA.pdf",
+  "weinkarte_url": "https://www.turm.restaurant/images/document/23781556/Vinothek-NQi6kOTPPeX_ABfqZYSXcg.pdf",
+  "maps_url": "https://maps.app.goo.gl/2sGGw6JuQGG6P4Sz8",
+  "google_bewertung": 4.5,
+  "google_anzahl": 1045,
+  "google_quelle": "Stephans Tabelle (nicht live geprüft)",
+  "kueche": "Pfälzer Küche mit modernen Einflüssen, gutbürgerlich bis gehoben",
+  "beschreibung": "Historischer Turmbau von 1925 am Eingang des Ebertparks, seit April 2025 von der GEG Gastronomie & Event Group betrieben. Unter einem Dach: Restaurant, Pfälzer Stube, Bistro, Vinothek und Lounge mit Blick über den Park. Die Karte reicht von Saumagen und Schnitzel bis Saibling und Rumpsteak.",
+  "stephans_preisangabe": "20–40 €",
+  "preis_pro_person_korrigiert": "ca. 43–76 € p. P. inkl. Getränke (Hauptgang 18,50–34,50 €)",
+  "preis_abweichung": "Stephans 20–40 € stimmt nur für einen Hauptgang allein; mit Dessert und Getränken ca. 43–58 €, mit Vorspeise bis ca. 76 € p. P.",
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: Pfälzisch – Hauptgang + Dessert + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Schweineschnitzel „Wiener Art“ mit Turm-Pommes",
+          "preis": 19.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Turm-Trio: Saumagen, Bratwurst, Leberknödel mit Rieslingkraut",
+          "preis": 21.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Gebrannte Tahiti-Vanillecreme mit Mango-Passionsfruchtsorbet",
+          "preis": 9.8,
+          "anzahl": 1
+        },
+        {
+          "text": "Pfälzer Beerenragout mit Riesling-Sabayon",
+          "preis": 12.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Teinacher Gourmet Medium 0,25 l",
+          "preis": 3.1,
+          "anzahl": 2
+        },
+        {
+          "text": "2024er Kallstadter Riesling, Weingut Bühler, 1/4 l",
+          "preis": 5.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Apfelsaftschorle 0,30 l",
+          "preis": 3.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Eilles Tee",
+          "preis": 3.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee Créma",
+          "preis": 3.1,
+          "anzahl": 1
+        }
+      ],
+      "summe": 86.3
+    },
+    {
+      "titel": "Beispiel 2: Mittelweg – Salat + Hauptgang + Dessert + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Bunter Marktsalat",
+          "preis": 9.5,
+          "anzahl": 2
+        },
+        {
+          "text": "Hausgemachte Rinderroulade mit Kartoffel-Liebstöckel-Püree",
+          "preis": 26.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Hohenloher Schweinefiletmedaillons mit Kräuterspätzle",
+          "preis": 27.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Gebrannte Tahiti-Vanillecreme",
+          "preis": 9.8,
+          "anzahl": 2
+        },
+        {
+          "text": "Teinacher Gourmet Medium 0,25 l",
+          "preis": 3.1,
+          "anzahl": 2
+        },
+        {
+          "text": "2024er Kallstadter Riesling, Weingut Bühler, 1/4 l",
+          "preis": 5.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Apfelsaftschorle 0,30 l",
+          "preis": 3.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Eilles Tee",
+          "preis": 3.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee Créma",
+          "preis": 3.1,
+          "anzahl": 1
+        }
+      ],
+      "summe": 115.6
+    },
+    {
+      "titel": "Beispiel 3: Drei Gänge gehoben + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Cremige Burrata auf Pfälzer Strauchtomaten",
+          "preis": 17.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Frisch angemachtes Rindertatar",
+          "preis": 19.8,
+          "anzahl": 1
+        },
+        {
+          "text": "Rumpsteak mit Schmorzwiebeln, gratinierte Kartoffeln",
+          "preis": 34.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Saiblingsfilet mit Venere-Risotto und Safransauce",
+          "preis": 32.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Joghurtterrine mit Honig, Nüssen, Aprikose",
+          "preis": 13.8,
+          "anzahl": 1
+        },
+        {
+          "text": "Süßes Turm-Trio mit Espresso",
+          "preis": 10.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Teinacher Gourmet Medium 0,25 l",
+          "preis": 3.1,
+          "anzahl": 2
+        },
+        {
+          "text": "2024er Kallstadter Riesling, Weingut Bühler, 1/4 l",
+          "preis": 5.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Apfelsaftschorle 0,30 l",
+          "preis": 3.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Eilles Tee",
+          "preis": 3.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee Créma",
+          "preis": 3.1,
+          "anzahl": 1
+        }
+      ],
+      "summe": 151.6
+    }
+  ],
+  "oeffnung_samstag": "11:00–23:00, Küche 12:00–21:00",
+  "oeffnung_hinweis": "Website nennt Mo–So gleiche Zeiten. Online-Speisekarte wirkt wie eine Sommerkarte (Pfifferlinge, „sommerliches Gemüsecurry“) – Gerichte/Preise am 31.10. können abweichen. Martinsgans-Menü (79 €) erst ab 11.11. Fr 30.10. ab 21 Uhr AfterWork mit DJ in der Lounge (nicht Samstag).",
+  "oeffnung_quelle": "https://www.turm.restaurant/",
+  "reservierung": null,
+  "parken": {
+    "text": "Am Restaurant selbst keine Parkplätze. Empfohlen: Parkplatz Vorgelände Friedrich-Ebert-Halle (Navi: Erzbergerstraße 83, 67063 Ludwigshafen), laut Lageplan direkt gegenüber, kurzer Fußweg (Meterzahl nicht angegeben). Ausweichen: Straßenparken Kopernikus-/Schwedlerstraße (bis ca. 430 m). Kosten nicht belegt.",
+    "parkopedia_url": null,
+    "quelle": "https://www.turm.restaurant/ ; https://lukom.com/wp-content/uploads/2026/03/Parkmoeglichkeiten-Eberthalle.pdf"
+  },
+  "bilder": [
+    {
+      "datei": "img/turmrestaurant-1.jpg",
+      "art": "location",
+      "beschreibung": "Turmbau im Ebertpark mit Brunnen",
+      "quelle_url": "https://www.turm.restaurant/images/1200/15072782/turmrestaurant-is-02.jpg"
+    },
+    {
+      "datei": "img/turmrestaurant-2.jpg",
+      "art": "gastraum",
+      "beschreibung": "Gastraum Restaurant",
+      "quelle_url": "https://www.turm.restaurant/images/1024/22342573/restaurant-1R-EDCw-GoDOtBmUAwET6Q.jpg"
+    },
+    {
+      "datei": "img/turmrestaurant-3.jpg",
+      "art": "gericht",
+      "beschreibung": "Fischgericht beim Anrichten",
+      "quelle_url": "https://www.turm.restaurant/images/1920/22343036/restaurant-01-HGk82ywAZBS2B2O0N0HtGQ.jpg"
+    }
+  ],
+  "quellen": [
+    "https://www.turm.restaurant/",
+    "https://www.turm.restaurant/images/document/26525753/Speisekarte-Restaurant-GWMX8RL8aaDlSJzdplu0RA.pdf",
+    "https://www.turm.restaurant/impressum",
+    "https://gag-ludwigshafen.de/wp-content/uploads/2024/12/2024-12-PM-Neustart-Turmrestaurant.pdf",
+    "https://lukom.com/wp-content/uploads/2026/03/Parkmoeglichkeiten-Eberthalle.pdf"
+  ],
+  "nicht_geprueft": [
+    "Google-Bewertung nicht live geprüft (Stephans Tabelle)",
+    "Speisekarte offenbar Sommerkarte, Datum im PDF nicht angegeben – Herbstkarte evtl. anders",
+    "Parkplatz Eberthalle: Kosten und ob am 31.10. durch eine Hallenveranstaltung belegt, nicht geprüft",
+    "Parkopedia-Eintrag für den Eberthallen-Parkplatz nicht gefunden",
+    "Ob Halloween/Sonderveranstaltung am 31.10. den Restaurantbetrieb einschränkt, nicht geprüft"
+  ],
+  "stand": "2026-10-29"
+}

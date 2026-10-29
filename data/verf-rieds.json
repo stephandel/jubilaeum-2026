@@ -1,0 +1,22 @@
+{
+  "slug": "rieds",
+  "name": "Rieds Restaurant",
+  "telefon": "+49 6221 7146140",
+  "email": "info@rieds-restaurant.de",
+  "website": "https://rieds-restaurant.de/",
+  "oeffnung_samstag": "11:00–14:00 (Brunch) und 17:30–22:30 (Abendküche)",
+  "oeffnung_hinweis": "Montag Ruhetag. Am 1.11. gibt es statt des Brunch einen Secret Brunch (11:30–15:00); auf Samstag keine Auswirkung genannt.",
+  "oeffnung_quelle": "https://rieds-restaurant.de/",
+  "reservierung": {
+    "art": "online",
+    "tool": "OpenTable",
+    "url": "https://www.opentable.de/restref/client?rid=597822&restref=597822&lang=de-DE",
+    "verfuegbar_31_10": "nein",
+    "freie_zeiten": [],
+    "hinweis": "OpenTable im Browser geprüft (29.10., ca. 14:20 Uhr): „keine freien Tische an diesem Tag“ für 2 Personen. Bitte anrufen: 06221 7146140 oder Warteliste bei OpenTable.",
+    "stand": "2026-10-29"
+  },
+  "nicht_geprueft": [
+    "Verfügbarkeit am 31.10. (OpenTable nicht automatisch lesbar)"
+  ]
+}

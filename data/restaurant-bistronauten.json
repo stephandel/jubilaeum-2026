@@ -1,0 +1,186 @@
+{
+  "slug": "bistronauten",
+  "name": "bistronauten",
+  "adresse": "Kopernikusstraße 43, 69469 Weinheim",
+  "ort": "Weinheim",
+  "telefon": "+49 6201 8461856",
+  "email": "info@bistronauten.de",
+  "website": "https://www.bistronauten.de/",
+  "speisekarte_url": "https://www.bistronauten.de/aktuelles_menue_online.pdf",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=bistronauten+Kopernikusstra%C3%9Fe+43%2C+69469+Weinheim",
+  "google_bewertung": 4.8,
+  "google_anzahl": 619,
+  "google_quelle": "Vorrecherche 29.10. (nicht live geprüft)",
+  "kueche": "regionale, saisonale Marktküche",
+  "beschreibung": "Bistro im ehemaligen OEG-Bahnhof von 1903 mit offener Küche, Theke und Backstein-Ambiente; lockerer Service ohne Förmlichkeit. Es gibt ein festes Abendmenü mit täglich einem Fleisch-, Fisch- und vegetarischen Hauptgang, Zutaten überwiegend von kleinen Betrieben aus der Region. Der Guide Michelin empfiehlt dringend zu reservieren.",
+  "stephans_preisangabe": "Vorrecherche: 60–90 €, Menüs 62–89 €",
+  "preis_pro_person_korrigiert": "Menü 65 € p. P. inkl. Wasser (Suppe, Salat, Hauptgang nach Wahl, Dessert oder Käse), zzgl. Wein/Getränke",
+  "preis_abweichung": "Aktuelle Karte (PDF vom 16.10.2026) zeigt nur ein Menü zu 65 € inkl. Wasser; ein teureres Menü (laut Michelin früher auch 7 Gänge) ist derzeit nicht online.",
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: Menü × 2 (Kalbsragout / Lachsforelle) + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "bistronauten-Menü mit Hohenloher Kalbsragout, Quitte-Nougat-Dessert",
+          "preis": 65.0,
+          "anzahl": 1
+        },
+        {
+          "text": "bistronauten-Menü mit Odenwälder Lachsforelle, Rohmilchkäse",
+          "preis": 65.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser (im Menüpreis enthalten)",
+          "preis": 0.0,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 130.0,
+      "summe_hinweis": "Summe ohne: 1 Glas Wein, 1 Saft/Schorle, 1 Tee, 1 Kaffee (Preise nicht online)."
+    },
+    {
+      "titel": "Beispiel 2: Menü × 2 vegetarisch (Parmesanflan) + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "bistronauten-Menü mit Parmesanflan, Schmorgemüse, Kastanien",
+          "preis": 65.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser (im Menüpreis enthalten)",
+          "preis": 0.0,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 130.0,
+      "summe_hinweis": "Summe ohne: 1 Glas Wein, 1 Saft/Schorle, 1 Tee, 1 Kaffee (Preise nicht online)."
+    },
+    {
+      "titel": "Beispiel 3: Menü × 2 + Getränkeprofil, Variante Weinbegleitung für 1 Person",
+      "positionen": [
+        {
+          "text": "bistronauten-Menü (Kürbissuppe, Bistrosalat, Hauptgang nach Wahl, Dessert/Käse)",
+          "preis": 65.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Weinbegleitung für 1 Person",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser (im Menüpreis enthalten)",
+          "preis": 0.0,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 130.0,
+      "summe_hinweis": "Ob es eine Weinbegleitung gibt und was sie kostet, steht nicht online. Summe ohne: Weinbegleitung für 1 Person, 1 Saft/Schorle, 1 Tee, 1 Kaffee (Preise nicht online)."
+    }
+  ],
+  "oeffnung_samstag": "ab 18:00",
+  "oeffnung_hinweis": "Geöffnet Dienstag bis Samstag ab 18 Uhr, nur Abendservice (Michelin: bis 24 Uhr). Für 17-Uhr-Wunsch zu spät; frühester Beginn 18 Uhr. Keine Ferien-/Feiertagshinweise gefunden.",
+  "oeffnung_quelle": "https://www.bistronauten.de/",
+  "reservierung": {
+    "art": "telefon",
+    "tool": null,
+    "url": null,
+    "verfuegbar_31_10": "unbekannt",
+    "freie_zeiten": null,
+    "hinweis": "Kein Online-Reservierungssystem; Website: \"Telefonische Reservierung ab 12.00 Uhr empfohlen\", Tel. 06201 8461856. Online nicht prüfbar – bitte anrufen (laut Michelin immer gut besucht).",
+    "stand": "2026-10-29"
+  },
+  "parken": {
+    "text": "Parkplatz Nord direkt am Haus, Eingang an der Südseite; Straßenbahn-Haltestelle \"Alter OEG-Bahnhof\" vor der Tür.",
+    "parkopedia_url": null,
+    "quelle": "https://www.bistronauten.de/"
+  },
+  "bilder": [
+    {
+      "datei": "img/bistronauten-1.jpg",
+      "art": "location",
+      "quelle_url": "https://www.bistronauten.de/images/2.Theke.jpg"
+    },
+    {
+      "datei": "img/bistronauten-2.jpg",
+      "art": "gericht",
+      "quelle_url": "https://www.bistronauten.de/images/4.2.Loeffel_drip.jpg"
+    },
+    {
+      "datei": "img/bistronauten-3.jpg",
+      "art": "location",
+      "quelle_url": "https://www.bistronauten.de/images/7.Gebaeude.jpg"
+    }
+  ],
+  "quellen": [
+    "https://www.bistronauten.de/",
+    "https://www.bistronauten.de/aktuelles_menue_online.pdf",
+    "https://guide.michelin.com/de/de/baden-wurttemberg/weinheim/restaurant/bistronauten",
+    "https://www.falstaff.com/en/restaurants/bistronauten-weinheim"
+  ],
+  "nicht_geprueft": [
+    "Verfügbarkeit am 31.10. (nur telefonisch)",
+    "Getränkepreise außer Wasser (keine Getränkekarte online) – Summen nur Menü",
+    "Weinbegleitung (nicht online)",
+    "Zahlungsart widersprüchlich: Vorrecherche \"nur Barzahlung\", Michelin und Falstaff nennen Kartenzahlung – beim Anruf klären",
+    "Google-Bewertung (Vorrecherche-Wert übernommen)",
+    "Menü-PDF kann sich kurzfristig ändern (\"kurzfristige Änderungen sind möglich\")"
+  ],
+  "stand": "2026-10-29"
+}

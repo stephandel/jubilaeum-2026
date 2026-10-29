@@ -1,0 +1,121 @@
+{
+  "slug": "mary-jane",
+  "name": "Mary Jane (Mary Jane Space)",
+  "adresse": "Poststraße 36/7, 69115 Heidelberg",
+  "ort": "Heidelberg",
+  "telefon": null,
+  "email": "info@mary-jane.space",
+  "website": "https://mary-jane.space/",
+  "speisekarte_url": "https://mary-jane.space/booknow",
+  "speisekarte_hinweis": "Keine feste Karte (Omakase/Carte blanche). Menüs und Preise erscheinen im Buchungsformular nach Datumswahl; Datenquelle: https://mary-jane.space/appointments/menus/2026-10-31",
+  "maps_url": "https://maps.app.goo.gl/G8mTFXdcYgp5XyYAA",
+  "google_bewertung": 4.9,
+  "google_anzahl": 145,
+  "google_quelle": "Stephans Tabelle (nicht live geprüft); heidelberg24.de nannte früher 4,9 bei 117 Bewertungen",
+  "kueche": "Fine Dining, Omakase-Menü mit Front Cooking, gemüsebetont mit Fisch/Fleisch",
+  "beschreibung": "Fine-Dining-Raum im Obergeschoss des Alten Hallenbads in Bergheim mit offener Küche, an der die Gäste direkt sitzen. Küchenchef Jonas Jenz kocht ohne feste Karte ein saisonales Überraschungsmenü (auch vegetarisch), Sommelier ist Jo Wessels (Best Sommelier of South Africa 2018). Der Abend dauert mehrere Stunden und endet gegen 23:30 Uhr.",
+  "stephans_preisangabe": ">100 €",
+  "preis_pro_person_korrigiert": "129 € (Appetizer + 5 Gänge) oder 159 € (Appetizer + 7 Gänge) pro Person, Vorkasse, Getränke extra",
+  "preis_abweichung": null,
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: 2 × Regular Omakase, Getränke nach Profil (Preise nicht online) (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Regular Omakase – Appetizers + 5 Gänge (Start 19:00)",
+          "preis": 129.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Getränke (Wasser, Wein, Schorle, Tee, Kaffee) – Preise nicht online",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 258.0
+    },
+    {
+      "titel": "Beispiel 2: 2 × Extended Omakase, Getränke nach Profil (Preise nicht online) (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Extended Omakase – Appetizers + 7 Gänge (Start 18:30)",
+          "preis": 159.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Getränke – Preise nicht online",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 318.0
+    },
+    {
+      "titel": "Beispiel 3: 2 × Regular Omakase + Weinbegleitung für 1 Person (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Regular Omakase – Appetizers + 5 Gänge",
+          "preis": 129.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Weinbegleitung 1 Person – Preis nicht online (im Buchungsformular nur ankreuzbar)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "übrige Getränke – Preise nicht online",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 258.0
+    }
+  ],
+  "preisbeispiele_hinweis": "Summen enthalten nur die Menüpreise; Getränke und Weinbegleitung werden vor Ort abgerechnet, Preise nirgends online gefunden.",
+  "oeffnung_samstag": "Menüstart 18:30 (7 Gänge) bzw. 19:00 (5 Gänge), Ende ca. 23:30",
+  "oeffnung_hinweis": "Nur Abendservice; Buchung nur online mit Vorkasse. Buchbare Tage laut Formular Mi–Sa; Menüs am Samstag 31.10. im System hinterlegt. Ende 23:30 – spät für die Heimfahrt.",
+  "oeffnung_quelle": "https://mary-jane.space/appointments/menus/2026-10-31",
+  "reservierung": null,
+  "parken": {
+    "text": "Parkhaus P1 Poststraße (Poststraße 7, 592 Plätze), vom Restaurant selbst als Anfahrt genannt; Zugang über Fußweg Bergheimer Straße/Seiteneingang Altes Hallenbad, wenige Gehminuten (nicht gemessen). 2,50 €/h, Nachttarif 21–7 Uhr 0,50 €/h, max. 5 € (Stand Feb. 2026).",
+    "parkopedia_url": "https://www.parkopedia.de/parken/tiefgarage/poststra%C3%9Fe_p1/69115/heidelberg/",
+    "quelle": "https://mary-jane.space/contact https://www.heidelberg24.de/heidelberg/parken-bestes-parkhaus-zentral-guenstig-auto-94147627.html"
+  },
+  "bilder": [
+    {
+      "datei": "img/mary-jane-1.webp",
+      "art": "location",
+      "beschreibung": "Gastraum mit langer Tafel, abends",
+      "quelle_url": "https://mary-jane.space/build/assets/mobile-space-02-wWSoi4OM.webp"
+    },
+    {
+      "datei": "img/mary-jane-2.webp",
+      "art": "gericht",
+      "beschreibung": "Fischgericht mit grüner Sauce und Blüte",
+      "quelle_url": "https://mary-jane.space/build/assets/mobile-home-02-0g5MJVWe.webp"
+    },
+    {
+      "datei": "img/mary-jane-3.webp",
+      "art": "gericht",
+      "beschreibung": "Gang im Ringteller",
+      "quelle_url": "https://mary-jane.space/build/assets/mobile-home-03-CS7YMGyS.webp"
+    }
+  ],
+  "quellen": [
+    "https://mary-jane.space/",
+    "https://mary-jane.space/faq",
+    "https://mary-jane.space/team",
+    "https://mary-jane.space/contact",
+    "https://mary-jane.space/booknow",
+    "https://mary-jane.space/appointments/menus/2026-10-31",
+    "https://www.schlemmer-atlas.de/restaurants/deutschland/heidelberg/mary-jane-space/"
+  ],
+  "nicht_geprueft": [
+    "Telefonnummer – auf Website keine angegeben",
+    "Getränkepreise und Preis der Weinbegleitung – nicht online",
+    "Google-Bewertung nicht live geprüft (Stephans Tabelle)",
+    "Bilder sind kleine Mobil-Fassungen (ca. 24–77 KB)"
+  ],
+  "stand": "2026-10-29"
+}

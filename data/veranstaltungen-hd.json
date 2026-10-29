@@ -1,0 +1,120 @@
+[
+  {
+    "titel": "Wein & Delikatessen Montpellier – Verkostung mit Weinbar und Live-Musik (Django Mobil)",
+    "ort": "Alter Karlstorbahnhof",
+    "adresse": "Am Karlstor 1, 69117 Heidelberg",
+    "uhrzeit": "Verkostungen ab 13:00, 16:30 und 20:00 (je ca. 3 h)",
+    "datum": "2026-10-31",
+    "preis": "13:00 und 16:30 ab 14 €, 20:00 ab 5 €",
+    "tickets_url": "https://www.eventim.de/noapp/event/22094793/",
+    "url": "https://www.mvp.de/heidelberg/veranstaltungen/wein-delikatessen-montpellier/",
+    "kategorie": "nachmittag",
+    "beschreibung": "13 Weingüter aus der Region Montpellier mit Austern, Käse, Wurst und Oliven; samstags Weinbar mit Gypsy-Jazz-Band. Tickets 13:00: eventim 22094791, 20:00: eventim 22094794.",
+    "quelle": "https://www.mvp.de/heidelberg/veranstaltungen/wein-delikatessen-montpellier/",
+    "stand": "2026-10-29"
+  },
+  {
+    "titel": "Enjoy Jazz: The Messthetics & James Brandon Lewis",
+    "ort": "Metropolink's Commissary, Patrick-Henry-Village, Heidelberg",
+    "adresse": "South Gettysburg Avenue 46, 69124 Heidelberg",
+    "uhrzeit": "Einlass 19:00, Beginn 20:00",
+    "datum": "2026-10-31",
+    "preis": "VVK 37,30 €, AK 40 €",
+    "tickets_url": "https://enjoyjazz.reservix.de/tickets-the-messthetics-and-james-brandon-lewis-in-heidelberg-metropolinks-commissary-patrick-henry-village-heidelberg-am-31-10-2026/e2535729",
+    "url": "https://enjoyjazz.de/en/event/the-messthetics-and-james-brandon-lewis/",
+    "kategorie": "abends",
+    "beschreibung": "Tenorsaxofonist James Brandon Lewis mit The Messthetics (zwei Ex-Fugazi-Musiker): kraftvoller Instrumental-Rock trifft Jazz, laut. Auf der Festivalseite nicht als ausverkauft markiert.",
+    "quelle": "https://enjoyjazz.de/en/event/the-messthetics-and-james-brandon-lewis/",
+    "nicht_geprueft": [
+      "Hausnummer: Enjoy Jazz nennt 46, guidle.com 45"
+    ],
+    "stand": "2026-10-29"
+  },
+  {
+    "titel": "Steffen Weber & Band – American Songbook",
+    "ort": "Jazzhaus Heidelberg",
+    "adresse": "Leyergasse 6, 69117 Heidelberg",
+    "uhrzeit": "21:00",
+    "datum": "2026-10-31",
+    "preis": "ab 23 €",
+    "tickets_url": "https://www.eventim.de/noapp/event/22118549/",
+    "url": "https://www.mvp.de/heidelberg/veranstaltungen/steffen-weber-band/",
+    "kategorie": "abends",
+    "beschreibung": "Saxofonist der HR Big Band mit klassischem Jazz und Stücken aus dem American Songbook – ruhiger und romantischer als Enjoy Jazz, passt nach einem Abendessen in der Altstadt.",
+    "quelle": "https://www.mvp.de/heidelberg/veranstaltungen/steffen-weber-band/",
+    "stand": "2026-10-29"
+  },
+  {
+    "titel": "»Der zerbrochne Krug« (Kleist) – Wiederaufnahme",
+    "ort": "Theater Heidelberg, Marguerre-Saal",
+    "adresse": "Theaterstraße 10, 69117 Heidelberg",
+    "uhrzeit": "19:30–21:50, Einführung 18:45",
+    "datum": "2026-10-31",
+    "preis": "ab 22,30 € (mvp.de)",
+    "tickets_url": "https://theaterheidelberg.eventim-inhouse.de/webshop/webticket/shop?event=15895",
+    "url": "https://www.theaterheidelberg.de/spielplan/",
+    "kategorie": "abends",
+    "beschreibung": "Kleists Komödie um einen Dorfrichter, der über seine eigene Tat zu Gericht sitzt.",
+    "quelle": "https://www.theaterheidelberg.de/spielplan/",
+    "stand": "2026-10-29"
+  },
+  {
+    "titel": "»Asiawochen« (Yannic Han Biao Federer) – Wiederaufnahme",
+    "ort": "Theater Heidelberg, Zwinger 1",
+    "adresse": "Theaterstraße 10, 69117 Heidelberg (Adresse Theater & Orchester; Zwinger-Eingang nicht geprüft)",
+    "uhrzeit": "20:00–21:45, Einführung 19:30, danach Nachgespräch",
+    "datum": "2026-10-31",
+    "preis": null,
+    "tickets_url": "https://theaterheidelberg.eventim-inhouse.de/webshop/webticket/shop?event=15981",
+    "url": "https://www.theaterheidelberg.de/spielplan/",
+    "kategorie": "abends",
+    "beschreibung": "Schauspiel ab 16 Jahren nach dem Roman von Federer, kleine Bühne.",
+    "quelle": "https://www.theaterheidelberg.de/spielplan/",
+    "stand": "2026-10-29"
+  },
+  {
+    "titel": "Auf den Spuren der Nachtwächter – Altstadtführung",
+    "ort": "Treffpunkt Eingang Rathaus",
+    "adresse": "Marktplatz 10, 69117 Heidelberg",
+    "uhrzeit": "20:00 (ca. 90 Min.)",
+    "datum": "2026-10-31",
+    "preis": "ab 15,90 €",
+    "tickets_url": "https://www.eventim.de/noapp/event/22062603/",
+    "url": "https://www.mvp.de/heidelberg/veranstaltungen/auf-den-spuren-der-nachtwaechter-heidelberg/",
+    "kategorie": "abends",
+    "beschreibung": "Abendlicher Rundgang durch die Altstadt mit Nachtwächter-Geschichten; passt, wenn früh (17 Uhr) gegessen wird.",
+    "quelle": "https://www.mvp.de/heidelberg/veranstaltungen/auf-den-spuren-der-nachtwaechter-heidelberg/",
+    "stand": "2026-10-29"
+  },
+  {
+    "titel": "»ich bin einer wie alle – nur besser« (Theaterlabor Bielefeld)",
+    "ort": "TiK – Theater im Karlstorbahnhof",
+    "adresse": "Marlene-Dietrich-Platz 3, 69126 Heidelberg",
+    "uhrzeit": "20:00 (Einlass 18:30)",
+    "datum": "2026-10-31",
+    "preis": "VVK 18,60 €, AK 19 €",
+    "tickets_url": "https://www.karlstorbahnhof.de/programm/veranstaltung/ich-bin-einer-wie-alle-nur-besser/",
+    "url": "https://www.karlstorbahnhof.de/programm/veranstaltung/ich-bin-einer-wie-alle-nur-besser/",
+    "kategorie": "abends",
+    "beschreibung": "Gastspiel eines freien Theaters im Kulturhaus Karlstorbahnhof (Südstadt).",
+    "quelle": "https://www.karlstorbahnhof.de/",
+    "nicht_geprueft": [
+      "Adresse Karlstorbahnhof aus Vorwissen, nicht online gegengeprüft"
+    ],
+    "stand": "2026-10-29"
+  },
+  {
+    "titel": "Sirenia + illumishade (Symphonic Metal)",
+    "ort": "Café Central Weinheim",
+    "adresse": "Bahnhofstraße 19, 69469 Weinheim",
+    "uhrzeit": "Einlass 19:00, Beginn 20:00",
+    "datum": "2026-10-31",
+    "preis": "AK 35 €",
+    "tickets_url": "https://loveyourartist.com/de/profiles/cafe-central-tocopilla-events-QVVS7L/events",
+    "url": "https://www.cafecentral.de/",
+    "kategorie": "abends",
+    "beschreibung": "Einzige gefundene Veranstaltung in Weinheim am 31.10.; laute Metal-Show – nur der Vollständigkeit halber.",
+    "quelle": "https://www.cafecentral.de/",
+    "stand": "2026-10-29"
+  }
+]

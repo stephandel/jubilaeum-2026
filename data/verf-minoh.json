@@ -1,0 +1,25 @@
+{
+  "slug": "minoh",
+  "name": "Minoh",
+  "telefon": "+49 160 3008843",
+  "email": null,
+  "website": null,
+  "oeffnung_samstag": "11:30–22:00 (nur Drittquelle Restaurantguru, nicht von Betriebs-Website)",
+  "oeffnung_hinweis": "Keine eigene Website gefunden. Japanische Küche, Preisniveau laut Restaurantguru 10–20 € p. P. – eher einfach, passt vermutlich nicht zum Wunschprofil 'gehoben'.",
+  "oeffnung_quelle": "https://restaurantguru.com/Minoh-Mannheim",
+  "reservierung": {
+    "art": "telefon",
+    "tool": null,
+    "url": null,
+    "verfuegbar_31_10": "unbekannt",
+    "freie_zeiten": [],
+    "hinweis": "Kein Online-Reservierungstool gefunden – online nicht prüfbar – bitte anrufen: 0160 3008843 (Nummer nur aus Restaurantguru).",
+    "stand": "2026-10-29"
+  },
+  "nicht_geprueft": [
+    "Website, E-Mail",
+    "Öffnungszeiten nur aus Drittquelle",
+    "Telefonnummer nur aus Drittquelle",
+    "Verfügbarkeit 31.10."
+  ]
+}

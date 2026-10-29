@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Nachmittag · 27 Jahre wir</title>
+  <script>try { var t = localStorage.getItem("jg-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}</script>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-seite="nachmittag">
+  <a class="sprung" href="#inhalt">Zum Inhalt springen</a>
+  <header class="titelzeile glas">
+    <a class="marke" href="index.html" aria-label="27 Jahre wir – Startseite"><span class="marke-27" aria-hidden="true">27</span><span class="marke-text">Jahre wir</span></a>
+    <div class="ichbin" role="group" aria-label="Ich bin">
+      <span class="ichbin-label">Ich bin</span>
+      <button type="button" class="seg" data-person="S" aria-pressed="false">Stephan</button>
+      <button type="button" class="seg" data-person="B" aria-pressed="false">Bilgen</button>
+    </div>
+    <button type="button" class="thema" id="thema" aria-label="Darstellung umschalten"></button>
+  </header>
+  <nav class="tabbar glas" aria-label="Seiten">
+    <a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg><span>Restaurants</span></a>
+    <a href="nachmittag.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg><span>Nachmittag</span></a>
+    <a href="cafes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2v2M14 2v2M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg><span>Cafés</span></a>
+  </nav>
+  <main id="inhalt" class="inhalt" tabindex="-1">
+    <noscript><p class="hinweiszeile">Bitte JavaScript einschalten – die Inhalte werden aus data.js aufgebaut.</p></noscript>
+    <div id="app"></div>
+  </main>
+  <footer class="fuss">
+    <p class="fuss-gross">Der schönste Platz ist neben dir.</p>
+    <p class="fuss-klein">Mit Liebe ausgesucht · 27 Jahre wir</p>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="data.js"></script>
+  <script src="likestore.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

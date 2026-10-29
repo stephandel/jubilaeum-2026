@@ -1,0 +1,210 @@
+{
+  "slug": "der-philosoph",
+  "name": "Der Philosoph",
+  "adresse": "Brückenstraße 14, 69120 Heidelberg",
+  "ort": "Heidelberg (Neuenheim)",
+  "telefon": "+49 160 7987032",
+  "email": "post@restaurant-philosoph.de",
+  "website": "https://restaurant-philosoph.de/",
+  "speisekarte_url": "https://restaurant-philosoph.de/assets/pdf/menukarte.pdf",
+  "maps_url": "https://maps.app.goo.gl/CULtruBNhzDJDXg99",
+  "google_bewertung": 4.8,
+  "google_anzahl": 49,
+  "google_quelle": "Stephans Tabelle (nicht live geprüft)",
+  "kueche": "saisonal-regionale gehobene Küche (Fine Dining), Menüs oder à la carte; Empfehlung im Guide Michelin",
+  "beschreibung": "Restaurant am Fuß des Philosophenwegs in Neuenheim, geführt von Nils Gier und Bastian Engelhart (zuvor Küchenleitung der Herrenmühle). Moderne Menüs mit Produkten regionaler Lieferanten, alle Gänge auch einzeln bestellbar; viele Gerichte werden halal zubereitet. Laut Website im Guide Michelin empfohlen; feiert im November den ersten Geburtstag.",
+  "stephans_preisangabe": ">100 €",
+  "preis_pro_person_korrigiert": "Menü 79 € (3 Gänge) bis 119 € (5 Gänge), vegetarisch 74–114 €; Hauptgänge à la carte 42–47 €; Weinbegleitung 31–44 €",
+  "preis_abweichung": "Stimmt in etwa: Menüs ab 79 € p. P. ohne Getränke, mit Getränken bzw. ab 4 Gängen über 100 € p. P.",
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: Menü 4 Gänge × 2 + Weinbegleitung für 1 Person",
+      "positionen": [
+        {
+          "text": "Menü 4 Gänge",
+          "preis": 99.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Weinbegleitung 4 Gänge (1 Person)",
+          "preis": 37.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser (2 ×)",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 235.0,
+      "summe_hinweis": "Summe ohne Wasser/Saft/Tee/Kaffee (Glas Wein entfällt durch Weinbegleitung) – Getränkepreise sind online nicht veröffentlicht; realistisch zusätzlich ca. 30–50 € (Schätzung, nicht belegt)."
+    },
+    {
+      "titel": "Beispiel 2: Menü 3 Gänge × 2 + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "Menü 3 Gänge (Rindertatar/Consommé, Fisch aus der Region bzw. Lammrücken, Quitte)",
+          "preis": 79.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser (2 ×)",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 158.0,
+      "summe_hinweis": "Summe ohne Getränkeprofil – Getränkepreise sind online nicht veröffentlicht; realistisch zusätzlich ca. 30–50 € (Schätzung, nicht belegt)."
+    },
+    {
+      "titel": "Beispiel 3: à la carte (2 Pers.) + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "Rindertatar – Birne | Paprika | Rauch",
+          "preis": 23.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Kürbissuppe – Kokos | Curry | Granatapfel",
+          "preis": 16.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Lammrücken – Miso | Apfel | Meerrettich",
+          "preis": 47.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Hirschravioli – Zwetschge | Steinpilz | Süßkartoffel",
+          "preis": 46.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Quitte – Mandel | Honig | Thymian",
+          "preis": 18.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser (2 ×)",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 168.0,
+      "summe_hinweis": "Summe ohne Getränkeprofil – Getränkepreise sind online nicht veröffentlicht; realistisch zusätzlich ca. 30–50 € (Schätzung, nicht belegt)."
+    },
+    {
+      "titel": "Variante: Menü 5 Gänge × 2 + Weinbegleitung für 1 Person",
+      "positionen": [
+        {
+          "text": "Menü 5 Gänge",
+          "preis": 119.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Weinbegleitung 5 Gänge (1 Person)",
+          "preis": 44.0,
+          "anzahl": 1
+        }
+      ],
+      "summe": 282.0,
+      "summe_hinweis": "Ohne Wasser/Saft/Tee/Kaffee (Preise nicht online)."
+    }
+  ],
+  "oeffnung_samstag": "18:00–23:00",
+  "oeffnung_hinweis": "Do–Mo 18–23 Uhr, Di & Mi geschlossen; nur Abendservice. Allerheiligen (So 1.11.) betrifft Samstag nicht. Gänsemenü erst ab November.",
+  "oeffnung_quelle": "https://restaurant-philosoph.de/",
+  "reservierung": null,
+  "parken": {
+    "text": "Parkhaus Nordbrückenkopf (P16), Brückenkopfstraße 1, 69120 Heidelberg – ca. 120 m Luftlinie (Koordinaten OpenStreetMap), etwa 2–3 Min. zu Fuß; 238 Plätze, 24 h geöffnet, Einfahrtshöhe 1,80 m, laut Bewertungen sehr eng. Preis laut Parkopedia-Übersicht 1 € / 2 h (Momentaufnahme, nicht geprüft).",
+    "parkopedia_url": "https://www.parkopedia.de/parken/heidelberg/",
+    "quelle": "https://www.parkinglist.de/parkplatz/heidelberg/parkhaus-nordbrueckenkopf-heidelberg-483 https://www.heidelberg24.de/heidelberg/schlimmste-schlechteste-parkhaeuser-stadt-preise-vergleich-93715408.html; nominatim.openstreetmap.org"
+  },
+  "bilder": [
+    {
+      "datei": "img/der-philosoph-1.webp",
+      "art": "location",
+      "quelle_url": "https://restaurant-philosoph.de/assets/media/restaurant-1-c2.webp"
+    },
+    {
+      "datei": "img/der-philosoph-2.webp",
+      "art": "gericht",
+      "quelle_url": "https://restaurant-philosoph.de/assets/media/lammgericht.webp"
+    },
+    {
+      "datei": "img/der-philosoph-3.webp",
+      "art": "gericht",
+      "quelle_url": "https://restaurant-philosoph.de/assets/media/fischgericht.webp"
+    }
+  ],
+  "quellen": [
+    "https://restaurant-philosoph.de/",
+    "https://restaurant-philosoph.de/assets/pdf/menukarte.pdf",
+    "https://restaurant-philosoph.de/assets/pdf/aktuelles.pdf",
+    "https://www.parkinglist.de/parkplatz/heidelberg/parkhaus-nordbrueckenkopf-heidelberg-483",
+    "https://www.opentable.de/r/der-philosoph-reservations-heidelberg"
+  ],
+  "nicht_geprueft": [
+    "Getränkepreise (Wasser, Wein glasweise, Saft, Tee, Kaffee) – keine Getränkekarte online",
+    "Google-Bewertung nicht live geprüft",
+    "Parkhaus-Preis nur aus Parkopedia-Übersicht (Snippet), Fußweg nur aus Luftlinie abgeleitet",
+    "Kein direkter Parkopedia-Eintrag für das Parkhaus gefunden, Link führt zur Heidelberg-Übersicht"
+  ],
+  "stand": "2026-10-29",
+  "speisekarte_stand": "PDF zuletzt geändert 08.10.2026 (Server-Datum)"
+}

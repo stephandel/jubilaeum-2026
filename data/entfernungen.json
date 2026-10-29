@@ -1,0 +1,168 @@
+{
+  "_quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'.",
+  "das-atelier": {
+    "km": 7.5,
+    "min": 17,
+    "route": "über B44"
+  },
+  "mary-jane": {
+    "km": 35.9,
+    "min": 34,
+    "route": "über A6 und A656"
+  },
+  "rieds": {
+    "km": 34.8,
+    "min": 29,
+    "route": "über A6 und A656"
+  },
+  "der-philosoph": {
+    "km": 36.7,
+    "min": 34,
+    "route": "über A6"
+  },
+  "doblers": {
+    "km": 8.9,
+    "min": 20,
+    "route": "über B44"
+  },
+  "tourist-trap": {
+    "km": 7.0,
+    "min": 15,
+    "route": "über B44"
+  },
+  "grenzhof": {
+    "km": 30.6,
+    "min": 30,
+    "route": "über A6"
+  },
+  "turmrestaurant": {
+    "km": 16.2,
+    "min": 22,
+    "route": "über L523"
+  },
+  "minoh": {
+    "km": 8.5,
+    "min": 20,
+    "route": "über B44"
+  },
+  "spinne": {
+    "km": 45.1,
+    "min": 38,
+    "route": "über A61 und A65"
+  },
+  "atable": {
+    "km": 31.5,
+    "min": 32,
+    "route": "über A6"
+  },
+  "kurfuerstenstube": {
+    "km": 36.5,
+    "min": 36,
+    "route": "über A6"
+  },
+  "ziegler": {
+    "km": 18.1,
+    "min": 23,
+    "route": "über Waldstraße"
+  },
+  "bistronauten": {
+    "km": 17.6,
+    "min": 24,
+    "route": "über A659"
+  },
+  "chocami": {
+    "km": 36.4,
+    "min": 33,
+    "route": "über A6"
+  },
+  "coer": {
+    "km": 8.1,
+    "min": 19,
+    "route": "über B44"
+  },
+  "macaronnerie": {
+    "km": 36.2,
+    "min": 35,
+    "route": "über A6"
+  },
+  "mousse-mousse": {
+    "km": 37.3,
+    "min": 35,
+    "route": "über A6"
+  },
+  "pastry-poets": {
+    "km": 18.9,
+    "min": 27,
+    "route": "über A659"
+  },
+  "schafheutle": {
+    "km": 36.4,
+    "min": 33,
+    "route": "über A6"
+  },
+  "yagiya": {
+    "km": 6.4,
+    "min": 18,
+    "route": "über B44"
+  },
+  "nm-ma-barockschloss": {
+    "km": 8.4,
+    "min": 20,
+    "route": "über B44"
+  },
+  "nm-ma-wasserturm-kunsthalle": {
+    "km": 8.5,
+    "min": 20,
+    "route": "über B44"
+  },
+  "nm-ma-rem-jungbusch": {
+    "km": 7.3,
+    "min": 16,
+    "route": "über B44"
+  },
+  "nm-ma-rhein-reissinsel": {
+    "km": 9.9,
+    "min": 22,
+    "route": "über B44"
+  },
+  "nm-schwetzingen-schlossgarten": {
+    "km": 33.2,
+    "min": 30,
+    "route": "über A6"
+  },
+  "nm-lu-ebertpark-hack": {
+    "km": 9.4,
+    "min": 20,
+    "route": "über B44"
+  },
+  "hd-philosophenweg": {
+    "km": 36.2,
+    "min": 33,
+    "route": "über A6"
+  },
+  "hd-schloss-koenigstuhl": {
+    "km": 37.5,
+    "min": 37,
+    "route": "über A6"
+  },
+  "hd-altstadt-museum": {
+    "km": 36.4,
+    "min": 33,
+    "route": "über A6"
+  },
+  "hd-prinzhorn": {
+    "km": 35.3,
+    "min": 30,
+    "route": "über A6 und A656"
+  },
+  "wh-exotenwald-wachenburg": {
+    "km": 18.2,
+    "min": 26,
+    "route": "über A659"
+  },
+  "wh-altstadt-pastry": {
+    "km": 18.3,
+    "min": 26,
+    "route": "über A659"
+  }
+}

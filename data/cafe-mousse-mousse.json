@@ -1,0 +1,44 @@
+{
+  "slug": "mousse-mousse",
+  "name": "Mousse Mousse – Pâtisserie Moderne",
+  "adresse": "Römerstraße 216, 69126 Heidelberg",
+  "ort": "Heidelberg-Rohrbach",
+  "telefon": "+49 176 84984826",
+  "email": "mousse.mousse@web.de",
+  "website": "https://www.moussemousse-patisseriemoderneheidelberg.de/",
+  "speisekarte_url": null,
+  "google_bewertung": 5.0,
+  "google_anzahl": 54,
+  "google_quelle": "Stephans Tabelle vom 13.09.2026 (nicht live geprüft)",
+  "spezialitaet": "Moderne französische Entremets und Törtchen (u. a. Opéra, Zitrone, Himbeere, Heidelbeere), teils glutenfrei",
+  "preisniveau": null,
+  "beschreibung": "Moderne Pâtisserie mit kleinem Café in Heidelberg-Rohrbach, Schwerpunkt auf Mousse-Törtchen und Entremets. Einige Sorten gibt es glutenfrei (Spuren möglich).",
+  "oeffnung_samstag": "09:00–18:00",
+  "oeffnung_hinweis": "Mo–Mi geschlossen, Do–So 9–18 Uhr",
+  "oeffnung_quelle": "https://www.moussemousse-patisseriemoderneheidelberg.de/",
+  "parken": null,
+  "bilder": [
+    {
+      "datei": "img/cafe-mousse-mousse-1.jpg",
+      "art": "cafe",
+      "quelle_url": "https://primary.jwwb.nl/public/o/z/j/temp-roftsigprpstlughycta/cafe-high.jpg"
+    },
+    {
+      "datei": "img/cafe-mousse-mousse-2.png",
+      "art": "produkt",
+      "quelle_url": "https://primary.jwwb.nl/public/o/z/j/temp-roftsigprpstlughycta/gallery1-high-iu2tiv.png"
+    }
+  ],
+  "quellen": [
+    "https://www.moussemousse-patisseriemoderneheidelberg.de/",
+    "https://www.11880.com/branchenbuch/heidelberg-neckar/071213064B113968521/mousse-mousse-patisserie-moderne-heidelberg.html"
+  ],
+  "nicht_geprueft": [
+    "Google-Bewertung nur aus Stephans Tabelle",
+    "Preise nicht online",
+    "Parken nicht recherchiert",
+    "Bild 2 ist eine Werbegrafik mit Törtchen (Text 'glutenfrei')"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Mousse+Mousse+%E2%80%93+P%C3%A2tisserie+Moderne%2C+R%C3%B6merstra%C3%9Fe+216%2C+69126+Heidelberg",
+  "stand": "2026-10-29"
+}

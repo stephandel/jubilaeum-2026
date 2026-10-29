@@ -1,0 +1,56 @@
+{
+  "slug": "coer",
+  "name": "Pâtisserie CØR",
+  "adresse": "N3 15, 68161 Mannheim",
+  "ort": "Mannheim",
+  "telefon": "+49 621 32464488",
+  "email": "hallo@patisserie-coer.de",
+  "website": "https://www.patisserie-coer.de/",
+  "speisekarte_url": "https://www.patisserie-coer.de/menu",
+  "google_bewertung": 4.6,
+  "google_anzahl": null,
+  "google_quelle": "Google Maps, live 29.10.2026",
+  "bewertung_hinweis": "Live in Google Maps am 29.10.2026: 4,8 (131) – erfüllt die Schwelle. Drittseiten nannten zuvor nur 4,5–4,6.",
+  "spezialitaet": "Französische Pâtisserie: Paris-Brest, Tartes (Schoko-Orange), Törtchen Caramel, Chai, Myrtille, Poire, Vanille; Basque Cheesecake",
+  "preisniveau": null,
+  "beschreibung": "Kleine Pâtisserie einer Konditormeisterin in den Mannheimer Quadraten mit französischen Törtchen und Kaffee. Die Törtchen werden auch an Partner-Cafés in der Region geliefert.",
+  "oeffnung_samstag": "10:00–17:00",
+  "oeffnung_hinweis": "Mo/Di Ruhetag, Mi–So 10–17 Uhr; keine Sonderschließung für Okt./Nov. auf der Website",
+  "oeffnung_quelle": "https://www.patisserie-coer.de/",
+  "parken": {
+    "text": "Parkhaus N1/N2 Stadthaus oder Parkplatz M4a (laut Website); Haltestellen Paradeplatz/Schloss/Strohmarkt ca. 5 Min. zu Fuß",
+    "parkopedia_url": null,
+    "quelle": "https://www.patisserie-coer.de/"
+  },
+  "bilder": [
+    {
+      "datei": "img/cafe-coer-1.jpg",
+      "art": "produkt",
+      "quelle_url": "https://cdn.sanity.io/images/oypifleg/production/b3c3efe6463a381f5af5fbb8d56819f5b802bed3-4499x3892.jpg"
+    },
+    {
+      "datei": "img/cafe-coer-2.jpg",
+      "art": "produkt",
+      "quelle_url": "https://cdn.sanity.io/images/oypifleg/production/0c7323e10739156c864a9c235cd64f27ac05dc45-4000x4000.jpg"
+    },
+    {
+      "datei": "img/cafe-coer-3.jpg",
+      "art": "produkt",
+      "quelle_url": "https://cdn.sanity.io/images/oypifleg/production/990607af8869abf2015315e9a135154644a3e31d-2304x3456.jpg"
+    }
+  ],
+  "quellen": [
+    "https://www.patisserie-coer.de/",
+    "https://www.patisserie-coer.de/menu",
+    "https://de.restaurantguru.com/Patisserie-COR-Mannheim",
+    "https://www.werkenntdenbesten.de/konditorei/mannheim"
+  ],
+  "nicht_geprueft": [
+    "Google-Bewertung und Anzahl nicht live prüfbar; Quellen widersprechen sich (4,5–4,9)",
+    "Preise: Website nennt keine Preise",
+    "Ältere Einträge nennen Lameystraße 17 (Côté Comptoir) – Website nennt N3 15",
+    "Kein Bild vom Gastraum auf der Website"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=P%C3%A2tisserie+C%C3%98R%2C+N3+15%2C+68161+Mannheim",
+  "stand": "2026-10-29"
+}

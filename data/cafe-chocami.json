@@ -1,0 +1,50 @@
+{
+  "slug": "chocami",
+  "name": "Chocami Chocolaterie & Pâtisserie",
+  "adresse": "Scheffelstraße 28, 68723 Schwetzingen",
+  "ort": "Schwetzingen",
+  "telefon": "+49 6202 6651295",
+  "email": "info@chocami.de",
+  "website": "https://chocami.de/",
+  "speisekarte_url": "https://chocami.de/produkt-kategorie/nur-im-laden-erhaeltlich/toertchen/",
+  "google_bewertung": 4.8,
+  "google_anzahl": 161,
+  "google_quelle": "Stephans Tabelle vom 13.09.2026 (nicht live geprüft); alter Heidelberger Standort laut wanderlog 4,7 bei 49 (dauerhaft geschlossen)",
+  "spezialitaet": "Pralinen, Schokolade, Törtchen, Motivtorten; Trinkschokolade 'WOW Kakao'",
+  "preisniveau": "Halloween-Törtchen 2026: 7,90 € (nur Abholung 30./31.10.)",
+  "beschreibung": "Chocolaterie und Pâtisserie einer Konditormeisterin in Schwetzingen mit Pralinen, Schokolade und Törtchen aus eigener Manufaktur. Eher Laden als Café; Törtchen gibt es nur im Geschäft.",
+  "oeffnung_samstag": "10:00–14:00 (volles Sortiment inkl. Törtchen)",
+  "oeffnung_hinweis": "Di 10–15, Mi/Do klingeln, Fr 13–18, Sa 10–14 Uhr; früh schließend – nur für einen Vormittagsstopp geeignet",
+  "oeffnung_quelle": "https://chocami.de/",
+  "parken": null,
+  "bilder": [
+    {
+      "datei": "img/cafe-chocami-1.jpg",
+      "art": "produkt",
+      "quelle_url": "https://chocami.de/wp-content/uploads/2025/07/IMG_20250919_132717.jpg"
+    },
+    {
+      "datei": "img/cafe-chocami-2.jpg",
+      "art": "produkt",
+      "quelle_url": "https://chocami.de/wp-content/uploads/2025/07/IMG_20250919_132736.jpg"
+    },
+    {
+      "datei": "img/cafe-chocami-3.jpg",
+      "art": "produkt",
+      "quelle_url": "https://chocami.de/wp-content/uploads/2026/10/Halloween-Toertchen-2026.jpeg"
+    }
+  ],
+  "quellen": [
+    "https://chocami.de/",
+    "https://chocami.de/produkt-kategorie/nur-im-laden-erhaeltlich/toertchen/",
+    "https://wanderlog.com/place/details/3272053/chocami"
+  ],
+  "nicht_geprueft": [
+    "Google-Bewertung nur aus Stephans Tabelle",
+    "Sitzplätze/Kaffeeausschank nicht belegt – vermutlich nur Verkauf",
+    "Kein Foto vom Laden",
+    "Parken nicht recherchiert"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Chocami+Chocolaterie+%26+P%C3%A2tisserie%2C+Scheffelstra%C3%9Fe+28%2C+68723+Schwetzingen",
+  "stand": "2026-10-29"
+}

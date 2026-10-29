@@ -1,0 +1,26 @@
+{
+  "slug": "tourist-trap",
+  "name": "The Tourist Trap",
+  "telefon": "+49 621 63742080",
+  "email": "trap@sipandsmile-gastro.de",
+  "website": "https://the-tourist-trap.de/",
+  "oeffnung_samstag": "ab 18:00 (Ende nicht angegeben)",
+  "oeffnung_hinweis": "Mo & Di Ruhetage; Sa gilt 'Main Season': 7-Gänge-Menü inkl. Aperitif 130 € (veg.) / 170 € (Fisch & Fleisch) p. P. Michelin-Stern 2026. Vor 18 Uhr kein Platz möglich.",
+  "oeffnung_quelle": "https://the-tourist-trap.de/",
+  "reservierung": {
+    "art": "online",
+    "tool": "OpenTable",
+    "url": "https://www.opentable.de/restref/client/?rid=420276&lang=de-DE",
+    "verfuegbar_31_10": "ja",
+    "freie_zeiten": [
+      "18:00"
+    ],
+    "hinweis": "OpenTable im Browser geprüft (29.10., ca. 14:25 Uhr), 2 Personen: „noch 1 Reservierungszeit übrig“ – 18:00 Uhr. Fr/Sa „Main Season“: 7-Gänge-Menü 130 € (veg.) / 170 € (Fisch & Fleisch) p. P., jeweils inkl. Aperitif; daneben Munchies-Karte (kleine Gerichte). Nicht gebucht.",
+    "stand": "2026-10-29"
+  },
+  "nicht_geprueft": [
+    "Verfügbarkeit 31.10. (OpenTable nicht maschinell abfragbar)",
+    "Schlusszeit Samstag",
+    "Allerheiligen-Effekt: Sa ist ohnehin 'Main Season', kein Sonderhinweis gefunden"
+  ]
+}

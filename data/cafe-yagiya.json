@@ -1,0 +1,53 @@
+{
+  "slug": "yagiya",
+  "name": "YagiYa Konditorei Pâtisserie",
+  "adresse": "Käfertaler Straße 35, 68167 Mannheim",
+  "ort": "Mannheim-Neckarstadt-Ost",
+  "telefon": null,
+  "email": null,
+  "website": "https://www.instagram.com/yagiya.yagiya/",
+  "speisekarte_url": null,
+  "google_bewertung": 5.0,
+  "google_anzahl": 171,
+  "google_quelle": "mannheim24.de, Artikel 'Die besten Bäckereien' (2026, Google-Daten zitiert) – nicht live geprüft; reviewhero.io: 4,95 bei 110 (Google 80 + Facebook 30, Stand ≥ 05/2023)",
+  "spezialitaet": "Japanisch-französische Pâtisserie: Matcha-Gebäck, Mousse-Törtchen, Windbeutel, Macarons, Baumkuchen",
+  "preisniveau": null,
+  "beschreibung": "Kleine Konditorei in der Neckarstadt, die japanische und französische Pâtisserie verbindet. Bekannt für Matcha-Törtchen, Windbeutel und Baumkuchen.",
+  "oeffnung_samstag": "12:00–17:00",
+  "oeffnung_hinweis": "Quellen uneinig über Wochentage (Do–Sa bzw. Mi–Sa 12–17, So 11–14); Samstag 12–17 Uhr übereinstimmend in mannheim24, Cylex, reviewhero; finde-offen nennt 12–18 Uhr",
+  "oeffnung_quelle": "https://www.mannheim24.de/mannheim/baeckereien-filialen-beste-stadt-adressen-infos-wo-94489766.html",
+  "parken": null,
+  "bilder": [
+    {
+      "datei": "img/cafe-yagiya-1.jpg",
+      "art": "location",
+      "quelle_url": "https://www.mawayoflife.de/wp-content/uploads/2019/06/mawayXyagiya1.jpg"
+    },
+    {
+      "datei": "img/cafe-yagiya-2.jpg",
+      "art": "produkt",
+      "quelle_url": "https://www.mawayoflife.de/wp-content/uploads/2019/06/mawayXyagiya11.jpg"
+    },
+    {
+      "datei": "img/cafe-yagiya-3.jpg",
+      "art": "produkt",
+      "quelle_url": "https://www.mawayoflife.de/wp-content/uploads/2019/06/mawayXyagiya13.jpg"
+    }
+  ],
+  "quellen": [
+    "https://www.mannheim24.de/mannheim/baeckereien-filialen-beste-stadt-adressen-infos-wo-94489766.html",
+    "https://www.reviewhero.io/yagiya-konditorei-patisserie-6f4f",
+    "https://www.speisekarte.de/mannheim/restaurant/yagiya_konditorei_patisserie",
+    "https://www.mawayoflife.de/2019/06/yagiya-der-japanische-traum-vom-baumkuchen/"
+  ],
+  "nicht_geprueft": [
+    "Keine eigene Website, keine Telefonnummer gefunden",
+    "Öffnungszeiten nur aus Drittquellen – vorher auf Instagram/Facebook prüfen",
+    "Preise nicht online",
+    "Bilder aus Blogbeitrag von 2019",
+    "Ob es Sitzplätze gibt, nicht belegt",
+    "Parken nicht recherchiert"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=YagiYa+Konditorei+P%C3%A2tisserie%2C+K%C3%A4fertaler+Stra%C3%9Fe+35%2C+68167+Mannheim",
+  "stand": "2026-10-29"
+}

@@ -1,0 +1,207 @@
+{
+  "slug": "ziegler",
+  "name": "Restaurant Ziegler",
+  "adresse": "Sachsenstraße 39, 69469 Weinheim-Hohensachsen",
+  "ort": "Weinheim-Hohensachsen",
+  "telefon": "+49 6201 52645",
+  "email": null,
+  "website": "https://www.restaurant-ziegler.de/",
+  "speisekarte_url": "https://www.restaurant-ziegler.de/kopie-von-hauptspeisen",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Restaurant+Ziegler+Sachsenstra%C3%9Fe+39%2C+69469+Weinheim",
+  "google_bewertung": 4.7,
+  "google_anzahl": 280,
+  "google_quelle": "Vorrecherche 29.10. (nicht live geprüft)",
+  "kueche": "modern-international mit klassischen Gerichten",
+  "beschreibung": "Familiengeführtes Restaurant (Jacqueline und Alexander Hahn) im Weinheimer Ortsteil Hohensachsen an der Bergstraße, modern eingerichtet und ruhig. Die Karte reicht vom Wiener Schnitzel bis zu Gerichten mit asiatischen Akzenten; dazu ein Abendmenü mit 4 oder 6 Gängen. Die Website zeigt die Auszeichnung Bib Gourmand des Guide Michelin.",
+  "stephans_preisangabe": "Vorrecherche: Vorspeise ca. 20 €, Hauptgang ca. 34 €",
+  "preis_pro_person_korrigiert": "Vorspeisen 8–20 €, Suppen 11 €, Hauptgänge 25–38 €, Desserts 11–13 €; Abendmenü 80 € (4 Gänge) / 105 € (6 Gänge)",
+  "preis_abweichung": null,
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: à la carte – Vorspeise, Hauptgang, Dessert + Getränkeprofil (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Rind & Blumenkohl (Tatar vom Rinderfilet)",
+          "preis": 20.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Kürbis & Ziegenkäse (Cannelloni)",
+          "preis": 18.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Geschmorte Kalbsbäckchen mit Steinpilz-Gnocchi (Hauptgang)",
+          "preis": 34.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Lamm & Bohne (Weidelammrücken)",
+          "preis": 34.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Frankfurter Kranz (geeist)",
+          "preis": 12.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Buttermilch & Mohn",
+          "preis": 12.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser (1 große Flasche)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 130.0,
+      "summe_hinweis": "Summe ohne: Wasser (1 große Flasche), 1 Glas Wein, 1 Saft/Schorle, 1 Tee, 1 Kaffee (Preise nicht online)."
+    },
+    {
+      "titel": "Beispiel 2: Abendmenü 4 Gänge × 2 + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "Abendmenü 4 Gänge (Lachs, Enten-Dashi, Rind & Backe, Frankfurter Kranz)",
+          "preis": 80.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser (1 große Flasche)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 160.0,
+      "summe_hinweis": "Summe ohne: Wasser (1 große Flasche), 1 Glas Wein, 1 Saft/Schorle, 1 Tee, 1 Kaffee (Preise nicht online)."
+    },
+    {
+      "titel": "Beispiel 3: Abendmenü 6 Gänge × 2 + Getränkeprofil, Variante Weinbegleitung für 1 Person",
+      "positionen": [
+        {
+          "text": "Abendmenü 6 Gänge (mit Kabeljau & Erbse und Mojito-Sorbet)",
+          "preis": 105.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Weinbegleitung für 1 Person",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser (1 große Flasche)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 210.0,
+      "summe_hinweis": "Eine Weinbegleitung wird auf der Website nicht erwähnt – vor Ort fragen. Summe ohne: Weinbegleitung für 1 Person, Wasser (1 große Flasche), 1 Saft/Schorle, 1 Tee, 1 Kaffee (Preise nicht online)."
+    }
+  ],
+  "oeffnung_samstag": "Mittag 12:00–13:30 (Küche), Abend ab 17:30, Küchenschluss 21:00",
+  "oeffnung_hinweis": "Ruhetage Dienstag und Mittwoch; Samstag regulär geöffnet. Keine Betriebsferien oder Feiertagshinweise auf der Website gefunden.",
+  "oeffnung_quelle": "https://www.restaurant-ziegler.de/schreiben-sie-uns",
+  "reservierung": {
+    "art": "formular",
+    "tool": "eigenes Formular",
+    "url": "https://www.restaurant-ziegler.de/schreiben-sie-uns",
+    "verfuegbar_31_10": "unbekannt",
+    "freie_zeiten": null,
+    "hinweis": "Kein Online-Buchungssystem mit Verfügbarkeitsanzeige, nur Anfrageformular (\"Reservierung ist erst nach Bestätigung gültig\"). Formular nicht abgeschickt. Für zwei Tage Vorlauf besser anrufen: 06201 52645.",
+    "stand": "2026-10-29"
+  },
+  "parken": {
+    "text": null,
+    "parkopedia_url": null,
+    "quelle": null
+  },
+  "bilder": [
+    {
+      "datei": "img/ziegler-1.jpg",
+      "art": "location",
+      "quelle_url": "https://static.wixstatic.com/media/202473_eac717ea1cd5440abccdc9d3f525208e~mv2.png"
+    },
+    {
+      "datei": "img/ziegler-2.jpg",
+      "art": "gericht",
+      "quelle_url": "https://static.wixstatic.com/media/202473_9296e3f54022463687ce096e90ea3444~mv2.jpg"
+    }
+  ],
+  "quellen": [
+    "https://www.restaurant-ziegler.de/",
+    "https://www.restaurant-ziegler.de/schreiben-sie-uns",
+    "https://www.restaurant-ziegler.de/kopie-von-fisch-vegetarisch",
+    "https://www.restaurant-ziegler.de/fisch-vegetarisch",
+    "https://www.restaurant-ziegler.de/kopie-von-hauptspeisen",
+    "https://www.restaurant-ziegler.de/kopie-von-dessert",
+    "https://www.restaurant-ziegler.de/kopie-von-abendmen%C3%BC",
+    "https://www.restaurant-ziegler.de/galerie",
+    "https://guide.michelin.com/de/de/baden-wurttemberg/weinheim/restaurant/ziegler"
+  ],
+  "nicht_geprueft": [
+    "Verfügbarkeit am 31.10. (nur Anfrageformular bzw. Telefon)",
+    "Getränkepreise (keine Getränkekarte online) – Summen nur Speisen",
+    "Weinbegleitung (auf der Website nicht erwähnt)",
+    "Parken (keine Angaben auf Website und im Michelin-Eintrag)",
+    "Gültigkeitsdatum der Karte (Seite nennt nur \"Herbstzeit\")",
+    "Google-Bewertung (Vorrecherche-Wert übernommen)",
+    "Zahlungsarten: laut Michelin Kreditkarten akzeptiert, Website ohne Angabe"
+  ],
+  "stand": "2026-10-29"
+}

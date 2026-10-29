@@ -1,0 +1,197 @@
+{
+  "slug": "spinne",
+  "name": "Restaurant Spinne",
+  "adresse": "Eichkehle 58, 67433 Neustadt an der Weinstraße",
+  "ort": "Neustadt an der Weinstraße (Haardt)",
+  "telefon": "+49 6321 9597799",
+  "email": "info@restaurant-spinne.de",
+  "website": "https://www.restaurant-spinne.de",
+  "speisekarte_url": "https://www.restaurant-spinne.de/restaurant",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Restaurant+Spinne+Eichkehle+58%2C+67433+Neustadt+an+der+Weinstra%C3%9Fe",
+  "google_bewertung": 4.9,
+  "google_anzahl": 281,
+  "google_quelle": "Vorrecherche vom 29.10.2026 (Google, nicht erneut live geprüft)",
+  "kueche": "klassisch-saisonal mit regionalen und internationalen Einflüssen, Menü frei zusammenstellbar (Michelin-Teller)",
+  "beschreibung": "Familienbetrieb des Ehepaars Friedrich am Waldrand von Neustadt-Haardt, seit 2016, mit Gästehaus. Die Küche stellt Pasta, Fonds, Jus, Eis und Terrinen selbst her; das Menü wird aus der Karte in drei bis vier Gängen zusammengestellt. Nur EC-Karte, keine Kreditkarten; derzeit keine veganen Gerichte.",
+  "stephans_preisangabe": "Vorrecherche: Michelin €€€, Schätzung 150–250 € für zwei",
+  "preis_pro_person_korrigiert": "64–90 € Menü (3–4 Gänge) bzw. à la carte Vorspeise 26 € + Hauptgang 42 € + Dessert 13 € = 81 €, zzgl. Getränke",
+  "preis_abweichung": null,
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: Spinne-Menü 3 Gänge (Suppe | Hauptgang | Dessert) × 2 + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "Spinne-Menü: Petersilienwurzel-Suppe mit Herbsttrüffel | Hirschkalbsrücken mit Holunderjus und Pfifferlingen | Zwetschgenknödel mit Eis",
+          "preis": 64.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "Glas Wein (keine offene Weinkarte online)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 128.0,
+      "hinweis": "Summe nur Speisen; Getränkepreise nicht online. Mit Getränken grob geschätzt ca. 160–170 € (Schätzung, nicht belegt)."
+    },
+    {
+      "titel": "Beispiel 2: Spinne-Menü 4 Gänge (Vorspeise | Suppe | Hauptgang | Dessert) × 2 + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "Spinne-Menü: Saltimbocca vom Kaninchen | Petersilienwurzel-Suppe | Entrecôte mit Portweinjus und Steinpilzen | Variation vom Kürbis",
+          "preis": 90.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "Glas Wein (keine offene Weinkarte online)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 180.0,
+      "hinweis": "Summe nur Speisen. Eine Weinbegleitung ist online nicht ausgeschrieben (Variante 'Weinbegleitung für 1 Person' nicht belegbar). Mit Getränken grob geschätzt ca. 210–225 € (Schätzung)."
+    },
+    {
+      "titel": "Beispiel 3: à la carte – Vorspeise, Hauptgang, Dessert (2 Pers.) + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "Saltimbocca vom Kaninchen, Kürbis-Chutney, Artischocke",
+          "preis": 26.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Yellowfin Tuna, Avocado, Apfel, Melone",
+          "preis": 26.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Hirschkalbsrücken gebraten, Holunderjus, Pfifferlinge, Kürbispüree",
+          "preis": 42.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Fisch des Tages (Wildfang), Krustentiersoße, Blumenkohl",
+          "preis": 42.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Zwetschgenknödel, Eis, Ragout von der Zwetschge",
+          "preis": 13.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Espresso Surprise",
+          "preis": 13.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Drink & Drive – alkoholfreier Schaumwein 0,1 l (für die fahrende Person, optional)",
+          "preis": 6.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser, Glas Wein, Saft/Schorle, Tee, Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 168.5,
+      "hinweis": "À la carte ist teurer als das gleichwertige 3-Gänge-Menü (76 € p. P.). Übrige Getränke nicht online."
+    }
+  ],
+  "oeffnung_samstag": "ab 17:00 (Michelin: 17:00–22:00)",
+  "oeffnung_hinweis": "Website nennt 'Öffnungszeiten bis Ende Oktober': Mi–Sa ab 17 Uhr, So ab 16 Uhr, Mo+Di Ruhetag. Der 31.10. fällt noch in diesen Zeitraum, ist also regulär geöffnet. Was ab November gilt, steht nicht online. Allerheiligen (So) betrifft den Samstag nicht.",
+  "oeffnung_quelle": "https://www.restaurant-spinne.de",
+  "reservierung": {
+    "art": "online",
+    "tool": "Wix Table Reservations (Anfrageformular auf der Website)",
+    "url": "https://www.restaurant-spinne.de/reservations",
+    "verfuegbar_31_10": "unbekannt",
+    "freie_zeiten": [
+      "17:00",
+      "18:00",
+      "19:00",
+      "20:00"
+    ],
+    "hinweis": "Anfrageformular auf der Website (29.10., ca. 14:45 Uhr): Zeitfenster 17/18/19/20 Uhr wählbar, aber keine Live-Verfügbarkeit – das Haus bestätigt die Anfrage. Nichts abgeschickt. Bitte anrufen: 06321 9597799.",
+    "stand": "2026-10-29"
+  },
+  "parken": {
+    "text": "Laut Michelin hat das Restaurant einen eigenen Parkplatz; Zahl der Plätze und Kosten nicht angegeben.",
+    "parkopedia_url": null,
+    "quelle": "https://guide.michelin.com/de/de/rheinland-pfalz/neustadt-an-der-weinstrasse/restaurant/spinne"
+  },
+  "bilder": [
+    {
+      "datei": "img/spinne-1.jpg",
+      "art": "location",
+      "quelle_url": "https://static.wixstatic.com/media/aefe10_70aba0f0215d4d1abd1208f0d4876434~mv2.jpg"
+    },
+    {
+      "datei": "img/spinne-2.jpg",
+      "art": "gericht",
+      "quelle_url": "https://static.wixstatic.com/media/aefe10_9f2321ac9d284ed0814ce8b7f08bd498~mv2.jpg"
+    },
+    {
+      "datei": "img/spinne-3.jpg",
+      "art": "gericht",
+      "quelle_url": "https://static.wixstatic.com/media/aefe10_15c1488d33b84fd29f680659d130d713~mv2.jpg"
+    }
+  ],
+  "quellen": [
+    "https://www.restaurant-spinne.de",
+    "https://www.restaurant-spinne.de/restaurant",
+    "https://www.restaurant-spinne.de/reservations",
+    "https://www.restaurant-spinne.de/galerie",
+    "https://guide.michelin.com/de/de/rheinland-pfalz/neustadt-an-der-weinstrasse/restaurant/spinne"
+  ],
+  "nicht_geprueft": [
+    "Getränkepreise (Wasser, offener Wein, Saft, Tee, Kaffee) – nicht online, nur Aperitifs",
+    "Weinbegleitung – online nicht angeboten/ausgeschrieben",
+    "Datum der Speisekarte nicht angegeben (Herbstgerichte, wirkt aktuell)",
+    "Verfügbarkeit am 31.10. heute nicht erneut abgefragt (Wix-Widget ohne Browser nicht lesbar); Wert aus Vorrecherche",
+    "Google-Bewertung nicht live geprüft (Wert aus Vorrecherche)",
+    "Parkplatz: Größe/Kosten unbekannt"
+  ],
+  "stand": "2026-10-29"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "der-philosoph",
+  "name": "Der Philosoph",
+  "telefon": "+49 160 7987032",
+  "email": "post@restaurant-philosoph.de",
+  "website": "https://restaurant-philosoph.de/",
+  "oeffnung_samstag": "18:00–23:00",
+  "oeffnung_hinweis": "Nur Abendservice; Do–Mo 18–23 Uhr, Di+Mi geschlossen. Urlaubshinweis auf der Website betrifft nur 24.–31.08.2026 (auskommentiert).",
+  "oeffnung_quelle": "https://restaurant-philosoph.de/",
+  "reservierung": {
+    "art": "online",
+    "tool": "OpenTable",
+    "url": "https://www.opentable.de/r/der-philosoph-reservations-heidelberg?restref=445668&lang=de-DE",
+    "verfuegbar_31_10": "ja",
+    "freie_zeiten": [
+      "18:15",
+      "18:30",
+      "18:45",
+      "19:15",
+      "19:30"
+    ],
+    "hinweis": "OpenTable im Browser geprüft (29.10., ca. 14:20 Uhr), 2 Personen, Wunschzeit 19:00: angebotene Zeiten 18:15, 18:30, 18:45, 19:15, 19:30. Nicht gebucht.",
+    "stand": "2026-10-29"
+  },
+  "nicht_geprueft": [
+    "Verfügbarkeit am 31.10. (OpenTable nicht automatisch lesbar)"
+  ]
+}

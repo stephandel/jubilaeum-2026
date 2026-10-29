@@ -1,0 +1,212 @@
+{
+  "slug": "doblers",
+  "name": "Dobler's Restaurant",
+  "adresse": "Seckenheimer Straße 20, 68165 Mannheim",
+  "ort": "Mannheim (Oststadt)",
+  "telefon": "+49 621 14397",
+  "email": "info@doblers-restaurant.de",
+  "website": "https://doblers-restaurant.de/",
+  "speisekarte_url": "https://doblers-restaurant.de/speisekarten/",
+  "speisekarte_pdfs": [
+    "https://doblers-restaurant.de/wp-content/uploads/2026/06/Speisekarte-NEU-24.pdf",
+    "https://doblers-restaurant.de/wp-content/uploads/2026/06/A-Menue-zur-Jahreszeit-Abend-24.pdf"
+  ],
+  "maps_url": "https://maps.app.goo.gl/qoJu7uHTr4LSF2Xq8",
+  "google_bewertung": 4.8,
+  "google_anzahl": 464,
+  "google_quelle": "Stephans Tabelle (nicht live geprüft)",
+  "kueche": "klassische französisch-mediterrane Küche, 1 Michelin-Stern (laut Stephan und Michelin-Eintrag)",
+  "beschreibung": "Traditionsreiches Gourmetrestaurant in der Mannheimer Oststadt, Inhaber Eric Schumacher. Klassische Küche mit Wahlmenü (4 oder 5 Gänge) und à-la-carte-Karte; Weinkeller mit über 700 Positionen, darunter Domaine de la Romanée-Conti. Gastraum hell und klassisch eingedeckt.",
+  "stephans_preisangabe": "<100 €",
+  "preis_pro_person_korrigiert": "Abendmenü 138 € (4 Gänge) / 158 € (5 Gänge) p. P.; à la carte Vorspeise 25–48 €, Hauptgang 53–58 € – ohne Getränke",
+  "preis_abweichung": "Stephans Angabe <100 € stimmt nicht: Schon ein Hauptgang mit Vorspeise liegt bei 80–100 € p. P., das Abendmenü bei 138–158 € p. P. (Stand der Online-Beispielkarte Juni 2026). Unter 100 € ist allenfalls das Mittagsangebot (Mittagsmenü 63 € laut Vorrecherche, hier nicht geprüft).",
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: Abendmenü 5 Gänge × 2 + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "5-Gang-Menü zum Abend (Beispielkarte Juni 2026)",
+          "preis": 158.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser (2 ×)",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 316.0,
+      "summe_hinweis": "Summe ohne Getränkeprofil – Getränkepreise sind online nicht veröffentlicht; realistisch zusätzlich ca. 30–50 € (Schätzung, nicht belegt). Weinbegleitung nur „individuell“ auf Anfrage, kein Preis online."
+    },
+    {
+      "titel": "Beispiel 2: Abendmenü 4 Gänge × 2 + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "Menü mit 4 Gängen",
+          "preis": 138.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser (2 ×)",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 276.0,
+      "summe_hinweis": "Summe ohne Getränkeprofil – Getränkepreise sind online nicht veröffentlicht; realistisch zusätzlich ca. 30–50 € (Schätzung, nicht belegt)."
+    },
+    {
+      "titel": "Beispiel 3: à la carte (2 Pers.) + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "„Burrata“ aus Apulien mit Aubergine Viola",
+          "preis": 32.0,
+          "anzahl": 1
+        },
+        {
+          "text": "„Onsen-Ei“ mit marinierter Entenbrust und Wintertrüffel-Jus",
+          "preis": 42.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Weißer Heilbutt (Wildfang) mit Erbsenpüree",
+          "preis": 53.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Rosa gebratenes Lammkarree mit Pfifferlingen",
+          "preis": 58.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser (2 ×)",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "1 Glas Wein",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "1 Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 185.0,
+      "summe_hinweis": "Summe ohne Getränkeprofil – Getränkepreise sind online nicht veröffentlicht; realistisch zusätzlich ca. 30–50 € (Schätzung, nicht belegt). Dessertpreise stehen nicht in der Online-Karte."
+    },
+    {
+      "titel": "Variante Wein: Menü 5 Gänge × 2 + Flasche statt Glas",
+      "positionen": [
+        {
+          "text": "5-Gang-Menü zum Abend",
+          "preis": 158.0,
+          "anzahl": 2
+        },
+        {
+          "text": "2023 Cuvée Z, Weingut Oliver Zeter (0,75 l) – günstigster Weinvorschlag zum Menü",
+          "preis": 62.0,
+          "anzahl": 1
+        }
+      ],
+      "summe": 378.0,
+      "summe_hinweis": "Weinbegleitung für 1 Person: Preis nicht online („individuelle Weinbegleitung“). Flaschenpreis zur Orientierung."
+    }
+  ],
+  "oeffnung_samstag": "12:00–15:00 und 18:30–23:00 (Gäste-Einlass abends 18:30–20:00)",
+  "oeffnung_hinweis": "Di–Sa geöffnet, So & Mo Ruhetag. Abendmenü laut Karte nur bis 20 Uhr bestellbar. Online genannte Betriebsferien (26.05.–04.06. und 03.–24.08.2026) betreffen den 31.10. nicht. Ankunft zwischen 18:30 und 20:00 nötig.",
+  "oeffnung_quelle": "https://doblers-restaurant.de/kontakt-und-anfahrt/",
+  "reservierung": null,
+  "parken": {
+    "text": "Parkplätze mit Parkuhren direkt gegenüber; nächstes Parkhaus: CONTIPARK Parkhaus FINA, Friedrich-Karl-Straße 10, ca. 200 m (Angabe Restaurant). Achtung: Laut Drittanbieter-Verzeichnis nur 06:00–21:00 geöffnet – für ein Abendessen bis nach 21 Uhr ungeeignet, falls die Ausfahrt danach nicht möglich ist (nicht geprüft). Straßenbahn Linie 6, Haltestelle Werderstraße, gegenüber.",
+    "parkopedia_url": null,
+    "quelle": "https://doblers-restaurant.de/kontakt-und-anfahrt/; https://coparking.ch/en/Germany/parkings/18186"
+  },
+  "bilder": [
+    {
+      "datei": "img/doblers-1.jpg",
+      "art": "location",
+      "quelle_url": "https://doblers-restaurant.de/wp-content/uploads/2023/08/Doblers-2307-Interior-4.jpg"
+    },
+    {
+      "datei": "img/doblers-2.jpg",
+      "art": "gericht",
+      "quelle_url": "https://doblers-restaurant.de/wp-content/uploads/2023/08/Doblers-2307-8292.jpg"
+    },
+    {
+      "datei": "img/doblers-3.jpg",
+      "art": "gericht",
+      "quelle_url": "https://doblers-restaurant.de/wp-content/uploads/2023/08/Doblers-2307-8262.jpg"
+    }
+  ],
+  "quellen": [
+    "https://doblers-restaurant.de/",
+    "https://doblers-restaurant.de/speisekarten/",
+    "https://doblers-restaurant.de/kontakt-und-anfahrt/",
+    "https://doblers-restaurant.de/weine-und-getraenke/",
+    "https://guide.michelin.com/de/de/baden-wurttemberg/mannheim/restaurant/doblers",
+    "https://coparking.ch/en/Germany/parkings/18186"
+  ],
+  "nicht_geprueft": [
+    "Online-Karten sind ausdrücklich nur „Beispiele“ und stammen von Juni 2026 (Spargel-Saison) – Herbstkarte und aktuelle Preise nicht online",
+    "Mittagsmenü 63 € aus der Vorrecherche nicht bestätigt (keine Mittagskarte online gefunden)",
+    "Getränkepreise und Weinbegleitung – keine Getränke-/Weinkarte online, nur Flaschenpreise der Menü-Weinvorschläge",
+    "Öffnungszeiten Parkhaus FINA nur aus Drittanbieter-Verzeichnis",
+    "Kein Parkopedia-Eintrag gefunden",
+    "Google-Bewertung nicht live geprüft",
+    "Michelin-Stern 2026 nicht direkt auf guide.michelin.com abgelesen"
+  ],
+  "stand": "2026-10-29"
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "mary-jane",
+  "name": "Mary Jane Space",
+  "telefon": null,
+  "email": "info@mary-jane.space",
+  "website": "https://mary-jane.space/",
+  "oeffnung_samstag": "Menüstart 19:00 (Regular, 5 Gänge, 129 €) oder 18:30 (Extended, 7 Gänge, 159 €); Ende gegen 23:30",
+  "oeffnung_hinweis": "Nur abends, ein gemeinsamer Menübeginn je Variante; Zeiten aus dem Buchungssystem der Website für den 31.10.",
+  "oeffnung_quelle": "https://mary-jane.space/booknow",
+  "reservierung": {
+    "art": "online",
+    "tool": "eigenes Formular",
+    "url": "https://mary-jane.space/booknow",
+    "verfuegbar_31_10": "ja",
+    "freie_zeiten": [],
+    "hinweis": "Buchungsseite per GET gelesen: Datum 31.10.2026 wählbar, Feld data-free=17 (vermutlich 17 freie Plätze). Feste Startzeit statt Zeitfenster, deshalb keine Einzelzeiten. Reservierung laut FAQ ausschließlich online mit Vorkasse; Formular nicht abgeschickt.",
+    "stand": "2026-10-29"
+  },
+  "nicht_geprueft": [
+    "Telefonnummer nicht auf der Website (Schlemmer Atlas nennt +49 176 63013452, nicht bestätigt)",
+    "Genaue Startzeit am 31.10. (18:30 nur aus Schlemmer Atlas)",
+    "Ob data-free wirklich freie Plätze bedeutet – Wert nur aus dem Seitenquelltext"
+  ]
+}

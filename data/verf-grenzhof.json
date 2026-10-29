@@ -1,0 +1,26 @@
+{
+  "slug": "grenzhof",
+  "name": "Hotel & Restaurant Grenzhof",
+  "telefon": "+49 6202 943-0",
+  "email": "welcome@grenzhof.de",
+  "website": "https://www.grenzhof.de/",
+  "oeffnung_samstag": "Abendkarte à la carte ab 18:00, laut Fußzeile 18–21 Uhr; Café/Apero-Lounge 14–18 Uhr",
+  "oeffnung_hinweis": "Restaurant: Reservierung erforderlich. Sonntags Ruhetag (betrifft Sa nicht). Kein Hinweis auf Betriebsferien oder Sonderveranstaltung am 31.10. gefunden.",
+  "oeffnung_quelle": "https://www.grenzhof.de/restaurant/",
+  "reservierung": {
+    "art": "online",
+    "tool": "TheFork",
+    "url": "https://widget.thefork.com/de/f7ff27cc-fdd4-4b6c-9332-729dd3f26b72",
+    "verfuegbar_31_10": "ja",
+    "freie_zeiten": [
+      "18:00",
+      "18:30",
+      "19:30"
+    ],
+    "hinweis": "TheFork-Widget im Browser geprüft (29.10., ca. 14:30 Uhr), 31.10., 2 Personen: 18:00, 18:30, 19:30 wählbar. Nicht gebucht.",
+    "stand": "2026-10-29"
+  },
+  "nicht_geprueft": [
+    "Verfügbarkeit 31.10. (TheFork blockiert automatische Abfrage)"
+  ]
+}

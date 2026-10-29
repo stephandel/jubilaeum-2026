@@ -1,0 +1,201 @@
+{
+  "slug": "atable",
+  "name": "Atable im Amtshaus",
+  "adresse": "Hauptstraße 29, 67251 Freinsheim",
+  "ort": "Freinsheim",
+  "telefon": "+49 6353 5019355",
+  "email": "atable@amtshaus-freinsheim.de",
+  "website": "https://www.amtshaus-freinsheim.de/restaurant",
+  "speisekarte_url": "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/downloads/Speisekarte_aktuell.pdf",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Atable+im+Amtshaus+Hauptstra%C3%9Fe+29%2C+67251+Freinsheim",
+  "google_bewertung": 4.7,
+  "google_anzahl": 231,
+  "google_quelle": "Vorrecherche vom 29.10.2026 (Google, nicht erneut live geprüft)",
+  "kueche": "moderne Interpretation der klassischen französischen Küche, saisonal (Michelin €€€, Falstaff 87 Punkte)",
+  "beschreibung": "Restaurant des Boutique-Hotels Amtshaus in der Freinsheimer Altstadt, unter dem Sandsteingewölbe ehemaliger Stallungen. Küchenchef Swen Bultmann kocht klassisch-französisch mit Pfälzer und elsässischen Produkten; Sommelière Sybille Bultmann führt eine große, ausgezeichnete Weinkarte. À la carte oder Menü in 3 bis 6 Gängen, auch vegetarisch.",
+  "stephans_preisangabe": "Vorrecherche: über 100 €",
+  "preis_pro_person_korrigiert": "Menü 75–130 € (3–6 Gänge); à la carte Vorspeise 18–34 €, Hauptgang 42–50 €, Dessert 9–22 €",
+  "preis_abweichung": null,
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: Menü „Atable“ 4 Gänge × 2 + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "Menü 4 Gänge: Terrine de campagne von der Wachtel | Gebratener Kabeljau mit Kalbskopfgraupen | Medaillon vom Hirschrücken | Canelé de Bordeaux mit Sanddornsorbet",
+          "preis": 95.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Weisbrod, Freinsheimer Stadtwein Riesling trocken, 0,1 l (offener Wein)",
+          "preis": 4.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 194.5,
+      "hinweis": "Summe ohne Wasser, Saft, Tee, Kaffee (Preise nicht online). Mit diesen grob geschätzt ca. 220–230 € (Schätzung, nicht belegt). Offene Weine werden zu 0,1 l ausgeschenkt, auch als Viertel in der Karaffe."
+    },
+    {
+      "titel": "Beispiel 2: Menü „Atable“ 6 Gänge × 2 + Weinbegleitung für 1 Person + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "Menü 6 Gänge: Wachtel-Terrine | Kabeljau | Jakobsmuscheln aus der Normandie mit Kürbis | Hirschrücken | Käse vom Wagen | Canelé de Bordeaux",
+          "preis": 130.0,
+          "anzahl": 2
+        },
+        {
+          "text": "Weinbegleitung 1 Person = Summe der 6 Glasempfehlungen à 0,1 l (Bernhart Grauburgunder 7,50 | Acham-Magin Riesling 9 | Salwey Weißburgunder GG 15 | San Leonardo Rosso 9 | Scheu Gewürztraminer 8,50 | Clos Uroulat Jurançon 12)",
+          "preis": 61.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser",
+          "preis": null,
+          "anzahl": 2
+        },
+        {
+          "text": "Saft/Schorle",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 321.0,
+      "hinweis": "Eine pauschale Weinbegleitung steht nicht auf der Karte; 61 € sind die Einzelpreise der zum Menü empfohlenen Gläser. Mit den übrigen Getränken grob geschätzt ca. 345–355 € (Schätzung)."
+    },
+    {
+      "titel": "Beispiel 3: à la carte – Vorspeise, Hauptgang, Dessert (2 Pers.) + Getränkeprofil",
+      "positionen": [
+        {
+          "text": "Hausgemachte Terrine de campagne von der Wachtel mit Rote-Bete-Chutney",
+          "preis": 24.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Salat „Lyonnaise“ mit pochiertem Ei, Speck und Croutons",
+          "preis": 18.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Medaillon vom Hirschrücken mit Pastinaken, Pfifferlingen und Berberitzensauce",
+          "preis": 48.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Rosa gebratene Brust von der Barbarieente mit Orangenchicorée",
+          "preis": 42.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Crème brûlée mit Sorbet",
+          "preis": 14.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Canelé de Bordeaux mit Rum-Gel und Sanddornsorbet",
+          "preis": 18.0,
+          "anzahl": 1
+        },
+        {
+          "text": "Weisbrod, Freinsheimer Stadtwein Riesling trocken, 0,1 l",
+          "preis": 4.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser, Saft/Schorle, Tee, Kaffee",
+          "preis": null,
+          "anzahl": 1
+        }
+      ],
+      "summe": 168.5,
+      "hinweis": "Summe ohne Wasser, Saft, Tee, Kaffee (nicht online)."
+    }
+  ],
+  "oeffnung_samstag": "12:00–14:00 und 18:30–23:00 (Michelin: abends 18:30–21:30, vermutlich letzte Bestellung)",
+  "oeffnung_hinweis": "Abendservice erst ab 18:30 – im Wunschfenster 17–20 Uhr also nur 18:30–20:00 möglich. Ruhetage So+Mo; Allerheiligen (So) betrifft den Samstag nicht.",
+  "oeffnung_quelle": "https://www.amtshaus-freinsheim.de/restaurant",
+  "reservierung": {
+    "art": "online",
+    "tool": "gastronovi",
+    "url": "https://services.gastronovi.com/restaurants/123465/reservation/widget/referral?embed=1",
+    "verfuegbar_31_10": "ja",
+    "freie_zeiten": [
+      "18:30",
+      "18:45",
+      "19:00",
+      "19:15",
+      "19:30",
+      "19:45",
+      "20:00"
+    ],
+    "hinweis": "gastronovi-Widget im Browser geprüft (29.10., ca. 14:40 Uhr), 2 Personen: Zeitfenster 18:30–21:00 wählbar; 19:00 führte bis zur Eingabe der persönlichen Daten (frei). Nichts eingegeben, nicht gebucht. Nur 19:00 wirklich bis zum Ende geprüft.",
+    "stand": "2026-10-29"
+  },
+  "parken": {
+    "text": "Kein eigener Restaurantparkplatz genannt; öffentliche Parkplätze: Erpolzheimer Straße (Parkplatz Barockgarten), Weisenheimer Straße (nahe Eisentor), Haintorstraße (Altstadt; Zufahrt wegen gesperrtem Haintor nur über Friedhof- oder Denkmalstraße), Herxheimer Straße (Verbandsgemeindeverwaltung). Kosten nicht angegeben.",
+    "parkopedia_url": null,
+    "quelle": "https://www.amtshaus-freinsheim.de/restaurant"
+  },
+  "bilder": [
+    {
+      "datei": "img/atable-1.jpg",
+      "art": "location",
+      "quelle_url": "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/atable_raeume/Atable_21-06-14_web_2192.jpg"
+    },
+    {
+      "datei": "img/atable-2.jpg",
+      "art": "gericht",
+      "quelle_url": "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/atable_kueche/Atable_21-06-14_web_2572.jpg"
+    },
+    {
+      "datei": "img/atable-3.jpg",
+      "art": "gericht",
+      "quelle_url": "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/atable_kueche/Atable_21-06-14_web_2677.jpg"
+    }
+  ],
+  "quellen": [
+    "https://www.amtshaus-freinsheim.de/restaurant",
+    "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/downloads/Speisekarte_aktuell.pdf",
+    "https://www.amtshaus-freinsheim.de/fileadmin/user_upload/downloads/Weinkarte_Atable.pdf",
+    "https://www.amtshaus-freinsheim.de/aktuelles",
+    "https://www.amtshaus-freinsheim.de/kontakt",
+    "https://guide.michelin.com/de/de/rheinland-pfalz/freinsheim/restaurant/atable-im-amtshaus",
+    "https://www.falstaff.com/en/restaurants/atable-im-amtshaus-freinsheim"
+  ],
+  "nicht_geprueft": [
+    "Preise für Wasser, Saft, Tee, Kaffee – nicht in Speise- oder Weinkarte",
+    "Keine pauschale Weinbegleitung ausgeschrieben; Wert aus Einzelgläsern errechnet",
+    "Verfügbarkeit am 31.10. heute nicht erneut abgefragt (gastronovi mit Bot-Schutz); Wert aus Vorrecherche",
+    "Google-Bewertung nicht live geprüft (Wert aus Vorrecherche)",
+    "Parkgebühren unbekannt"
+  ],
+  "stand": "2026-10-29"
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "pastry-poets",
+  "name": "Pastry Poets – Pâtisserie & Café",
+  "adresse": "Alte Postgasse 53, 69469 Weinheim",
+  "ort": "Weinheim",
+  "telefon": null,
+  "email": "info@pastry-poets.de (Reservierung: reservierung@pastry-poets.de)",
+  "website": "https://pastry-poets.de/",
+  "speisekarte_url": null,
+  "google_bewertung": 5.0,
+  "google_anzahl": 55,
+  "google_quelle": "Stephans Tabelle vom 13.09.2026 (nicht live geprüft)",
+  "spezialitaet": "Französische Tartelettes, saisonale Törtchen, Choux, Croissants",
+  "preisniveau": null,
+  "beschreibung": "Pâtisserie-Café zweier Konditormeisterinnen in der Weinheimer Altstadt, entstanden aus einem Wagen auf Mannheimer Wochenmärkten. Handgemachte Törtchen und Croissants nach Pariser Vorbild, dazu Kaffee.",
+  "oeffnung_samstag": "09:00–17:00",
+  "oeffnung_hinweis": "Di und Mi Ruhetag; Tischreservierung per E-Mail möglich Weitere Quelle: https://www.visitbergstrasse.com/essen-trinken/pastry-poets-weinheim",
+  "oeffnung_quelle": "https://pastry-poets.de/",
+  "parken": null,
+  "bilder": [
+    {
+      "datei": "img/cafe-pastry-poets-1.jpg",
+      "art": "team",
+      "quelle_url": "https://pastry-poets.de/wp-content/uploads/2024/09/IMG_60451-scaled.jpg"
+    },
+    {
+      "datei": "img/cafe-pastry-poets-2.jpg",
+      "art": "produkt",
+      "quelle_url": "https://pastry-poets.de/wp-content/uploads/elementor/thumbs/IMG_0335-qpuj53eyrfni76zq46d4bp1grc46ntc96uv2fxhbxc.jpg"
+    },
+    {
+      "datei": "img/cafe-pastry-poets-3.jpg",
+      "art": "produkt",
+      "quelle_url": "https://pastry-poets.de/wp-content/uploads/elementor/thumbs/EAXM8130-scaled-qpuj8hlzfwas4i28an6mbu7dzfdwggtczno6twg5gg.jpeg"
+    }
+  ],
+  "quellen": [
+    "https://pastry-poets.de/",
+    "https://www.visitbergstrasse.com/essen-trinken/pastry-poets-weinheim",
+    "https://www.mannheimer-morgen.de/leben/geniessen_artikel,-restaurant-bars-und-essen-pastry-poets-bringen-in-weinheim-franzoesisches-flair-auf-den-kuchenteller-_arid,2375843.html"
+  ],
+  "nicht_geprueft": [
+    "Google-Bewertung nur aus Stephans Tabelle",
+    "Telefonnummer nicht veröffentlicht",
+    "Preise nicht online",
+    "Parken nicht recherchiert",
+    "Kein Gastraum-Foto (Bild 1 zeigt Inhaberin)"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Pastry+Poets+%E2%80%93+P%C3%A2tisserie+%26+Caf%C3%A9%2C+Alte+Postgasse+53%2C+69469+Weinheim",
+  "stand": "2026-10-29"
+}

@@ -1,0 +1,219 @@
+{
+  "slug": "das-atelier",
+  "name": "Das Atelier",
+  "adresse": "G7 17, 68159 Mannheim",
+  "ort": "Mannheim",
+  "telefon": "+49 174 6086339",
+  "email": "service@dasatelierma.de",
+  "website": "https://dasatelierma.de/",
+  "speisekarte_url": "https://dasatelierma.de/speisekarte/",
+  "getraenkekarte_url": "https://dasatelierma.de/getraenke/",
+  "maps_url": "https://maps.app.goo.gl/mkbhSWebViP7skCv5",
+  "google_bewertung": 4.7,
+  "google_anzahl": 147,
+  "google_quelle": "Stephans Tabelle (nicht live geprüft)",
+  "kueche": "französisch geprägte Fusionsküche mit türkischen und mediterranen Einflüssen",
+  "beschreibung": "Restaurant im Quadrat G7 am Rand des Jungbusch mit Wohnzimmer-Atmosphäre, Kamin und Wintergarten (laut Schlemmer Atlas). Die Karte mischt französische Klassiker (Café de Paris, Aligot, Crème brûlée) mit Mezze-artigen Vorspeisen, Pasta und Tatar; alles laut Website handgemacht. Etwa ein Dutzend offene Weine.",
+  "stephans_preisangabe": "30–40 €",
+  "preis_pro_person_korrigiert": "ca. 40–70 € (Hauptgericht 19,50–32,90 €, mit Dessert und Getränken)",
+  "preis_abweichung": "Stephans Angabe 30–40 € deckt nur den Hauptgang ab; mit Dessert und Getränken realistisch 40–70 € pro Person (Hauptgerichte 19,50–32,90 €, Karte Stand 27.10.2026).",
+  "preisbeispiele": [
+    {
+      "titel": "Beispiel 1: 2 Pasta + 1 Dessert geteilt + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Tagliatelle Rustica",
+          "preis": 19.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Orzo Mare",
+          "preis": 21.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Baskischer Cheesecake",
+          "preis": 9.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser still/sprudel 0,75 l",
+          "preis": 6.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Lugana Santa Sofia 0,2 l (offener Wein, kleinstes Glas 0,2 l)",
+          "preis": 8.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Apfelschorle 0,4 l",
+          "preis": 4.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee (nicht auf der Karte)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee",
+          "preis": 3.2,
+          "anzahl": 1
+        }
+      ],
+      "summe": 75.2
+    },
+    {
+      "titel": "Beispiel 2: 2 Hauptgerichte + 2 Desserts + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Huhn – Aligot",
+          "preis": 24.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Lachs (Zitronengras-Beurre-blanc, Edamame-Püree)",
+          "preis": 27.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Crème brûlée",
+          "preis": 9.9,
+          "anzahl": 2
+        },
+        {
+          "text": "Wasser still/sprudel 0,75 l",
+          "preis": 6.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Lugana Santa Sofia 0,2 l (offener Wein, kleinstes Glas 0,2 l)",
+          "preis": 8.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Apfelschorle 0,4 l",
+          "preis": 4.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee (nicht auf der Karte)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee",
+          "preis": 3.2,
+          "anzahl": 1
+        }
+      ],
+      "summe": 96.1
+    },
+    {
+      "titel": "Beispiel 3: Vorspeise + Hauptgang + Dessert je Person + Getränke (2 Pers.)",
+      "positionen": [
+        {
+          "text": "Tatar-Trio „Crunch & Spice“",
+          "preis": 18.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Burrata mit bunten Tomaten",
+          "preis": 13.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Bonfilet Café de Paris",
+          "preis": 32.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Rippchen – Aligot",
+          "preis": 28.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Baskischer Cheesecake",
+          "preis": 9.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Crème brûlée",
+          "preis": 9.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Wasser still/sprudel 0,75 l",
+          "preis": 6.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Lugana Santa Sofia 0,2 l (offener Wein, kleinstes Glas 0,2 l)",
+          "preis": 8.9,
+          "anzahl": 1
+        },
+        {
+          "text": "Apfelschorle 0,4 l",
+          "preis": 4.5,
+          "anzahl": 1
+        },
+        {
+          "text": "Tee (nicht auf der Karte)",
+          "preis": null,
+          "anzahl": 1
+        },
+        {
+          "text": "Kaffee",
+          "preis": 3.2,
+          "anzahl": 1
+        }
+      ],
+      "summe": 136.7
+    }
+  ],
+  "preisbeispiele_hinweis": "Tee steht nicht auf der Getränkekarte (Summe ohne Tee). Offene Weine nur im 0,2-l-Glas.",
+  "oeffnung_samstag": "17:00–00:00",
+  "oeffnung_hinweis": "Montag Ruhetag; Sonntag (Allerheiligen) laut Website 17–23 Uhr geöffnet. Küchenschluss nicht angegeben.",
+  "oeffnung_quelle": "https://dasatelierma.de/kontakt/",
+  "reservierung": null,
+  "parken": {
+    "text": "Nächste öffentliche Tiefgarage: H6 (Swanseaplatz), diagonales Nachbarquadrat zu G7, wenige Gehminuten (nicht gemessen); laut Parkinglist 24 h geöffnet, 271 Plätze. Tarif nicht geprüft. Alternativ Straßenparken in den Quadraten (Parkschein).",
+    "parkopedia_url": "https://www.parkopedia.de/parken/tiefgarage/h6/68159/mannheim/",
+    "quelle": "https://www.parkinglist.de/parkplatz/mannheim/parkhaus-h-6-mannheim-2501 (Suchergebnis-Auszug, Seite selbst gesperrt)"
+  },
+  "bilder": [
+    {
+      "datei": "img/das-atelier-1.jpg",
+      "art": "location",
+      "beschreibung": "Schaufenster mit Schriftzug und Sitzbank vor dem Eingang",
+      "quelle_url": "https://dasatelierma.de/wp-content/uploads/2025/05/Das-Atelier-Mannheim-Restaurant-square.jpg"
+    },
+    {
+      "datei": "img/das-atelier-2.jpg",
+      "art": "gericht",
+      "beschreibung": "Fleischgericht auf Püree, daneben Fensterfront",
+      "quelle_url": "https://dasatelierma.de/wp-content/uploads/2025/05/Das-Atelier-Mannheim-Header-01.jpg"
+    },
+    {
+      "datei": "img/das-atelier-3.jpg",
+      "art": "location",
+      "beschreibung": "Gastraum und Küche (schwarz-weiß)",
+      "quelle_url": "https://dasatelierma.de/wp-content/uploads/2025/05/Das-Atelier-Mannheim-Cooking.jpg"
+    }
+  ],
+  "quellen": [
+    "https://dasatelierma.de/",
+    "https://dasatelierma.de/speisekarte/",
+    "https://dasatelierma.de/getraenke/",
+    "https://dasatelierma.de/kontakt/",
+    "https://www.schlemmer-atlas.de/restaurants/deutschland/mannheim/das-atelier/"
+  ],
+  "nicht_geprueft": [
+    "Google-Bewertung nicht live geprüft (Stephans Tabelle)",
+    "Küchenschluss am Samstag",
+    "Parkgebühren Tiefgarage H6 und genauer Fußweg",
+    "Datum der Speisekarte: Seite zuletzt geändert am 27.10.2026 laut Seitenzeitstempel, Karte also aktuell, aber nicht ausdrücklich datiert"
+  ],
+  "stand": "2026-10-29"
+}

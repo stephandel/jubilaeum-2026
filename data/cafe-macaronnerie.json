@@ -1,0 +1,41 @@
+{
+  "slug": "macaronnerie",
+  "name": "Macaronnerie Heidelberg",
+  "adresse": "Sofienstraße 23, 69115 Heidelberg",
+  "ort": "Heidelberg",
+  "telefon": "+49 6221 1866935",
+  "email": null,
+  "website": "https://www.macarons-heidelberg.de/",
+  "speisekarte_url": null,
+  "google_bewertung": 4.7,
+  "google_anzahl": 819,
+  "google_quelle": "wanderlog.com (Google-Daten, nicht live geprüft); heidelberg24.de 16.09.2026: 4,7",
+  "bewertung_hinweis": "Grenzfall: live 4,7 (29.10.2026), also nicht über 4,7 – als Ausweichoption aufgenommen.",
+  "spezialitaet": "Macarons, französische Törtchen und Kuchen, Kaffee",
+  "preisniveau": null,
+  "beschreibung": "Französisch geprägtes Café seit 2014 mit großer Macaron-Auswahl, Törtchen und Kaffee. Zweite Filiale in der Hauptstraße 122 (Altstadt).",
+  "oeffnung_samstag": "07:30–18:00 (Sofienstraße); Filiale Hauptstraße 122 täglich 8–18",
+  "oeffnung_hinweis": "Weitere Quelle: https://wanderlog.com/place/details/2653317",
+  "oeffnung_quelle": "https://www.heidelberg24.de/heidelberg/beste-baeckereien-heidelberg-sechs-adressen-tipps-gebaeck-sauerteigbrot-94489763.html",
+  "parken": null,
+  "bilder": [
+    {
+      "datei": "img/cafe-macaronnerie-1.jpg",
+      "art": "produkt",
+      "quelle_url": "https://www.macarons-heidelberg.de/wp-content/uploads/2021/02/macaronnerie-heidelberg.jpg"
+    }
+  ],
+  "quellen": [
+    "https://wanderlog.com/place/details/2653317",
+    "https://www.heidelberg24.de/heidelberg/beste-baeckereien-heidelberg-sechs-adressen-tipps-gebaeck-sauerteigbrot-94489763.html",
+    "https://www.macarons-heidelberg.de/"
+  ],
+  "nicht_geprueft": [
+    "Nur 1 Bild (Website hat sonst nur Instagram-Bilder)",
+    "Preise nicht geprüft",
+    "Öffnungszeiten nur aus Drittquellen",
+    "Parken nicht recherchiert"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Macaronnerie+Heidelberg%2C+Sofienstra%C3%9Fe+23%2C+69115+Heidelberg",
+  "stand": "2026-10-29"
+}
