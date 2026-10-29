@@ -1033,6 +1033,21 @@
   ich = lsGet("jg-ich");
   ichSetzen(ich);
 
+  // ---------- Als Web-App installieren (iPhone/iPad) ----------
+  var istIOS = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var istApp = window.navigator.standalone === true || (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches);
+  function installHtml(kurz) {
+    if (istApp) return kurz ? "" : '<div class="install ok"><b>✓ Als App installiert</b><span>Ihr öffnet die Seite gerade vom Home-Bildschirm.</span></div>';
+    var teilen = '<svg class="ios-teilen" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>';
+    if (!istIOS) return kurz ? "" : '<div class="install"><b>Als App aufs Handy</b><span>Öffnet die Seite auf dem iPhone in Safari, dann erscheint hier die Anleitung.</span></div>';
+    return '<div class="install' + (kurz ? " kurz" : "") + '"><b>📲 Als App auf den Home-Bildschirm</b><ol>' +
+      "<li>In Safari unten auf " + teilen + " <b>Teilen</b> tippen (bei neuerem iOS zuerst unten links auf <b>≡</b> bzw. <b>•••</b>).</li>" +
+      "<li><b>Zum Home-Bildschirm</b> wählen.</li>" +
+      "<li><b>Hinzufügen</b> – fertig. Die Seite startet dann wie eine App, mit dem Ringe-Symbol.</li></ol></div>";
+  }
+  var inst = document.getElementById("installieren");
+  if (inst) inst.innerHTML = installHtml(false);
+
   // Schnittstelle für Start- und Planerseite (start.js, planer.js werden vor script.js geladen)
   var JG = window.JG = {
     D: D, NAMEN: NAMEN, STAND: STAND, NG: NG,
@@ -1041,7 +1056,7 @@
     aktionen: aktionen, istFavorit: istFavorit, lsGet: lsGet, lsSet: lsSet,
     ich: function () { return ich; }, likes: function () { return likes; },
     ichSetzen: function (p) { ichSetzen(p); },
-    beispielA: beispielA, beimAktualisieren: null
+    beispielA: beispielA, beimAktualisieren: null, installHtml: installHtml, istIOS: istIOS, istApp: istApp
   };
 
   // 15-Minuten-Regel: war die Seite länger weg, geht es auf der Startseite weiter

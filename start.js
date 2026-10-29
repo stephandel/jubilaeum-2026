@@ -215,7 +215,8 @@
         el.innerHTML = '<div class="werbist glas-leicht"><p class="werbist-frage">Wer schaut gerade?</p>' +
           '<div class="werbist-knoepfe"><button type="button" class="werbist-knopf" data-wer="S">Stephan</button>' +
           '<button type="button" class="werbist-knopf" data-wer="B">Bilgen</button></div>' +
-          '<p class="hinweis">Damit eure 👍 und Kommentare richtig zugeordnet werden. Die Seite merkt es sich, ändern geht jederzeit.</p></div>';
+          '<p class="hinweis">Damit eure 👍 und Kommentare richtig zugeordnet werden. Die Seite merkt es sich, ändern geht jederzeit über ⚙️.</p>' +
+          (JG.installHtml ? JG.installHtml(true) : "") + "</div>";
       } else {
         el.innerHTML = '<p class="hero-unter">Hallo ' + esc(JG.NAMEN[ich]) + ' <span aria-hidden="true">👋</span></p>' +
           '<p class="hero-satz">Ein Tag nur für euch – hier läuft alles zusammen. <button type="button" class="link-knopf" data-aktion="wechseln">Nicht ' + esc(JG.NAMEN[ich]) + "? Wechseln</button></p>";

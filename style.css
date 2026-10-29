@@ -759,3 +759,10 @@ body.sheet-offen { overflow: hidden; }
 .bild.galerie:focus-within .gal-pfeil { display: inline-flex; }
 /* Vier Tagesideen: 2 × 2 auf breiten Bildschirmen */
 @media (min-width: 768px) { .karten.tipps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Installationsanleitung */
+.install { margin-top: var(--s3); padding: var(--s3) var(--s4); border-radius: 18px; background: var(--fuellung); text-align: left; font-size: var(--fs-footnote); display: grid; gap: 4px; }
+.install ol { margin: 4px 0 0; padding-left: var(--s5); display: grid; gap: 4px; }
+.install.kurz { margin-top: var(--s4); }
+.install.ok b { color: var(--ok-text); }
+.ios-teilen { width: 16px; height: 16px; vertical-align: -3px; fill: none; stroke: var(--akzent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
