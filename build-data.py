@@ -187,6 +187,7 @@ def main():
             "window.GUIDE_DATA = " + json.dumps(daten, ensure_ascii=False, indent=1) + ";\n")
     with open(os.path.join(HIER, "data.js"), "w", encoding="utf-8") as f:
         f.write(text)
+    versionsstempel_setzen()
     d = daten
     print(f"data.js geschrieben: {len(d['restaurants'])} Restaurants, {len(d['cafes'])} Cafés, "
           f"{len(d['nachmittag'])} Nachmittagsoptionen, {len(d['veranstaltungen'])} Veranstaltungen")
@@ -194,6 +195,31 @@ def main():
     ohne = [x["slug"] for x in d["cafes"] + d["nachmittag"] if not x.get("entfernung")]
     print(f"Ohne Entfernung ({len(ohne)}):", ", ".join(ohne) or "–")
     print(f"Fehlende Bilder ({len(fehlend)}):", ", ".join(fehlend) or "–")
+
+
+def versionsstempel_setzen():
+    """Hängt an data.js, script.js, likestore.js, style.css und base.css in den HTML-Dateien
+    einen Versionsstempel (?v=…) aus dem Inhalt an. So holt der Browser nach jeder Änderung
+    die neue Datei statt einer alten Kopie aus dem Zwischenspeicher (GitHub Pages, iPhone)."""
+    import hashlib
+    import re
+    dateien = ["data.js", "script.js", "likestore.js", "style.css", "base.css"]
+    stempel = {}
+    for name in dateien:
+        with open(os.path.join(HIER, name), "rb") as f:
+            stempel[name] = hashlib.md5(f.read()).hexdigest()[:8]
+    for html in ["index.html", "nachmittag.html", "cafes.html"]:
+        pfad = os.path.join(HIER, html)
+        with open(pfad, encoding="utf-8") as f:
+            inhalt = f.read()
+        neu = inhalt
+        for name, v in stempel.items():
+            neu = re.sub(r'(["\'])' + re.escape(name) + r'(\?v=[0-9a-f]+)?(["\'])',
+                         lambda m: m.group(1) + name + "?v=" + v + m.group(3), neu)
+        if neu != inhalt:
+            with open(pfad, "w", encoding="utf-8") as f:
+                f.write(neu)
+            print(f"{html}: Versionsstempel aktualisiert")
 
 
 if __name__ == "__main__":
