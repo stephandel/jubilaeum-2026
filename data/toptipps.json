@@ -17,23 +17,6 @@
     "warum": "Alles liegt in Neuenheim, ihr parkt nur einmal (P16, abends höchstens 2 €). Der Philosoph hatte für Samstag freie Tische zwischen 18:15 und 19:30 Uhr."
   },
   {
-    "id": "nah-und-ruhig",
-    "titel": "Nah, ruhig, ohne Stress",
-    "stimmung": "entspannt · kurze Wege",
-    "kurz": "Waldrunde am Karlstern, Torte im Café Wolfsbau, abends Landhausküche in der Gutsstube.",
-    "n": "ma-kaefertaler-wald-wolfsbau",
-    "c": "cv:cafe-wolfsbau",
-    "r": "grenzhof",
-    "zeit": "18:30",
-    "ablauf": [
-      "13:30 Karlstern: Weiher und Wildgehege",
-      "15:00 Kaffee und Kuchen im Café Wolfsbau (bis 17 Uhr)",
-      "Zuhause kurz frisch machen",
-      "18:30 Grenzhof, Gutsstube"
-    ],
-    "warum": "Nur wenige Minuten bis zum Wald, am Grenzhof wird kostenlos direkt am Haus geparkt. Für Samstag waren dort 18:00, 18:30 und 19:30 Uhr frei."
-  },
-  {
     "id": "schloss-und-omakase",
     "titel": "Schlossblick & Überraschungsmenü",
     "stimmung": "besonders · Erlebnis",
@@ -49,5 +32,44 @@
       "19:00 Mary Jane – Regular Omakase (Vorkasse)"
     ],
     "warum": "Ein Tag mit vielen Aussichten und einem Abend, der überrascht. Bei Mary Jane waren für Samstag noch Plätze frei; Menü 129 € pro Person, Getränke extra."
+  },
+  {
+    "id": "barockgarten-grandhotel",
+    "titel": "Barockgarten & Grandhotel",
+    "stimmung": "festlich · klassisch",
+    "kurz": "Pralinen bei Chocami, Herbstspaziergang im Schwetzinger Schlossgarten, abends die Kurfürstenstube im Europäischen Hof.",
+    "n": "nm-schwetzingen-schlossgarten",
+    "c": "c:chocami",
+    "r": "kurfuerstenstube",
+    "zeit": "18:30",
+    "folge": [
+      "c",
+      "n",
+      "r"
+    ],
+    "ablauf": [
+      "12:30 Chocami in Schwetzingen – Pralinen und Törtchen (Sa nur bis 14 Uhr)",
+      "13:30 Schlossgarten: Parterre, Gartenmoschee (bis 16 Uhr), englischer Garten",
+      "16:30 letzter Einlass, danach weiter nach Heidelberg",
+      "18:30 Kurfürstenstube im Europäischen Hof"
+    ],
+    "warum": "Der klassischste der vier Tage: Barockgarten im Herbstlicht und ein Abend im Grandhotel. In der Kurfürstenstube waren für Samstag 18:30, 18:45, 19:15, 19:30 und 19:45 Uhr frei. Menüs 147–235 € pro Person, also der teuerste Vorschlag."
+  },
+  {
+    "id": "nah-und-ruhig",
+    "titel": "Nah, ruhig, ohne Stress",
+    "stimmung": "entspannt · kurze Wege",
+    "kurz": "Waldrunde am Karlstern, Torte im Café Wolfsbau, abends Landhausküche in der Gutsstube.",
+    "n": "ma-kaefertaler-wald-wolfsbau",
+    "c": "cv:cafe-wolfsbau",
+    "r": "grenzhof",
+    "zeit": "18:30",
+    "ablauf": [
+      "13:30 Karlstern: Weiher und Wildgehege",
+      "15:00 Kaffee und Kuchen im Café Wolfsbau (bis 17 Uhr)",
+      "Zuhause kurz frisch machen",
+      "18:30 Grenzhof, Gutsstube"
+    ],
+    "warum": "Nur wenige Minuten bis zum Wald, am Grenzhof wird kostenlos direkt am Haus geparkt. Für Samstag waren dort 18:00, 18:30 und 19:30 Uhr frei."
   }
 ]

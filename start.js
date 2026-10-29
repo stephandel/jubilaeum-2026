@@ -194,7 +194,7 @@
       '<section class="block" aria-labelledby="h-tag"><h2 id="h-tag">Unser Tag</h2><div id="unser-tag"></div></section>' +
       '<section class="block" aria-labelledby="h-wetter"><h2 id="h-wetter">Wetter am Samstag</h2><div class="wetter glas-leicht"><div id="wetter"><p class="hinweis">Wetter wird geladen …</p></div>' +
       '<details class="mehr mg-ausfuehrlich" id="mg-auf"><summary>Ausführliches Wetter (Meteogramm wie auf der Fuerte-Seite)</summary><div id="meteogramm-jg"></div></details></div></section>' +
-      '<section class="block" aria-labelledby="h-tipps"><h2 id="h-tipps">Drei Ideen für den Tag</h2><p class="unterzeile">Meine Lieblingskombinationen aus allen geprüften Angaben – mit einem Tipp direkt in den Planer.</p><div class="karten tipps" id="tipps"></div></section>' +
+      '<section class="block" aria-labelledby="h-tipps"><h2 id="h-tipps">Vier Ideen für den Tag</h2><p class="unterzeile">Meine Lieblingskombinationen aus allen geprüften Angaben – mit einem Tipp direkt in den Planer.</p><div class="karten tipps" id="tipps"></div></section>' +
       '<section class="block" aria-labelledby="h-fav"><h2 id="h-fav">Eure Favoriten</h2><div id="favoriten"></div></section>' +
       '<section class="block" aria-labelledby="h-wege"><h2 id="h-wege">Alles ansehen</h2><div class="kacheln-wege">' +
       kachel("restaurants.html", "🍽️", "Restaurants", (JG.D.restaurants || []).length + " Häuser, freie Tische am Samstag") +
@@ -239,7 +239,7 @@
     function tagZeichnen() {
       var el = document.getElementById("unser-tag");
       if (!plan || !(plan.n || plan.c || plan.r)) {
-        el.innerHTML = '<div class="tag-leer glas-leicht"><p><b>Noch nicht geplant.</b> Stellt euch den Tag im Planer zusammen oder übernehmt eine der drei Ideen unten. Sobald ihr speichert, steht euer Tag hier – für euch beide.</p>' +
+        el.innerHTML = '<div class="tag-leer glas-leicht"><p><b>Noch nicht geplant.</b> Stellt euch den Tag im Planer zusammen oder übernehmt eine der vier Ideen unten. Sobald ihr speichert, steht euer Tag hier – für euch beide.</p>' +
           '<p><a class="knopf-primaer" href="planer.html">Tag zusammenstellen</a></p></div>';
         return;
       }
@@ -327,7 +327,7 @@
     function tippsZeichnen() {
       var tipps = JG.D.toptipps || [];
       document.getElementById("tipps").innerHTML = tipps.map(function (t) {
-        var n = K[t.n], c = K[H.cafeKey(t.c, K)], r = K["r:" + t.r];
+        var n = K["n:" + t.n], c = K[H.cafeKey(t.c, K)], r = K["r:" + t.r];
         var rahmen = r ? H.preisRahmen(r.obj) : null;
         var cafeBudget = [20, 30];
         var preis = rahmen ? "ca. " + Math.round(rahmen[0] + cafeBudget[0]) + "–" + H.euroRund(rahmen[1] + cafeBudget[1]) + " zu zweit" : "";

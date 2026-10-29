@@ -757,3 +757,5 @@ body.sheet-offen { overflow: hidden; }
 /* Galerie: Quelle oben rechts, Pfeile auch per Tastatur */
 .gal-quelle { top: 6px; bottom: auto; }
 .bild.galerie:focus-within .gal-pfeil { display: inline-flex; }
+/* Vier Tagesideen: 2 × 2 auf breiten Bildschirmen */
+@media (min-width: 768px) { .karten.tipps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

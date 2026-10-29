@@ -78,7 +78,7 @@
       if (id === "wuerfel") { wuerfeln(); return; }
       var t = (JG.D.toptipps || []).filter(function (x) { return x.id === id; })[0];
       if (!t) return;
-      plan = { start: (t.ablauf[0] || "").slice(0, 5).match(/\d\d:\d\d/) ? t.ablauf[0].slice(0, 5) : "13:00", n: "n:" + t.n, c: H.cafeKey(t.c, K), r: "r:" + t.r, zeit: t.zeit };
+      plan = { start: (t.ablauf[0] || "").slice(0, 5).match(/\d\d:\d\d/) ? t.ablauf[0].slice(0, 5) : "13:00", n: "n:" + t.n, c: H.cafeKey(t.c, K), r: "r:" + t.r, zeit: t.zeit, folge: t.folge };
     }
 
     // ---------- Optionen ----------
@@ -207,6 +207,8 @@
             }
             nEnde = Math.min(nEnde, soll - rest);
           }
+          var zuN = schlussZeit(n.oeffnung_31_10);
+          if (zuN != null && zuN > nStart + 30 && nEnde > zuN) nEnde = zuN; // nicht länger als geöffnet
           if (nEnde - nStart < 90) warn.push(["warn", "⏳ Für den Nachmittag bleiben nur " + Math.max(0, Math.round((nEnde - nStart) / 6) / 10).toString().replace(".", ",") + " Stunden – früher losfahren (oben „Start“) oder später essen."]);
           zeilen.push(z(nStart, "🍂", esc(K[plan.n].name), "bis ca. " + H.uhr(nEnde) + (n.oeffnung_31_10 ? " · " + esc(kurzSatz(n.oeffnung_31_10)) : "")));
           zeiten.n = nStart;
