@@ -1,5 +1,5 @@
 {
-  "_quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'.",
+  "_quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends.",
   "das-atelier": {
     "km": 7.5,
     "min": 17,
@@ -163,6 +163,46 @@
   "wh-altstadt-pastry": {
     "km": 18.3,
     "min": 26,
+    "route": "über A659"
+  },
+  "frankys-farm": {
+    "km": 7.5,
+    "min": 16,
+    "route": ""
+  },
+  "blum": {
+    "km": 9.4,
+    "min": 19,
+    "route": ""
+  },
+  "sunday": {
+    "km": 37.2,
+    "min": 33,
+    "route": ""
+  },
+  "panno": {
+    "km": 38.1,
+    "min": 34,
+    "route": ""
+  },
+  "patisserie-sophie": {
+    "km": 25.0,
+    "min": 30,
+    "route": ""
+  },
+  "ma-kaefertaler-wald-wolfsbau": {
+    "km": 4.2,
+    "min": 8,
+    "route": ""
+  },
+  "hd-koenigstuhl-bergstube": {
+    "km": 41.9,
+    "min": 41,
+    "route": "über A6"
+  },
+  "wh-hermannshof-schlosspark": {
+    "km": 18.3,
+    "min": 23,
     "route": "über A659"
   }
 }

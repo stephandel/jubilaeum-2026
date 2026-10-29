@@ -116,5 +116,23 @@
     "beschreibung": "Einzige gefundene Veranstaltung in Weinheim am 31.10.; laute Metal-Show – nur der Vollständigkeit halber.",
     "quelle": "https://www.cafecentral.de/",
     "stand": "2026-10-29"
+  },
+  {
+    "titel": "Marionettenoper: Mozarts „Die Zauberflöte“ (Collegium Musicum, Uni Heidelberg)",
+    "ort": "Pädagogische Hochschule Heidelberg, Mehrzweckhalle",
+    "adresse": "Keplerstraße 87, 69120 Heidelberg-Neuenheim",
+    "uhrzeit": "19:00 laut Veranstalterseite (Uni-Kalender: 20:00), Dauer ca. 120 Minuten",
+    "datum": "2026-10-31",
+    "preis": "Eintritt frei, Spenden willkommen",
+    "tickets_url": null,
+    "url": "https://www.uni-heidelberg.de/fakultaeten/philosophie/zegk/collegium_musicum/marionettenoper.html",
+    "kategorie": "abends",
+    "beschreibung": "Marionetten, Gesang und Klavierfassung der Zauberflöte, Wiederaufnahme nach 20 Jahren; neun Gesangssolisten. Keine Platzreservierung möglich, laut Veranstalter ausreichend Sitzplätze. Zugang auch von der Quinckestraße (neben Nr. 72), barrierefrei. Uhrzeit-Widerspruch: Die Seite der Marionettenoper nennt Sa 31.10. 19 Uhr (So 1.11. 16 Uhr), der Uni-Veranstaltungskalender Sa 20:00 (So 17:00). Die Veranstalterseite ist die Primärquelle; im Zweifel kurz per E-Mail nachfragen (marionettenoper@zegk.uni-heidelberg.de). Kollidiert bei 19 Uhr mit dem Abendessen.",
+    "quelle": "https://www.uni-heidelberg.de/fakultaeten/philosophie/zegk/collegium_musicum/marionettenoper.html; Kalender: https://www.uni-heidelberg.de/de/veranstaltungen/marionettenoper-die-zauberfloete-2026-10-31",
+    "stand": "2026-10-29",
+    "nicht_geprueft": [
+      "tatsächlicher Beginn (19:00 oder 20:00) – Quellen widersprechen sich, nicht per Rückfrage geklärt",
+      "Platzandrang bei freiem Eintritt ohne Reservierung"
+    ]
   }
 ]

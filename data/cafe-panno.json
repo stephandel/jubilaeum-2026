@@ -1,0 +1,51 @@
+{
+  "name": "Café Panno",
+  "adresse": "Ingrimstraße 22, 69117 Heidelberg",
+  "ort": "Heidelberg-Altstadt",
+  "telefon": null,
+  "email": "hi@panno-heidelberg.de",
+  "website": "https://panno-heidelberg.de/",
+  "speisekarte_url": "https://panno-heidelberg.de/karte/",
+  "bewertung_hinweis": "Fremde Fassung nennt 4,8 (331) – nicht selbst geprüft, nur Hinweis.",
+  "spezialitaet": "Espresso-Getränke, Organic Matcha, Signature Drinks (Cookie Butter Matcha, Tiramisu Latte, Salted Caramel), hauseigene Espressoröstung",
+  "preisniveau": "Getränkekarte: Espresso 3,00 €, Cappuccino klein 4,00 € / groß 4,70 €, Flat White 4,50 €, Matcha Latte 5,30 €, Signature Drinks 5,80–7,00 €; keine Kuchenpreise online",
+  "beschreibung": "Kleines Café in einer ruhigen Altstadtgasse mit sorgfältigem Kaffee, Organic Matcha und kreativen Special Drinks. Ein entspannter Zwischenstopp zwischen Altstadt und Neckar – Schwerpunkt sind die Getränke.",
+  "oeffnung_samstag": "12:00–17:00",
+  "oeffnung_hinweis": "Mo–Fr 10–17:30, Sa–So 12–17 Uhr (Startseite und Kontaktseite stimmen überein)",
+  "oeffnung_quelle": "https://panno-heidelberg.de/kontakt/",
+  "parken": {
+    "text": "Parkhaus P13 Karlsplatz/Rathaus laut fremder Fassung (nicht geprüft)",
+    "parkopedia_url": null,
+    "quelle": "https://parken.heidelberg.de/detailView/P13"
+  },
+  "bilder": [
+    {
+      "datei": "img/cafe-panno-1.jpg",
+      "art": "location",
+      "quelle_url": "https://www.google.com/maps/place/Caf%C3%A9+Panno/"
+    },
+    {
+      "datei": "img/cafe-panno-2.jpg",
+      "art": "produkt",
+      "quelle_url": "https://www.google.com/maps/place/Caf%C3%A9+Panno/"
+    }
+  ],
+  "quellen": [
+    "https://panno-heidelberg.de/",
+    "https://panno-heidelberg.de/karte/",
+    "https://panno-heidelberg.de/kontakt/"
+  ],
+  "nicht_geprueft": [
+    "Kuchen: auf der Website kein Kuchenangebot und keine Kuchenpreise genannt – Café ist getränkelastig",
+    "Telefon: keines auf der Website (nur E-Mail/Formular)",
+    "Parkhaus P13 nicht selbst geprüft",
+    "Zweites Bild (Gästefoto, nur ca. 10 KB, Getränk mit Keks) ist klein",
+    "Sitzplatz am Samstag nicht bestätigt"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Panno%2C%20Ingrimstra%C3%9Fe%2022%2C%2069117%20Heidelberg",
+  "slug": "panno",
+  "google_bewertung": null,
+  "google_anzahl": null,
+  "google_quelle": "wird von der Leitung live geprüft",
+  "stand": "2026-10-29"
+}

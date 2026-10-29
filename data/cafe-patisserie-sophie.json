@@ -1,0 +1,48 @@
+{
+  "name": "Pâtisserie Sophie",
+  "adresse": "Ladenburger Straße 10, 69120 Heidelberg",
+  "ort": "Heidelberg-Neuenheim",
+  "telefon": "+49 6221 6736550",
+  "email": "info@patisserie-sophie.de",
+  "website": "https://patisserie-sophie.de/",
+  "speisekarte_url": null,
+  "bewertung_hinweis": null,
+  "spezialitaet": "Feine Törtchen (Mousse, Crème, Gelee, Nuss/Schokolade), Viennoiserie (Croissant, Pain au Chocolat, Kouign-Amann), Specialty Coffee",
+  "preisniveau": null,
+  "beschreibung": "Kleine Pâtisserie einer Konditormeisterin in Neuenheim, die französische, spanische und deutsche Einflüsse verbindet. Es gibt feine Törtchen, Viennoiserie und Specialty Coffee – zum Mitnehmen oder vor Ort.",
+  "oeffnung_samstag": "09:30–17:30",
+  "oeffnung_hinweis": "Öffnungszeiten 2026: Freitag und Samstag 9:30–17:30, Sonn- und Feiertag 10–16 Uhr; sonst kein Hinweis (Mo–Do vermutlich zu)",
+  "oeffnung_quelle": "https://patisserie-sophie.de/",
+  "parken": {
+    "text": "Parkhaus P16 Nordbrückenkopf, Uferstraße 5 laut fremder Fassung (nicht geprüft)",
+    "parkopedia_url": null,
+    "quelle": "https://www.swhd.de/p16"
+  },
+  "bilder": [
+    {
+      "datei": "img/cafe-patisserie-sophie-1.jpg",
+      "art": "produkt",
+      "quelle_url": "https://patisserie-sophie.de/"
+    },
+    {
+      "datei": "img/cafe-patisserie-sophie-2.jpg",
+      "art": "produkt",
+      "quelle_url": "https://patisserie-sophie.de/"
+    }
+  ],
+  "quellen": [
+    "https://patisserie-sophie.de/"
+  ],
+  "nicht_geprueft": [
+    "Preise: Website nennt keine",
+    "Sitzplätze: Website sagt „to go oder vor Ort“, Anzahl/Reservierung unbekannt",
+    "Parkhaus P16 nicht selbst geprüft",
+    "Bildquelle: fremde Fassung nennt patisserie-sophie.de als Quelle; Dateien nicht auf der Seite verglichen"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=P%C3%A2tisserie%20Sophie%2C%20Ladenburger%20Stra%C3%9Fe%2010%2C%2069120%20Heidelberg",
+  "slug": "patisserie-sophie",
+  "google_bewertung": null,
+  "google_anzahl": null,
+  "google_quelle": "wird von der Leitung live geprüft",
+  "stand": "2026-10-29"
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Sunday Café",
+  "adresse": "Hauptstraße 110 (am Theaterplatz), 69117 Heidelberg",
+  "ort": "Heidelberg-Altstadt",
+  "telefon": null,
+  "email": null,
+  "website": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/",
+  "speisekarte_url": null,
+  "bewertung_hinweis": "Fremde Fassung nennt 4,9 (164) – nicht selbst geprüft, nur Hinweis.",
+  "spezialitaet": "Täglich frische Kuchen, Kaffee, süße und herzhafte Snacks",
+  "preisniveau": null,
+  "beschreibung": "Liebevoll geführtes Nachbarschafts-Café direkt am Theaterplatz in der Altstadt, mit lockerer, familiärer Stimmung. Es gibt täglich frische Kuchen und guten Kaffee – ein gemütlicher Stopp beim Altstadtbummel.",
+  "oeffnung_samstag": "10:00–18:00",
+  "oeffnung_hinweis": "Di–Fr 9–18, Sa/So 10–18, Feiertage 10–18, Mo geschlossen",
+  "oeffnung_quelle": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/",
+  "parken": {
+    "text": "Parkhaus P10 Friedrich-Ebert-Platz laut fremder Fassung (nicht geprüft)",
+    "parkopedia_url": null,
+    "quelle": "https://www.swhd.de/p10"
+  },
+  "bilder": [
+    {
+      "datei": "img/cafe-sunday-1.jpg",
+      "art": "location",
+      "quelle_url": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/"
+    },
+    {
+      "datei": "img/cafe-sunday-2.jpg",
+      "art": "produkt",
+      "quelle_url": "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/"
+    }
+  ],
+  "quellen": [
+    "https://www.vielmehr.heidelberg.de/dankstelle/cafe-sunday/",
+    "https://instagram.com/sunday_heidelberg"
+  ],
+  "nicht_geprueft": [
+    "Preise: keine öffentliche Karte gefunden",
+    "Telefon: keines gefunden (Kontakt über Instagram)",
+    "Parkhaus P10 und Tarife nicht selbst geprüft",
+    "Reservierung nicht bekannt; Platz am Samstag nicht bestätigt",
+    "Instagram nicht abgerufen"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Sunday%20Caf%C3%A9%2C%20Hauptstra%C3%9Fe%20110%2C%2069117%20Heidelberg",
+  "slug": "sunday",
+  "google_bewertung": null,
+  "google_anzahl": null,
+  "google_quelle": "wird von der Leitung live geprüft",
+  "stand": "2026-10-29"
+}

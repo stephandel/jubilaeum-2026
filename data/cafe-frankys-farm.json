@@ -1,0 +1,53 @@
+{
+  "name": "Franky’s Farm (Coffee & Cheesecake)",
+  "adresse": "G7 20, 68159 Mannheim",
+  "ort": "Mannheim",
+  "telefon": "+49 621 48203548",
+  "email": null,
+  "website": "https://lnk.bio/frankysfarm_mannheim",
+  "speisekarte_url": "https://www.ubereats.com/de/store/frankys-farm-spezialitaten-coffee-mannheim/2GgbRAdBURWyt400DxqloA",
+  "bewertung_hinweis": "Fremde Fassung nennt 4,8 (943) – nicht selbst geprüft, nur Hinweis.",
+  "spezialitaet": "Cheesecake (San-Sebastian-Variante, Pistazie), Kaffee, Matcha",
+  "preisniveau": null,
+  "beschreibung": "Gemütliches Café am Rand von G7 mit Cheesecake in mehreren Sorten, Kaffee und Matcha. Lange geöffnet, daher auch als späterer Süßstopp vor oder nach dem Abendessen gut denkbar.",
+  "oeffnung_samstag": "10:30–23:00",
+  "oeffnung_hinweis": "Mehrere Verzeichnisse (Coolibri, Tripadvisor, Restaurantguru, koffie.work): Mo–Do 10:30–22:00, Fr–So 10:30–23:00. Abweichend: Apple Maps 10:30–21:00, Wolt 9–23 Uhr. Keine offizielle Zeitenangabe abrufbar (lnk.bio blockiert).",
+  "oeffnung_quelle": "https://coolibri.de/restaurant/frankys-farm-cheesecake-spezialitaten-cafe-mannheim/",
+  "parken": {
+    "text": "Keine eigenen Parkplätze belegt; Tiefgarage G1 Marktplatz laut fremder Fassung (nicht geprüft)",
+    "parkopedia_url": null,
+    "quelle": "https://parken-mannheim.de/parking/g1-marktplatz/"
+  },
+  "bilder": [
+    {
+      "datei": "img/cafe-frankys-farm-1.jpg",
+      "art": "location",
+      "quelle_url": "https://www.google.com/maps/place/Franky%E2%80%98s+Farm+(Coffee+%26+Cheesecake)/"
+    },
+    {
+      "datei": "img/cafe-frankys-farm-2.jpg",
+      "art": "produkt",
+      "quelle_url": "https://www.google.com/maps/place/Franky%E2%80%98s+Farm+(Coffee+%26+Cheesecake)/"
+    }
+  ],
+  "quellen": [
+    "https://coolibri.de/restaurant/frankys-farm-cheesecake-spezialitaten-cafe-mannheim/",
+    "https://maps.apple.com/place?place-id=IF44FEA7852BF1EE9",
+    "https://www.tripadvisor.com/Restaurant_Review-g187290-d26533231-Reviews-Frankys_Farm_Cafe_Mannheim-Mannheim_Baden_Wurttemberg.html",
+    "https://lnk.bio/frankysfarm_mannheim",
+    "https://www.ubereats.com/de/store/frankys-farm-spezialitaten-coffee-mannheim/2GgbRAdBURWyt400DxqloA"
+  ],
+  "nicht_geprueft": [
+    "Preise: Uber-Eats-Lieferkarte nicht abrufbar (403); die fremde Fassung nennt dort Cappuccino 3,90 €, San-Sebastian-Cheesecake 5,90 €, Matcha-Latte 4,30 €, Pistazien-Cheesecake 7,70 € – nur Lieferkartenpreise, nicht bestätigt, Vor-Ort-Preise können abweichen",
+    "Offizieller Linkhub lnk.bio blockiert Abruf (Cloudflare); Öffnung nur aus Verzeichnissen",
+    "Öffnung am 31.10. nicht gesondert bestätigt",
+    "Aachener Seite frankys-home.de gehört nicht zu diesem Café",
+    "Reservierung/Tisch nicht geprüft"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Franky%E2%80%99s%20Farm%2C%20G7%2020%2C%2068159%20Mannheim",
+  "slug": "frankys-farm",
+  "google_bewertung": null,
+  "google_anzahl": null,
+  "google_quelle": "wird von der Leitung live geprüft",
+  "stand": "2026-10-29"
+}

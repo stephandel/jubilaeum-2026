@@ -12,8 +12,10 @@
     "tool": "gastronovi",
     "url": "https://services.gastronovi.com/restaurants/118467/reservation/widget?L=de",
     "verfuegbar_31_10": "unbekannt",
-    "freie_zeiten": [],
-    "hinweis": "Nur telefonisch möglich: Das Online-Tool (gastronovi) wirkt kaputt, es meldet pauschal „nicht verfügbar“ (Stephans Einschätzung, 29.10. abends). Bitte anrufen: 0621 65714720.",
+    "freie_zeiten": [
+      "20:30 (Pfälzer Stube)"
+    ],
+    "hinweis": "Online im Bereich „Turmrestaurant“ abends kein Tisch. Im zweiten Gastraum „Pfälzer Stube“ (gleiches Haus) bot das gastronovi-Widget am 29.10. abends für 2 Personen am 31.10. nur 15:30, 15:45 und 20:30 Uhr an (19:00 nicht verfügbar; nichts gebucht). Für einen Tisch im Turmrestaurant selbst bitte anrufen: 0621 65714720.",
     "stand": "2026-10-29"
   },
   "nicht_geprueft": [

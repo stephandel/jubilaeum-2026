@@ -1,0 +1,50 @@
+{
+  "name": "Blum Café (Konditorei & Café)",
+  "adresse": "Schwetzinger Straße 92, 68165 Mannheim",
+  "ort": "Mannheim",
+  "telefon": "+49 621 26230",
+  "email": "info@blum-mannheim.de",
+  "website": "https://blum-mannheim.de/",
+  "speisekarte_url": null,
+  "bewertung_hinweis": "Fremde Fassung nennt 4,8 (358) – nicht selbst geprüft, nur Hinweis.",
+  "spezialitaet": "Konditorei-Torten und Kuchen (Käsekuchen, Schwarzwälder Kirsch, Mango-Sahne, Zitronen-Baiser u. a. laut Website-Beiträgen), Gebäck, Mittagstisch",
+  "preisniveau": null,
+  "beschreibung": "Konditorei mit Café in der Schwetzingerstadt, die klassische Torten und feines Gebäck anbietet. Ein ruhiger, traditioneller Kuchenstopp für den Nachmittag.",
+  "oeffnung_samstag": "11:00–16:00 (unsicher)",
+  "oeffnung_hinweis": "Quellen widersprechen sich: Yelp (11/2025), yably, nochoffen Sa 11–16; Cylex/Tripadvisor 10:30–18; 11880 10–18; Deutsche Business 11–17; fremde Fassung: Website 10:30–18, Google 11–18. Website blum-mannheim.de steht im Wartungsmodus ohne Zeiten. Vor Fahrt telefonisch klären; ein Tripadvisor-Gast fand Sa 11 Uhr geschlossen.",
+  "oeffnung_quelle": "https://www.yelp.de/biz/blum-coffee-bar-mannheim-2",
+  "parken": null,
+  "bilder": [
+    {
+      "datei": "img/cafe-blum-1.jpg",
+      "art": "location",
+      "quelle_url": "https://www.google.com/maps/place/Blum+Caf%C3%A9/"
+    },
+    {
+      "datei": "img/cafe-blum-2.jpg",
+      "art": "produkt",
+      "quelle_url": "https://www.google.com/maps/place/Blum+Caf%C3%A9/"
+    }
+  ],
+  "quellen": [
+    "https://blum-mannheim.de/",
+    "https://www.yelp.de/biz/blum-coffee-bar-mannheim-2",
+    "https://www.tripadvisor.com.au/Restaurant_Review-g187290-d10264434-Reviews-Blum_Coffee_bar-Mannheim_Baden_Wurttemberg.html",
+    "https://web2.cylex.de/firma-home/blum-coffee-bar-6094629.html",
+    "https://www.nochoffen.de/mannheim-blum-coffee-bar"
+  ],
+  "nicht_geprueft": [
+    "Öffnung Samstag widersprüchlich (siehe Hinweis), keine offizielle Angabe abrufbar",
+    "Preise: keine online (Website im Wartungsmodus)",
+    "Parken: keine belegte Angabe; Parkhausfinder https://parken-mannheim.de/",
+    "Telefonnummer aus Yelp/Tripadvisor und fremder Fassung, nicht aus offiziellem Impressum (Seite im Wartungsmodus)",
+    "Teils als „Blum Coffee Bar“ gelistet – gleiche Adresse; nicht mit cafe-blum.de verwechseln",
+    "Google-Öffnungszeiten nicht selbst gesehen"
+  ],
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Blum%20Caf%C3%A9%2C%20Schwetzinger%20Stra%C3%9Fe%2092%2C%2068165%20Mannheim",
+  "slug": "blum",
+  "google_bewertung": null,
+  "google_anzahl": null,
+  "google_quelle": "wird von der Leitung live geprüft",
+  "stand": "2026-10-29"
+}

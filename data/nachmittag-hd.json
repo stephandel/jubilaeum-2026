@@ -1,424 +1,622 @@
 [
-  {
-    "slug": "hd-philosophenweg",
-    "titel": "Altstadt, Café und Philosophenweg zum Sonnenuntergang",
-    "region": "Heidelberg",
-    "ablauf": [
-      "13:00 Parken im Parkhaus Nordbrückenkopf (P16, Uferstraße), über die Theodor-Heuss-Brücke in die Altstadt",
-      "13:20 Bummel über Hauptstraße, Marktplatz und Heiliggeistkirche",
-      "14:00 Kaffee und Torte im Café Schafheutle (Hauptstraße 94)",
-      "15:15 Über die Alte Brücke zum Nordufer, Aufstieg über den steilen Schlangenweg (bequemer: über die Hirschgasse)",
-      "15:45 Philosophenweg und Philosophengärtchen, Blick auf Schloss und Altstadt im Abendlicht",
-      "17:05 Sonnenuntergang am Philosophenweg",
-      "17:20 Abstieg Richtung Neuenheim/Theodor-Heuss-Brücke, ca. 17:45 am Parkhaus"
-    ],
-    "dauer": "ca. 4,5 h",
-    "start_adresse": "Parkhaus Nordbrückenkopf (P16), Uferstraße, 69120 Heidelberg",
-    "parken": {
-      "text": "P16 Nordbrückenkopf, Uferstraße 69120 Heidelberg; laut Stadt-Datenplattform 2,50 €/h, 4 h 9 €, 5 h 10,50 €",
-      "quelle": "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83"
-    },
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=Philosophenweg%2C%2069120%20Heidelberg",
-    "weitere_links": [
-      {
-        "text": "Philosophenweg (Heidelberg Marketing)",
-        "url": "https://www.heidelberg-marketing.de/"
-      },
-      {
-        "text": "Café Schafheutle",
-        "url": "https://cafe-schafheutle.de"
-      }
-    ],
-    "oeffnung_31_10": "Philosophenweg und Alte Brücke frei zugänglich; Café Schafheutle Sa 09:30–18:00 (speisekarte.de)",
-    "kosten": "Weg kostenlos; Parken ca. 10,50 € (5 h); Café nach Verzehr",
-    "cafe": {
-      "name": "Café Schafheutle",
-      "adresse": "Hauptstraße 94, 69117 Heidelberg",
-      "oeffnung_samstag": "09:30–18:00 (laut speisekarte.de, „Ausnahmen möglich“)",
-      "google": "4,7 (2.066) – Stephans Tabelle 13.09.2026, nicht live geprüft",
-      "website": "https://cafe-schafheutle.de",
-      "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Schafheutle%2C%20Hauptstra%C3%9Fe%2094%2C%2069117%20Heidelberg",
-      "quelle": "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle"
-    },
-    "veranstaltung": null,
-    "bilder": [
-      {
-        "datei": "img/nm-hd-philosophenweg-1.jpg",
-        "art": "location",
-        "quelle_url": "https://commons.wikimedia.org/wiki/File:HeidelbergPhilosophenweg.JPG"
-      },
-      {
-        "datei": "img/nm-hd-philosophenweg-2.jpg",
-        "art": "location",
-        "quelle_url": "https://commons.wikimedia.org/wiki/File:Heidelberg_Philosophenweg_vom_Burgweg.jpg"
-      }
-    ],
-    "quellen": [
-      "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83",
-      "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle"
-    ],
-    "nicht_geprueft": [
-      "Öffnungszeit Café Schafheutle nicht auf eigener Website geprüft (Website antwortete mit Fehler 429), Quelle ist speisekarte.de",
-      "Gehzeiten geschätzt, nicht gemessen",
-      "Abstieg nach Sonnenuntergang in der Dämmerung – Weg ist befestigt, Beleuchtung nicht geprüft"
-    ],
-    "stand": "2026-10-29"
+ {
+  "slug": "hd-philosophenweg",
+  "titel": "Altstadt, Café und Philosophenweg zum Sonnenuntergang",
+  "region": "Heidelberg",
+  "ablauf": [
+   "13:00 Parken im Parkhaus Nordbrückenkopf (P16, Uferstraße), über die Theodor-Heuss-Brücke in die Altstadt",
+   "13:20 Bummel über Hauptstraße, Marktplatz und Heiliggeistkirche",
+   "14:00 Kaffee und Torte im Café Schafheutle (Hauptstraße 94)",
+   "15:15 Über die Alte Brücke zum Nordufer, Aufstieg über den steilen Schlangenweg (bequemer: über die Hirschgasse)",
+   "15:45 Philosophenweg und Philosophengärtchen, Blick auf Schloss und Altstadt im Abendlicht",
+   "17:05 Sonnenuntergang am Philosophenweg",
+   "17:20 Abstieg Richtung Neuenheim/Theodor-Heuss-Brücke, ca. 17:45 am Parkhaus"
+  ],
+  "dauer": "ca. 4,5 h",
+  "start_adresse": "Parkhaus Nordbrückenkopf (P16), Uferstraße, 69120 Heidelberg",
+  "parken": {
+   "text": "P16 Nordbrückenkopf, Uferstraße 69120 Heidelberg; laut Stadt-Datenplattform 2,50 €/h, 4 h 9 €, 5 h 10,50 €",
+   "quelle": "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83"
   },
-  {
-    "slug": "hd-schloss-koenigstuhl",
-    "titel": "Schloss mit Bergbahn bis zum Königstuhl",
-    "region": "Heidelberg",
-    "ablauf": [
-      "12:30 Parken im Parkhaus Kornmarkt/Schloss (P12), Schlossticket an der Bergbahn-Talstation Kornmarkt kaufen",
-      "12:40 Bergbahn Kornmarkt → Station Schloss (alle 10 Min.)",
-      "12:50 Schlosshof, Altan mit Blick über Neckar und Altstadt, Großes Fass, Deutsches Apotheken-Museum",
-      "13:00 oder 14:00 optional klassische Schlossführung (Innenräume nur mit Führung, Sa stündlich 10–16 Uhr, 60 Min.)",
-      "14:45 Bergbahn Schloss → Molkenkur, dort Umstieg in die historische obere Bahn (alle 20 Min.) zum Königstuhl",
-      "15:15 Königstuhl (über 550 m), Aussicht über Rheinebene, kurzer Waldspaziergang",
-      "16:30 Talfahrt Königstuhl → Molkenkur → Kornmarkt",
-      "17:00 Kaffee im Café Schafheutle (Hauptstraße 94, ca. 5 Min. vom Kornmarkt) – Sonnenuntergang 17:05 alternativ am Schloss-Altan erleben (Schlosshof bis 18 Uhr offen)"
-    ],
-    "dauer": "ca. 5 h",
-    "start_adresse": "Parkhaus Kornmarkt/Schloss (P12), Neue Schlossstraße, 69117 Heidelberg",
-    "parken": {
-      "text": "P12 Kornmarkt/Schloss, Neue Schlossstraße 69117 Heidelberg (direkt an der Bergbahn-Talstation); laut Stadt-Datenplattform 2,50 €/h, 4 h 9 €, 5 h 10,50 €",
-      "quelle": "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83"
-    },
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=Heidelberger%20Schloss%2C%20Schlosshof%201%2C%2069117%20Heidelberg",
-    "weitere_links": [
-      {
-        "text": "Schloss: Öffnungszeiten",
-        "url": "https://www.schloss-heidelberg.de/besuchsinformation/oeffnungszeiten"
-      },
-      {
-        "text": "Schloss: Preise",
-        "url": "https://www.schloss-heidelberg.de/besuchsinformation/preise"
-      },
-      {
-        "text": "Bergbahn: Sommerfahrplan",
-        "url": "https://www.bergbahn-heidelberg.de/sommerfahrplan"
-      },
-      {
-        "text": "Bergbahn: Tarife",
-        "url": "https://www.bergbahn-heidelberg.de/tarife"
-      },
-      {
-        "text": "Online-Tickets Bergbahn",
-        "url": "https://www.bergbahn-heidelberg.de/de/Tickets/ticketsbestellen/"
-      }
-    ],
-    "oeffnung_31_10": "Schlosshof, Altan, Fasskeller 09:00–18:00 (letzter Einlass 17:30), Schlosskasse bis 17:15; Apotheken-Museum 10:00–18:00 (letzter Einlass 17:40). Bergbahn: Sommerfahrplan gilt bis 01.11.2026 (Winterfahrplan ab 02.11.) – untere Bahn alle 10 Min., letzte Fahrt 20:00; obere Bahn alle 20 Min., letzte Talfahrt Königstuhl 19:48",
-    "kosten": "Panoramaticket Bergbahn (Kornmarkt–Schloss–Molkenkur–Königstuhl, hin und zurück) inkl. Schlosshof, Fass und Apotheken-Museum: 17 € p. P., für zwei 34 €. Nur Schlossticket (bis Molkenkur): 11 € p. P. Schlossführung +6 € p. P.",
-    "cafe": {
-      "name": "Café Schafheutle",
-      "adresse": "Hauptstraße 94, 69117 Heidelberg",
-      "oeffnung_samstag": "09:30–18:00 (laut speisekarte.de, „Ausnahmen möglich“)",
-      "google": "4,7 (2.066) – Stephans Tabelle 13.09.2026, nicht live geprüft",
-      "website": "https://cafe-schafheutle.de",
-      "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Schafheutle%2C%20Hauptstra%C3%9Fe%2094%2C%2069117%20Heidelberg",
-      "quelle": "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle"
-    },
-    "veranstaltung": null,
-    "bilder": [
-      {
-        "datei": "img/nm-hd-schloss-koenigstuhl-1.jpg",
-        "art": "location",
-        "quelle_url": "https://commons.wikimedia.org/wiki/File:HeidelbergerSchlossHof.jpg"
-      },
-      {
-        "datei": "img/nm-hd-schloss-koenigstuhl-2.jpg",
-        "art": "location",
-        "quelle_url": "https://commons.wikimedia.org/wiki/File:Obere_Bergbahn_Heidelberg,_Bahn_in_der_Station_Königstuhl.jpg"
-      }
-    ],
-    "quellen": [
-      "https://www.schloss-heidelberg.de/besuchsinformation/oeffnungszeiten",
-      "https://www.schloss-heidelberg.de/besuchsinformation/preise",
-      "https://www.bergbahn-heidelberg.de/sommerfahrplan",
-      "https://www.bergbahn-heidelberg.de/tarife",
-      "https://www.bergbahn-heidelberg.de/de/Kopfnavigation/Presse/Aktuelles/Heidelberger-Bergbahnen-stellen-auf-Winterfahrplan-um1_86123.html",
-      "https://www.bergbahn-heidelberg.de/de/Kopfnavigation/Presse/Schlosstermine/Schlossfuehrungen-im-Oktober_86123.html",
-      "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83",
-      "https://www.bergbahn-heidelberg.de/tarife"
-    ],
-    "nicht_geprueft": [
-      "Tarifseite der Bergbahn nennt kein Jahr; Schlossticket 11 € bis 31.12.2026 ist auf der Schloss-Website bestätigt, Königstuhlticket 10 € nicht ausdrücklich für 2026",
-      "Café oder Einkehr auf dem Königstuhl/Molkenkur nicht geprüft",
-      "Andrang am Samstag vor Allerheiligen (Herbstferien) – Wartezeit an der Bergbahn möglich"
-    ],
-    "stand": "2026-10-29"
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Philosophenweg%2C%2069120%20Heidelberg",
+  "weitere_links": [
+   {
+    "text": "Philosophenweg (Heidelberg Marketing)",
+    "url": "https://www.heidelberg-marketing.de/"
+   },
+   {
+    "text": "Café Schafheutle",
+    "url": "https://cafe-schafheutle.de"
+   }
+  ],
+  "oeffnung_31_10": "Philosophenweg und Alte Brücke frei zugänglich; Café Schafheutle Sa 09:30–18:00 (speisekarte.de)",
+  "kosten": "Weg kostenlos; Parken ca. 10,50 € (5 h); Café nach Verzehr",
+  "cafe": {
+   "name": "Café Schafheutle",
+   "adresse": "Hauptstraße 94, 69117 Heidelberg",
+   "oeffnung_samstag": "09:30–18:00 (laut speisekarte.de, „Ausnahmen möglich“)",
+   "google": "4,7 (2.066) – Stephans Tabelle 13.09.2026, nicht live geprüft",
+   "website": "https://cafe-schafheutle.de",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Schafheutle%2C%20Hauptstra%C3%9Fe%2094%2C%2069117%20Heidelberg",
+   "quelle": "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle"
   },
-  {
-    "slug": "hd-altstadt-museum",
-    "titel": "Kurpfälzisches Museum, Café und Alte Brücke/Neckarwiese",
-    "region": "Heidelberg",
-    "ablauf": [
-      "13:00 Parken im Parkhaus Unibibliothek (P11, Graben-/Sandgasse) oder Karlsplatz/Rathaus (P13)",
-      "13:15 Kurpfälzisches Museum (Hauptstraße 97): Ausstellung „Unschätzbar“ (Kunst des Sammelns) und Sammlung (Gemälde, Stadtgeschichte)",
-      "14:45 Kaffee im Café Schafheutle (Hauptstraße 94, fast gegenüber)",
-      "15:45 Bummel zur Alten Brücke mit Brückentor und Brückenaffe",
-      "16:15 Über die Brücke ans Nordufer, Spaziergang am Neckar entlang zur Neckarwiese",
-      "17:05 Sonnenuntergang am Neckar mit Blick auf Altstadt und Schloss",
-      "17:30 Zurück über die Theodor-Heuss-Brücke zum Parkhaus"
-    ],
-    "dauer": "ca. 4,5 h",
-    "start_adresse": "Kurpfälzisches Museum, Hauptstraße 97, 69117 Heidelberg",
-    "parken": {
-      "text": "P11 Unibibliothek, Graben-/Sandgasse 69117 Heidelberg (1,50 €/h laut Datenplattform) oder P13 Karlsplatz/Rathaus, Karlsplatz 69117 Heidelberg (2 €/h, 4 h 8 €)",
-      "quelle": "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83"
-    },
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=Kurpf%C3%A4lzisches%20Museum%2C%20Hauptstra%C3%9Fe%2097%2C%2069117%20Heidelberg",
-    "weitere_links": [
-      {
-        "text": "Kurpfälzisches Museum",
-        "url": "https://www.museum-heidelberg.de/"
-      },
-      {
-        "text": "Café Schafheutle",
-        "url": "https://cafe-schafheutle.de"
-      }
-    ],
-    "oeffnung_31_10": "Kurpfälzisches Museum Di–So 10:00–18:00 (museum-heidelberg.de); Café Schafheutle Sa 09:30–18:00 (speisekarte.de); Alte Brücke, Neckarwiese frei",
-    "kosten": "Museum vermutlich 7 € p. P. (Reiseportal audiala, Stand April 2026, nicht offiziell bestätigt); Parken ca. 6–10 €; Café nach Verzehr",
-    "cafe": {
-      "name": "Café Schafheutle",
-      "adresse": "Hauptstraße 94, 69117 Heidelberg",
-      "oeffnung_samstag": "09:30–18:00 (laut speisekarte.de, „Ausnahmen möglich“)",
-      "google": "4,7 (2.066) – Stephans Tabelle 13.09.2026, nicht live geprüft",
-      "website": "https://cafe-schafheutle.de",
-      "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Schafheutle%2C%20Hauptstra%C3%9Fe%2094%2C%2069117%20Heidelberg",
-      "quelle": "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle"
-    },
-    "veranstaltung": "Gegen 16:30 alternativ zur Neckarwiese: „Wein & Delikatessen Montpellier“ im Alten Karlstorbahnhof (Am Karlstor 1), Verkostung 16:30 Uhr, ab 14 € – siehe veranstaltungen-hd.json",
-    "bilder": [
-      {
-        "datei": "img/nm-hd-altstadt-museum-1.jpg",
-        "art": "location",
-        "quelle_url": "https://commons.wikimedia.org/wiki/File:Kurpfälzisches_Museum_Haupteingang.JPG"
-      },
-      {
-        "datei": "img/nm-hd-altstadt-museum-2.jpg",
-        "art": "location",
-        "quelle_url": "https://commons.wikimedia.org/wiki/File:Alte_Brücke_Heidelberg_von_Nordwesten.jpg"
-      }
-    ],
-    "quellen": [
-      "https://www.museum-heidelberg.de/",
-      "https://audiala.com/de/deutschland/heidelberg/kurpfalzisches-museum-heidelberg",
-      "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83"
-    ],
-    "nicht_geprueft": [
-      "Eintrittspreis Kurpfälzisches Museum (offizielle Preisliste nicht abrufbar)",
-      "Enddatum der Ausstellung „Unschätzbar“ nicht genannt",
-      "Die Sonderausstellung „Lotte Hofmann Preis für Textilkunst 2026“ (18.10.2026–10.01.2027) ist in der Textilsammlung Max Berk (eigener Standort, Sa 13–18 Uhr), nicht im Hauptgebäude – Adresse nicht geprüft"
-    ],
-    "stand": "2026-10-29"
-  },
-  {
-    "slug": "hd-prinzhorn",
-    "titel": "Sammlung Prinzhorn: Jubiläumsausstellung „Alles Kunst?“ und Neckarufer",
-    "region": "Heidelberg",
-    "ablauf": [
-      "13:00 Parken im Parkhaus P15 Klinikum Bergheim (Thibautstraße 1A)",
-      "13:10 Museum Sammlung Prinzhorn (Voßstraße 2): Jubiläumsausstellung „Alles Kunst? 25 Jahre Museum Sammlung Prinzhorn“ – Kunst aus psychiatrischen Anstalten um 1900, international bedeutend",
-      "14:45 Spaziergang am Neckar entlang (Neckarstaden) in die Altstadt",
-      "15:30 Kaffee im Café Schafheutle (Hauptstraße 94)",
-      "16:30 Alte Brücke, Sonnenuntergang 17:05 am Neckarufer",
-      "17:30 Zurück zum Parkhaus (Fußweg oder Bus/Taxi)"
-    ],
-    "dauer": "ca. 4,5 h",
-    "start_adresse": "Sammlung Prinzhorn, Voßstraße 2, 69115 Heidelberg",
-    "parken": {
-      "text": "P15 Klinikum Bergheim, Thibautstraße 1A, 69115 Heidelberg; laut Datenplattform 1,50 €/h, Tageshöchstsatz 10 €; vom Museum empfohlen",
-      "quelle": "https://www.sammlung-prinzhorn.de/besucherinfo/anfahrt-und-kontakt/"
-    },
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=Sammlung%20Prinzhorn%2C%20Vo%C3%9Fstra%C3%9Fe%202%2C%2069115%20Heidelberg",
-    "weitere_links": [
-      {
-        "text": "Sammlung Prinzhorn",
-        "url": "https://www.sammlung-prinzhorn.de/"
-      },
-      {
-        "text": "Besucherinfo",
-        "url": "https://www.sammlung-prinzhorn.de/besucherinfo/"
-      }
-    ],
-    "oeffnung_31_10": "Sa 11:00–17:00, letzter Einlass 16:30 (sammlung-prinzhorn.de/besucherinfo); Museumscafé nur Mo–Fr",
-    "kosten": "Eintritt 10 € p. P. (ermäßigt 7 €); Parken ca. 7,50 € (5 h); Café nach Verzehr",
-    "cafe": {
-      "name": "Café Schafheutle",
-      "adresse": "Hauptstraße 94, 69117 Heidelberg",
-      "oeffnung_samstag": "09:30–18:00 (laut speisekarte.de, „Ausnahmen möglich“)",
-      "google": "4,7 (2.066) – Stephans Tabelle 13.09.2026, nicht live geprüft",
-      "website": "https://cafe-schafheutle.de",
-      "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Schafheutle%2C%20Hauptstra%C3%9Fe%2094%2C%2069117%20Heidelberg",
-      "quelle": "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle"
-    },
-    "veranstaltung": "Ausstellung „Alles Kunst?“ bis 31.01.2027",
-    "bilder": [
-      {
-        "datei": "img/nm-hd-prinzhorn-1.jpg",
-        "art": "location",
-        "quelle_url": "https://commons.wikimedia.org/wiki/File:Sammlung_Prinzhorn_Ansicht_von_Westen.JPG"
-      },
-      {
-        "datei": "img/nm-hd-prinzhorn-2.jpg",
-        "art": "ausstellung",
-        "quelle_url": "https://commons.wikimedia.org/wiki/File:In_der_Sammlung_Prinzhorn.jpg"
-      }
-    ],
-    "quellen": [
-      "https://www.sammlung-prinzhorn.de/",
-      "https://www.sammlung-prinzhorn.de/besucherinfo/",
-      "https://www.sammlung-prinzhorn.de/besucherinfo/anfahrt-und-kontakt/",
-      "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83"
-    ],
-    "nicht_geprueft": [
-      "Fußweg Museum–Altstadt (ca. 2 km) nicht gemessen",
-      "Museum laut eigener Seite nicht barrierefrei",
-      "Inhaltlich anspruchsvoll (Psychiatriegeschichte) – Geschmackssache für einen Jubiläumstag"
-    ],
-    "stand": "2026-10-29"
-  },
-  {
-    "slug": "wh-exotenwald-wachenburg",
-    "titel": "Weinheim: Schlosspark, Exotenwald und Wachenburg",
-    "region": "Weinheim",
-    "ablauf": [
-      "12:30 Start am Weinheimer Schloss (Rathaus), Schlosspark mit Zeder und Herbstfärbung",
-      "13:00 Weiter in den angrenzenden Exotenwald (Mammutbäume, nordamerikanische Baumarten) – Rundwege frei zugänglich",
-      "14:15 Aufstieg zur Wachenburg (laut Wanderportal ca. 3,4 km ab Parkplatz), Burghof mit Blick über die Rheinebene",
-      "14:45 Optional Einkehr in der Burgschänke (Öffnung unbestätigt)",
-      "15:30 Abstieg in die Altstadt",
-      "16:10 Kaffee und Pâtisserie bei Pastry Poets (Alte Postgasse 53, schließt 17:00)",
-      "Alternative: Kaffee zuerst um 12:30, dann Wald und Sonnenuntergang 17:05 an der Wachenburg"
-    ],
-    "dauer": "ca. 4 h (Wanderung ca. 7 km, mit Anstieg)",
-    "start_adresse": "Weinheimer Schloss (Rathaus), Obertorstraße 9, 69469 Weinheim",
-    "parken": {
-      "text": "nicht geprüft – Parkplätze am Schlosspark/Altstadt (Wohnmobil-Stellplatz Rote Turmstraße 30 laut promobil kostenlos)",
-      "quelle": "https://www.promobil.de/stellplatz/stellplatz-am-schlosspark-59cb6093ee8eaa137a502805.html"
-    },
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=Exotenwald%20Weinheim",
-    "weitere_links": [
-      {
-        "text": "Wanderroute Schlosspark und Exotenwald",
-        "url": "https://www.ich-geh-wandern.de/schlosspark-weinheim-und-der-exotenwald"
-      },
-      {
-        "text": "Wachenburg Burgschänke (Verzeichnis)",
-        "url": "https://foodle.pro/restaurants/weinheim/restaurant-burgschenke-kaiser-flick-gastronomie-wachenburg"
-      },
-      {
-        "text": "Pastry Poets",
-        "url": "https://pastry-poets.de"
-      },
-      {
-        "text": "Google Maps Wachenburg",
-        "url": "https://www.google.com/maps/search/?api=1&query=Wachenburg%20Weinheim"
-      }
-    ],
-    "oeffnung_31_10": "Schlosspark und Exotenwald frei zugänglich; Burgschänke Wachenburg laut Verzeichnis Sa 11:00–21:00 (undatiert, Betreiber Kaiser & Flick, Website wachenburg.de nicht erreichbar); Pastry Poets Sa 09:00–17:00",
-    "kosten": "Park, Wald, Burghof kostenlos; Café/Burgschänke nach Verzehr",
-    "cafe": {
-      "name": "Pâtisserie & Café Pastry Poets",
-      "adresse": "Alte Postgasse 53, 69469 Weinheim",
-      "oeffnung_samstag": "09:00–17:00 (Ruhetage Di/Mi)",
-      "google": "5,0 (55) – Stephans Tabelle 13.09.2026, nicht live geprüft",
-      "website": "https://pastry-poets.de",
-      "reservierung": "reservierung@pastry-poets.de",
-      "maps_url": "https://www.google.com/maps/search/?api=1&query=Pastry%20Poets%2C%20Alte%20Postgasse%2053%2C%2069469%20Weinheim",
-      "quelle": "https://pastry-poets.de"
-    },
-    "veranstaltung": null,
-    "bilder": [
-      {
-        "datei": "img/nm-wh-exotenwald-wachenburg-1.jpg",
-        "art": "location",
-        "quelle_url": "https://commons.wikimedia.org/wiki/File:Exotenwald_Weinheim_01.jpg"
-      },
-      {
-        "datei": "img/nm-wh-exotenwald-wachenburg-2.jpg",
-        "art": "location",
-        "quelle_url": "https://commons.wikimedia.org/wiki/File:Wachenburg_2010.jpg"
-      }
-    ],
-    "quellen": [
-      "https://pastry-poets.de",
-      "https://foodle.pro/restaurants/weinheim/restaurant-burgschenke-kaiser-flick-gastronomie-wachenburg",
-      "https://www.ich-geh-wandern.de/schlosspark-weinheim-und-der-exotenwald"
-    ],
-    "nicht_geprueft": [
-      "Öffnungszeit Burgschänke Wachenburg (nur undatierter Verzeichniseintrag) – vorher anrufen",
-      "Startadresse Obertorstraße 9 (Rathaus) aus Vorwissen, nicht online gegengeprüft",
-      "Parkplatz/Parkgebühr",
-      "Abstieg nach Sonnenuntergang im Wald – Taschenlampe nötig",
-      "Pastry-Poets-Bewertung nur aus Stephans Tabelle",
-      "Wegstrecke 3,4 km zur Wachenburg nur aus Suchergebnis-Zusammenfassung (Komoot), nicht selbst nachgemessen"
-    ],
-    "stand": "2026-10-29"
-  },
-  {
-    "slug": "wh-altstadt-pastry",
-    "titel": "Weinheim: Altstadt, Marktplatz und Pastry Poets",
-    "region": "Weinheim",
-    "ablauf": [
-      "13:00 Marktplatz mit Fachwerk und Laurentiuskirche, Gassen der Altstadt und Gerberbachviertel",
-      "14:00 Kaffee und Pâtisserie bei Pastry Poets (Alte Postgasse 53)",
-      "15:00 Schlosspark und kurzer Rundweg im Exotenwald (ca. 1 h)",
-      "16:30 Zurück zum Marktplatz, Sonnenuntergang 17:05 – kurzer Weg, ruhiges Tempo"
-    ],
-    "dauer": "ca. 4 h",
-    "start_adresse": "Marktplatz, 69469 Weinheim",
-    "parken": {
-      "text": "nicht geprüft",
-      "quelle": null
-    },
-    "maps_url": "https://www.google.com/maps/search/?api=1&query=Marktplatz%2C%2069469%20Weinheim",
-    "weitere_links": [
-      {
-        "text": "Pastry Poets",
-        "url": "https://pastry-poets.de"
-      },
-      {
-        "text": "Stadt Weinheim",
-        "url": "https://www.weinheim.de/"
-      }
-    ],
-    "oeffnung_31_10": "Altstadt und Schlosspark frei; Pastry Poets Sa 09:00–17:00 (Ruhetage Di/Mi), Reservierung per E-Mail möglich",
-    "kosten": "kostenlos bis auf Café",
-    "cafe": {
-      "name": "Pâtisserie & Café Pastry Poets",
-      "adresse": "Alte Postgasse 53, 69469 Weinheim",
-      "oeffnung_samstag": "09:00–17:00 (Ruhetage Di/Mi)",
-      "google": "5,0 (55) – Stephans Tabelle 13.09.2026, nicht live geprüft",
-      "website": "https://pastry-poets.de",
-      "reservierung": "reservierung@pastry-poets.de",
-      "maps_url": "https://www.google.com/maps/search/?api=1&query=Pastry%20Poets%2C%20Alte%20Postgasse%2053%2C%2069469%20Weinheim",
-      "quelle": "https://pastry-poets.de"
-    },
-    "veranstaltung": "Samstags-Shopping im Oktober beim Wochenmarkt (laut weinheim.de; ob am 31.10. und zu welcher Uhrzeit nicht geprüft)",
-    "bilder": [
-      {
-        "datei": "img/nm-wh-altstadt-pastry-1.jpg",
-        "art": "location",
-        "quelle_url": "https://commons.wikimedia.org/wiki/File:Marktplatz_in_Weinheim_(1).jpg"
-      },
-      {
-        "datei": "img/nm-wh-altstadt-pastry-2.jpg",
-        "art": "produkt",
-        "quelle_url": "https://pastry-poets.de/wp-content/uploads/elementor/thumbs/DSC_0368-scaled-qpuj3cfs1j9albj7bx546mxkyiqlc3e8m75jae2pi8.jpg"
-      }
-    ],
-    "quellen": [
-      "https://pastry-poets.de",
-      "https://www.weinheim.de/"
-    ],
-    "nicht_geprueft": [
-      "Parken",
-      "Bild 2 ist klein (400×400 px, 23 KB)",
-      "Preise Pastry Poets nicht online"
-    ],
-    "stand": "2026-10-29"
+  "veranstaltung": null,
+  "bilder": [
+   {
+    "datei": "img/nm-hd-philosophenweg-1.jpg",
+    "art": "location",
+    "quelle_url": "https://commons.wikimedia.org/wiki/File:HeidelbergPhilosophenweg.JPG"
+   },
+   {
+    "datei": "img/nm-hd-philosophenweg-2.jpg",
+    "art": "location",
+    "quelle_url": "https://commons.wikimedia.org/wiki/File:Heidelberg_Philosophenweg_vom_Burgweg.jpg"
+   },
+   {
+    "datei": "img/nm-hd-philosophenweg-3.jpg",
+    "art": "cafe",
+    "quelle_url": "https://patisserie-sophie.de/"
+   },
+   {
+    "datei": "img/nm-hd-philosophenweg-4.jpg",
+    "art": "cafe",
+    "quelle_url": "https://patisserie-sophie.de/"
+   }
+  ],
+  "quellen": [
+   "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83",
+   "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle",
+   "https://patisserie-sophie.de/"
+  ],
+  "nicht_geprueft": [
+   "Öffnungszeit Café Schafheutle nicht auf eigener Website geprüft (Website antwortete mit Fehler 429), Quelle ist speisekarte.de",
+   "Gehzeiten geschätzt, nicht gemessen",
+   "Abstieg nach Sonnenuntergang in der Dämmerung – Weg ist befestigt, Beleuchtung nicht geprüft",
+   "Café-Vorschlag (Knösel/Sophie): Preise, Kuchenangebot und Tischverfügbarkeit nicht geprüft; Google-Bewertung nicht eingetragen"
+  ],
+  "stand": "2026-10-29",
+  "cafe_vorschlag": {
+   "name": "Pâtisserie Sophie",
+   "adresse": "Ladenburger Straße 10, 69120 Heidelberg",
+   "hinweis": "Neuenheim; Fr und Sa 9:30–17:30 Uhr (2026); Törtchen, Viennoiserie, Specialty Coffee, vor Ort oder to go; Tel. 06221 6736550",
+   "quelle": "https://patisserie-sophie.de/"
   }
+ },
+ {
+  "slug": "hd-schloss-koenigstuhl",
+  "titel": "Schloss mit Bergbahn bis zum Königstuhl",
+  "region": "Heidelberg",
+  "ablauf": [
+   "12:30 Parken im Parkhaus Kornmarkt/Schloss (P12), Schlossticket an der Bergbahn-Talstation Kornmarkt kaufen",
+   "12:40 Bergbahn Kornmarkt → Station Schloss (alle 10 Min.)",
+   "12:50 Schlosshof, Altan mit Blick über Neckar und Altstadt, Großes Fass, Deutsches Apotheken-Museum",
+   "13:00 oder 14:00 optional klassische Schlossführung (Innenräume nur mit Führung, Sa stündlich 10–16 Uhr, 60 Min.)",
+   "14:45 Bergbahn Schloss → Molkenkur, dort Umstieg in die historische obere Bahn (alle 20 Min.) zum Königstuhl",
+   "15:15 Königstuhl (über 550 m), Aussicht über Rheinebene, kurzer Waldspaziergang",
+   "16:30 Talfahrt Königstuhl → Molkenkur → Kornmarkt",
+   "17:00 Kaffee im Café Schafheutle (Hauptstraße 94, ca. 5 Min. vom Kornmarkt) – Sonnenuntergang 17:05 alternativ am Schloss-Altan erleben (Schlosshof bis 18 Uhr offen)"
+  ],
+  "dauer": "ca. 5 h",
+  "start_adresse": "Parkhaus Kornmarkt/Schloss (P12), Neue Schlossstraße, 69117 Heidelberg",
+  "parken": {
+   "text": "P12 Kornmarkt/Schloss, Neue Schlossstraße 69117 Heidelberg (direkt an der Bergbahn-Talstation); laut Stadt-Datenplattform 2,50 €/h, 4 h 9 €, 5 h 10,50 €",
+   "quelle": "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83"
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Heidelberger%20Schloss%2C%20Schlosshof%201%2C%2069117%20Heidelberg",
+  "weitere_links": [
+   {
+    "text": "Schloss: Öffnungszeiten",
+    "url": "https://www.schloss-heidelberg.de/besuchsinformation/oeffnungszeiten"
+   },
+   {
+    "text": "Schloss: Preise",
+    "url": "https://www.schloss-heidelberg.de/besuchsinformation/preise"
+   },
+   {
+    "text": "Bergbahn: Sommerfahrplan",
+    "url": "https://www.bergbahn-heidelberg.de/sommerfahrplan"
+   },
+   {
+    "text": "Bergbahn: Tarife",
+    "url": "https://www.bergbahn-heidelberg.de/tarife"
+   },
+   {
+    "text": "Online-Tickets Bergbahn",
+    "url": "https://www.bergbahn-heidelberg.de/de/Tickets/ticketsbestellen/"
+   }
+  ],
+  "oeffnung_31_10": "Schlosshof, Altan, Fasskeller 09:00–18:00 (letzter Einlass 17:30), Schlosskasse bis 17:15; Apotheken-Museum 10:00–18:00 (letzter Einlass 17:40). Bergbahn: Sommerfahrplan gilt bis 01.11.2026 (Winterfahrplan ab 02.11.) – untere Bahn alle 10 Min., letzte Fahrt 20:00; obere Bahn alle 20 Min., letzte Talfahrt Königstuhl 19:48",
+  "kosten": "Panoramaticket Bergbahn (Kornmarkt–Schloss–Molkenkur–Königstuhl, hin und zurück) inkl. Schlosshof, Fass und Apotheken-Museum: 17 € p. P., für zwei 34 €. Nur Schlossticket (bis Molkenkur): 11 € p. P. Schlossführung +6 € p. P.",
+  "cafe": {
+   "name": "Café Schafheutle",
+   "adresse": "Hauptstraße 94, 69117 Heidelberg",
+   "oeffnung_samstag": "09:30–18:00 (laut speisekarte.de, „Ausnahmen möglich“)",
+   "google": "4,7 (2.066) – Stephans Tabelle 13.09.2026, nicht live geprüft",
+   "website": "https://cafe-schafheutle.de",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Schafheutle%2C%20Hauptstra%C3%9Fe%2094%2C%2069117%20Heidelberg",
+   "quelle": "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle"
+  },
+  "veranstaltung": null,
+  "bilder": [
+   {
+    "datei": "img/nm-hd-schloss-koenigstuhl-1.jpg",
+    "art": "location",
+    "quelle_url": "https://commons.wikimedia.org/wiki/File:HeidelbergerSchlossHof.jpg"
+   },
+   {
+    "datei": "img/nm-hd-schloss-koenigstuhl-2.jpg",
+    "art": "location",
+    "quelle_url": "https://commons.wikimedia.org/wiki/File:Obere_Bergbahn_Heidelberg,_Bahn_in_der_Station_Königstuhl.jpg"
+   },
+   {
+    "datei": "img/nm-hd-schloss-koenigstuhl-3.jpg",
+    "art": "cafe",
+    "quelle_url": "https://www.cafeknoesel-hd.de/"
+   },
+   {
+    "datei": "img/nm-hd-schloss-koenigstuhl-4.jpg",
+    "art": "cafe",
+    "quelle_url": "https://www.cafeknoesel-hd.de/"
+   }
+  ],
+  "quellen": [
+   "https://www.schloss-heidelberg.de/besuchsinformation/oeffnungszeiten",
+   "https://www.schloss-heidelberg.de/besuchsinformation/preise",
+   "https://www.bergbahn-heidelberg.de/sommerfahrplan",
+   "https://www.bergbahn-heidelberg.de/tarife",
+   "https://www.bergbahn-heidelberg.de/de/Kopfnavigation/Presse/Aktuelles/Heidelberger-Bergbahnen-stellen-auf-Winterfahrplan-um1_86123.html",
+   "https://www.bergbahn-heidelberg.de/de/Kopfnavigation/Presse/Schlosstermine/Schlossfuehrungen-im-Oktober_86123.html",
+   "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83",
+   "https://www.bergbahn-heidelberg.de/tarife",
+   "https://www.cafeknoesel-hd.de/"
+  ],
+  "nicht_geprueft": [
+   "Tarifseite der Bergbahn nennt kein Jahr; Schlossticket 11 € bis 31.12.2026 ist auf der Schloss-Website bestätigt, Königstuhlticket 10 € nicht ausdrücklich für 2026",
+   "Café oder Einkehr auf dem Königstuhl/Molkenkur nicht geprüft",
+   "Andrang am Samstag vor Allerheiligen (Herbstferien) – Wartezeit an der Bergbahn möglich",
+   "Einkehr auf dem Königstuhl: Bergstube im Berggasthof (täglich ab 12 Uhr) siehe Eintrag hd-koenigstuhl-bergstube",
+   "Café-Vorschlag (Knösel/Sophie): Preise, Kuchenangebot und Tischverfügbarkeit nicht geprüft; Google-Bewertung nicht eingetragen"
+  ],
+  "stand": "2026-10-29",
+  "cafe_vorschlag": {
+   "name": "Café & Hotel Knösel",
+   "adresse": "Haspelgasse 20, 69117 Heidelberg",
+   "hinweis": "älteste Café Heidelbergs laut eigener Seite; täglich ab 9 Uhr, Küche bis 17 Uhr; Tel. 06221 7272754, Online-Reservierung auf der Website",
+   "quelle": "https://www.cafeknoesel-hd.de/"
+  }
+ },
+ {
+  "slug": "hd-altstadt-museum",
+  "titel": "Kurpfälzisches Museum, Café und Alte Brücke/Neckarwiese",
+  "region": "Heidelberg",
+  "ablauf": [
+   "13:00 Parken im Parkhaus Unibibliothek (P11, Graben-/Sandgasse) oder Karlsplatz/Rathaus (P13)",
+   "13:15 Kurpfälzisches Museum (Hauptstraße 97): Ausstellung „Unschätzbar“ (Kunst des Sammelns) und Sammlung (Gemälde, Stadtgeschichte)",
+   "14:45 Kaffee im Café Schafheutle (Hauptstraße 94, fast gegenüber)",
+   "15:45 Bummel zur Alten Brücke mit Brückentor und Brückenaffe",
+   "16:15 Über die Brücke ans Nordufer, Spaziergang am Neckar entlang zur Neckarwiese",
+   "17:05 Sonnenuntergang am Neckar mit Blick auf Altstadt und Schloss",
+   "17:30 Zurück über die Theodor-Heuss-Brücke zum Parkhaus"
+  ],
+  "dauer": "ca. 4,5 h",
+  "start_adresse": "Kurpfälzisches Museum, Hauptstraße 97, 69117 Heidelberg",
+  "parken": {
+   "text": "P11 Unibibliothek, Graben-/Sandgasse 69117 Heidelberg (1,50 €/h laut Datenplattform) oder P13 Karlsplatz/Rathaus, Karlsplatz 69117 Heidelberg (2 €/h, 4 h 8 €)",
+   "quelle": "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83"
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Kurpf%C3%A4lzisches%20Museum%2C%20Hauptstra%C3%9Fe%2097%2C%2069117%20Heidelberg",
+  "weitere_links": [
+   {
+    "text": "Kurpfälzisches Museum",
+    "url": "https://www.museum-heidelberg.de/"
+   },
+   {
+    "text": "Café Schafheutle",
+    "url": "https://cafe-schafheutle.de"
+   }
+  ],
+  "oeffnung_31_10": "Kurpfälzisches Museum Di–So 10:00–18:00 (museum-heidelberg.de); Café Schafheutle Sa 09:30–18:00 (speisekarte.de); Alte Brücke, Neckarwiese frei",
+  "kosten": "Museum vermutlich 7 € p. P. (Reiseportal audiala, Stand April 2026, nicht offiziell bestätigt); Parken ca. 6–10 €; Café nach Verzehr",
+  "cafe": {
+   "name": "Café Schafheutle",
+   "adresse": "Hauptstraße 94, 69117 Heidelberg",
+   "oeffnung_samstag": "09:30–18:00 (laut speisekarte.de, „Ausnahmen möglich“)",
+   "google": "4,7 (2.066) – Stephans Tabelle 13.09.2026, nicht live geprüft",
+   "website": "https://cafe-schafheutle.de",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Schafheutle%2C%20Hauptstra%C3%9Fe%2094%2C%2069117%20Heidelberg",
+   "quelle": "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle"
+  },
+  "veranstaltung": "Gegen 16:30 alternativ zur Neckarwiese: „Wein & Delikatessen Montpellier“ im Alten Karlstorbahnhof (Am Karlstor 1), Verkostung 16:30 Uhr, ab 14 € – siehe veranstaltungen-hd.json",
+  "bilder": [
+   {
+    "datei": "img/nm-hd-altstadt-museum-1.jpg",
+    "art": "location",
+    "quelle_url": "https://commons.wikimedia.org/wiki/File:Kurpfälzisches_Museum_Haupteingang.JPG"
+   },
+   {
+    "datei": "img/nm-hd-altstadt-museum-2.jpg",
+    "art": "location",
+    "quelle_url": "https://commons.wikimedia.org/wiki/File:Alte_Brücke_Heidelberg_von_Nordwesten.jpg"
+   }
+  ],
+  "quellen": [
+   "https://www.museum-heidelberg.de/",
+   "https://audiala.com/de/deutschland/heidelberg/kurpfalzisches-museum-heidelberg",
+   "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83"
+  ],
+  "nicht_geprueft": [
+   "Eintrittspreis Kurpfälzisches Museum (offizielle Preisliste nicht abrufbar)",
+   "Enddatum der Ausstellung „Unschätzbar“ nicht genannt",
+   "Die Sonderausstellung „Lotte Hofmann Preis für Textilkunst 2026“ (18.10.2026–10.01.2027) ist in der Textilsammlung Max Berk (eigener Standort, Sa 13–18 Uhr), nicht im Hauptgebäude – Adresse nicht geprüft",
+   "Café-Vorschlag (Knösel/Sophie): Preise, Kuchenangebot und Tischverfügbarkeit nicht geprüft; Google-Bewertung nicht eingetragen"
+  ],
+  "stand": "2026-10-29",
+  "cafe_vorschlag": {
+   "name": "Café & Hotel Knösel",
+   "adresse": "Haspelgasse 20, 69117 Heidelberg",
+   "hinweis": "älteste Café Heidelbergs laut eigener Seite; täglich ab 9 Uhr, Küche bis 17 Uhr; Tel. 06221 7272754, Online-Reservierung auf der Website",
+   "quelle": "https://www.cafeknoesel-hd.de/"
+  }
+ },
+ {
+  "slug": "hd-prinzhorn",
+  "titel": "Sammlung Prinzhorn: Jubiläumsausstellung „Alles Kunst?“ und Neckarufer",
+  "region": "Heidelberg",
+  "ablauf": [
+   "13:00 Parken im Parkhaus P15 Klinikum Bergheim (Thibautstraße 1A)",
+   "13:10 Museum Sammlung Prinzhorn (Voßstraße 2): Jubiläumsausstellung „Alles Kunst? 25 Jahre Museum Sammlung Prinzhorn“ – Kunst aus psychiatrischen Anstalten um 1900, international bedeutend",
+   "14:45 Spaziergang am Neckar entlang (Neckarstaden) in die Altstadt",
+   "15:30 Kaffee im Café Schafheutle (Hauptstraße 94)",
+   "16:30 Alte Brücke, Sonnenuntergang 17:05 am Neckarufer",
+   "17:30 Zurück zum Parkhaus (Fußweg oder Bus/Taxi)"
+  ],
+  "dauer": "ca. 4,5 h",
+  "start_adresse": "Sammlung Prinzhorn, Voßstraße 2, 69115 Heidelberg",
+  "parken": {
+   "text": "P15 Klinikum Bergheim, Thibautstraße 1A, 69115 Heidelberg; laut Datenplattform 1,50 €/h, Tageshöchstsatz 10 €; vom Museum empfohlen",
+   "quelle": "https://www.sammlung-prinzhorn.de/besucherinfo/anfahrt-und-kontakt/"
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Sammlung%20Prinzhorn%2C%20Vo%C3%9Fstra%C3%9Fe%202%2C%2069115%20Heidelberg",
+  "weitere_links": [
+   {
+    "text": "Sammlung Prinzhorn",
+    "url": "https://www.sammlung-prinzhorn.de/"
+   },
+   {
+    "text": "Besucherinfo",
+    "url": "https://www.sammlung-prinzhorn.de/besucherinfo/"
+   }
+  ],
+  "oeffnung_31_10": "Sa 11:00–17:00, letzter Einlass 16:30 (sammlung-prinzhorn.de/besucherinfo); Museumscafé nur Mo–Fr",
+  "kosten": "Eintritt 10 € p. P. (ermäßigt 7 €); Parken ca. 7,50 € (5 h); Café nach Verzehr",
+  "cafe": {
+   "name": "Café Schafheutle",
+   "adresse": "Hauptstraße 94, 69117 Heidelberg",
+   "oeffnung_samstag": "09:30–18:00 (laut speisekarte.de, „Ausnahmen möglich“)",
+   "google": "4,7 (2.066) – Stephans Tabelle 13.09.2026, nicht live geprüft",
+   "website": "https://cafe-schafheutle.de",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Schafheutle%2C%20Hauptstra%C3%9Fe%2094%2C%2069117%20Heidelberg",
+   "quelle": "https://www.speisekarte.de/heidelberg-neckar/restaurant/cafe_schafheutle"
+  },
+  "veranstaltung": "Ausstellung „Alles Kunst?“ bis 31.01.2027",
+  "bilder": [
+   {
+    "datei": "img/nm-hd-prinzhorn-1.jpg",
+    "art": "location",
+    "quelle_url": "https://commons.wikimedia.org/wiki/File:Sammlung_Prinzhorn_Ansicht_von_Westen.JPG"
+   },
+   {
+    "datei": "img/nm-hd-prinzhorn-2.jpg",
+    "art": "ausstellung",
+    "quelle_url": "https://commons.wikimedia.org/wiki/File:In_der_Sammlung_Prinzhorn.jpg"
+   }
+  ],
+  "quellen": [
+   "https://www.sammlung-prinzhorn.de/",
+   "https://www.sammlung-prinzhorn.de/besucherinfo/",
+   "https://www.sammlung-prinzhorn.de/besucherinfo/anfahrt-und-kontakt/",
+   "https://ckan.datenplattform.heidelberg.de/de/dataset/parkhausmetadatenv2/resource/d7e102da-fa7c-4dcc-909a-46b32b5ccb83"
+  ],
+  "nicht_geprueft": [
+   "Fußweg Museum–Altstadt (ca. 2 km) nicht gemessen",
+   "Museum laut eigener Seite nicht barrierefrei",
+   "Inhaltlich anspruchsvoll (Psychiatriegeschichte) – Geschmackssache für einen Jubiläumstag",
+   "Café-Vorschlag (Knösel/Sophie): Preise, Kuchenangebot und Tischverfügbarkeit nicht geprüft; Google-Bewertung nicht eingetragen"
+  ],
+  "stand": "2026-10-29",
+  "cafe_vorschlag": {
+   "name": "Pâtisserie Sophie",
+   "adresse": "Ladenburger Straße 10, 69120 Heidelberg",
+   "hinweis": "Neuenheim; Fr und Sa 9:30–17:30 Uhr (2026); Törtchen, Viennoiserie, Specialty Coffee, vor Ort oder to go; Tel. 06221 6736550",
+   "quelle": "https://patisserie-sophie.de/"
+  }
+ },
+ {
+  "slug": "wh-exotenwald-wachenburg",
+  "titel": "Weinheim: Schlosspark, Exotenwald und Wachenburg",
+  "region": "Weinheim",
+  "ablauf": [
+   "12:30 Start am Weinheimer Schloss (Rathaus), Schlosspark mit Zeder und Herbstfärbung",
+   "13:00 Weiter in den angrenzenden Exotenwald (Mammutbäume, nordamerikanische Baumarten) – Rundwege frei zugänglich",
+   "14:15 Aufstieg zur Wachenburg (laut Wanderportal ca. 3,4 km ab Parkplatz), Burghof mit Blick über die Rheinebene",
+   "14:45 Optional Einkehr in der Burgschänke (Öffnung unbestätigt)",
+   "15:30 Abstieg in die Altstadt",
+   "16:10 Kaffee und Pâtisserie bei Pastry Poets (Alte Postgasse 53, schließt 17:00)",
+   "Alternative: Kaffee zuerst um 12:30, dann Wald und Sonnenuntergang 17:05 an der Wachenburg"
+  ],
+  "dauer": "ca. 4 h (Wanderung ca. 7 km, mit Anstieg)",
+  "start_adresse": "Weinheimer Schloss (Rathaus), Obertorstraße 9, 69469 Weinheim",
+  "parken": {
+   "text": "nicht geprüft – Parkplätze am Schlosspark/Altstadt (Wohnmobil-Stellplatz Rote Turmstraße 30 laut promobil kostenlos)",
+   "quelle": "https://www.promobil.de/stellplatz/stellplatz-am-schlosspark-59cb6093ee8eaa137a502805.html"
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Exotenwald%20Weinheim",
+  "weitere_links": [
+   {
+    "text": "Wanderroute Schlosspark und Exotenwald",
+    "url": "https://www.ich-geh-wandern.de/schlosspark-weinheim-und-der-exotenwald"
+   },
+   {
+    "text": "Wachenburg Burgschänke (Verzeichnis)",
+    "url": "https://foodle.pro/restaurants/weinheim/restaurant-burgschenke-kaiser-flick-gastronomie-wachenburg"
+   },
+   {
+    "text": "Pastry Poets",
+    "url": "https://pastry-poets.de"
+   },
+   {
+    "text": "Google Maps Wachenburg",
+    "url": "https://www.google.com/maps/search/?api=1&query=Wachenburg%20Weinheim"
+   }
+  ],
+  "oeffnung_31_10": "Schlosspark und Exotenwald frei zugänglich; Burgschänke Wachenburg laut Verzeichnis Sa 11:00–21:00 (undatiert, Betreiber Kaiser & Flick, Website wachenburg.de nicht erreichbar); Pastry Poets Sa 09:00–17:00",
+  "kosten": "Park, Wald, Burghof kostenlos; Café/Burgschänke nach Verzehr",
+  "cafe": {
+   "name": "Pâtisserie & Café Pastry Poets",
+   "adresse": "Alte Postgasse 53, 69469 Weinheim",
+   "oeffnung_samstag": "09:00–17:00 (Ruhetage Di/Mi)",
+   "google": "5,0 (55) – Stephans Tabelle 13.09.2026, nicht live geprüft",
+   "website": "https://pastry-poets.de",
+   "reservierung": "reservierung@pastry-poets.de",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Pastry%20Poets%2C%20Alte%20Postgasse%2053%2C%2069469%20Weinheim",
+   "quelle": "https://pastry-poets.de"
+  },
+  "veranstaltung": null,
+  "bilder": [
+   {
+    "datei": "img/nm-wh-exotenwald-wachenburg-1.jpg",
+    "art": "location",
+    "quelle_url": "https://commons.wikimedia.org/wiki/File:Exotenwald_Weinheim_01.jpg"
+   },
+   {
+    "datei": "img/nm-wh-exotenwald-wachenburg-2.jpg",
+    "art": "location",
+    "quelle_url": "https://commons.wikimedia.org/wiki/File:Wachenburg_2010.jpg"
+   }
+  ],
+  "quellen": [
+   "https://pastry-poets.de",
+   "https://foodle.pro/restaurants/weinheim/restaurant-burgschenke-kaiser-flick-gastronomie-wachenburg",
+   "https://www.ich-geh-wandern.de/schlosspark-weinheim-und-der-exotenwald"
+  ],
+  "nicht_geprueft": [
+   "Öffnungszeit Burgschänke Wachenburg (nur undatierter Verzeichniseintrag) – vorher anrufen",
+   "Startadresse Obertorstraße 9 (Rathaus) aus Vorwissen, nicht online gegengeprüft",
+   "Parkplatz/Parkgebühr",
+   "Abstieg nach Sonnenuntergang im Wald – Taschenlampe nötig",
+   "Pastry-Poets-Bewertung nur aus Stephans Tabelle",
+   "Wegstrecke 3,4 km zur Wachenburg nur aus Suchergebnis-Zusammenfassung (Komoot), nicht selbst nachgemessen"
+  ],
+  "stand": "2026-10-29"
+ },
+ {
+  "slug": "wh-altstadt-pastry",
+  "titel": "Weinheim: Altstadt, Marktplatz und Pastry Poets",
+  "region": "Weinheim",
+  "ablauf": [
+   "13:00 Marktplatz mit Fachwerk und Laurentiuskirche, Gassen der Altstadt und Gerberbachviertel",
+   "14:00 Kaffee und Pâtisserie bei Pastry Poets (Alte Postgasse 53)",
+   "15:00 Schlosspark und kurzer Rundweg im Exotenwald (ca. 1 h)",
+   "16:30 Zurück zum Marktplatz, Sonnenuntergang 17:05 – kurzer Weg, ruhiges Tempo"
+  ],
+  "dauer": "ca. 4 h",
+  "start_adresse": "Marktplatz, 69469 Weinheim",
+  "parken": {
+   "text": "nicht geprüft",
+   "quelle": null
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Marktplatz%2C%2069469%20Weinheim",
+  "weitere_links": [
+   {
+    "text": "Pastry Poets",
+    "url": "https://pastry-poets.de"
+   },
+   {
+    "text": "Stadt Weinheim",
+    "url": "https://www.weinheim.de/"
+   }
+  ],
+  "oeffnung_31_10": "Altstadt und Schlosspark frei; Pastry Poets Sa 09:00–17:00 (Ruhetage Di/Mi), Reservierung per E-Mail möglich",
+  "kosten": "kostenlos bis auf Café",
+  "cafe": {
+   "name": "Pâtisserie & Café Pastry Poets",
+   "adresse": "Alte Postgasse 53, 69469 Weinheim",
+   "oeffnung_samstag": "09:00–17:00 (Ruhetage Di/Mi)",
+   "google": "5,0 (55) – Stephans Tabelle 13.09.2026, nicht live geprüft",
+   "website": "https://pastry-poets.de",
+   "reservierung": "reservierung@pastry-poets.de",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Pastry%20Poets%2C%20Alte%20Postgasse%2053%2C%2069469%20Weinheim",
+   "quelle": "https://pastry-poets.de"
+  },
+  "veranstaltung": "Samstags-Shopping im Oktober beim Wochenmarkt (laut weinheim.de; ob am 31.10. und zu welcher Uhrzeit nicht geprüft)",
+  "bilder": [
+   {
+    "datei": "img/nm-wh-altstadt-pastry-1.jpg",
+    "art": "location",
+    "quelle_url": "https://commons.wikimedia.org/wiki/File:Marktplatz_in_Weinheim_(1).jpg"
+   },
+   {
+    "datei": "img/nm-wh-altstadt-pastry-2.jpg",
+    "art": "produkt",
+    "quelle_url": "https://pastry-poets.de/wp-content/uploads/elementor/thumbs/DSC_0368-scaled-qpuj3cfs1j9albj7bx546mxkyiqlc3e8m75jae2pi8.jpg"
+   }
+  ],
+  "quellen": [
+   "https://pastry-poets.de",
+   "https://www.weinheim.de/"
+  ],
+  "nicht_geprueft": [
+   "Parken",
+   "Bild 2 ist klein (400×400 px, 23 KB)",
+   "Preise Pastry Poets nicht online"
+  ],
+  "stand": "2026-10-29"
+ },
+ {
+  "slug": "hd-koenigstuhl-bergstube",
+  "titel": "Königstuhl: Waldrunde und Kaffeepause in der Bergstube",
+  "region": "Heidelberg",
+  "beschreibung": "Ruhige Alternative zur Altstadt: kurze Waldwege und Aussicht auf dem Königstuhl (ca. 570 m), anschließend Kaffee und Kuchen in der Bergstube des Berggasthofs. Anreise mit dem Auto bis zum Berggasthof; wer die Bergbahn nutzen will, findet das im Eintrag „Schloss mit Bergbahn bis zum Königstuhl“. Bei Regen oder Nebel wenig reizvoll.",
+  "ablauf": [
+   "12:30 Ankunft Berggasthof Königstuhl, Parken",
+   "12:45–14:15 kleine Waldrunde und Aussicht (frei gewählt, nicht vermessen)",
+   "14:15–15:30 Kaffee und Kuchen in der Bergstube (Küche 12–21 Uhr)",
+   "bis 16:00 zurück zum Auto; Sonnenuntergang 17:05"
+  ],
+  "dauer": "ca. 3–4 h",
+  "start_adresse": "Berggasthof Königstuhl, Königstuhl 2, 69117 Heidelberg",
+  "parken": {
+   "text": "Parkplätze in unmittelbarer Nähe; die Anfahrtsseite nennt „Parkgebühr“, das Winter-Magazin „kostenlose Parkplätze“ (beim Märchenparadies) – vor Ort prüfen",
+   "quelle": "https://gasthof-koenigstuhl.de/anfahrt/"
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Berggasthof%20K%C3%B6nigstuhl%2C%20K%C3%B6nigstuhl%202%2C%2069117%20Heidelberg",
+  "weitere_links": [
+   {
+    "text": "Berggasthof Königstuhl: Kulinarik/Bergstube",
+    "url": "https://gasthof-koenigstuhl.de/kulinarik/"
+   },
+   {
+    "text": "Winterkarte Bergstube (PDF)",
+    "url": "https://gasthof-koenigstuhl.de/wp-content/uploads/2026/10/20261027_Magazin_Winter26_Screen.pdf"
+   },
+   {
+    "text": "Anfahrt",
+    "url": "https://gasthof-koenigstuhl.de/anfahrt/"
+   }
+  ],
+  "oeffnung_31_10": "Bergstube täglich ab 12:00 Uhr, Küche 12:00–21:00 Uhr; Waldwege frei zugänglich",
+  "kosten": "Wald frei; laut Winterkarte (Magazin 27.10.2026): Stück Blechkuchen 5,50 €, Stück Torte 7,50 €, Kaffee 3,30 € (Schreibweise im PDF mit Fußnotenziffer, Kaffeepreis daher leicht unsicher)",
+  "veranstaltung": null,
+  "cafe_vorschlag": {
+   "name": "Bergstube im Berggasthof Königstuhl",
+   "adresse": "Königstuhl 2, 69117 Heidelberg",
+   "hinweis": "täglich ab 12 Uhr, Küche bis 21 Uhr; Kuchenvitrine laut Karte; Reservierung telefonisch 06221 4160300 oder online über die Gastronomieseite (Verfügbarkeit nicht geprüft)",
+   "quelle": "https://gasthof-koenigstuhl.de/kulinarik/"
+  },
+  "bilder": [
+   {
+    "datei": "img/nm-hd-koenigstuhl-bergstube-1.jpg",
+    "art": "location",
+    "quelle_url": "https://gasthof-koenigstuhl.de/"
+   },
+   {
+    "datei": "img/nm-hd-koenigstuhl-bergstube-2.jpg",
+    "art": "cafe",
+    "quelle_url": "https://gasthof-koenigstuhl.de/kulinarik/"
+   },
+   {
+    "datei": "img/nm-hd-koenigstuhl-bergstube-3.jpg",
+    "art": "cafe",
+    "quelle_url": "https://gasthof-koenigstuhl.de/kulinarik/"
+   }
+  ],
+  "quellen": [
+   "https://gasthof-koenigstuhl.de/kulinarik/",
+   "https://gasthof-koenigstuhl.de/anfahrt/",
+   "https://gasthof-koenigstuhl.de/wp-content/uploads/2026/10/20261027_Magazin_Winter26_Screen.pdf"
+  ],
+  "nicht_geprueft": [
+   "Länge/Verlauf der Waldrunde nicht geprüft (Planungsschätzung der Fremdfassung 1,5–3 km)",
+   "Parkgebühr widersprüchlich (Anfahrtsseite: Gebühr; Winter-Magazin: kostenlos)",
+   "Tischverfügbarkeit nicht geprüft; Google-Bewertung nicht eingetragen",
+   "Aussicht wetterabhängig"
+  ],
+  "stand": "2026-10-29"
+ },
+ {
+  "slug": "wh-hermannshof-schlosspark",
+  "titel": "Weinheim: Hermannshof, Schlosspark und Kaffee am Marktplatz",
+  "region": "Weinheim",
+  "beschreibung": "Staudengarten Hermannshof (Schau- und Sichtungsgarten) und der angrenzende Schlosspark mit altem Baumbestand, Teichbereich und Deutschlands größter Libanonzeder. Danach Kaffee im Café Florian/Flo am Marktplatz. Der Hermannshof ist täglich 10–18 Uhr geöffnet.",
+  "ablauf": [
+   "13:00–14:00 Hermannshof, Babostraße 5",
+   "14:00–15:00 Schlosspark und Gerberbachviertel",
+   "15:00–16:15 Kaffee im Flo (Café Florian), Marktplatz 8",
+   "ca. 16:30 Rückweg zum Auto; Sonnenuntergang 17:05"
+  ],
+  "dauer": "ca. 3–4 h",
+  "start_adresse": "Schau- und Sichtungsgarten Hermannshof, Babostraße 5, 69469 Weinheim",
+  "parken": {
+   "text": "nicht geprüft (Fremdfassung nennt Parkhäuser D1–D3, erste Stunde frei)",
+   "quelle": "https://www.weinheim.de/%2CLde/717765.html"
+  },
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Hermannshof%2C%20Babostra%C3%9Fe%205%2C%2069469%20Weinheim",
+  "weitere_links": [
+   {
+    "text": "Hermannshof",
+    "url": "https://sichtungsgarten-hermannshof.de/"
+   },
+   {
+    "text": "Schlosspark (Stadt Weinheim)",
+    "url": "https://www.weinheim.de/746773.html"
+   },
+   {
+    "text": "Flo / Café Florian",
+    "url": "https://www.flo-weinheim.de/"
+   }
+  ],
+  "oeffnung_31_10": "Hermannshof täglich (auch an Feiertagen) 10:00–18:00 Uhr, Winterpause erst 19.12.2026–10.1.2027; Schlosspark täglich rund um die Uhr, freitags und samstags nachts ab ca. 20 Uhr abgeschlossen; Flo Sa 9–1 Uhr (Mittwoch Ruhetag), Frühstück 9–12, Tapas & Restaurant 12–22 Uhr",
+  "kosten": "Schlosspark frei; Hermannshof-Eintritt nicht geprüft (Fremdfassung: kostenfrei); Kaffee/Kuchen nach Verzehr",
+  "veranstaltung": null,
+  "cafe_vorschlag": {
+   "name": "Flo / Café Florian",
+   "adresse": "Marktplatz 8, 69469 Weinheim",
+   "hinweis": "Sa 9–1 Uhr, Mi Ruhetag; Tel. 06201 69480",
+   "quelle": "https://www.flo-weinheim.de/"
+  },
+  "bilder": [
+   {
+    "datei": "img/nm-wh-hermannshof-schlosspark-1.jpg",
+    "art": "location",
+    "quelle_url": "https://sichtungsgarten-hermannshof.de/"
+   },
+   {
+    "datei": "img/nm-wh-hermannshof-schlosspark-2.jpg",
+    "art": "location",
+    "quelle_url": "https://www.weinheim.de/746773.html"
+   },
+   {
+    "datei": "img/nm-wh-hermannshof-schlosspark-3.jpg",
+    "art": "cafe",
+    "quelle_url": "https://www.flo-weinheim.de/"
+   },
+   {
+    "datei": "img/nm-wh-hermannshof-schlosspark-4.jpg",
+    "art": "cafe",
+    "quelle_url": "https://www.flo-weinheim.de/"
+   }
+  ],
+  "quellen": [
+   "https://sichtungsgarten-hermannshof.de/",
+   "https://www.weinheim.de/746773.html",
+   "https://www.flo-weinheim.de/"
+  ],
+  "nicht_geprueft": [
+   "Eintrittspreis Hermannshof (Preisseite nicht abrufbar)",
+   "Parken nicht geprüft",
+   "Flo: Preise und Kuchenangebot nicht geprüft; Online-Reservierung laut Fremdfassung offline, nur Telefon",
+   "Google-Bewertung nicht eingetragen"
+  ],
+  "stand": "2026-10-29"
+ }
 ]

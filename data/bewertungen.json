@@ -1,5 +1,5 @@
 {
-  "_quelle": "Google Maps im Browser, live abgelesen am Do 29.10.2026 (Restaurants ca. 13:45 Uhr, Cafés ca. 15:10 Uhr)",
+  "_quelle": "Google Maps im Browser, live abgelesen am Do 29.10.2026 (Restaurants ca. 13:45 Uhr, Cafés ca. 15:10 Uhr); Nachtrag 5 Cafés am 29.10.2026 abends",
   "das-atelier": {
     "bewertung": 4.7,
     "anzahl": 147
@@ -83,5 +83,25 @@
   "yagiya": {
     "bewertung": 5.0,
     "anzahl": 177
+  },
+  "frankys-farm": {
+    "bewertung": 4.8,
+    "anzahl": 943
+  },
+  "blum": {
+    "bewertung": 4.8,
+    "anzahl": 358
+  },
+  "sunday": {
+    "bewertung": 4.9,
+    "anzahl": 164
+  },
+  "panno": {
+    "bewertung": 4.8,
+    "anzahl": 331
+  },
+  "patisserie-sophie": {
+    "bewertung": 5.0,
+    "anzahl": 40
   }
 }

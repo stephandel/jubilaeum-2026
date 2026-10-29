@@ -171,9 +171,9 @@
   "oeffnung_quelle": "https://restaurant-philosoph.de/",
   "reservierung": null,
   "parken": {
-    "text": "Parkhaus Nordbrückenkopf (P16), Brückenkopfstraße 1, 69120 Heidelberg – ca. 120 m Luftlinie (Koordinaten OpenStreetMap), etwa 2–3 Min. zu Fuß; 238 Plätze, 24 h geöffnet, Einfahrtshöhe 1,80 m, laut Bewertungen sehr eng. Preis laut Parkopedia-Übersicht 1 € / 2 h (Momentaufnahme, nicht geprüft).",
+    "text": "Parkhaus Nordbrückenkopf (P16), Brückenkopfstraße 1, ca. 2–3 Min. zu Fuß; 24 h geöffnet, Einfahrtshöhe 1,80 m, laut Bewertungen sehr eng. Tarif laut Stadtwerke Heidelberg: tagsüber bis 3 Stunden 7,50 €; Abend-/Nachttarif 20–8 Uhr 0,50 € je angefangene Stunde, höchstens 2,00 €.",
     "parkopedia_url": "https://www.parkopedia.de/parken/heidelberg/",
-    "quelle": "https://www.parkinglist.de/parkplatz/heidelberg/parkhaus-nordbrueckenkopf-heidelberg-483 https://www.heidelberg24.de/heidelberg/schlimmste-schlechteste-parkhaeuser-stadt-preise-vergleich-93715408.html; nominatim.openstreetmap.org"
+    "quelle": "https://www.swhd.de/p16"
   },
   "bilder": [
     {

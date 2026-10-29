@@ -147,5 +147,24 @@
     "nicht_geprueft": [
       "Preis"
     ]
+  },
+  {
+    "titel": "Halloween – Das Familienfest im Luisenpark",
+    "ort": "Luisenpark Mannheim",
+    "adresse": "Theodor-Heuss-Anlage 2, 68165 Mannheim",
+    "uhrzeit": "17:00–21:00, Einlass ab 16:00, Kassenschluss 20:00",
+    "datum": "2026-10-31",
+    "preis": "13,50 € Erwachsene (Kinder 0–5 Jahre frei, nur mit Erwachsenenkarte)",
+    "tickets_url": "https://shop.luisenpark.de/categories/17",
+    "url": "https://www.mannheim.de/de/veranstaltung/halloween-das-familienfest",
+    "kategorie": "abends",
+    "beschreibung": "Gruselfest für Familien mit Kindern im dunklen Park: Kürbislichter, Burgspielplatz als „Friedhof“, Lasershow auf der Seebühne, Märchen- und Schattentheater, Kinderrockband, Clowns und Feuerjonglage. Ehrlich gesagt eher lebhaft und auf Kinder ausgerichtet, kein ruhiger Abend zu zweit; der Park ist tagsüber für den Aufbau geschlossen. Überschneidet sich mit dem Abendessen (17–20 Uhr).",
+    "quelle": "https://www.mannheim.de/de/veranstaltung/halloween-das-familienfest",
+    "stand": "2026-10-29",
+    "nicht_geprueft": [
+      "Preis 13,50 € nur für „Halloween Erwachsene*r“ im Luisenpark-Shop (shop.luisenpark.de/article/379) gelesen, nicht über den ganzen Bestellvorgang; mannheim.de nennt keinen Preis",
+      "ob Tickets noch verfügbar sind",
+      "Maximalandrang und Wartezeiten am Eingang"
+    ]
   }
 ]
