@@ -1884,12 +1884,12 @@ window.GUIDE_DATA = {
    "oeffnung_hinweis": "Laut Website Montag bis Sonntag geöffnet, kein Ruhetag. Navi-Adresse für Parkplatz Eberthalle: Erzbergerstraße 83. Martinsgans-Menü erst ab 11.11.; am 30.10. AfterWork mit DJ, für 31.10. keine Veranstaltung gelistet.",
    "oeffnung_quelle": "https://www.turm.restaurant/",
    "reservierung": {
-    "art": "online",
+    "art": "telefon",
     "tool": "gastronovi",
     "url": "https://services.gastronovi.com/restaurants/118467/reservation/widget?L=de",
-    "verfuegbar_31_10": "nein",
+    "verfuegbar_31_10": "unbekannt",
     "freie_zeiten": [],
-    "hinweis": "gastronovi-Widget im Browser geprüft (29.10., ca. 14:35 Uhr), Bereich „Turmrestaurant“, 2 Personen, 19:00: „leider nicht verfügbar“; Alternativliste ist eine Standardliste. Zweiter Bereich „Pfälzer Stube“ nicht geprüft (Fremdquelle nannte dort 20:30). Bitte anrufen: 0621 65714720.",
+    "hinweis": "Nur telefonisch möglich: Das Online-Tool (gastronovi) wirkt kaputt, es meldet pauschal „nicht verfügbar“ (Stephans Einschätzung, 29.10. abends). Bitte anrufen: 0621 65714720.",
     "stand": "2026-10-29"
    },
    "parken": {
@@ -1944,7 +1944,7 @@ window.GUIDE_DATA = {
     "quelle": "Stephans Tabelle (nicht live geprüft)"
    },
    "google_live": true,
-   "status": "nein",
+   "status": "unbekannt",
    "entfernung": {
     "km": 16.2,
     "min": 22,
