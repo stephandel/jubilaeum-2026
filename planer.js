@@ -216,14 +216,20 @@
             var km = abstandKm(KO[plan.n], KO[plan.c]);
             zeilen.push(z(cafeAn, "☕", esc(c.name), "mitten im Nachmittag, " + (km < 1.2 ? "zu Fuß" : km.toFixed(1).replace(".", ",") + " km entfernt") + (c.oeffnung ? " · Samstag " + esc(c.oeffnung) : "")));
             zeiten.c = cafeAn;
+            if (!c.oeffnung && cafeAn >= 17 * 60) warn.push(["warn", "☕ " + c.name + " um " + H.uhr(cafeAn) + " – Öffnungszeit am Abend nicht geprüft, wahrscheinlich geschlossen."]);
             if (schluss != null && schluss - nStart < 60) warn.push(["warn", "☕ " + c.name + " schließt schon um " + H.uhr(schluss) + " – früher starten oder anderes Café wählen."]);
           }
           var su = H.minuten(SONNENUNTERGANG);
           if (nStart < su && nEnde > su - 30) warn.push(["info", "🌇 Sonnenuntergang um ca. " + SONNENUNTERGANG + " Uhr – Aussichtspunkte vorher einplanen."]);
+          if (nStart >= su - 15) warn.push(["warn", "🌙 " + K[plan.n].name + " läge erst ab " + H.uhr(nStart) + " – dann ist es dunkel und vieles geschlossen. Den Nachmittag vor das Essen legen."]);
+          var oe = String(n.oeffnung_31_10 || ""), einlass = /letzter einlass\D{0,8}(\d{1,2}[:.]\d{2})/i.exec(oe), zu = schlussZeit(oe);
+          var grenze = einlass ? H.minuten(einlass[1]) : zu;
+          if (grenze != null && grenze > 9 * 60 && nStart > grenze - 30) warn.push(["warn", "🚪 " + K[plan.n].name + ": " + (einlass ? "letzter Einlass " : "geöffnet bis ") + H.uhr(grenze) + " – ihr kämt erst um " + H.uhr(nStart) + " an."]);
           t = nEnde;
         } else if (art === "c") {
           zeilen.push(z(t, "☕", esc(c.name), c.oeffnung ? "Samstag " + esc(c.oeffnung) : ""));
           zeiten.c = t;
+          if (schluss == null && t >= 17 * 60) warn.push(["warn", "☕ " + c.name + " um " + H.uhr(t) + " – Öffnungszeit am Abend nicht geprüft, wahrscheinlich geschlossen."]);
           if (schluss != null && t + 30 > schluss) warn.push(["warn", "☕ " + c.name + " schließt um " + H.uhr(schluss) + " – ihr kämt erst gegen " + H.uhr(t) + " an. Früher starten, Reihenfolge ändern oder Café tauschen."]);
           t += 60;
         } else if (art === "r") {
@@ -238,7 +244,7 @@
           if (/vorkasse/i.test(JSON.stringify(r.reservierung || {}) + (r.preis_pro_person_korrigiert || ""))) warn.push(["info", "💳 " + r.name + ": Menü wird vorab bezahlt (Vorkasse)."]);
           t += 150;
         } else if (art === "v") {
-          var v = K[plan.v].obj, vStart = H.minuten(v.uhrzeit);
+          var v = K[plan.v].obj, vStart = H.beginn(v.uhrzeit);
           if (vStart != null && t > vStart) warn.push(["warn", "✨ " + v.titel + " beginnt um " + H.uhr(vStart) + " – in dieser Reihenfolge nicht zu schaffen. Reihenfolge ändern oder weglassen."]);
           t = vStart != null ? Math.max(vStart, t) : t;
           zeilen.push(z(t, "✨", esc(v.titel), esc(v.ort || "")));
@@ -325,7 +331,7 @@
       if (!zug || ev.pointerId !== zug.id) return;
       var neu = Array.prototype.map.call(zug.liste.querySelectorAll(".ab-item"), function (li) { return li.dataset.art; });
       zug.item.classList.remove("zieht"); zug = null;
-      plan.folge = neu; alles();
+      plan.folge = neu; alles(true);
     }
     app.addEventListener("pointerup", zugEnde);
     app.addEventListener("pointercancel", zugEnde);
@@ -357,11 +363,13 @@
     }
 
     function alsText() {
-      var z = ["Unser 27. Jahrestag – Samstag, 31.10.2026", ""];
-      if (plan.n && K[plan.n]) z.push("🍂 Nachmittag: " + K[plan.n].name + " (Start " + plan.start + ")");
-      if (plan.c && K[plan.c]) z.push("☕ Kaffee: " + K[plan.c].name);
-      if (plan.r && K[plan.r]) z.push("🍽️ Abendessen: " + K[plan.r].name + (plan.zeit ? " um " + plan.zeit : "") + (K[plan.r].obj.telefon ? " · Tel. " + K[plan.r].obj.telefon : ""));
-      if (plan.v && K[plan.v]) z.push("✨ Danach: " + K[plan.v].name + (K[plan.v].obj.uhrzeit ? " (" + K[plan.v].obj.uhrzeit + ")" : ""));
+      var z = ["Unser 27. Jahrestag – Samstag, 31.10.2026", "", "🏠 Abfahrt " + (plan.start || "13:00")];
+      folge().forEach(function (a) {
+        var e = K[plan[a]], extra = "";
+        if (a === "r") extra = (plan.zeit ? " um " + plan.zeit : "") + (e.obj.telefon ? " · Tel. " + e.obj.telefon : "");
+        if (a === "v" && e.obj.uhrzeit) extra = " (" + e.obj.uhrzeit + ")";
+        z.push(ICON[a] + " " + ART_TEXT[a] + ": " + e.name + extra);
+      });
       z.push("", "Route: " + googleRoute(stationen()));
       return z.join("\n");
     }
@@ -410,7 +418,8 @@
       }
       sel.value = z;
     }
-    function alles() {
+    function alles(vomNutzer) {
+      if (vomNutzer) plan._t = Date.now();
       startFeld();
       try { localStorage.setItem(ENTWURF, JSON.stringify(plan)); } catch (e) {}
       optionenZeichnen();
@@ -429,29 +438,29 @@
           if (cv && cv.name && !plan.c) plan.c = H.cafeKey("cv:" + JG.slugify(cv.name), K);
         }
         if (art === "r") { var fz = (K[key] && K[key].obj.reservierung && K[key].obj.reservierung.freie_zeiten) || []; plan.zeit = fz.length ? (fz[0].match(/\d\d:\d\d/) || [undefined])[0] : undefined; }
-        alles(); return;
+        alles(true); return;
       }
       var sb = ev.target.closest("[data-schieb]");
       if (sb) {
         var fo = folge(), i = fo.indexOf(sb.dataset.schieb), j = i + Number(sb.dataset.richtung);
-        if (i >= 0 && j >= 0 && j < fo.length) { var tmp = fo[i]; fo[i] = fo[j]; fo[j] = tmp; plan.folge = fo; alles(); }
+        if (i >= 0 && j >= 0 && j < fo.length) { var tmp = fo[i]; fo[i] = fo[j]; fo[j] = tmp; plan.folge = fo; alles(true); }
         return;
       }
       var zb = ev.target.closest("[data-zeit]");
-      if (zb) { plan.zeit = zb.dataset.zeit; alles(); return; }
+      if (zb) { plan.zeit = zb.dataset.zeit; alles(true); return; }
       var m = ev.target.closest("[data-mehr]");
       if (m) { var el = document.getElementById("opt-" + m.dataset.mehr); el.dataset.alle = el.dataset.alle === "1" ? "0" : "1"; optionenZeichnen(); return; }
       var w = ev.target.closest("[data-weg]");
-      if (w) { plan[w.dataset.weg] = undefined; if (w.dataset.weg === "r") plan.zeit = undefined; alles(); return; }
+      if (w) { plan[w.dataset.weg] = undefined; if (w.dataset.weg === "r") plan.zeit = undefined; alles(true); return; }
       var vl = ev.target.closest("[data-vorlage]");
-      if (vl) { vorlageAnwenden(vl.dataset.vorlage); alles(); if (vl.dataset.vorlage !== "wuerfel") JG.toast(vl.dataset.vorlage === "leer" ? "Neu beginnen" : "Vorlage übernommen – nach Belieben anpassen."); return; }
+      if (vl) { vorlageAnwenden(vl.dataset.vorlage); alles(true); if (vl.dataset.vorlage !== "wuerfel") JG.toast(vl.dataset.vorlage === "leer" ? "Neu beginnen" : "Vorlage übernommen – nach Belieben anpassen."); return; }
       var a = ev.target.closest("[data-aktion]");
       if (a && a.dataset.aktion === "speichern") {
         if (!JG.ich()) { JG.toast("Bitte oben erst wählen: Stephan oder Bilgen."); return; }
         var KS = window.KommentarStore;
-        var zuSpeichern = { n: plan.n, c: plan.c, r: plan.r, zeit: plan.zeit, v: plan.v && KS ? KS.schluessel(plan.v) : plan.v };
+        var zuSpeichern = { n: plan.n, c: plan.c, r: plan.r, zeit: plan.zeit, v: plan.v && KS ? KS.schluessel(plan.v) : plan.v, start: plan.start, folge: folge().join(",") };
         a.disabled = true;
-        window.TagStore.load().then(function (alt) { if (alt && alt.erledigt) zuSpeichern.erledigt = alt.erledigt; return window.TagStore.save(zuSpeichern, JG.ich()); }).then(function () { a.disabled = false; JG.toast("Gespeichert – steht jetzt auf der Startseite für euch beide."); })
+        window.TagStore.load().then(function (alt) { if (alt && alt.erledigt) zuSpeichern.erledigt = alt.erledigt; if (alt && alt.fest) zuSpeichern.fest = true; return window.TagStore.save(zuSpeichern, JG.ich()); }).then(function () { a.disabled = false; JG.toast("Gespeichert – steht jetzt auf der Startseite für euch beide."); })
           .catch(function () { a.disabled = false; JG.toast("Speichern hat nicht geklappt – bitte noch einmal."); });
         return;
       }
@@ -462,19 +471,22 @@
       }
     });
     document.getElementById("p-likes").addEventListener("change", function (e) { nurLikes = e.target.checked; optionenZeichnen(); });
-    document.getElementById("p-start").addEventListener("change", function (e) { plan.start = e.target.value; ergebnisZeichnen(letzteRoute); try { localStorage.setItem(ENTWURF, JSON.stringify(plan)); } catch (x) {} });
+    document.getElementById("p-start").addEventListener("change", function (e) { plan.start = e.target.value; plan._t = Date.now(); ergebnisZeichnen(letzteRoute); try { localStorage.setItem(ENTWURF, JSON.stringify(plan)); } catch (x) {} });
 
     // ---------- Start: Vorlage aus der Adresse, sonst gespeicherter Tag, sonst Entwurf ----------
     var tippId = new URLSearchParams(location.search).get("tipp");
-    if (tippId) { vorlageAnwenden(tippId); alles(); return; }
+    JG.beimAktualisieren = function () { optionenZeichnen(); };
+    if (tippId) { vorlageAnwenden(tippId); alles(true); return; }
     try { var e = JSON.parse(localStorage.getItem(ENTWURF)); if (e) plan = e; } catch (x) {}
     alles();
     if (window.TagStore) window.TagStore.load().then(function (p) {
-      if (p && (p.n || p.c || p.r) && !(plan.n || plan.c || plan.r)) {
-        plan = { start: plan.start || "13:00", n: p.n, c: H.cafeKey(p.c, K), r: p.r, zeit: p.zeit, v: H.eventKey(p.v, K) || undefined };
-        alles();
-      }
+      if (!p || !(p.n || p.c || p.r)) return;
+      // Gemeinsam gespeicherter Tag gewinnt, wenn er neuer ist als der eigene Entwurf
+      if ((plan.n || plan.c || plan.r) && plan._t && plan._t > (p.at || 0)) return;
+      plan = { start: p.start || plan.start || "13:00", n: p.n, c: H.cafeKey(p.c, K), r: p.r, zeit: p.zeit, v: H.eventKey(p.v, K) || undefined,
+        folge: p.folge ? String(p.folge).split(",") : undefined, _t: p.at };
+      alles();
+      if (p.von) JG.toast("Gemeinsamer Tag geladen (zuletzt von " + (JG.NAMEN[p.von] || p.von) + ").");
     }).catch(function () {});
-    JG.beimAktualisieren = function () { optionenZeichnen(); };
   };
 })();

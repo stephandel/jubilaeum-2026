@@ -175,8 +175,8 @@
   "adresse": "Meerwiesenstraße 1, 68163 Mannheim"
  },
  "n:nm-schwetzingen-schlossgarten": {
-  "lat": 49.3836,
-  "lon": 8.5785,
+  "lat": 49.38397,
+  "lon": 8.57071,
   "adresse": "Schloss Schwetzingen, Schloss Mittelbau, 68723 Schwetzingen"
  },
  "cv:walzwerk-cafe": {
@@ -185,13 +185,13 @@
   "adresse": "Carl-Theodor-Straße 1, 68723 Schwetzingen"
  },
  "n:nm-lu-ebertpark-hack": {
-  "lat": 49.47933,
-  "lon": 8.42924,
+  "lat": 49.4798,
+  "lon": 8.44395,
   "adresse": "Wilhelm-Hack-Museum, Berliner Straße 23, 67059 Ludwigshafen am Rhein"
  },
  "n:ma-kaefertaler-wald-wolfsbau": {
-  "lat": 49.5345,
-  "lon": 8.49529,
+  "lat": 49.53796,
+  "lon": 8.51219,
   "adresse": "Karlstern, Karlsternstraße 130, 68305 Mannheim"
  },
  "cv:cafe-wolfsbau": {
@@ -200,8 +200,8 @@
   "adresse": "Waldpforte 81, 68305 Mannheim"
  },
  "n:hd-philosophenweg": {
-  "lat": 49.41827,
-  "lon": 8.69136,
+  "lat": 49.41372,
+  "lon": 8.69321,
   "adresse": "Parkhaus Nordbrückenkopf (P16), Uferstraße, 69120 Heidelberg"
  },
  "cv:cafe-schafheutle": {
@@ -235,8 +235,8 @@
   "adresse": "Sammlung Prinzhorn, Voßstraße 2, 69115 Heidelberg"
  },
  "n:wh-exotenwald-wachenburg": {
-  "lat": 49.54114,
-  "lon": 8.6724,
+  "lat": 49.54577,
+  "lon": 8.67056,
   "adresse": "Weinheimer Schloss (Rathaus), Obertorstraße 9, 69469 Weinheim"
  },
  "cv:patisserie-cafe-pastry-poets": {
@@ -260,8 +260,8 @@
   "adresse": "Königstuhl 2, 69117 Heidelberg"
  },
  "n:wh-hermannshof-schlosspark": {
-  "lat": 49.54182,
-  "lon": 8.67464,
+  "lat": 49.54749,
+  "lon": 8.67015,
   "adresse": "Schau- und Sichtungsgarten Hermannshof, Babostraße 5, 69469 Weinheim"
  },
  "cv:flo-cafe-florian": {

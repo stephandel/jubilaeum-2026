@@ -63,6 +63,14 @@
       var m = /(\d{1,2})[:.](\d{2})/.exec(hhmm || "");
       return m ? Number(m[1]) * 60 + Number(m[2]) : null;
     },
+    // Beginn einer Veranstaltung: „Beginn 19:30“ vor „Einlass 18:30“
+    beginn: function (text) {
+      var t = String(text || "");
+      var m = /beginn\D{0,12}(\d{1,2}[:.]\d{2})/i.exec(t);
+      if (m) return H.minuten(m[1]);
+      return H.minuten(t.replace(/einlass\D{0,12}\d{1,2}[:.]\d{2}/gi, ""));
+    },
+    euroRund: function (x) { return Math.round(x).toLocaleString("de-DE") + " €"; },
     // Wetter für den 31.10. (einmal laden, 30 Min. merken)
     wetter: function () {
       var jetzt = Date.now();
@@ -121,7 +129,7 @@
     if (sunM != null) {
       var xs = L + ((sunM / 60) - std[0].s) * bx;
       svg += '<rect x="' + xs.toFixed(1) + '" y="' + O + '" width="' + (W - R - xs).toFixed(1) + '" height="' + (yBoden - O) + '" class="mgk-nacht"/>';
-      svg += '<text x="' + (xs + 4).toFixed(1) + '" y="' + (O + 12) + '" class="mgk-klein">🌇 ' + sunset + "</text>";
+      svg += '<text x="' + (xs + 4).toFixed(1) + '" y="' + (yBoden - 6) + '" class="mgk-klein">🌇 ' + sunset + "</text>";
     }
     // Regenbalken (Wahrscheinlichkeit)
     std.forEach(function (x, i) {
@@ -164,7 +172,7 @@
     var tmin = d.daily.temperature_2m_min[0], tmax = d.daily.temperature_2m_max[0];
     if (tmax <= 10) tipps.push("🧣 Kühl – warme Jacke und Schal.");
     return {
-      zeile: wmo(codeMitte)[0] + " " + wmo(codeMitte)[1] + " · " + Math.round(tmin) + "–" + Math.round(tmax) + " °C · Regen nachmittags bis " + pTag + " %",
+      zeile: wmo(codeMitte)[0] + " " + wmo(codeMitte)[1] + " · " + Math.round(tmin) + "–" + Math.round(tmax) + " °C · " + (pTag < 10 ? "nachmittags kein Regen erwartet" : "Regenrisiko nachmittags bis " + pTag + " %"),
       sonne: "☀️ " + d.daily.sunrise[0].slice(11, 16) + " · 🌇 " + d.daily.sunset[0].slice(11, 16),
       tipps: tipps
     };
@@ -253,10 +261,18 @@
             (navi ? '<a class="tl-navi" href="' + navi + '" target="_blank" rel="noopener" aria-label="Navigation zu ' + esc(s[2].name) + '">Navi ↗</a>' : "") + "</li>";
         }).join("") + "</ol>" +
         todoHtml(r, v) +
-        (rahmen ? '<p class="hinweis">Abendessen laut Preisbeispielen ca. ' + JG.euro(rahmen[0]) + (rahmen[1] > rahmen[0] ? "–" + JG.euro(rahmen[1]) : "") + " zu zweit.</p>" : "") +
+        (rahmen ? '<p class="hinweis">Abendessen laut Preisbeispielen ca. ' + (rahmen[1] > rahmen[0] ? Math.round(rahmen[0]) + "–" : "") + H.euroRund(rahmen[1]) + " zu zweit.</p>" : "") +
+        konfliktHtml(r, v) +
         (r && r.obj.status !== "ja" && !plan.fest ? '<p class="warn-zeile">⚠️ Für dieses Restaurant ist kein freier Tisch bestätigt – bitte anrufen' + (r.obj.telefon ? ": " + JG.telLink(r.obj.telefon) : "") + ".</p>" : "") +
         '<div class="tag-knoepfe"><a class="knopf-sekundaer" href="planer.html">Im Planer ändern</a>' +
         '<button type="button" class="knopf-primaer" data-aktion="fest">' + (plan.fest ? "Wieder Entwurf" : "Als fest markieren") + "</button></div></div>";
+    }
+    // Veranstaltung beginnt vor dem Ende des Abendessens?
+    function konfliktHtml(r, v) {
+      if (!r || !v || !plan.zeit) return "";
+      var b = H.beginn(v.obj.uhrzeit), tisch = H.minuten(plan.zeit);
+      if (b == null || tisch == null || b >= tisch + 150) return "";
+      return '<p class="warn-zeile">⚠️ ' + esc(v.name) + " beginnt um " + H.uhr(b) + " – das passt nicht nach einem Tisch um " + plan.zeit + ".</p>";
     }
     // Heute-Modus am 31.10.: Countdown bis zum Tisch
     function heuteHtml(r) {
@@ -266,8 +282,8 @@
       var tisch = plan && plan.zeit ? H.minuten(plan.zeit) : null;
       if (r && tisch != null) {
         var jetzt = heute.getHours() * 60 + heute.getMinutes(), rest = tisch - jetzt;
-        if (rest > 0) h += "<span>Tisch im " + esc(r.name) + " um " + plan.zeit + " – noch " + (rest >= 60 ? Math.floor(rest / 60) + " Std. " : "") + (rest % 60) + " Min.</span>";
-        else if (rest > -180) h += "<span>Guten Appetit im " + esc(r.name) + "!</span>";
+        if (rest > 0) h += "<span>Tisch um " + plan.zeit + ": " + esc(r.name) + " – noch " + (rest >= 60 ? Math.floor(rest / 60) + " Std. " : "") + (rest % 60) + " Min.</span>";
+        else if (rest > -180) h += "<span>Guten Appetit! 🥂</span>";
       }
       return h + "</div>";
     }
@@ -282,7 +298,8 @@
     }
     function todoHtml(r, v) {
       var erl = (plan.erledigt || "").split(",").filter(Boolean);
-      return '<div class="todos"><p class="steuer-label">Bis Samstag zu erledigen</p><ul>' + todos(r, v).map(function (td) {
+      var heute = new Date(), istTag = heute.getFullYear() === 2026 && heute.getMonth() === 9 && heute.getDate() === 31;
+      return '<div class="todos"><p class="steuer-label">' + (istTag ? "Heute noch zu erledigen" : "Bis Samstag zu erledigen") + "</p><ul>" + todos(r, v).map(function (td) {
         var an = erl.indexOf(td.id) >= 0;
         return '<li class="' + (an ? "erledigt" : "") + '"><label class="check"><input type="checkbox" data-todo="' + td.id + '"' + (an ? " checked" : "") + "> " + esc(td.text) + "</label>" +
           (td.tel ? " " + JG.telLink(td.tel) : "") + (td.url ? ' <a href="' + esc(td.url) + '" target="_blank" rel="noopener">online ↗</a>' : "") + "</li>";
@@ -313,7 +330,7 @@
         var n = K[t.n], c = K[H.cafeKey(t.c, K)], r = K["r:" + t.r];
         var rahmen = r ? H.preisRahmen(r.obj) : null;
         var cafeBudget = [20, 30];
-        var preis = rahmen ? "ca. " + JG.euro(rahmen[0] + cafeBudget[0]) + "–" + JG.euro(rahmen[1] + cafeBudget[1]) + " zu zweit" : "";
+        var preis = rahmen ? "ca. " + Math.round(rahmen[0] + cafeBudget[0]) + "–" + H.euroRund(rahmen[1] + cafeBudget[1]) + " zu zweit" : "";
         var fahrt = n && n.obj.entfernung ? n.obj.entfernung.min + " Min. bis zum Start" : "";
         return '<article class="karte tipp">' + JG.bilder({ bilder: (n && n.obj.bilder || []).slice(0, 1).concat(r ? (r.obj.bilder || []).slice(0, 1) : []), name: t.titel }) +
           '<div class="karte-kopf"><p class="kicker">' + esc(t.stimmung.toUpperCase()) + "</p><h3>" + esc(t.titel) + "</h3>" +

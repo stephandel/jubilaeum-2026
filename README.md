@@ -4,7 +4,10 @@ Live: **https://stephandel.github.io/jubilaeum-2026/** (ohne Anmeldung, Likes ge
 Lokal: `index.html` per Doppelklick öffnen (Likes dann nur auf diesem Gerät).
 
 ## Aufbau
-- `index.html` Restaurants · `nachmittag.html` Nachmittag & Abends · `cafes.html` Cafés
+- `index.html` Startseite (start.js) · `nachmittag.html` · `cafes.html` · `restaurants.html` · `planer.html` (planer.js, Leaflet, OSRM-Routen)
+- `data/koordinaten.json` (OpenStreetMap Nominatim, für Karte, Luftbild und Routen), `data/toptipps.json` (drei Tagesideen)
+- `wetter/` = Meteogramm-Baustein aus dem Fuerte-Projekt („Wetter Tool“), auf der Startseite ausklappbar
+- Gemeinsam über den Worker: Likes (Art `jub`), „Unser Tag“ (Art `jub`, slug `tag|feld|wert`), Kommentare (Notizen `jub|…`)
 - `data/*.json` → `python3 build-data.py` → `data.js` (Daten für die Seiten; nie `data.js` von Hand ändern)
 - `likestore.js` entscheidet am Ort der Seite: auf `stephandel.github.io` gemeinsamer Stand über den
   Cloudflare-Worker `fuerte-sync` (Art `jub`, Quelltext im Fuerte-Repo unter `worker/`), sonst localStorage.
