@@ -633,7 +633,7 @@ window.GUIDE_DATA = {
     "url": "https://www.opentable.de/restref/client?rid=597822&restref=597822&lang=de-DE",
     "verfuegbar_31_10": "nein",
     "freie_zeiten": [],
-    "hinweis": "OpenTable im Browser geprüft (29.10., ca. 14:20 Uhr): „keine freien Tische an diesem Tag“ für 2 Personen. Bitte anrufen: 06221 7146140 oder Warteliste bei OpenTable.",
+    "hinweis": "OpenTable zweimal geprüft (29.10., 14:20 Uhr und abends, Stephans Bildschirmfoto): „keine freien Tische an diesem Tag“ für 2 Personen; 18:00 am 31.10. nicht buchbar, nächste freie Tische erst So 1.11. ab 17:30. Bitte anrufen: 06221 7146140 oder bei OpenTable auf die Warteliste setzen (Knopf „Warteliste“ unter den Zeiten).",
     "stand": "2026-10-29"
    },
    "parken": {
