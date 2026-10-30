@@ -209,5 +209,11 @@
     "Kein direkter Parkopedia-Eintrag für das Parkhaus gefunden, Link führt zur Heidelberg-Übersicht"
   ],
   "stand": "2026-10-29",
-  "speisekarte_stand": "PDF zuletzt geändert 08.10.2026 (Server-Datum)"
+  "speisekarte_stand": "PDF zuletzt geändert 08.10.2026 (Server-Datum)",
+  "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/heidelberg/restaurant/der-philosoph",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+  }
 }

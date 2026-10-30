@@ -246,5 +246,11 @@
     "Google-Bewertung nicht live geprüft",
     "Gerichtsfotos ohne Zuordnung zu einem bestimmten Gang"
   ],
-  "stand": "2026-10-29"
+  "stand": "2026-10-29",
+  "michelin": {
+    "auszeichnung": "stern1",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/mannheim/restaurant/the-tourist-trap",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+  }
 }

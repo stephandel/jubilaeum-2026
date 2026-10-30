@@ -186,5 +186,11 @@
     "Kein echtes Gerichtsfoto auf der Website gefunden; Bild 3 ist ein Werbebild (Gans) und wohl Stockfoto",
     "Speisekarte trägt „gültig ab August 2026“ – ob sie am 31.10. noch gilt, nicht bestätigt"
   ],
-  "stand": "2026-10-29"
+  "stand": "2026-10-29",
+  "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/heidelberg/restaurant/gutsstube",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+  }
 }

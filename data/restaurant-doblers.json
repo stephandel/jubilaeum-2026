@@ -217,5 +217,11 @@
     "Google-Bewertung nicht live geprüft",
     "Michelin-Stern 2026 nicht direkt auf guide.michelin.com abgelesen"
   ],
-  "stand": "2026-10-29"
+  "stand": "2026-10-29",
+  "michelin": {
+    "auszeichnung": "stern1",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/mannheim/restaurant/doblers",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+  }
 }

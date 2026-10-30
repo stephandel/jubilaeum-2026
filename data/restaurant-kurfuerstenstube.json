@@ -213,5 +213,11 @@
     "Google-Bewertung (Vorrecherche-Wert übernommen)",
     "Bild 2 (Gericht) ist ein Symbolbild der Hotelküche von 2024, kein Gericht der aktuellen Karte"
   ],
-  "stand": "2026-10-29"
+  "stand": "2026-10-29",
+  "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/heidelberg/restaurant/die-kurfurstenstube",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+  }
 }

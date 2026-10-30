@@ -144,6 +144,25 @@
     return h + "</div>";
   }
 
+  // Guide-Michelin-Abzeichen (selbst gezeichnet im Stil der Symbole): Stern, Bib Gourmand, Teller (= empfohlen)
+  var MICHELIN = {
+    stern1: { text: "1 Michelin-Stern", kurz: "1 Stern",
+      svg: '<g fill="currentColor">' + [0, 60, 120, 180, 240, 300].map(function (w) { return '<ellipse cx="12" cy="6.2" rx="3.6" ry="5.4" transform="rotate(' + w + ' 12 12)"/>'; }).join("") + '</g><circle cx="12" cy="12" r="2.6" fill="#fff"/>' },
+    bib: { text: "Bib Gourmand", kurz: "Bib Gourmand",
+      svg: '<circle cx="12" cy="12" r="10.5" fill="currentColor"/><circle cx="8.6" cy="9.6" r="1.6" fill="#fff"/><circle cx="15.4" cy="9.6" r="1.6" fill="#fff"/><path d="M7 14c1.4 2.4 3 3.4 5 3.4s3.6-1 5-3.4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><path d="M14.2 16.6c.4 1.4 1.5 1.8 2.2 1.1" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>' },
+    teller: { text: "Empfehlung im Guide Michelin", kurz: "Michelin",
+      svg: '<circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="5.6" fill="none" stroke="currentColor" stroke-width="1.6"/>' }
+  };
+  function michelinHtml(e, nurSymbol) {
+    var m = e && e.michelin, a = m && MICHELIN[m.auszeichnung];
+    if (!a) return "";
+    var inhalt = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">' + a.svg + "</svg>" + (nurSymbol ? "" : "<span>" + a.kurz + "</span>");
+    var titel = "Guide Michelin: " + a.text;
+    return nurSymbol || !m.url
+      ? '<span class="michelin michelin-' + m.auszeichnung + '" title="' + esc(titel) + '" role="img" aria-label="' + esc(titel) + '">' + inhalt + "</span>"
+      : '<a class="michelin michelin-' + m.auszeichnung + '" href="' + esc(m.url) + '" target="_blank" rel="noopener" title="' + esc(titel) + ' – Seite im Guide öffnen" aria-label="' + esc(titel) + '">' + inhalt + "</a>";
+  }
+
   function bewertungHtml(e) {
     if (e.google_bewertung == null) return '<span class="ng">Bewertung ' + NG + "</span>";
     return '<span class="sterne" title="' + esc(e.google_quelle || "") + '"><span aria-hidden="true">★</span> ' +
@@ -420,7 +439,7 @@
       '<div class="karte-kopf">' +
       '<p class="kicker"><span class="zahlen">' + nr + "</span> / " + esc((r.ort_kicker || r.ort || "").toUpperCase()) +
       (r.zusatz ? ' <span class="tag zusatz">Zusatz</span>' : "") + "</p>" +
-      "<h3>" + esc(r.name) + "</h3>" +
+      "<h3>" + esc(r.name) + (r.michelin ? " " + michelinHtml(r) : "") + "</h3>" +
       '<p class="kueche">' + oderNG(r.kueche) + "</p>" +
       '<p class="fakten">' + bewertungHtml(r) + '<span class="trenn" aria-hidden="true">·</span>' + entfHtml(r) + "</p>" +
       preisZeile(r) +
@@ -529,7 +548,7 @@
         "</tr></thead><tbody>";
       tab += gefiltert.map(function (r) {
         return '<tr data-status="' + r.status + '">' +
-          '<th scope="row"><a href="#r-' + esc(r.slug) + '">' + esc(r.name) + "</a>" + (r.zusatz ? ' <span class="tag zusatz">Zusatz</span>' : "") +
+          '<th scope="row"><a href="#r-' + esc(r.slug) + '">' + esc(r.name) + "</a>" + (r.michelin ? " " + michelinHtml(r, true) : "") + (r.zusatz ? ' <span class="tag zusatz">Zusatz</span>' : "") +
           '<span class="ort">' + esc(r.ort || "") + "</span></th>" +
           '<td data-label="Autofahrt">' + entfHtml(r, true) + "</td>" +
           '<td data-label="Beispiel A zu zweit">' + beispielAHtml(r) + "</td>" +
@@ -1053,7 +1072,7 @@
   var JG = window.JG = {
     D: D, NAMEN: NAMEN, STAND: STAND, NG: NG,
     esc: esc, euro: euro, zahl: zahl, link: link, telLink: telLink, routeUrl: routeUrl, slugify: slugify,
-    toast: toast, bilder: bilder, bewertungHtml: bewertungHtml, entfHtml: entfHtml, statusHtml: statusHtml,
+    toast: toast, bilder: bilder, bewertungHtml: bewertungHtml, michelinHtml: michelinHtml, entfHtml: entfHtml, statusHtml: statusHtml,
     aktionen: aktionen, istFavorit: istFavorit, lsGet: lsGet, lsSet: lsSet,
     ich: function () { return ich; }, likes: function () { return likes; },
     ichSetzen: function (p) { ichSetzen(p); },

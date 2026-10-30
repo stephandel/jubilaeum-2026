@@ -200,5 +200,11 @@
     "Google-Bewertung nicht live geprüft (Wert aus Vorrecherche)",
     "Parkgebühren unbekannt"
   ],
-  "stand": "2026-10-29"
+  "stand": "2026-10-29",
+  "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/rheinland-pfalz/freinsheim/restaurant/atable-im-amtshaus",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+  }
 }

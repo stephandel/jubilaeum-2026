@@ -113,7 +113,7 @@
       if (art === "v") unter.push(o.uhrzeit || "", o.ort || "");
       var gewaehlt = plan[art] === e.key;
       return '<button type="button" class="opt' + (gewaehlt ? " gewaehlt" : "") + (art === "r" && o.status === "nein" ? " gedimmt" : "") + '" data-art="' + art + '" data-key="' + esc(e.key) + '" aria-pressed="' + gewaehlt + '">' +
-        '<span class="opt-name">' + esc(e.name) + likeMarke(e.key) + '</span><span class="opt-unter">' + esc(unter.filter(Boolean).join(" · ")) + "</span></button>";
+        '<span class="opt-name">' + esc(e.name) + (art === "r" ? JG.michelinHtml(o, true) : "") + likeMarke(e.key) + '</span><span class="opt-unter">' + esc(unter.filter(Boolean).join(" · ")) + "</span></button>";
     }
     function optionenZeichnen() {
       ["n", "c", "r", "v"].forEach(function (art) {

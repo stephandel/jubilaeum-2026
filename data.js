@@ -946,6 +946,12 @@ window.GUIDE_DATA = {
    ],
    "stand": "2026-10-29",
    "speisekarte_stand": "PDF zuletzt geändert 08.10.2026 (Server-Datum)",
+   "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/heidelberg/restaurant/der-philosoph",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+   },
    "zusatz": false,
    "verf_geprueft": true,
    "bewertung_original": {
@@ -1202,6 +1208,12 @@ window.GUIDE_DATA = {
     "Zwei E-Mail-Adressen auf der Website: info@doblers-restaurant.de und restaurant@doblers.de"
    ],
    "stand": "2026-10-29",
+   "michelin": {
+    "auszeichnung": "stern1",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/mannheim/restaurant/doblers",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+   },
    "zusatz": false,
    "verf_geprueft": true,
    "bewertung_original": {
@@ -1490,6 +1502,12 @@ window.GUIDE_DATA = {
     "Allerheiligen-Effekt: Sa ist ohnehin 'Main Season', kein Sonderhinweis gefunden"
    ],
    "stand": "2026-10-29",
+   "michelin": {
+    "auszeichnung": "stern1",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/mannheim/restaurant/the-tourist-trap",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+   },
    "zusatz": false,
    "verf_geprueft": true,
    "bewertung_original": {
@@ -1716,6 +1734,12 @@ window.GUIDE_DATA = {
     "Verfügbarkeit 31.10. (TheFork blockiert automatische Abfrage)"
    ],
    "stand": "2026-10-29",
+   "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/heidelberg/restaurant/gutsstube",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+   },
    "zusatz": false,
    "verf_geprueft": true,
    "bewertung_original": {
@@ -2419,6 +2443,12 @@ window.GUIDE_DATA = {
     "Parkplatz: Größe/Kosten unbekannt"
    ],
    "stand": "2026-10-29",
+   "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/rheinland-pfalz/neustadt-an-der-weinstrasse/restaurant/spinne",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+   },
    "zusatz": true,
    "bewertung_original": {
     "wert": 4.9,
@@ -2646,6 +2676,12 @@ window.GUIDE_DATA = {
     "Parkgebühren unbekannt"
    ],
    "stand": "2026-10-29",
+   "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/rheinland-pfalz/freinsheim/restaurant/atable-im-amtshaus",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+   },
    "zusatz": true,
    "bewertung_original": {
     "wert": 4.7,
@@ -2885,6 +2921,12 @@ window.GUIDE_DATA = {
     "Bild 2 (Gericht) ist ein Symbolbild der Hotelküche von 2024, kein Gericht der aktuellen Karte"
    ],
    "stand": "2026-10-29",
+   "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/heidelberg/restaurant/die-kurfurstenstube",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+   },
    "zusatz": true,
    "bewertung_original": {
     "wert": 4.7,
@@ -3115,6 +3157,12 @@ window.GUIDE_DATA = {
     "Zahlungsarten: laut Michelin Kreditkarten akzeptiert, Website ohne Angabe"
    ],
    "stand": "2026-10-29",
+   "michelin": {
+    "auszeichnung": "bib",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/weinheim/restaurant/ziegler",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+   },
    "zusatz": true,
    "bewertung_original": {
     "wert": 4.7,
@@ -3326,6 +3374,12 @@ window.GUIDE_DATA = {
     "Menü-PDF kann sich kurzfristig ändern (\"kurzfristige Änderungen sind möglich\")"
    ],
    "stand": "2026-10-29",
+   "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/baden-wurttemberg/weinheim/restaurant/bistronauten",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 30.10.2026",
+    "stand": "2026-10-30"
+   },
    "zusatz": true,
    "bewertung_original": {
     "wert": 4.8,

@@ -353,7 +353,7 @@
         heuteHtml(r) +
         '<ol class="tag-linie">' + schritte.map(function (s) {
           var navi = s[2].adresse ? "https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=" + encodeURIComponent(String(s[2].adresse).replace(/\s*\(.*?\)/g, "")) : null;
-          return '<li><span class="tl-icon" aria-hidden="true">' + s[0] + '</span><span class="tl-text"><small>' + esc(s[1]) + '</small><a href="' + s[2].link + '">' + esc(s[2].name) + "</a>" +
+          return '<li><span class="tl-icon" aria-hidden="true">' + s[0] + '</span><span class="tl-text"><small>' + esc(s[1]) + '</small><a href="' + s[2].link + '">' + esc(s[2].name) + "</a>" + (s[2].art === "r" ? JG.michelinHtml(s[2].obj, true) : "") +
             (s[2].ort ? '<span class="tl-ort">' + esc(s[2].ort) + "</span>" : "") + "</span>" +
             (navi ? '<a class="tl-navi" href="' + navi + '" target="_blank" rel="noopener" aria-label="Navigation zu ' + esc(s[2].name) + '">Navi ↗</a>' : "") + "</li>";
         }).join("") + "</ol>" +
