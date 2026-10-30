@@ -3110,10 +3110,10 @@ window.GUIDE_DATA = {
     "art": "formular",
     "tool": "eigenes Formular",
     "url": "https://www.restaurant-ziegler.de/schreiben-sie-uns",
-    "verfuegbar_31_10": "unbekannt",
-    "freie_zeiten": null,
-    "hinweis": "Kein Online-Buchungssystem mit Verfügbarkeitsanzeige, nur Anfrageformular (\"Reservierung ist erst nach Bestätigung gültig\"). Formular nicht abgeschickt. Für zwei Tage Vorlauf besser anrufen: 06201 52645.",
-    "stand": "2026-10-29"
+    "verfuegbar_31_10": "nein",
+    "freie_zeiten": [],
+    "hinweis": "Abgesagt: Antwort von Familie Hahn per E-Mail (30.10., 09:21) – „Reservierungswunsch nicht erfüllbar“. Am Samstag kurzfristig nochmal anrufen möglich (06201 52645), keine Warteliste.",
+    "stand": "2026-10-30"
    },
    "parken": {
     "text": null,
@@ -3171,7 +3171,7 @@ window.GUIDE_DATA = {
     "quelle": "Vorrecherche 29.10. (nicht live geprüft)"
    },
    "google_live": true,
-   "status": "unbekannt",
+   "status": "nein",
    "entfernung": {
     "km": 18.1,
     "min": 23,
@@ -6623,13 +6623,13 @@ window.GUIDE_DATA = {
   },
   {
    "id": "barockgarten-grandhotel",
-   "titel": "Barockgarten & Bergstraße",
-   "stimmung": "festlich · genussvoll",
-   "kurz": "Herbstspaziergang im Schwetzinger Schlossgarten, Mousse-Törtchen bei Mousse Mousse, abends Bib-Gourmand-Küche im Ziegler an der Bergstraße.",
+   "titel": "Barockgarten & Grandhotel",
+   "stimmung": "festlich · klassisch",
+   "kurz": "Herbstspaziergang im Schwetzinger Schlossgarten, Mousse-Törtchen bei Mousse Mousse, abends die Kurfürstenstube im Europäischen Hof.",
    "n": "nm-schwetzingen-schlossgarten",
    "c": "c:mousse-mousse",
-   "r": "ziegler",
-   "zeit": "18:00",
+   "r": "kurfuerstenstube",
+   "zeit": "18:30",
    "start": "12:30",
    "folge": [
     "n",
@@ -6640,10 +6640,10 @@ window.GUIDE_DATA = {
     "13:00 Schlossgarten Schwetzingen: Parterre, Gartenmoschee (bis 16 Uhr), englischer Garten",
     "15:30 Fahrt nach Heidelberg-Rohrbach (ca. 16 Min.)",
     "16:00 Mousse Mousse – Entremets und Törtchen (Sa bis 18 Uhr)",
-    "17:30 weiter nach Weinheim-Hohensachsen (ca. 22 Min.)",
-    "18:00 Restaurant Ziegler – à la carte oder Abendmenü"
+    "18:00 weiter zum Europäischen Hof (ca. 9 Min.)",
+    "18:30 Kurfürstenstube – Menü oder à la carte"
    ],
-   "warum": "Barockgarten im Herbstlicht, dazu die feinsten Törtchen der Liste (Mousse Mousse, 5,0★) und ein entspannter Abend an der Bergstraße. Das Ziegler hat keine Online-Verfügbarkeit – bitte anrufen (06201 52645); abends ab 17:30 geöffnet. Preisbeispiele 130–210 € zu zweit."
+   "warum": "Barockgarten im Herbstlicht, dazu die feinsten Törtchen der Liste (Mousse Mousse, 5,0★) und ein festlicher Abend im Grandhotel. Die Kurfürstenstube hatte für Samstag 18:30–19:45 Uhr frei (OpenTable, Stand 29.10.). Das Ziegler hat abgesagt."
   },
   {
    "id": "mannheim-planken-atelier",

@@ -161,10 +161,10 @@
     "art": "formular",
     "tool": "eigenes Formular",
     "url": "https://www.restaurant-ziegler.de/schreiben-sie-uns",
-    "verfuegbar_31_10": "unbekannt",
-    "freie_zeiten": null,
-    "hinweis": "Kein Online-Buchungssystem mit Verfügbarkeitsanzeige, nur Anfrageformular (\"Reservierung ist erst nach Bestätigung gültig\"). Formular nicht abgeschickt. Für zwei Tage Vorlauf besser anrufen: 06201 52645.",
-    "stand": "2026-10-29"
+    "verfuegbar_31_10": "nein",
+    "freie_zeiten": [],
+    "hinweis": "Abgesagt: Antwort von Familie Hahn per E-Mail (30.10., 09:21) – „Reservierungswunsch nicht erfüllbar“. Am Samstag kurzfristig nochmal anrufen möglich (06201 52645), keine Warteliste.",
+    "stand": "2026-10-30"
   },
   "parken": {
     "text": null,
