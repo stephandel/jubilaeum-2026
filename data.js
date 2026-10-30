@@ -1445,8 +1445,8 @@ window.GUIDE_DATA = {
     "freie_zeiten": [
      "18:00"
     ],
-    "hinweis": "OpenTable im Browser geprüft (29.10., ca. 14:25 Uhr), 2 Personen: „noch 1 Reservierungszeit übrig“ – 18:00 Uhr. Fr/Sa „Main Season“: 7-Gänge-Menü 130 € (veg.) / 170 € (Fisch & Fleisch) p. P., jeweils inkl. Aperitif; daneben Munchies-Karte (kleine Gerichte). Nicht gebucht.",
-    "stand": "2026-10-29"
+    "hinweis": "OpenTable im Browser geprüft (30.10., ca. 10 Uhr), 2 Personen: „noch 1 Reservierungszeit übrig“ – 18:00 Uhr (schon am 29.10. so). Fr/Sa „Main Season“: 7-Gänge-Menü 130 € (veg.) / 170 € (Fisch & Fleisch) p. P., jeweils inkl. Aperitif; daneben Munchies-Karte (kleine Gerichte). Nicht gebucht.",
+    "stand": "2026-10-30"
    },
    "parken": {
     "text": "MVV-Parkplatz direkt am Anleger (am Fuß des MVV-Hochhauses): laut Restaurant Mi–Fr ab 18 Uhr, Sa & So ganztägig nutzbar. Parkscheibenpflicht laut Parkopedia-Snippet (nicht geprüft). Alternative: Parkhaus MVV-Hochhaus, Luisenring 49 (Drittanbieter-Angabe). Straßenbahn Linie 2, Haltestelle Kurpfalzbrücke, ca. 3 Min. zu Fuß.",
@@ -6623,13 +6623,13 @@ window.GUIDE_DATA = {
   },
   {
    "id": "barockgarten-grandhotel",
-   "titel": "Barockgarten & Gourmetabend",
-   "stimmung": "festlich · genussvoll",
-   "kurz": "Herbstspaziergang im Schwetzinger Schlossgarten, Mousse-Törtchen bei Mousse Mousse, abends Der Philosoph in Heidelberg-Neuenheim.",
+   "titel": "Barockgarten & Sternemenü",
+   "stimmung": "festlich · Erlebnis",
+   "kurz": "Herbstspaziergang im Schwetzinger Schlossgarten, Mousse-Törtchen bei Mousse Mousse, abends Sterneküche im Tourist Trap am Neckar.",
    "n": "nm-schwetzingen-schlossgarten",
    "c": "c:mousse-mousse",
-   "r": "der-philosoph",
-   "zeit": "18:15",
+   "r": "tourist-trap",
+   "zeit": "18:00",
    "start": "12:30",
    "folge": [
     "n",
@@ -6639,11 +6639,11 @@ window.GUIDE_DATA = {
    "ablauf": [
     "13:00 Schlossgarten Schwetzingen: Parterre, Gartenmoschee (bis 16 Uhr), englischer Garten",
     "15:30 Fahrt nach Heidelberg-Rohrbach (ca. 16 Min.)",
-    "16:00 Mousse Mousse – Entremets und Törtchen (Sa bis 18 Uhr)",
-    "17:45 weiter nach Neuenheim (ca. 9 Min.), Parkhaus P16",
-    "18:15 Der Philosoph – Menü oder à la carte"
+    "15:45 Mousse Mousse – Entremets und Törtchen",
+    "17:20 weiter nach Mannheim an den Neckar (ca. 28 Min.)",
+    "18:00 The Tourist Trap – 7-Gänge-Menü"
    ],
-   "warum": "Barockgarten im Herbstlicht, dazu die feinsten Törtchen der Liste (Mousse Mousse, 5,0★) und abends Gourmetküche mit Michelin-Empfehlung (Google 4,8★). Der Philosoph hatte für Samstag 18:15–19:30 Uhr frei (OpenTable, Stand 29.10.). Genau diese Kombination steht schon in eurem „Unser Tag“. Das Ziegler hat abgesagt."
+   "warum": "Barockgarten im Herbstlicht, dazu die feinsten Törtchen der Liste (Mousse Mousse, 5,0★) und abends ein Michelin-Stern. Tourist Trap hatte am 30.10. noch genau einen Tisch frei: 18:00 Uhr (OpenTable). Menü 130 € (vegetarisch) oder 170 € p. P. inkl. Aperitif. Parken direkt am Anleger, samstags ganztägig. Das Ziegler hat abgesagt."
   },
   {
    "id": "mannheim-planken-atelier",
