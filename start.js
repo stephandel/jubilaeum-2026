@@ -285,7 +285,7 @@
       '<section class="hero start-hero"><div class="hero-27" aria-hidden="true">27</div>' +
       '<p class="hero-label">' + esc(countdown) + " · Samstag, 31. Oktober 2026</p>" +
       "<h1>27 Jahre wir.</h1>" +
-      '<div id="gruss"></div></section>' +
+      '<div id="gruss"></div><div id="partner-likes"></div></section>' +
       '<section class="block" aria-labelledby="h-tag"><h2 id="h-tag">Unser Tag</h2><div id="unser-tag"></div></section>' +
       '<section class="block" aria-labelledby="h-wetter"><h2 id="h-wetter">Wetter am Samstag</h2><div class="wetter glas-leicht"><div id="wetter"><p class="hinweis">Wetter wird geladen …</p></div>' +
       '<details class="mehr mg-ausfuehrlich" id="mg-auf"><summary>Ausführliches Wetter (Meteogramm wie auf der Fuerte-Seite)</summary><div id="meteogramm-jg"></div></details></div></section>' +
@@ -441,7 +441,39 @@
     }
 
     // ---------- Favoriten aus den Likes ----------
+    // Ganz oben: was die andere Person mag – gruppiert, zum Antippen
+    function partnerZeichnen() {
+      var el = document.getElementById("partner-likes"), ich = JG.ich();
+      if (!el) return;
+      if (!ich) { el.innerHTML = ""; return; }
+      var andere = ich === "S" ? "B" : "S", likes = JG.likes() || {};
+      var GRUPPEN = [["r", "🍽️ Restaurants"], ["c", "🍰 Cafés"], ["n", "🍂 Nachmittag"], ["t", "💡 Tagesideen"], ["v", "✨ Abends"]];
+      var tipps = {}; (JG.D.toptipps || []).forEach(function (t) { tipps["t:" + t.id] = t; });
+      var proGruppe = {}, anzahl = 0, offen = 0;
+      Object.keys(likes).forEach(function (key) {
+        var v = likes[key] || {};
+        if (v[andere] !== "hoch") return;
+        var e = K[key], t = tipps[key];
+        var eintrag = e ? { name: e.name, link: e.link } : t ? { name: t.titel, link: "#h-tipps" } : null;
+        if (!eintrag) return;
+        eintrag.beide = v[ich] === "hoch"; eintrag.gestimmt = !!v[ich];
+        var g = key.split(":")[0];
+        (proGruppe[g] = proGruppe[g] || []).push(eintrag);
+        anzahl++; if (!v[ich]) offen++;
+      });
+      if (!anzahl) { el.innerHTML = ""; return; }
+      var name = JG.NAMEN[andere];
+      el.innerHTML = '<div class="partner-likes glas-leicht"><h2 class="pl-titel">💛 ' + esc(name) + " mag " + anzahl + (anzahl === 1 ? " Ort" : " Orte") + "</h2>" +
+        '<p class="pl-unter">' + (offen ? "Bei " + offen + " davon fehlt noch deine Stimme – antippen, ansehen, 👍 oder 👎." : "Du hast überall mit abgestimmt. 🥂") + "</p>" +
+        GRUPPEN.filter(function (g) { return proGruppe[g[0]]; }).map(function (g) {
+          return '<div class="pl-gruppe"><h3>' + g[1] + '</h3><div class="fav-chips">' + proGruppe[g[0]].map(function (e) {
+            return '<a class="fav-chip' + (e.beide ? " pl-beide" : e.gestimmt ? "" : " pl-offen") + '" href="' + e.link + '">' + esc(e.name) + (e.beide ? " 💛" : e.gestimmt ? "" : ' <small>neu für dich</small>') + "</a>";
+          }).join("") + "</div></div>";
+        }).join("") + "</div>";
+    }
+
     function favoritenZeichnen() {
+      partnerZeichnen();
       var likes = JG.likes() || {}, ich = JG.ich();
       var beide = [], einer = [], uneinig = [];
       Object.keys(likes).forEach(function (key) {

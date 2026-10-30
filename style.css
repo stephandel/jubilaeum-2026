@@ -802,3 +802,12 @@ a.michelin:hover { background: color-mix(in srgb, #C8102E 18%, transparent); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .michelin { color: #FF5A6E; } }
 :root[data-theme="dark"] .michelin { color: #FF5A6E; }
 .verbindung-hinweis { margin: var(--s3) auto 0; max-width: 860px; }
+
+/* Schild „💛 Stephan mag das“ oben rechts auf dem Foto */
+.partner-schild { position: absolute; right: var(--s3); top: var(--s3); z-index: 3; padding: 5px 12px; border-radius: 999px; font-size: var(--fs-footnote); font-weight: 800; color: #4A2A00; background: linear-gradient(135deg, #FFF3C4, #F6CF5A); box-shadow: 0 3px 12px rgba(0,0,0,.28); pointer-events: none; white-space: nowrap; }
+.partner-likes { margin-top: var(--s4); padding: var(--s4); text-align: left; border: 2px solid #F6CF5A; }
+.pl-titel { margin: 0 0 4px; font-size: var(--fs-title3); }
+.pl-unter { margin: 0 0 var(--s3); color: var(--label-2); font-size: var(--fs-subhead); }
+.pl-gruppe h3 { margin: var(--s3) 0 6px; font-size: var(--fs-subhead); }
+.fav-chip.pl-offen { border-color: #E2A800; box-shadow: inset 0 0 0 1px #E2A800; }
+.fav-chip.pl-offen small { color: #B07A00; font-weight: 700; }

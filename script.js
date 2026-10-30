@@ -136,7 +136,8 @@
         '<button type="button" class="bild-gross" aria-label="Bild vergrößern: ' + esc(b.beschreibung || name) + '"></button></figure>';
     });
     if (luft) teile.push(luft);
-    var h = '<div class="bild galerie">' + platz + '<div class="gal-band" tabindex="-1">' + teile.join("") + "</div>";
+    var schild = koKey ? partnerSchildText(koKey) : "";
+    var h = '<div class="bild galerie">' + platz + (schild ? '<span class="partner-schild">' + esc(schild) + "</span>" : "") + '<div class="gal-band" tabindex="-1">' + teile.join("") + "</div>";
     if (teile.length > 1) {
       h += '<button type="button" class="gal-pfeil zurueck" aria-label="Vorheriges Bild">‹</button><button type="button" class="gal-pfeil weiter" aria-label="Nächstes Bild">›</button>' +
         '<div class="gal-punkte" aria-hidden="true">' + teile.map(function (_, i) { return "<i" + (i ? "" : ' class="an"') + "></i>"; }).join("") + "</div>";
@@ -214,10 +215,33 @@
     var v = likes[key] || {};
     return v.S === "hoch" || v.B === "hoch";
   }
+  // Schild oben auf dem Foto: was die andere Person mag (ohne Auswahl: wer überhaupt mag)
+  function partnerSchildText(key) {
+    var v = likes[key] || {};
+    if (ich) {
+      var andere = ich === "S" ? "B" : "S";
+      if (v[andere] !== "hoch") return "";
+      return v[ich] === "hoch" ? "💛 Ihr beide mögt das" : "💛 " + NAMEN[andere] + " mag das";
+    }
+    if (v.S === "hoch" && v.B === "hoch") return "💛 Ihr beide mögt das";
+    if (v.S === "hoch" || v.B === "hoch") return "💛 " + NAMEN[v.S === "hoch" ? "S" : "B"] + " mag das";
+    return "";
+  }
+  function partnerSchilder() {
+    document.querySelectorAll(".likes").forEach(function (el) {
+      var karte = el.closest(".karte"), bild = karte && karte.querySelector(".bild");
+      if (!bild) return;
+      var text = partnerSchildText(el.dataset.key), alt = bild.querySelector(".partner-schild");
+      if (!text) { if (alt) alt.remove(); return; }
+      if (!alt) { alt = document.createElement("span"); alt.className = "partner-schild"; bild.appendChild(alt); }
+      alt.textContent = text;
+    });
+  }
   function likesAktualisieren() {
     document.querySelectorAll(".likes").forEach(function (el) {
       el.innerHTML = likeInnen(el.dataset.key, el.dataset.label);
     });
+    partnerSchilder();
     if (window.JG && typeof window.JG.beimAktualisieren === "function") window.JG.beimAktualisieren();
   }
 
