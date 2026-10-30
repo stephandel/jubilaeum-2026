@@ -204,5 +204,15 @@
     "km": 18.3,
     "min": 23,
     "route": "über A659"
+  },
+  "nm-ma-planken-juweliere": {
+    "km": 8.1,
+    "min": 19,
+    "route": "über B44 (wie CØR im Nachbarquadrat)"
+  },
+  "pf-haardt-pavillon": {
+    "km": 45.9,
+    "min": 37,
+    "route": "über A61 und A65"
   }
 }

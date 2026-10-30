@@ -4898,6 +4898,183 @@ window.GUIDE_DATA = {
    }
   },
   {
+   "slug": "nm-ma-planken-juweliere",
+   "titel": "Bummel über die Planken und zu den Juwelieren",
+   "region": "Mannheim",
+   "beschreibung": "Schlendern durch Mannheims Fußgängerzone Planken zwischen Paradeplatz und Wasserturm, unterwegs zwei bis drei Juweliere zum Schauen und Anprobieren. Alle liegen in den Quadraten wenige Gehminuten auseinander: Pletzsch direkt an den Planken (P2), Wenthe in O6, Franco Troncone in Q5 an der Fressgasse.",
+   "ablauf": [
+    "13:30 Parken (z. B. Parkhaus N1/N2), Kaffee in der Pâtisserie CØR in N3",
+    "14:30 Planken: Juwelier Pletzsch (P2, Planken 11, Sa 10–19 Uhr)",
+    "15:15 Juwelier Wenthe (O6 7, Sa 10–18 Uhr)",
+    "optional 16:00 Juwelier Franco Troncone (Q5 1, Sa 10–17 Uhr)",
+    "danach über die Fressgasse Richtung Jungbusch, zu Fuß ca. 15 Min. zum Atelier in G7"
+   ],
+   "dauer": "ca. 3–4 h",
+   "start_adresse": "Planken, 68161 Mannheim",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Planken%2C%2068161%20Mannheim",
+   "weitere_links": [
+    {
+     "text": "Juwelier Pletzsch",
+     "url": "https://www.pletzsch.de/"
+    },
+    {
+     "text": "Juwelier Wenthe",
+     "url": "https://www.juwelier-wenthe.de/"
+    },
+    {
+     "text": "Juwelier Franco Troncone",
+     "url": "https://www.troncone.de/"
+    },
+    {
+     "text": "Pletzsch in Maps",
+     "url": "https://www.google.com/maps/search/?api=1&query=Juwelier%20Pletzsch%2C%20P2%2C%20Planken%2011%2C%2068161%20Mannheim"
+    },
+    {
+     "text": "Wenthe in Maps",
+     "url": "https://www.google.com/maps/search/?api=1&query=Juwelier%20Wenthe%2C%20O6%207%2C%2068161%20Mannheim"
+    },
+    {
+     "text": "Troncone in Maps",
+     "url": "https://www.google.com/maps/search/?api=1&query=Juwelier%20Franco%20Troncone%2C%20Q5%201%2C%2068161%20Mannheim"
+    }
+   ],
+   "oeffnung_31_10": "Samstag laut Google Maps: Pletzsch 10–19 Uhr (4,6★, 129), Wenthe 10–18 Uhr (4,7★, 229), Franco Troncone 10–17 Uhr (4,9★, 99). Pâtisserie CØR Sa 10–17 Uhr.",
+   "oeffnung_quelle": "Google Maps, abgefragt 30.10.2026",
+   "kosten": "Bummeln kostenlos; Parken nach Tarif des Parkhauses (nicht geprüft)",
+   "veranstaltung": null,
+   "cafe_vorschlag": null,
+   "bilder": [
+    {
+     "datei": "img/nm-ma-planken-juweliere-1.jpg",
+     "art": "aussen",
+     "beschreibung": "Die Planken, Mannheims Fußgängerzone",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim,_die_Stra%C3%9Fe_%22Planken%22.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-planken-juweliere-3.jpg",
+     "art": "aussen",
+     "beschreibung": "Paradeplatz am westlichen Ende der Planken",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim-Paradeplatz.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-ma-planken-juweliere-2.jpg",
+     "art": "aussen",
+     "beschreibung": "Blick über die Planken zum Wasserturm",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim_Planken_Wasserturm.jpg",
+     "vorhanden": true
+    }
+   ],
+   "quellen": [
+    "Google Maps (Öffnungszeiten und Bewertungen, 30.10.2026)",
+    "https://www.patisserie-coer.de/"
+   ],
+   "nicht_geprueft": [
+    "Öffnungszeiten nur aus Google Maps, nicht auf den Websites der Juweliere gegengeprüft",
+    "Keine Fotos aus den Juweliergeschäften (nur Straßenansichten)",
+    "Gehzeit Planken → G7 laut Google Maps ca. 15 Min. (1,1 km)"
+   ],
+   "stand": "2026-10-30",
+   "entfernung": {
+    "km": 8.1,
+    "min": 19,
+    "route": "über B44 (wie CØR im Nachbarquadrat)",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   }
+  },
+  {
+   "slug": "pf-haardt-pavillon",
+   "titel": "Weinberge und König-Ludwig-Pavillon an der Haardt",
+   "region": "Pfalz",
+   "beschreibung": "Kaffee und Bio-Eis in Weisenheim am Berg, dann an den Haardtrand nach Gimmeldingen: kurzer Weg zum König-Ludwig-Pavillon mit Blick über die Weinberge in die Rheinebene, anschließend durch die Reben Richtung Haardt. Von dort sind es mit dem Auto nur 4 Minuten zur Spinne.",
+   "ablauf": [
+    "13:30 Café Charme und Bio-Eis Manufaktur, Weisenheim am Berg (Sa 10–17 Uhr)",
+    "15:00 Fahrt nach Gimmeldingen (ca. 27 Min.), Parken am Ortsrand Neubergstraße",
+    "15:30–16:45 zum König-Ludwig-Pavillon und durch die Weinberge, Abendlicht über der Rheinebene",
+    "Sonnenuntergang 17:05 – danach wird es schnell dunkel",
+    "4 Min. Fahrt zur Spinne (Eichkehle 58, Haardt)"
+   ],
+   "dauer": "ca. 3,5 h inkl. Café",
+   "start_adresse": "König-Ludwig-Pavillon, Neubergstraße 20, 67435 Neustadt an der Weinstraße-Gimmeldingen",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=K%C3%B6nig-Ludwig-Pavillon%2C%20Neubergstra%C3%9Fe%2020%2C%2067435%20Neustadt%20an%20der%20Weinstra%C3%9Fe",
+   "weitere_links": [
+    {
+     "text": "Café Charme (charme-du-sud.de)",
+     "url": "https://www.charme-du-sud.de/"
+    },
+    {
+     "text": "Café Charme in Maps",
+     "url": "https://maps.app.goo.gl/RrciGF2cRUbS6TLY8"
+    },
+    {
+     "text": "Gimmeldingen",
+     "url": "https://www.gimmeldingen.de/"
+    },
+    {
+     "text": "Alternative: Theodor Pâtisserie Landau",
+     "url": "https://maps.app.goo.gl/JdPRWpfnSp35yNoe7"
+    }
+   ],
+   "oeffnung_31_10": "Pavillon frei zugänglich (Google: rund um die Uhr). Café Charme Sa 10–17 Uhr (Google Maps, 4,7★, 149 Bewertungen, 20–30 € p. P.).",
+   "oeffnung_quelle": "Google Maps, abgefragt 30.10.2026",
+   "kosten": "Spaziergang kostenlos; Café ca. 20–30 € p. P. (Google-Angabe)",
+   "veranstaltung": null,
+   "cafe_vorschlag": {
+    "name": "Café Charme und Bio-Eis Manufaktur",
+    "adresse": "Hauptstraße 45, 67273 Weisenheim am Berg",
+    "oeffnung_samstag": "10:00–17:00",
+    "hinweis": "Sa 10–17 Uhr, Telefon 06353 9324061. Gewählt statt Theodor Pâtisserie in Landau: ab Zuhause 28 statt 47 Min., bis zur Spinne gleich weit (je ca. 29 Min.). Theodor: 4,5★ (387), Sa 10–17:30.",
+    "quelle": "Google Maps, 30.10.2026"
+   },
+   "bilder": [
+    {
+     "datei": "img/nm-pf-haardt-pavillon-1.jpg",
+     "art": "aussen",
+     "beschreibung": "König-Ludwig-Pavillon über Gimmeldingen",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:K%C3%B6nig-Ludwig-Pavillon_-_panoramio_(1).jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-pf-haardt-pavillon-2.jpg",
+     "art": "aussen",
+     "beschreibung": "Weinberg bei Gimmeldingen im Herbst, dahinter das Weinbiet",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Gimmeldingen-weinberg-im-herbst-mit-weinbiet.jpg",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-pf-haardt-pavillon-4.jpg",
+     "art": "cafe",
+     "beschreibung": "Terrasse des Café Charme in Weisenheim am Berg",
+     "quelle_url": "https://www.charme-du-sud.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-pf-haardt-pavillon-3.jpg",
+     "art": "cafe",
+     "beschreibung": "Café Charme am Abend, Hauptstraße 45",
+     "quelle_url": "https://www.charme-du-sud.de/",
+     "vorhanden": true
+    }
+   ],
+   "quellen": [
+    "Google Maps (Öffnungszeiten, Bewertungen, Fahr- und Gehzeiten, 30.10.2026)",
+    "https://www.charme-du-sud.de/"
+   ],
+   "nicht_geprueft": [
+    "Parkmöglichkeit am Pavillon (Neubergstraße) nicht geprüft",
+    "Länge der Weinbergrunde nicht gemessen – nach Gefühl, Rückweg vor Einbruch der Dunkelheit",
+    "Café-Fotos von der Website des Cafés (Alter unbekannt)"
+   ],
+   "stand": "2026-10-30",
+   "entfernung": {
+    "km": 45.9,
+    "min": 37,
+    "route": "über A61 und A65",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   }
+  },
+  {
    "slug": "hd-philosophenweg",
    "titel": "Altstadt, Café und Philosophenweg zum Sonnenuntergang",
    "region": "Heidelberg",
@@ -6334,6 +6511,21 @@ window.GUIDE_DATA = {
    "lat": 49.51823,
    "lon": 8.53596,
    "adresse": "Altes Kino Franklin, Mannheim"
+  },
+  "n:nm-ma-planken-juweliere": {
+   "lat": 49.48712,
+   "lon": 8.46787,
+   "adresse": "Planken, 68161 Mannheim"
+  },
+  "n:pf-haardt-pavillon": {
+   "lat": 49.38188,
+   "lon": 8.15677,
+   "adresse": "König-Ludwig-Pavillon, Neubergstraße 20, 67435 Neustadt an der Weinstraße"
+  },
+  "cv:cafe-charme-und-bio-eis-manufaktur": {
+   "lat": 49.51395,
+   "lon": 8.1533,
+   "adresse": "Hauptstraße 45, 67273 Weisenheim am Berg"
   }
  },
  "toptipps": [
@@ -6341,18 +6533,20 @@ window.GUIDE_DATA = {
    "id": "heidelberg-verliebt",
    "titel": "Heidelberg zum Verlieben",
    "stimmung": "romantisch · Gourmet",
-   "kurz": "Törtchen in Neuenheim, Philosophenweg im letzten Licht, danach Gourmetmenü gleich um die Ecke.",
+   "kurz": "Optional ein Blick beim Juwelier, Törtchen in Neuenheim, Philosophenweg im letzten Licht, danach Gourmetmenü gleich um die Ecke.",
    "n": "hd-philosophenweg",
    "c": "c:patisserie-sophie",
    "r": "der-philosoph",
    "zeit": "18:30",
+   "start": "12:30",
    "ablauf": [
-    "13:30 Pâtisserie Sophie in Neuenheim (Sa bis 17:30)",
-    "14:30 Philosophenweg und Philosophengärtchen",
+    "optional 13:00 Heidelberger Stadtjuwelier, Brückenstraße 12 in Neuenheim (Sa nur bis 14 Uhr)",
+    "13:45 Pâtisserie Sophie in Neuenheim (Sa bis 17:30)",
+    "14:45 Philosophenweg und Philosophengärtchen",
     "ca. 17:05 Sonnenuntergang über Altstadt und Schloss",
     "18:30 Der Philosoph – Menü oder à la carte"
    ],
-   "warum": "Alles liegt in Neuenheim, ihr parkt nur einmal (P16, abends höchstens 2 €). Der Philosoph hatte für Samstag freie Tische zwischen 18:15 und 19:30 Uhr."
+   "warum": "Alles liegt in Neuenheim, ihr parkt nur einmal (P16, abends höchstens 2 €). Der Juwelier liegt am Neuenheimer Brückenkopf, wenige Schritte von der Pâtisserie (Google 4,4★, Sa 10–14 Uhr). Der Philosoph hatte für Samstag freie Tische zwischen 18:15 und 19:30 Uhr."
   },
   {
    "id": "schloss-und-omakase",
@@ -6373,25 +6567,74 @@ window.GUIDE_DATA = {
   },
   {
    "id": "barockgarten-grandhotel",
-   "titel": "Barockgarten & Grandhotel",
-   "stimmung": "festlich · klassisch",
-   "kurz": "Pralinen bei Chocami, Herbstspaziergang im Schwetzinger Schlossgarten, abends die Kurfürstenstube im Europäischen Hof.",
+   "titel": "Barockgarten & Bergstraße",
+   "stimmung": "festlich · genussvoll",
+   "kurz": "Herbstspaziergang im Schwetzinger Schlossgarten, Mousse-Törtchen bei Mousse Mousse, abends Bib-Gourmand-Küche im Ziegler an der Bergstraße.",
    "n": "nm-schwetzingen-schlossgarten",
-   "c": "c:chocami",
-   "r": "kurfuerstenstube",
-   "zeit": "18:30",
+   "c": "c:mousse-mousse",
+   "r": "ziegler",
+   "zeit": "18:00",
+   "start": "12:30",
+   "folge": [
+    "n",
+    "c",
+    "r"
+   ],
+   "ablauf": [
+    "13:00 Schlossgarten Schwetzingen: Parterre, Gartenmoschee (bis 16 Uhr), englischer Garten",
+    "15:30 Fahrt nach Heidelberg-Rohrbach (ca. 16 Min.)",
+    "16:00 Mousse Mousse – Entremets und Törtchen (Sa bis 18 Uhr)",
+    "17:30 weiter nach Weinheim-Hohensachsen (ca. 22 Min.)",
+    "18:00 Restaurant Ziegler – à la carte oder Abendmenü"
+   ],
+   "warum": "Barockgarten im Herbstlicht, dazu die feinsten Törtchen der Liste (Mousse Mousse, 5,0★) und ein entspannter Abend an der Bergstraße. Das Ziegler hat keine Online-Verfügbarkeit – bitte anrufen (06201 52645); abends ab 17:30 geöffnet. Preisbeispiele 130–210 € zu zweit."
+  },
+  {
+   "id": "mannheim-planken-atelier",
+   "titel": "Mannheimer Stadtbummel",
+   "stimmung": "städtisch · funkelnd",
+   "kurz": "Französische Törtchen bei CØR, über die Planken zu zwei, drei Juwelieren, abends Das Atelier in G7 – alles zu Fuß.",
+   "n": "nm-ma-planken-juweliere",
+   "c": "c:coer",
+   "r": "das-atelier",
+   "zeit": "18:00",
+   "start": "13:00",
    "folge": [
     "c",
     "n",
     "r"
    ],
    "ablauf": [
-    "12:30 Chocami in Schwetzingen – Pralinen und Törtchen (Sa nur bis 14 Uhr)",
-    "13:30 Schlossgarten: Parterre, Gartenmoschee (bis 16 Uhr), englischer Garten",
-    "16:30 letzter Einlass, danach weiter nach Heidelberg",
-    "18:30 Kurfürstenstube im Europäischen Hof"
+    "13:30 Pâtisserie CØR in N3 (Sa bis 17 Uhr)",
+    "14:30 Planken: Juwelier Pletzsch (P2) und Juwelier Wenthe (O6)",
+    "optional 16:00 Juwelier Franco Troncone (Q5, Sa bis 17 Uhr)",
+    "danach zu Fuß ca. 15 Min. über die Fressgasse nach G7",
+    "18:00 Das Atelier"
    ],
-   "warum": "Der klassischste der vier Tage: Barockgarten im Herbstlicht und ein Abend im Grandhotel. In der Kurfürstenstube waren für Samstag 18:30, 18:45, 19:15, 19:30 und 19:45 Uhr frei. Menüs 147–235 € pro Person, also der teuerste Vorschlag."
+   "warum": "Nur 19 Minuten von zu Hause, einmal parken, alles zu Fuß. Die drei Juweliere haben bei Google 4,6–4,9★. Das Atelier hat keine Online-Verfügbarkeit – bitte anrufen (0174 6086339); samstags ab 17 Uhr geöffnet."
+  },
+  {
+   "id": "pfalz-spinne",
+   "titel": "Pfalz: Weinberge & Spinne",
+   "stimmung": "ländlich · Weitblick",
+   "kurz": "Kaffee und Bio-Eis in Weisenheim am Berg, Spaziergang zum König-Ludwig-Pavillon über den Weinbergen, abends die Spinne an der Haardt.",
+   "n": "pf-haardt-pavillon",
+   "c": "cv:cafe-charme-und-bio-eis-manufaktur",
+   "r": "spinne",
+   "zeit": "17:00",
+   "start": "13:00",
+   "folge": [
+    "c",
+    "n",
+    "r"
+   ],
+   "ablauf": [
+    "13:30 Café Charme und Bio-Eis Manufaktur, Weisenheim am Berg (Sa bis 17 Uhr)",
+    "15:00 ca. 27 Min. nach Gimmeldingen",
+    "15:30 König-Ludwig-Pavillon und Weinberge im Abendlicht",
+    "17:00 Restaurant Spinne (4 Min. Fahrt)"
+   ],
+   "warum": "Café Charme statt Theodor in Landau, weil es näher ist (28 statt 47 Min. ab Zuhause, zur Spinne beide ca. 29 Min.). Bei der Spinne waren für Samstag 17, 19 und 20 Uhr wählbar (Anfrage, das Haus bestätigt). Mit 19 Uhr bleibt mehr Zeit, dann aber den Spaziergang vor 17:30 beenden – danach ist es dunkel."
   },
   {
    "id": "nah-und-ruhig",

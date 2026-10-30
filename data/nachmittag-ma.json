@@ -532,5 +532,163 @@
       "Google-Bewertung nicht eingetragen"
     ],
     "stand": "2026-10-29"
+  },
+  {
+    "slug": "nm-ma-planken-juweliere",
+    "titel": "Bummel über die Planken und zu den Juwelieren",
+    "region": "Mannheim",
+    "beschreibung": "Schlendern durch Mannheims Fußgängerzone Planken zwischen Paradeplatz und Wasserturm, unterwegs zwei bis drei Juweliere zum Schauen und Anprobieren. Alle liegen in den Quadraten wenige Gehminuten auseinander: Pletzsch direkt an den Planken (P2), Wenthe in O6, Franco Troncone in Q5 an der Fressgasse.",
+    "ablauf": [
+      "13:30 Parken (z. B. Parkhaus N1/N2), Kaffee in der Pâtisserie CØR in N3",
+      "14:30 Planken: Juwelier Pletzsch (P2, Planken 11, Sa 10–19 Uhr)",
+      "15:15 Juwelier Wenthe (O6 7, Sa 10–18 Uhr)",
+      "optional 16:00 Juwelier Franco Troncone (Q5 1, Sa 10–17 Uhr)",
+      "danach über die Fressgasse Richtung Jungbusch, zu Fuß ca. 15 Min. zum Atelier in G7"
+    ],
+    "dauer": "ca. 3–4 h",
+    "start_adresse": "Planken, 68161 Mannheim",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Planken%2C%2068161%20Mannheim",
+    "weitere_links": [
+      {
+        "text": "Juwelier Pletzsch",
+        "url": "https://www.pletzsch.de/"
+      },
+      {
+        "text": "Juwelier Wenthe",
+        "url": "https://www.juwelier-wenthe.de/"
+      },
+      {
+        "text": "Juwelier Franco Troncone",
+        "url": "https://www.troncone.de/"
+      },
+      {
+        "text": "Pletzsch in Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Juwelier%20Pletzsch%2C%20P2%2C%20Planken%2011%2C%2068161%20Mannheim"
+      },
+      {
+        "text": "Wenthe in Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Juwelier%20Wenthe%2C%20O6%207%2C%2068161%20Mannheim"
+      },
+      {
+        "text": "Troncone in Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Juwelier%20Franco%20Troncone%2C%20Q5%201%2C%2068161%20Mannheim"
+      }
+    ],
+    "oeffnung_31_10": "Samstag laut Google Maps: Pletzsch 10–19 Uhr (4,6★, 129), Wenthe 10–18 Uhr (4,7★, 229), Franco Troncone 10–17 Uhr (4,9★, 99). Pâtisserie CØR Sa 10–17 Uhr.",
+    "oeffnung_quelle": "Google Maps, abgefragt 30.10.2026",
+    "kosten": "Bummeln kostenlos; Parken nach Tarif des Parkhauses (nicht geprüft)",
+    "veranstaltung": null,
+    "cafe_vorschlag": null,
+    "bilder": [
+      {
+        "datei": "img/nm-ma-planken-juweliere-1.jpg",
+        "art": "aussen",
+        "beschreibung": "Die Planken, Mannheims Fußgängerzone",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim,_die_Stra%C3%9Fe_%22Planken%22.jpg"
+      },
+      {
+        "datei": "img/nm-ma-planken-juweliere-3.jpg",
+        "art": "aussen",
+        "beschreibung": "Paradeplatz am westlichen Ende der Planken",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim-Paradeplatz.jpg"
+      },
+      {
+        "datei": "img/nm-ma-planken-juweliere-2.jpg",
+        "art": "aussen",
+        "beschreibung": "Blick über die Planken zum Wasserturm",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Mannheim_Planken_Wasserturm.jpg"
+      }
+    ],
+    "quellen": [
+      "Google Maps (Öffnungszeiten und Bewertungen, 30.10.2026)",
+      "https://www.patisserie-coer.de/"
+    ],
+    "nicht_geprueft": [
+      "Öffnungszeiten nur aus Google Maps, nicht auf den Websites der Juweliere gegengeprüft",
+      "Keine Fotos aus den Juweliergeschäften (nur Straßenansichten)",
+      "Gehzeit Planken → G7 laut Google Maps ca. 15 Min. (1,1 km)"
+    ],
+    "stand": "2026-10-30"
+  },
+  {
+    "slug": "pf-haardt-pavillon",
+    "titel": "Weinberge und König-Ludwig-Pavillon an der Haardt",
+    "region": "Pfalz",
+    "beschreibung": "Kaffee und Bio-Eis in Weisenheim am Berg, dann an den Haardtrand nach Gimmeldingen: kurzer Weg zum König-Ludwig-Pavillon mit Blick über die Weinberge in die Rheinebene, anschließend durch die Reben Richtung Haardt. Von dort sind es mit dem Auto nur 4 Minuten zur Spinne.",
+    "ablauf": [
+      "13:30 Café Charme und Bio-Eis Manufaktur, Weisenheim am Berg (Sa 10–17 Uhr)",
+      "15:00 Fahrt nach Gimmeldingen (ca. 27 Min.), Parken am Ortsrand Neubergstraße",
+      "15:30–16:45 zum König-Ludwig-Pavillon und durch die Weinberge, Abendlicht über der Rheinebene",
+      "Sonnenuntergang 17:05 – danach wird es schnell dunkel",
+      "4 Min. Fahrt zur Spinne (Eichkehle 58, Haardt)"
+    ],
+    "dauer": "ca. 3,5 h inkl. Café",
+    "start_adresse": "König-Ludwig-Pavillon, Neubergstraße 20, 67435 Neustadt an der Weinstraße-Gimmeldingen",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=K%C3%B6nig-Ludwig-Pavillon%2C%20Neubergstra%C3%9Fe%2020%2C%2067435%20Neustadt%20an%20der%20Weinstra%C3%9Fe",
+    "weitere_links": [
+      {
+        "text": "Café Charme (charme-du-sud.de)",
+        "url": "https://www.charme-du-sud.de/"
+      },
+      {
+        "text": "Café Charme in Maps",
+        "url": "https://maps.app.goo.gl/RrciGF2cRUbS6TLY8"
+      },
+      {
+        "text": "Gimmeldingen",
+        "url": "https://www.gimmeldingen.de/"
+      },
+      {
+        "text": "Alternative: Theodor Pâtisserie Landau",
+        "url": "https://maps.app.goo.gl/JdPRWpfnSp35yNoe7"
+      }
+    ],
+    "oeffnung_31_10": "Pavillon frei zugänglich (Google: rund um die Uhr). Café Charme Sa 10–17 Uhr (Google Maps, 4,7★, 149 Bewertungen, 20–30 € p. P.).",
+    "oeffnung_quelle": "Google Maps, abgefragt 30.10.2026",
+    "kosten": "Spaziergang kostenlos; Café ca. 20–30 € p. P. (Google-Angabe)",
+    "veranstaltung": null,
+    "cafe_vorschlag": {
+      "name": "Café Charme und Bio-Eis Manufaktur",
+      "adresse": "Hauptstraße 45, 67273 Weisenheim am Berg",
+      "oeffnung_samstag": "10:00–17:00",
+      "hinweis": "Sa 10–17 Uhr, Telefon 06353 9324061. Gewählt statt Theodor Pâtisserie in Landau: ab Zuhause 28 statt 47 Min., bis zur Spinne gleich weit (je ca. 29 Min.). Theodor: 4,5★ (387), Sa 10–17:30.",
+      "quelle": "Google Maps, 30.10.2026"
+    },
+    "bilder": [
+      {
+        "datei": "img/nm-pf-haardt-pavillon-1.jpg",
+        "art": "aussen",
+        "beschreibung": "König-Ludwig-Pavillon über Gimmeldingen",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:K%C3%B6nig-Ludwig-Pavillon_-_panoramio_(1).jpg"
+      },
+      {
+        "datei": "img/nm-pf-haardt-pavillon-2.jpg",
+        "art": "aussen",
+        "beschreibung": "Weinberg bei Gimmeldingen im Herbst, dahinter das Weinbiet",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Gimmeldingen-weinberg-im-herbst-mit-weinbiet.jpg"
+      },
+      {
+        "datei": "img/nm-pf-haardt-pavillon-4.jpg",
+        "art": "cafe",
+        "beschreibung": "Terrasse des Café Charme in Weisenheim am Berg",
+        "quelle_url": "https://www.charme-du-sud.de/"
+      },
+      {
+        "datei": "img/nm-pf-haardt-pavillon-3.jpg",
+        "art": "cafe",
+        "beschreibung": "Café Charme am Abend, Hauptstraße 45",
+        "quelle_url": "https://www.charme-du-sud.de/"
+      }
+    ],
+    "quellen": [
+      "Google Maps (Öffnungszeiten, Bewertungen, Fahr- und Gehzeiten, 30.10.2026)",
+      "https://www.charme-du-sud.de/"
+    ],
+    "nicht_geprueft": [
+      "Parkmöglichkeit am Pavillon (Neubergstraße) nicht geprüft",
+      "Länge der Weinbergrunde nicht gemessen – nach Gefühl, Rückweg vor Einbruch der Dunkelheit",
+      "Café-Fotos von der Website des Cafés (Alter unbekannt)"
+    ],
+    "stand": "2026-10-30"
   }
 ]

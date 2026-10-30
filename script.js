@@ -585,7 +585,7 @@
   }
 
   // ---------- Nachmittag ----------
-  var REGIONEN = ["Mannheim", "Heidelberg", "Schwetzingen", "Weinheim", "Ludwigshafen"];
+  var REGIONEN = ["Mannheim", "Heidelberg", "Schwetzingen", "Weinheim", "Ludwigshafen", "Pfalz"];
 
   function cafeBlock(c, hinweisTitel) {
     if (!c) return "";

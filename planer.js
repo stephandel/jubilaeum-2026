@@ -78,7 +78,7 @@
       if (id === "wuerfel") { wuerfeln(); return; }
       var t = (JG.D.toptipps || []).filter(function (x) { return x.id === id; })[0];
       if (!t) return;
-      plan = { start: (t.ablauf[0] || "").slice(0, 5).match(/\d\d:\d\d/) ? t.ablauf[0].slice(0, 5) : "13:00", n: "n:" + t.n, c: H.cafeKey(t.c, K), r: "r:" + t.r, zeit: t.zeit, folge: t.folge };
+      plan = { start: t.start || ((t.ablauf[0] || "").slice(0, 5).match(/\d\d:\d\d/) ? t.ablauf[0].slice(0, 5) : "13:00"), n: "n:" + t.n, c: H.cafeKey(t.c, K), r: "r:" + t.r, zeit: t.zeit, folge: t.folge };
     }
 
     // ---------- Optionen ----------
