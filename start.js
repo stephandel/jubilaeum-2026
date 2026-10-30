@@ -118,6 +118,67 @@
     return bloecke.length ? { start: m(teile[0]), heim: m(teile[teile.length - 1]), bloecke: bloecke } : null;
   };
 
+  // Zeitplan wie im Planer berechnen (für gespeicherte Tage ohne Kurzform): gleiche Regeln, Fahrten per OSRM
+  function abstandKm(a, b) {
+    if (!a || !b) return Infinity;
+    var rad = Math.PI / 180, dLat = (b.lat - a.lat) * rad, dLon = (b.lon - a.lon) * rad;
+    var x = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    return 2 * 6371 * Math.asin(Math.sqrt(x));
+  }
+  function schlussZeit(oeffnung) {
+    var m = /(\d{1,2})(?::(\d{2}))?\s*[–-]\s*(\d{1,2})(?::(\d{2}))?/.exec(oeffnung || "");
+    if (!m) return null;
+    var h = Number(m[3]); if (h <= 4) h += 24;
+    return h * 60 + Number(m[4] || 0);
+  }
+  H.zeitplanRechnen = function (plan, K, KO) {
+    var cKey = H.cafeKey(plan.c, K), vKey = H.eventKey(plan.v, K);
+    var key = { n: plan.n, c: cKey, r: plan.r, v: vKey };
+    var f = (Array.isArray(plan.folge) ? plan.folge : String(plan.folge || "").split(",")).filter(function (a) { return "ncrv".indexOf(a) >= 0 && a; });
+    ["n", "c", "r", "v"].forEach(function (a) { if (f.indexOf(a) < 0) f.push(a); });
+    f = f.filter(function (a) { return key[a] && K[key[a]] && KO[key[a]]; });
+    if (!f.length || !KO.start) return Promise.resolve(null);
+    var st = ["start"].concat(f.map(function (a) { return key[a]; }), ["start"]);
+    var url = "https://router.project-osrm.org/route/v1/driving/" + st.map(function (k) { return KO[k].lon + "," + KO[k].lat; }).join(";") + "?overview=false";
+    return fetch(url).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (d) {
+      var legs = d && d.routes && d.routes[0] ? d.routes[0].legs : null;
+      var leg = function (i) { var l = legs && legs[i]; return l ? Math.round(l.duration / 60 * 1.15) : 25; };
+      var legZu = function (a) { return leg(f.indexOf(a)); };
+      var t = H.minuten(plan.start) || 13 * 60, t0 = t, bloecke = [];
+      var c = cKey && K[cKey] ? K[cKey] : null, schluss = c ? schlussZeit(c.oeffnung) : null;
+      var cafeNah = key.n && c && f.indexOf("c") === f.indexOf("n") + 1 && abstandKm(KO[key.n], KO[cKey]) <= 3;
+      var soll = key.r && K[key.r] ? H.minuten(plan.zeit) : null;
+      f.forEach(function (art, k) {
+        if (art === "c" && cafeNah) return;
+        t += legZu(art);
+        if (art === "n") {
+          var n = K[key.n].obj, m = /(\d+(?:,\d+)?)/.exec(n.dauer || ""), nStart = t, nEnde = t + (m ? Number(m[1].replace(",", ".")) : 3) * 60;
+          var ri = f.indexOf("r");
+          if (soll != null && ri > k) {
+            var rest = 15;
+            for (var j = k + 1; j <= ri; j++) {
+              rest += legZu(f[j]);
+              if (j < ri) rest += f[j] === "c" ? (cafeNah && j === k + 1 ? -legZu("c") : 60) : 90;
+            }
+            nEnde = Math.min(nEnde, soll - rest);
+          }
+          var zuN = schlussZeit(n.oeffnung_31_10);
+          if (zuN != null && zuN > nStart + 30 && nEnde > zuN) nEnde = zuN;
+          bloecke.push({ von: nStart, bis: nEnde, art: "n" });
+          if (cafeNah) {
+            var cafeAn = nStart + Math.min(90, Math.max(0, (nEnde - nStart - 60) / 2));
+            if (schluss != null && cafeAn + 60 > schluss) cafeAn = Math.max(nStart, schluss - 75);
+            bloecke.push({ von: cafeAn, bis: cafeAn + 60, art: "c" });
+          }
+          t = nEnde;
+        } else if (art === "c") { bloecke.push({ von: t, bis: t + 60, art: "c" }); t += 60; }
+        else if (art === "r") { t = soll != null ? Math.max(soll, t) : t; bloecke.push({ von: t, bis: t + 150, art: "r" }); t += 150; }
+        else if (art === "v") { var b = H.beginn(K[vKey].obj.uhrzeit); t = b != null ? Math.max(b, t) : t; bloecke.push({ von: t, bis: t + 120, art: "v" }); t += 120; }
+      });
+      return { start: t0, heim: t + leg(st.length - 2), bloecke: bloecke };
+    });
+  };
+
   function meteogramm(d, JG, tag) {
     var h = d.hourly, std = [];
     for (var i = 0; i < h.time.length; i++) {
@@ -407,11 +468,18 @@
     }
 
     // ---------- Wetter ----------
-    var wetterD = null;
+    var wetterD = null, gerechnet = { schluessel: null, tag: null };
     function tagFuerWetter() {
-      if (!plan) return null;
-      var tag = H.zeitplanLesen(plan.zp), tisch = H.minuten(plan.zeit);
-      if (!tag && plan.r && tisch != null) tag = { start: null, heim: null, bloecke: [{ von: tisch, bis: tisch + 150, art: "r" }] };
+      if (!plan || !(plan.n || plan.c || plan.r)) return null;
+      var tag = H.zeitplanLesen(plan.zp);
+      if (!tag) {
+        var s = JSON.stringify([plan.n, plan.c, plan.r, plan.v, plan.zeit, plan.start, plan.folge]);
+        if (gerechnet.schluessel !== s) {
+          gerechnet = { schluessel: s, tag: null };
+          H.zeitplanRechnen(plan, K, JG.D.koordinaten || {}).then(function (z) { if (gerechnet.schluessel === s) { gerechnet.tag = z; wetterMalen(); } });
+        }
+        tag = gerechnet.tag;
+      }
       if (!tag) return null;
       var namen = { n: K[plan.n], c: K[H.cafeKey(plan.c, K)], r: K[plan.r], v: K[H.eventKey(plan.v, K)] };
       tag.bloecke.forEach(function (b) { b.name = namen[b.art] ? namen[b.art].name : ""; });
