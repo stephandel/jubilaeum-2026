@@ -38,13 +38,13 @@
   },
   {
     "id": "barockgarten-grandhotel",
-    "titel": "Barockgarten & Grandhotel",
-    "stimmung": "festlich · klassisch",
-    "kurz": "Herbstspaziergang im Schwetzinger Schlossgarten, Mousse-Törtchen bei Mousse Mousse, abends die Kurfürstenstube im Europäischen Hof.",
+    "titel": "Barockgarten & Gourmetabend",
+    "stimmung": "festlich · genussvoll",
+    "kurz": "Herbstspaziergang im Schwetzinger Schlossgarten, Mousse-Törtchen bei Mousse Mousse, abends Der Philosoph in Heidelberg-Neuenheim.",
     "n": "nm-schwetzingen-schlossgarten",
     "c": "c:mousse-mousse",
-    "r": "kurfuerstenstube",
-    "zeit": "18:30",
+    "r": "der-philosoph",
+    "zeit": "18:15",
     "start": "12:30",
     "folge": [
       "n",
@@ -55,10 +55,10 @@
       "13:00 Schlossgarten Schwetzingen: Parterre, Gartenmoschee (bis 16 Uhr), englischer Garten",
       "15:30 Fahrt nach Heidelberg-Rohrbach (ca. 16 Min.)",
       "16:00 Mousse Mousse – Entremets und Törtchen (Sa bis 18 Uhr)",
-      "18:00 weiter zum Europäischen Hof (ca. 9 Min.)",
-      "18:30 Kurfürstenstube – Menü oder à la carte"
+      "17:45 weiter nach Neuenheim (ca. 9 Min.), Parkhaus P16",
+      "18:15 Der Philosoph – Menü oder à la carte"
     ],
-    "warum": "Barockgarten im Herbstlicht, dazu die feinsten Törtchen der Liste (Mousse Mousse, 5,0★) und ein festlicher Abend im Grandhotel. Die Kurfürstenstube hatte für Samstag 18:30–19:45 Uhr frei (OpenTable, Stand 29.10.). Das Ziegler hat abgesagt."
+    "warum": "Barockgarten im Herbstlicht, dazu die feinsten Törtchen der Liste (Mousse Mousse, 5,0★) und abends Gourmetküche mit Michelin-Empfehlung (Google 4,8★). Der Philosoph hatte für Samstag 18:15–19:30 Uhr frei (OpenTable, Stand 29.10.). Genau diese Kombination steht schon in eurem „Unser Tag“. Das Ziegler hat abgesagt."
   },
   {
     "id": "mannheim-planken-atelier",
