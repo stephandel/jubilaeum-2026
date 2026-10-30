@@ -5,13 +5,16 @@ Lokal: `index.html` per Doppelklick öffnen (Likes dann nur auf diesem Gerät).
 
 ## Aufbau
 - `index.html` Startseite (start.js) · `nachmittag.html` · `cafes.html` · `restaurants.html` · `planer.html` (planer.js, Leaflet, OSRM-Routen)
-- `data/koordinaten.json` (OpenStreetMap Nominatim, für Karte, Luftbild und Routen), `data/toptipps.json` (drei Tagesideen)
+- `data/koordinaten.json` (OpenStreetMap Nominatim, für Karte, Luftbild und Routen), `data/toptipps.json` (sechs Tagesideen; optional `start` = Abfahrtszeit für den Planer, `folge` = Reihenfolge)
 - `wetter/` = Meteogramm-Baustein aus dem Fuerte-Projekt („Wetter Tool“), auf der Startseite ausklappbar
 - Gemeinsam über den Worker: Likes (Art `jub`), „Unser Tag“ (Art `jub`, slug `tag|feld|wert`), Kommentare (Notizen `jub|…`)
+- „Unser Tag“ speichert seit 30.10. zusätzlich `zp` = Zeitplan-Kurzform aus dem Planer (`1300;1327-1427c;1456-1640n;1700-1930r;2009`, höchstens 70 Zeichen). Fehlt sie, rechnet die Startseite den Zeitplan selbst (`JGH.zeitplanRechnen`, gleiche Regeln wie `planer.js`) und zeichnet ihn ins Wetterdiagramm.
+- Restaurants mit `michelin: {auszeichnung: stern1|bib|teller, url}` bekommen ein Abzeichen (selbst gezeichnet, `michelinHtml` in script.js). Auszeichnung auf guide.michelin.com im Browser ablesen: `dataLayer`-Feld `distinction`.
+- Ist der Worker nicht erreichbar, zeigt die Seite oben einen gelben Hinweis (`verbindungHinweis`), statt still nur die Likes des Geräts zu zeigen.
 - `data/*.json` → `python3 build-data.py` → `data.js` (Daten für die Seiten; nie `data.js` von Hand ändern)
 - `likestore.js` entscheidet am Ort der Seite: auf `stephandel.github.io` gemeinsamer Stand über den
   Cloudflare-Worker `fuerte-sync` (Art `jub`, Quelltext im Fuerte-Repo unter `worker/`), sonst localStorage.
-- `likestore-online.js` ist nur für die claude.ai-Artefakt-Fassung (Artefakt-Datenbank).
+- `likestore-online.js` ist nur für die alte claude.ai-Artefakt-Fassung (https://claude.ai/artifact/NYQ6hy697MfdBb33hrDXKP). Diese trägt seit 30.10. oben einen Hinweis auf die neue Adresse; nicht mehr pflegen.
 - `QA-Bericht.md` Prüfprotokoll, Abweichungen, offene Punkte.
 
 ## Veröffentlichen (nach Änderungen)

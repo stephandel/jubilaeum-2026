@@ -147,7 +147,7 @@
 
   // Guide-Michelin-Abzeichen (selbst gezeichnet im Stil der Symbole): Stern, Bib Gourmand, Teller (= empfohlen)
   var MICHELIN = {
-    stern1: { text: "1 Michelin-Stern", kurz: "1 Stern",
+    stern1: { text: "1 Stern", kurz: "1 Stern",
       svg: '<g fill="currentColor">' + [0, 60, 120, 180, 240, 300].map(function (w) { return '<ellipse cx="12" cy="6.2" rx="3.6" ry="5.4" transform="rotate(' + w + ' 12 12)"/>'; }).join("") + '</g><circle cx="12" cy="12" r="2.6" fill="#fff"/>' },
     bib: { text: "Bib Gourmand", kurz: "Bib Gourmand",
       svg: '<circle cx="12" cy="12" r="10.5" fill="currentColor"/><circle cx="8.6" cy="9.6" r="1.6" fill="#fff"/><circle cx="15.4" cy="9.6" r="1.6" fill="#fff"/><path d="M7 14c1.4 2.4 3 3.4 5 3.4s3.6-1 5-3.4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><path d="M14.2 16.6c.4 1.4 1.5 1.8 2.2 1.1" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>' },

@@ -219,6 +219,7 @@
       });
       tag.bloecke.forEach(function (b) {
         var x1 = XM(b.von), x2 = XM(b.bis), breit = x2 - x1;
+        if (breit < 2) return;
         svg += '<rect x="' + x1.toFixed(1) + '" y="' + O + '" width="' + breit.toFixed(1) + '" height="' + (yBoden - O) + '" class="mgk-tag-schatten mgk-tag-' + b.art + '"/>';
         svg += '<rect x="' + x1.toFixed(1) + '" y="' + BAHN + '" width="' + breit.toFixed(1) + '" height="24" rx="8" class="mgk-tag mgk-tag-' + b.art + '"><title>' + JG.esc((b.name || "") + " · " + H.uhr(b.von) + "–" + H.uhr(b.bis)) + "</title></rect>";
         svg += '<text x="' + (x1 + 6).toFixed(1) + '" y="' + (BAHN + 16) + '" class="mgk-tag-text">' + ICON[b.art] + (breit > 62 ? " " + H.uhr(b.von) : "") + "</text>";
@@ -521,6 +522,7 @@
       if (!tag) return "";
       var ICON = { n: "🍂", c: "☕", r: "🍽️", v: "✨" };
       return tag.bloecke.slice().sort(function (a, b) { return a.von - b.von; }).map(function (b) {
+        if (b.bis <= b.von) return "";
         return '<span class="mgk-leg-punkt"><span aria-hidden="true">' + ICON[b.art] + "</span> " + H.uhr(b.von) + " " + esc(b.name || "") + "</span>";
       }).join("");
     }

@@ -2950,7 +2950,7 @@ window.GUIDE_DATA = {
    "adresse": "Sachsenstraße 39, 69469 Weinheim-Hohensachsen",
    "ort": "Weinheim-Hohensachsen",
    "telefon": "+49 6201 52645",
-   "email": null,
+   "email": "restaurantziegler@gmail.com",
    "website": "https://www.restaurant-ziegler.de/",
    "speisekarte_url": "https://www.restaurant-ziegler.de/kopie-von-hauptspeisen",
    "maps_url": "https://www.google.com/maps/search/?api=1&query=Restaurant+Ziegler+Sachsenstra%C3%9Fe+39%2C+69469+Weinheim",
@@ -3139,6 +3139,7 @@ window.GUIDE_DATA = {
    "quellen": [
     "https://www.restaurant-ziegler.de/",
     "https://www.restaurant-ziegler.de/schreiben-sie-uns",
+    "https://www.restaurant-ziegler.de/impressum",
     "https://www.restaurant-ziegler.de/kopie-von-fisch-vegetarisch",
     "https://www.restaurant-ziegler.de/fisch-vegetarisch",
     "https://www.restaurant-ziegler.de/kopie-von-hauptspeisen",
@@ -3156,7 +3157,7 @@ window.GUIDE_DATA = {
     "Google-Bewertung (Vorrecherche-Wert übernommen)",
     "Zahlungsarten: laut Michelin Kreditkarten akzeptiert, Website ohne Angabe"
    ],
-   "stand": "2026-10-29",
+   "stand": "2026-10-30",
    "michelin": {
     "auszeichnung": "bib",
     "url": "https://guide.michelin.com/de/de/baden-wurttemberg/weinheim/restaurant/ziegler",
@@ -6600,7 +6601,7 @@ window.GUIDE_DATA = {
     "ca. 17:05 Sonnenuntergang über Altstadt und Schloss",
     "18:30 Der Philosoph – Menü oder à la carte"
    ],
-   "warum": "Alles liegt in Neuenheim, ihr parkt nur einmal (P16, abends höchstens 2 €). Der Juwelier liegt am Neuenheimer Brückenkopf, wenige Schritte von der Pâtisserie (Google 4,4★, Sa 10–14 Uhr). Der Philosoph hatte für Samstag freie Tische zwischen 18:15 und 19:30 Uhr."
+   "warum": "Alles liegt in Neuenheim, ihr parkt nur einmal (P16, abends höchstens 2 €). Der Juwelier liegt am Neuenheimer Brückenkopf, wenige Schritte von der Pâtisserie (Juwelier: Google 4,4★, Sa 10–14 Uhr, Tel. 06221 6527222). Der Philosoph hatte für Samstag freie Tische zwischen 18:15 und 19:30 Uhr."
   },
   {
    "id": "schloss-und-omakase",
@@ -6617,7 +6618,8 @@ window.GUIDE_DATA = {
     "16:00 Kaffee und Kuchen in der Bergstube",
     "19:00 Mary Jane – Regular Omakase (Vorkasse)"
    ],
-   "warum": "Ein Tag mit vielen Aussichten und einem Abend, der überrascht. Bei Mary Jane waren für Samstag noch Plätze frei; Menü 129 € pro Person, Getränke extra."
+   "warum": "Ein Tag mit vielen Aussichten und einem Abend, der überrascht. Bei Mary Jane waren für Samstag noch Plätze frei; Menü 129 € pro Person, Getränke extra.",
+   "start": "12:00"
   },
   {
    "id": "barockgarten-grandhotel",
@@ -6705,7 +6707,8 @@ window.GUIDE_DATA = {
     "Zuhause kurz frisch machen",
     "18:30 Grenzhof, Gutsstube"
    ],
-   "warum": "Nur wenige Minuten bis zum Wald, am Grenzhof wird kostenlos direkt am Haus geparkt. Für Samstag waren dort 18:00, 18:30 und 19:30 Uhr frei."
+   "warum": "Nur wenige Minuten bis zum Wald, am Grenzhof wird kostenlos direkt am Haus geparkt. Für Samstag waren dort 18:00, 18:30 und 19:30 Uhr frei.",
+   "start": "13:20"
   }
  ]
 };

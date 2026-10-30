@@ -257,7 +257,7 @@
       var heim = leg(st.length - 2); zeilen.push(fahrZeile(heim)); t += heim.min;
       zeilen.push(z(t, "🏠", "Wieder zuhause (ungefähr)"));
       // Kurzform für die Startseite (Wetterdiagramm): "1300;1327-1427c;…;2009"
-      var hm = function (m) { return H.uhr(m).replace(":", ""); };
+      var hm = function (m) { m = Math.round(m); var h = Math.floor(m / 60), mi = m % 60; return (h < 10 ? "0" : "") + h + (mi < 10 ? "0" : "") + mi; }; // nicht über Mitternacht zurückspringen
       zeitplanKurz = [hm(t0)].concat(bloecke.map(function (b) { return hm(b[0]) + "-" + hm(b[1]) + b[2]; }), [hm(t)]).join(";");
       if (fahrMin != null && fahrMin > 120) warn.push(["info", "🚗 Insgesamt rund " + Math.round(fahrMin) + " Minuten im Auto – vielleicht Orte näher zusammenlegen."]);
 

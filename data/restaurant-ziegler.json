@@ -4,7 +4,7 @@
   "adresse": "Sachsenstraße 39, 69469 Weinheim-Hohensachsen",
   "ort": "Weinheim-Hohensachsen",
   "telefon": "+49 6201 52645",
-  "email": null,
+  "email": "restaurantziegler@gmail.com",
   "website": "https://www.restaurant-ziegler.de/",
   "speisekarte_url": "https://www.restaurant-ziegler.de/kopie-von-hauptspeisen",
   "maps_url": "https://www.google.com/maps/search/?api=1&query=Restaurant+Ziegler+Sachsenstra%C3%9Fe+39%2C+69469+Weinheim",
@@ -188,6 +188,7 @@
   "quellen": [
     "https://www.restaurant-ziegler.de/",
     "https://www.restaurant-ziegler.de/schreiben-sie-uns",
+    "https://www.restaurant-ziegler.de/impressum",
     "https://www.restaurant-ziegler.de/kopie-von-fisch-vegetarisch",
     "https://www.restaurant-ziegler.de/fisch-vegetarisch",
     "https://www.restaurant-ziegler.de/kopie-von-hauptspeisen",
@@ -205,7 +206,7 @@
     "Google-Bewertung (Vorrecherche-Wert übernommen)",
     "Zahlungsarten: laut Michelin Kreditkarten akzeptiert, Website ohne Angabe"
   ],
-  "stand": "2026-10-29",
+  "stand": "2026-10-30",
   "michelin": {
     "auszeichnung": "bib",
     "url": "https://guide.michelin.com/de/de/baden-wurttemberg/weinheim/restaurant/ziegler",
