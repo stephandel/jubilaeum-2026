@@ -801,3 +801,4 @@ a.michelin:hover { background: color-mix(in srgb, #C8102E 18%, transparent); }
 .michelin svg { flex: none; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .michelin { color: #FF5A6E; } }
 :root[data-theme="dark"] .michelin { color: #FF5A6E; }
+.verbindung-hinweis { margin: var(--s3) auto 0; max-width: 860px; }

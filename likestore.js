@@ -178,8 +178,9 @@ window.LikeStore = (function () {
       return standHolen().then(function (d) {
         var obj = ausWorker(d.jub);
         lokalSpeichern(obj);
+        window.LikeStore.fehler = false;
         return obj;
-      }).catch(function () { return lokalLaden(); });
+      }).catch(function () { window.LikeStore.fehler = true; return lokalLaden(); });
     },
     // person: "S" oder "B" – nur deren Stimmen werden ersetzt, die der anderen Person bleiben,
     // wie sie gerade auf dem Server liegen (so überschreiben sich zwei Geräte nicht gegenseitig)

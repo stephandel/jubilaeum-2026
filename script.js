@@ -1106,6 +1106,18 @@
     var r = ev.reason; toast("Fehler: " + ((r && r.message) || r || "unbekannt"));
   });
 
+  // Gemeinsamer Speicher nicht erreichbar → deutlich sagen, statt still nur die Likes dieses Geräts zu zeigen
+  function verbindungHinweis() {
+    var alt = document.getElementById("verbindung-hinweis");
+    if (!window.LikeStore.online || !window.LikeStore.fehler) { if (alt) alt.remove(); return; }
+    if (alt) return;
+    var p = document.createElement("p");
+    p.id = "verbindung-hinweis"; p.className = "warn-zeile verbindung-hinweis"; p.setAttribute("role", "status");
+    p.textContent = "⚠️ Die gemeinsamen Likes sind gerade nicht erreichbar – du siehst nur die Stimmen auf diesem Gerät. Bitte Internet prüfen und die Seite neu laden.";
+    var main = document.querySelector("main") || document.body;
+    main.insertBefore(p, main.firstChild);
+  }
+
   // Likes asynchron laden (LikeStore kann später online sein)
   document.body.classList.add("likes-laden");
   Promise.resolve()
@@ -1122,6 +1134,7 @@
     .then(function () {
       document.body.classList.remove("likes-laden");
       likesAktualisieren();
+      verbindungHinweis();
       var kommLaden = function () {
         if (!window.KommentarStore) return;
         window.KommentarStore.load().then(function (obj) {
@@ -1135,6 +1148,7 @@
         var nachsehen = function () {
           if (document.hidden || Date.now() - likesGeaendert < 8000) return;
           window.LikeStore.load().then(function (obj) {
+            verbindungHinweis();
             if (!obj || typeof obj !== "object" || Date.now() - likesGeaendert < 8000) return;
             if (JSON.stringify(obj) !== JSON.stringify(likes)) {
               likes = obj; likesAktualisieren();
