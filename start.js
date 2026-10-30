@@ -492,24 +492,29 @@
         return '<span class="mgk-leg-punkt"><span aria-hidden="true">' + ICON[b.art] + "</span> " + H.uhr(b.von) + " " + esc(b.name || "") + "</span>";
       }).join("");
     }
+    // Diagramm rechtsbündig: der Abend ist sichtbar, der Morgen liegt links (wischen). Eigenes Wischen bleibt beim Neuzeichnen erhalten.
+    function vonRechts() { var w = document.getElementById("mgk-wrap"); return w ? w.scrollWidth - w.clientWidth - w.scrollLeft : 0; }
+    function rechtsAnschlagen(abstand) { var w = document.getElementById("mgk-wrap"); if (w) w.scrollLeft = w.scrollWidth - w.clientWidth - (abstand || 0); }
     function wetterMalen() {
       var w = document.getElementById("mgk-wrap"), l = document.getElementById("mgk-legende");
       if (!wetterD || !w) return;
-      var tag = tagFuerWetter();
+      var tag = tagFuerWetter(), abstand = vonRechts();
       w.innerHTML = meteogramm(wetterD, JG, tag);
+      rechtsAnschlagen(abstand);
       if (l) l.innerHTML = tagLegende(tag);
     }
     function wetterZeichnen() {
       var el = document.getElementById("wetter");
       wetterLaden().then(function (d) {
         wetterD = d;
-        var z = wetterZusammenfassung(d);
+        var z = wetterZusammenfassung(d), abstand = vonRechts();
         var jetzt = new Date().toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
         el.innerHTML = '<p class="wetter-zeile"><b>' + esc(z.zeile) + '</b></p><p class="wetter-sonne">' + esc(z.sonne) + "</p>" +
           '<div class="mgk-wrap" id="mgk-wrap">' + meteogramm(d, JG, tagFuerWetter()) + "</div>" +
           '<p class="mgk-legende" id="mgk-legende">' + tagLegende(tagFuerWetter()) + "</p>" +
           '<ul class="wetter-tipps">' + z.tipps.map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul>" +
           '<p class="fussnote">Vorhersage für die Region Mannheim/Heidelberg · Open-Meteo · aktualisiert ' + jetzt + " Uhr, lädt alle 30 Minuten neu. Linie = Temperatur, gestrichelt = gefühlt, Balken = Regenwahrscheinlichkeit. Oben farbig: euer gespeicherter Tag aus dem Planer (Schätzung), 🚗 = unterwegs.</p>";
+        rechtsAnschlagen(abstand);
       }).catch(function () {
         el.innerHTML = '<p class="hinweis">Wetter konnte gerade nicht geladen werden. <a href="https://www.wetteronline.de/wetter/mannheim" rel="noopener" target="_blank">Wetter Mannheim ↗</a></p>';
       });
