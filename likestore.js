@@ -58,7 +58,7 @@ window.LikeStore = (function () {
   // Form: { n: "<nachmittag-slug>", c: "<café-schlüssel>", r: "<restaurant-slug>", zeit: "19:00", v: "<event-schlüssel>", fest: true, von: "S"|"B", at }
   // Online als Worker-Einträge "tag|<feld>|<wert>" in der Art "jub", sonst localStorage.
   var TKEY = "jg-tag-v1";
-  var TFELDER = ["n", "c", "r", "zeit", "v", "fest", "erledigt", "start", "folge"];
+  var TFELDER = ["n", "c", "r", "zeit", "v", "fest", "erledigt", "start", "folge", "zp"];
   function tagAusWorker(jub) {
     var plan = {}, at = 0, von = null;
     Object.keys(jub || {}).forEach(function (slug) {

@@ -775,3 +775,21 @@ body.sheet-offen { overflow: hidden; }
   .inhalt, .fuss { padding-bottom: calc(80px + var(--safe-bottom)); }
   .toast { bottom: calc(76px + max(8px, calc(var(--safe-bottom) - 14px))); }
 }
+
+/* Startseite: Wetterdiagramm mit „Ihr“-Zeile aus dem Planer */
+.mgk-ihr { font-weight: 700; fill: var(--label); }
+.mgk-fahrt { stroke: var(--label-3); stroke-width: 2; stroke-dasharray: 3 4; stroke-linecap: round; }
+.mgk-auto { font-size: 12px; }
+.mgk-tag { stroke-width: 1; }
+.mgk-tag-text { font-size: 12px; font-weight: 700; fill: var(--label); dominant-baseline: auto; pointer-events: none; }
+.mgk-tag.mgk-tag-n { fill: color-mix(in srgb, var(--gruen) 32%, transparent); stroke: var(--gruen); }
+.mgk-tag.mgk-tag-c { fill: color-mix(in srgb, var(--orange) 32%, transparent); stroke: var(--orange); }
+.mgk-tag.mgk-tag-r { fill: color-mix(in srgb, var(--gelb) 38%, transparent); stroke: var(--gelb); }
+.mgk-tag.mgk-tag-v { fill: color-mix(in srgb, var(--indigo) 32%, transparent); stroke: var(--indigo); }
+.mgk-tag-schatten.mgk-tag-n { fill: color-mix(in srgb, var(--gruen) 9%, transparent); }
+.mgk-tag-schatten.mgk-tag-c { fill: color-mix(in srgb, var(--orange) 9%, transparent); }
+.mgk-tag-schatten.mgk-tag-r { fill: color-mix(in srgb, var(--gelb) 11%, transparent); }
+.mgk-tag-schatten.mgk-tag-v { fill: color-mix(in srgb, var(--indigo) 9%, transparent); }
+.mgk-legende { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 var(--s2); font-size: var(--fs-footnote); color: var(--label-2); }
+.mgk-legende:empty { display: none; }
+.mgk-leg-punkt { white-space: nowrap; }

@@ -107,14 +107,25 @@
     });
   }
 
-  function meteogramm(d, JG) {
+  // Zeitplan-Kurzform aus dem Planer ("1300;1327-1427c;1456-1640n;1700-1930r;2009") lesen
+  H.zeitplanLesen = function (zp) {
+    var teile = String(zp || "").split(";"), m = function (s) { return /^\d{4}$/.test(s) ? Number(s.slice(0, 2)) * 60 + Number(s.slice(2)) : null; };
+    if (teile.length < 3) return null;
+    var bloecke = teile.slice(1, -1).map(function (b) {
+      var x = /^(\d{4})-(\d{4})([ncrv])$/.exec(b);
+      return x ? { von: m(x[1]), bis: m(x[2]), art: x[3] } : null;
+    }).filter(Boolean);
+    return bloecke.length ? { start: m(teile[0]), heim: m(teile[teile.length - 1]), bloecke: bloecke } : null;
+  };
+
+  function meteogramm(d, JG, tag) {
     var h = d.hourly, std = [];
     for (var i = 0; i < h.time.length; i++) {
       var stunde = Number(h.time[i].slice(11, 13));
       if (stunde >= 9 && stunde <= 23) std.push({ s: stunde, t: h.temperature_2m[i], g: h.apparent_temperature[i], p: h.precipitation_probability[i], mm: h.precipitation[i], c: h.weather_code[i], w: h.wind_speed_10m[i] });
     }
     if (!std.length) return '<p class="hinweis">Für den 31.10. liegen noch keine Stundenwerte vor.</p>';
-    var W = 680, Hh = 196, L = 58, R = 26, O = 36, U = 54;
+    var W = 680, Hh = 300, L = 58, R = 26, O = 76, U = 54, BAHN = 38;
     var tMin = Math.floor(Math.min.apply(null, std.map(function (x) { return Math.min(x.t, x.g); })) - 1);
     var tMax = Math.ceil(Math.max.apply(null, std.map(function (x) { return x.t; })) + 1);
     if (tMax - tMin < 6) tMax = tMin + 6;
@@ -131,6 +142,29 @@
       svg += '<rect x="' + xs.toFixed(1) + '" y="' + O + '" width="' + (W - R - xs).toFixed(1) + '" height="' + (yBoden - O) + '" class="mgk-nacht"/>';
       svg += '<text x="' + (xs + 4).toFixed(1) + '" y="' + (yBoden - 6) + '" class="mgk-klein">🌇 ' + sunset + "</text>";
     }
+    // Wann wir wo sind (aus dem Planer)
+    var XM = function (min) { return Math.max(L - bx / 2, Math.min(W - R, L + (min / 60 - std[0].s) * bx)); };
+    var ICON = { n: "🍂", c: "☕", r: "🍽️", v: "✨" };
+    svg += '<text x="2" y="' + (BAHN + 17) + '" class="mgk-klein mgk-ihr">Ihr</text>';
+    if (tag && tag.bloecke.length) {
+      // Lücken zwischen den Stationen = unterwegs (Fahrt, ggf. Warten)
+      var sortiert = tag.bloecke.slice().sort(function (a, b) { return a.von - b.von; }), lauf = tag.start, strecken = [];
+      sortiert.forEach(function (b) { if (lauf != null && b.von - lauf >= 3) strecken.push([lauf, b.von]); lauf = lauf == null ? b.bis : Math.max(lauf, b.bis); });
+      if (tag.heim != null && tag.heim - lauf >= 3) strecken.push([lauf, tag.heim]);
+      strecken.forEach(function (st) {
+        var x1 = XM(st[0]), x2 = XM(st[1]);
+        svg += '<line x1="' + x1.toFixed(1) + '" x2="' + x2.toFixed(1) + '" y1="' + (BAHN + 12) + '" y2="' + (BAHN + 12) + '" class="mgk-fahrt"><title>unterwegs ' + H.uhr(st[0]) + "–" + H.uhr(st[1]) + "</title></line>";
+        if (x2 - x1 > 22) svg += '<text x="' + ((x1 + x2) / 2).toFixed(1) + '" y="' + (BAHN + 17) + '" class="mgk-symbol mgk-auto">🚗</text>';
+      });
+      tag.bloecke.forEach(function (b) {
+        var x1 = XM(b.von), x2 = XM(b.bis), breit = x2 - x1;
+        svg += '<rect x="' + x1.toFixed(1) + '" y="' + O + '" width="' + breit.toFixed(1) + '" height="' + (yBoden - O) + '" class="mgk-tag-schatten mgk-tag-' + b.art + '"/>';
+        svg += '<rect x="' + x1.toFixed(1) + '" y="' + BAHN + '" width="' + breit.toFixed(1) + '" height="24" rx="8" class="mgk-tag mgk-tag-' + b.art + '"><title>' + JG.esc((b.name || "") + " · " + H.uhr(b.von) + "–" + H.uhr(b.bis)) + "</title></rect>";
+        svg += '<text x="' + (x1 + 6).toFixed(1) + '" y="' + (BAHN + 16) + '" class="mgk-tag-text">' + ICON[b.art] + (breit > 62 ? " " + H.uhr(b.von) : "") + "</text>";
+      });
+    } else {
+      svg += '<text x="' + L + '" y="' + (BAHN + 16) + '" class="mgk-klein">Speichert euren Tag im Planer – dann steht hier, wann ihr wo seid.</text>';
+    }
     // Regenbalken (Wahrscheinlichkeit)
     std.forEach(function (x, i) {
       var hh = (yBoden - O) * (x.p || 0) / 100;
@@ -144,7 +178,7 @@
       if (i % 2) return;
       svg += '<circle cx="' + X(i).toFixed(1) + '" cy="' + Y(x.t).toFixed(1) + '" r="3" class="mgk-punkt"/>';
       svg += '<text x="' + X(i).toFixed(1) + '" y="' + (Y(x.t) - 8).toFixed(1) + '" class="mgk-wert">' + Math.round(x.t) + "°</text>";
-      svg += '<text x="' + X(i).toFixed(1) + '" y="' + (O - 12) + '" class="mgk-symbol">' + wmo(x.c)[0] + "</text>";
+      svg += '<text x="' + X(i).toFixed(1) + '" y="22" class="mgk-symbol">' + wmo(x.c)[0] + "</text>";
       svg += '<text x="' + X(i).toFixed(1) + '" y="' + (Hh - U + 16) + '" class="mgk-achse">' + x.s + "</text>";
       svg += '<text x="' + X(i).toFixed(1) + '" y="' + (Hh - U + 32) + '" class="mgk-klein mgk-mitte">' + (x.p || 0) + " %</text>";
       svg += '<text x="' + X(i).toFixed(1) + '" y="' + (Hh - U + 46) + '" class="mgk-klein mgk-mitte">' + Math.round(x.w) + " km/h</text>";
@@ -194,7 +228,7 @@
       '<section class="block" aria-labelledby="h-tag"><h2 id="h-tag">Unser Tag</h2><div id="unser-tag"></div></section>' +
       '<section class="block" aria-labelledby="h-wetter"><h2 id="h-wetter">Wetter am Samstag</h2><div class="wetter glas-leicht"><div id="wetter"><p class="hinweis">Wetter wird geladen …</p></div>' +
       '<details class="mehr mg-ausfuehrlich" id="mg-auf"><summary>Ausführliches Wetter (Meteogramm wie auf der Fuerte-Seite)</summary><div id="meteogramm-jg"></div></details></div></section>' +
-      '<section class="block" aria-labelledby="h-tipps"><h2 id="h-tipps">Vier Ideen für den Tag</h2><p class="unterzeile">Meine Lieblingskombinationen aus allen geprüften Angaben – mit einem Tipp direkt in den Planer.</p><div class="karten tipps" id="tipps"></div></section>' +
+      '<section class="block" aria-labelledby="h-tipps"><h2 id="h-tipps">Ideen für den Tag</h2><p class="unterzeile">Meine Lieblingskombinationen aus allen geprüften Angaben – mit einem Tipp direkt in den Planer.</p><div class="karten tipps" id="tipps"></div></section>' +
       '<section class="block" aria-labelledby="h-fav"><h2 id="h-fav">Eure Favoriten</h2><div id="favoriten"></div></section>' +
       '<section class="block" aria-labelledby="h-wege"><h2 id="h-wege">Alles ansehen</h2><div class="kacheln-wege">' +
       kachel("restaurants.html", "🍽️", "Restaurants", (JG.D.restaurants || []).length + " Häuser, freie Tische am Samstag") +
@@ -238,9 +272,10 @@
 
     // ---------- Unser Tag ----------
     function tagZeichnen() {
+      wetterMalen();
       var el = document.getElementById("unser-tag");
       if (!plan || !(plan.n || plan.c || plan.r)) {
-        el.innerHTML = '<div class="tag-leer glas-leicht"><p><b>Noch nicht geplant.</b> Stellt euch den Tag im Planer zusammen oder übernehmt eine der vier Ideen unten. Sobald ihr speichert, steht euer Tag hier – für euch beide.</p>' +
+        el.innerHTML = '<div class="tag-leer glas-leicht"><p><b>Noch nicht geplant.</b> Stellt euch den Tag im Planer zusammen oder übernehmt eine der Ideen unten. Sobald ihr speichert, steht euer Tag hier – für euch beide.</p>' +
           '<p><a class="knopf-primaer" href="planer.html">Tag zusammenstellen</a></p></div>';
         return;
       }
@@ -372,15 +407,41 @@
     }
 
     // ---------- Wetter ----------
+    var wetterD = null;
+    function tagFuerWetter() {
+      if (!plan) return null;
+      var tag = H.zeitplanLesen(plan.zp), tisch = H.minuten(plan.zeit);
+      if (!tag && plan.r && tisch != null) tag = { start: null, heim: null, bloecke: [{ von: tisch, bis: tisch + 150, art: "r" }] };
+      if (!tag) return null;
+      var namen = { n: K[plan.n], c: K[H.cafeKey(plan.c, K)], r: K[plan.r], v: K[H.eventKey(plan.v, K)] };
+      tag.bloecke.forEach(function (b) { b.name = namen[b.art] ? namen[b.art].name : ""; });
+      return tag;
+    }
+    function tagLegende(tag) {
+      if (!tag) return "";
+      var ICON = { n: "🍂", c: "☕", r: "🍽️", v: "✨" };
+      return tag.bloecke.slice().sort(function (a, b) { return a.von - b.von; }).map(function (b) {
+        return '<span class="mgk-leg-punkt"><span aria-hidden="true">' + ICON[b.art] + "</span> " + H.uhr(b.von) + " " + esc(b.name || "") + "</span>";
+      }).join("");
+    }
+    function wetterMalen() {
+      var w = document.getElementById("mgk-wrap"), l = document.getElementById("mgk-legende");
+      if (!wetterD || !w) return;
+      var tag = tagFuerWetter();
+      w.innerHTML = meteogramm(wetterD, JG, tag);
+      if (l) l.innerHTML = tagLegende(tag);
+    }
     function wetterZeichnen() {
       var el = document.getElementById("wetter");
       wetterLaden().then(function (d) {
+        wetterD = d;
         var z = wetterZusammenfassung(d);
         var jetzt = new Date().toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
         el.innerHTML = '<p class="wetter-zeile"><b>' + esc(z.zeile) + '</b></p><p class="wetter-sonne">' + esc(z.sonne) + "</p>" +
-          '<div class="mgk-wrap">' + meteogramm(d, JG) + "</div>" +
+          '<div class="mgk-wrap" id="mgk-wrap">' + meteogramm(d, JG, tagFuerWetter()) + "</div>" +
+          '<p class="mgk-legende" id="mgk-legende">' + tagLegende(tagFuerWetter()) + "</p>" +
           '<ul class="wetter-tipps">' + z.tipps.map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul>" +
-          '<p class="fussnote">Vorhersage für die Region Mannheim/Heidelberg · Open-Meteo · aktualisiert ' + jetzt + " Uhr, lädt alle 30 Minuten neu. Linie = Temperatur, gestrichelt = gefühlt, Balken = Regenwahrscheinlichkeit.</p>";
+          '<p class="fussnote">Vorhersage für die Region Mannheim/Heidelberg · Open-Meteo · aktualisiert ' + jetzt + " Uhr, lädt alle 30 Minuten neu. Linie = Temperatur, gestrichelt = gefühlt, Balken = Regenwahrscheinlichkeit. Oben farbig: euer gespeicherter Tag aus dem Planer (Schätzung), 🚗 = unterwegs.</p>";
       }).catch(function () {
         el.innerHTML = '<p class="hinweis">Wetter konnte gerade nicht geladen werden. <a href="https://www.wetteronline.de/wetter/mannheim" rel="noopener" target="_blank">Wetter Mannheim ↗</a></p>';
       });

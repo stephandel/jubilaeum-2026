@@ -140,7 +140,7 @@
     // ---------- Ergebnis: Zeitplan, Route, Preis, Warnungen ----------
     var ICON = { n: "🍂", c: "☕", r: "🍽️", v: "✨" };
     var ART_TEXT = { n: "Nachmittag", c: "Kaffee", r: "Abendessen", v: "Danach" };
-    var wetterDaten = null;
+    var wetterDaten = null, zeitplanKurz = "";
     function folge() {
       var f = (plan.folge || []).filter(function (a) { return "ncrv".indexOf(a) >= 0; });
       ["n", "c", "r", "v"].forEach(function (a) { if (f.indexOf(a) < 0) f.push(a); });
@@ -188,7 +188,7 @@
       var fahrZeile = function (x) { return '<li class="zp-fahrt">🚗 ' + x.min + " Min." + (x.km != null ? " · " + x.km.toFixed(1).replace(".", ",") + " km" : "") + "</li>"; };
       var z = function (zeit, icon, text, extra) { return '<li><span class="zp-zeit">' + H.uhr(zeit) + '</span><span class="zp-icon" aria-hidden="true">' + icon + "</span><span>" + text + wetterBei(zeit) + (extra ? "<small>" + extra + "</small>" : "") + "</span></li>"; };
 
-      var t = H.minuten(plan.start) || 13 * 60, warn = [], zeilen = [], zeiten = {}, regenMax = 0, tempMin = 99;
+      var t = H.minuten(plan.start) || 13 * 60, warn = [], zeilen = [], zeiten = {}, regenMax = 0, tempMin = 99, bloecke = [], t0 = t;
       var c = plan.c && K[plan.c] ? K[plan.c] : null, schluss = c ? schlussZeit(c.oeffnung) : null;
       var cafeNah = plan.n && c && f.indexOf("c") === f.indexOf("n") + 1 && abstandKm(KO[plan.n], KO[plan.c]) <= 3;
       var soll = plan.r && K[plan.r] ? H.minuten(plan.zeit) : null;
@@ -211,13 +211,13 @@
           if (zuN != null && zuN > nStart + 30 && nEnde > zuN) nEnde = zuN; // nicht länger als geöffnet
           if (nEnde - nStart < 90) warn.push(["warn", "⏳ Für den Nachmittag bleiben nur " + Math.max(0, Math.round((nEnde - nStart) / 6) / 10).toString().replace(".", ",") + " Stunden – früher losfahren (oben „Start“) oder später essen."]);
           zeilen.push(z(nStart, "🍂", esc(K[plan.n].name), "bis ca. " + H.uhr(nEnde) + (n.oeffnung_31_10 ? " · " + esc(kurzSatz(n.oeffnung_31_10)) : "")));
-          zeiten.n = nStart;
+          zeiten.n = nStart; bloecke.push([nStart, nEnde, "n"]);
           if (cafeNah) {
             var cafeAn = nStart + Math.min(90, Math.max(0, (nEnde - nStart - 60) / 2));
             if (schluss != null && cafeAn + 60 > schluss) cafeAn = Math.max(nStart, schluss - 75);
             var km = abstandKm(KO[plan.n], KO[plan.c]);
             zeilen.push(z(cafeAn, "☕", esc(c.name), "mitten im Nachmittag, " + (km < 1.2 ? "zu Fuß" : km.toFixed(1).replace(".", ",") + " km entfernt") + (c.oeffnung ? " · Samstag " + esc(c.oeffnung) : "")));
-            zeiten.c = cafeAn;
+            zeiten.c = cafeAn; bloecke.push([cafeAn, cafeAn + 60, "c"]);
             if (!c.oeffnung && cafeAn >= 17 * 60) warn.push(["warn", "☕ " + c.name + " um " + H.uhr(cafeAn) + " – Öffnungszeit am Abend nicht geprüft, wahrscheinlich geschlossen."]);
             if (schluss != null && schluss - nStart < 60) warn.push(["warn", "☕ " + c.name + " schließt schon um " + H.uhr(schluss) + " – früher starten oder anderes Café wählen."]);
           }
@@ -230,7 +230,7 @@
           t = nEnde;
         } else if (art === "c") {
           zeilen.push(z(t, "☕", esc(c.name), c.oeffnung ? "Samstag " + esc(c.oeffnung) : ""));
-          zeiten.c = t;
+          zeiten.c = t; bloecke.push([t, t + 60, "c"]);
           if (schluss == null && t >= 17 * 60) warn.push(["warn", "☕ " + c.name + " um " + H.uhr(t) + " – Öffnungszeit am Abend nicht geprüft, wahrscheinlich geschlossen."]);
           if (schluss != null && t + 30 > schluss) warn.push(["warn", "☕ " + c.name + " schließt um " + H.uhr(schluss) + " – ihr kämt erst gegen " + H.uhr(t) + " an. Früher starten, Reihenfolge ändern oder Café tauschen."]);
           t += 60;
@@ -240,7 +240,7 @@
           if (soll != null && soll - an > 75) warn.push(["info", "🕰️ Vor dem Abendessen bleiben gut " + (Math.round((soll - an) / 6) / 10).toString().replace(".", ",") + " Stunden – Zeit zum Umziehen oder für einen Abstecher."]);
           t = soll != null ? Math.max(soll, an) : an;
           zeilen.push(z(t, "🍽️", esc(K[plan.r].name) + (soll == null ? " (Uhrzeit wählen)" : ""), r.telefon ? "Reservieren: " + JG.telLink(r.telefon) : ""));
-          zeiten.r = t;
+          zeiten.r = t; bloecke.push([t, t + 150, "r"]);
           if (r.status === "nein") warn.push(["warn", "⛔ " + r.name + " war online für Samstag ausgebucht – nur mit Glück per Telefon."]);
           else if (r.status !== "ja") warn.push(["info", "📞 " + r.name + ": freie Tische nicht online prüfbar – vorher anrufen."]);
           if (/vorkasse/i.test(JSON.stringify(r.reservierung || {}) + (r.preis_pro_person_korrigiert || ""))) warn.push(["info", "💳 " + r.name + ": Menü wird vorab bezahlt (Vorkasse)."]);
@@ -250,12 +250,15 @@
           if (vStart != null && t > vStart) warn.push(["warn", "✨ " + v.titel + " beginnt um " + H.uhr(vStart) + " – in dieser Reihenfolge nicht zu schaffen. Reihenfolge ändern oder weglassen."]);
           t = vStart != null ? Math.max(vStart, t) : t;
           zeilen.push(z(t, "✨", esc(v.titel), esc(v.ort || "")));
-          zeiten.v = t;
+          zeiten.v = t; bloecke.push([t, t + 120, "v"]);
           t += 120;
         }
       });
       var heim = leg(st.length - 2); zeilen.push(fahrZeile(heim)); t += heim.min;
       zeilen.push(z(t, "🏠", "Wieder zuhause (ungefähr)"));
+      // Kurzform für die Startseite (Wetterdiagramm): "1300;1327-1427c;…;2009"
+      var hm = function (m) { return H.uhr(m).replace(":", ""); };
+      zeitplanKurz = [hm(t0)].concat(bloecke.map(function (b) { return hm(b[0]) + "-" + hm(b[1]) + b[2]; }), [hm(t)]).join(";");
       if (fahrMin != null && fahrMin > 120) warn.push(["info", "🚗 Insgesamt rund " + Math.round(fahrMin) + " Minuten im Auto – vielleicht Orte näher zusammenlegen."]);
 
       // Wetter über den Tag
@@ -460,7 +463,7 @@
       if (a && a.dataset.aktion === "speichern") {
         if (!JG.ich()) { JG.toast("Bitte oben erst wählen: Stephan oder Bilgen."); return; }
         var KS = window.KommentarStore;
-        var zuSpeichern = { n: plan.n, c: plan.c, r: plan.r, zeit: plan.zeit, v: plan.v && KS ? KS.schluessel(plan.v) : plan.v, start: plan.start, folge: folge().join(",") };
+        var zuSpeichern = { n: plan.n, c: plan.c, r: plan.r, zeit: plan.zeit, v: plan.v && KS ? KS.schluessel(plan.v) : plan.v, start: plan.start, folge: folge().join(","), zp: zeitplanKurz };
         a.disabled = true;
         window.TagStore.load().then(function (alt) { if (alt && alt.erledigt) zuSpeichern.erledigt = alt.erledigt; if (alt && alt.fest) zuSpeichern.fest = true; return window.TagStore.save(zuSpeichern, JG.ich()); }).then(function () { a.disabled = false; JG.toast("Gespeichert – steht jetzt auf der Startseite für euch beide."); })
           .catch(function () { a.disabled = false; JG.toast("Speichern hat nicht geklappt – bitte noch einmal."); });
