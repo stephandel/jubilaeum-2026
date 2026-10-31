@@ -379,5 +379,15 @@
     "lat": 49.51395,
     "lon": 8.1533,
     "adresse": "Hauptstraße 45, 67273 Weisenheim am Berg"
+  },
+  "n:pf-bergstein-waldschenke": {
+    "lat": 49.36089,
+    "lon": 8.12996,
+    "adresse": "Im Meisental 81, 67433 Neustadt an der Weinstraße"
+  },
+  "r:esszimmer": {
+    "lat": 49.35493,
+    "lon": 8.13824,
+    "adresse": "Hintergasse 38, 67433 Neustadt an der Weinstraße"
   }
 }

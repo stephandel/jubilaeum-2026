@@ -3397,6 +3397,99 @@ window.GUIDE_DATA = {
    },
    "ort_basis": "Weinheim",
    "ort_kicker": "Weinheim"
+  },
+  {
+   "slug": "esszimmer",
+   "name": "Das Esszimmer – essen macht glücklich",
+   "adresse": "Hintergasse 38, 67433 Neustadt an der Weinstraße",
+   "ort": "Neustadt an der Weinstraße (Altstadt)",
+   "telefon": "+49 6321 354996",
+   "email": "info@esszimmer-neustadt.de",
+   "website": "https://www.esszimmer-neustadt.de/",
+   "speisekarte_url": "https://www.esszimmer-neustadt.de/esszimmer-am-abend",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Das+Esszimmer+Hintergasse+38%2C+67433+Neustadt+an+der+Weinstra%C3%9Fe",
+   "google_bewertung": 4.7,
+   "google_anzahl": 412,
+   "google_quelle": "Google Maps, live 29.10.2026",
+   "kueche": "moderne, kreative italienische Küche mit internationalen Einflüssen (Michelin-Empfehlung)",
+   "beschreibung": "Kleines Restaurant in der Neustadter Altstadt mit offener Küche von Thomas Manthey. Motto „Essen macht glücklich“: italienisch-mediterran, kreativ, dazu aufmerksamer Service in entspannter Atmosphäre. Donnerstags gibt es nur das Tastingmenü, am Samstag wird à la carte gegessen.",
+   "stephans_preisangabe": "Google: 40–90 € p. P.",
+   "preis_pro_person_korrigiert": "40–90 € p. P. (Google-Spanne); Tastingmenü donnerstags 63 €",
+   "preis_abweichung": null,
+   "preisbeispiele": [],
+   "oeffnung_samstag": "ab 17:00; zwei Startfenster: 17:00–17:30 (Tisch bis 19:30) und 20:00–20:30",
+   "oeffnung_hinweis": "Samstags nur abends. Im ersten Fenster steht der Tisch bis 19:30 Uhr zur Verfügung. Keine Hunde im Restaurant.",
+   "oeffnung_quelle": "https://www.esszimmer-neustadt.de/online-reservierung",
+   "reservierung": {
+    "art": "online",
+    "tool": "resmio",
+    "url": "https://www.esszimmer-neustadt.de/online-reservierung",
+    "verfuegbar_31_10": "ja",
+    "freie_zeiten": [
+     "17:00",
+     "17:15",
+     "17:30",
+     "20:00",
+     "20:15",
+     "20:30"
+    ],
+    "hinweis": "resmio-Formular auf der Website im Browser angesehen (31.10., ca. 12:45 Uhr), 2 Gäste, „Heute“: 17:00, 17:15, 17:30, 20:00, 20:15, 20:30 anklickbar. Nicht gebucht. Telefon 06321 354996.",
+    "stand": "2026-10-31"
+   },
+   "parken": {
+    "text": "Altstadt, Hintergasse ist eng. Parkhäuser in der Nähe (z. B. Altstadt-Parkhaus/Bahnhof), nicht einzeln geprüft.",
+    "parkopedia_url": null,
+    "quelle": null
+   },
+   "bilder": [
+    {
+     "datei": "img/esszimmer-1.jpg",
+     "art": "location",
+     "beschreibung": "Gastraum des Esszimmers",
+     "quelle_url": "https://www.esszimmer-neustadt.de/",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/esszimmer-2.jpg",
+     "art": "location",
+     "beschreibung": "Das Esszimmer von außen, Hintergasse",
+     "quelle_url": "https://www.esszimmer-neustadt.de/",
+     "vorhanden": true
+    }
+   ],
+   "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/rheinland-pfalz/neustadt-an-der-weinstrasse/restaurant/das-esszimmer",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 31.10.2026",
+    "stand": "2026-10-31"
+   },
+   "quellen": [
+    "https://www.esszimmer-neustadt.de/",
+    "https://www.esszimmer-neustadt.de/online-reservierung",
+    "https://guide.michelin.com/de/de/rheinland-pfalz/neustadt-an-der-weinstrasse/restaurant/das-esszimmer"
+   ],
+   "nicht_geprueft": [
+    "Abendkarte mit Preisen nicht gelesen (Zeitdruck am 31.10.)",
+    "Parkhaus in der Altstadt nicht geprüft",
+    "Bilder von der Restaurant-Website, Alter unbekannt"
+   ],
+   "stand": "2026-10-31",
+   "zusatz": true,
+   "bewertung_original": {
+    "wert": 4.7,
+    "anzahl": 412,
+    "quelle": "Stephans Bildschirmfoto aus Google Maps, 31.10.2026"
+   },
+   "google_live": true,
+   "status": "ja",
+   "entfernung": {
+    "km": 44.0,
+    "min": 36,
+    "route": "über A61 und A65",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   },
+   "ort_basis": "Neustadt an der Weinstraße",
+   "ort_kicker": "Neustadt an der Weinstraße · Altstadt"
   }
  ],
  "cafes": [
@@ -5130,6 +5223,80 @@ window.GUIDE_DATA = {
    }
   },
   {
+   "slug": "pf-bergstein-waldschenke",
+   "titel": "Waldschenke Ludwigsbrunnen und Neustadter Bergstein",
+   "region": "Pfalz",
+   "beschreibung": "Wanderhütte am Waldrand von Neustadt-Haardt mit großer Terrasse, Selbstbedienung, Pfälzer Küche, veganen Gerichten und täglicher Kuchenauswahl (Google 4,8★, 116). Von dort steigt ein Pfad in rund 30 Minuten zum Neustadter Bergstein, einem Felsen mit Bank und Geländer hoch über Neustadt (394 m, Google 4,8★, 112): Blick auf die Stadt, die Wolfsburg-Ruine und die Rheinebene.",
+   "ablauf": [
+    "14:00 Waldschenke Ludwigsbrunnen: Kuchen oder eine kleine Pfälzer Stärkung auf der Terrasse (Selbstbedienung)",
+    "14:45 Aufstieg zum Neustadter Bergstein, 1,4 km, ca. 30 Min., der letzte Teil ist steil",
+    "15:15 Aussicht vom Bergstein; wer mag, geht noch zur Wolfsburg-Ruine gleich unterhalb",
+    "15:45 zurück zur Hütte, ca. 25 Min. bergab",
+    "16:15 Fahrt in die Altstadt (9 Min.), Parkhaus, kurzer Bummel durch die Hintergasse"
+   ],
+   "dauer": "ca. 2,5 h inkl. Einkehr",
+   "start_adresse": "Waldschenke Ludwigsbrunnen, Im Meisental 81, 67433 Neustadt an der Weinstraße",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Wanderh%C3%BCtte+Waldschenke+Ludwigsbrunnen%2C+Im+Meisental+81%2C+67433+Neustadt+an+der+Weinstra%C3%9Fe",
+   "weitere_links": [
+    {
+     "text": "Waldschenke Ludwigsbrunnen (Website)",
+     "url": "https://waldschenke-ludwigsbrunnen.com/"
+    },
+    {
+     "text": "Neustadter Bergstein in Maps",
+     "url": "https://www.google.com/maps/search/?api=1&query=Neustadter+Bergstein"
+    },
+    {
+     "text": "Wanderung Ludwigsbrunnen–Wolfsburg (ich-geh-wandern.de)",
+     "url": "https://www.ich-geh-wandern.de/wandern/wolfsburg-neustadt-an-der-weinstrasse"
+    }
+   ],
+   "oeffnung_31_10": "Waldschenke Sa ab 12 Uhr (Google: bis 18:13). Bergstein frei zugänglich. Sonnenuntergang 17:03.",
+   "oeffnung_quelle": "waldschenke-ludwigsbrunnen.com und Google Maps, 31.10.2026",
+   "kosten": "Spaziergang kostenlos; Hütte 10–20 € p. P. (Kuchen, Leberknödelsuppe 7,50 €, Flammkuchen 12–14 €, Parfait 6,50 €). Bezahlung bar, PayPal oder Wero – keine Karte.",
+   "veranstaltung": null,
+   "cafe_vorschlag": {
+    "name": "Waldschenke Ludwigsbrunnen (Kuchen auf der Terrasse)",
+    "adresse": "Im Meisental 81, 67433 Neustadt an der Weinstraße",
+    "oeffnung_samstag": "12:00–18:00",
+    "hinweis": "Selbstbedienung, Parkplatz direkt vor der Hütte, Hund Horst gehört zum Haus. Telefon 0160 5876420.",
+    "quelle": "https://waldschenke-ludwigsbrunnen.com/ und Google Maps, 31.10.2026"
+   },
+   "bilder": [
+    {
+     "datei": "img/nm-pf-bergstein-1.jpg",
+     "art": "aussen",
+     "beschreibung": "Neustadter Bergstein",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:2012_Pf%C3%A4lzerwald_508_Neust%C3%A4dter_Bergstein.JPG",
+     "vorhanden": true
+    },
+    {
+     "datei": "img/nm-pf-bergstein-2.jpg",
+     "art": "aussen",
+     "beschreibung": "Wolfsburg-Ruine über dem Schöntal",
+     "quelle_url": "https://commons.wikimedia.org/wiki/File:Wolfsburg_%C3%BCber_dem_Sch%C3%B6ntal.JPG",
+     "vorhanden": true
+    }
+   ],
+   "quellen": [
+    "https://waldschenke-ludwigsbrunnen.com/",
+    "Google Maps (Öffnungszeiten, Bewertungen, Geh- und Fahrzeiten, 31.10.2026)",
+    "https://www.ich-geh-wandern.de/wandern/wolfsburg-neustadt-an-der-weinstrasse"
+   ],
+   "nicht_geprueft": [
+    "Wegverlauf und Steigung zum Bergstein nur aus Google Maps (Fußweg 1,4 km, 28 Min.), nicht selbst gelaufen",
+    "Ob die Waldschenke heute wirklich bis 18 Uhr offen hat (Website nennt keine Schlusszeit)",
+    "Kein Foto der Waldschenke (Website-Bilder nicht ladbar)"
+   ],
+   "stand": "2026-10-31",
+   "entfernung": {
+    "km": 45.9,
+    "min": 39,
+    "route": "über A61 und A65",
+    "quelle": "Google Maps Routenplaner im Browser, abgefragt Do 29.10.2026 ca. 13:30 Uhr (aktueller Verkehr, schnellste Route); Start Dirschauer Weg, 68307 Mannheim. Samstagabend kann abweichen, daher 'ca.'. Nachträge (Cafés aus Ideenliste, Käfertaler Wald, Königstuhl, Hermannshof) am 29.10.2026 abends."
+   }
+  },
+  {
    "slug": "hd-philosophenweg",
    "titel": "Altstadt, Café und Philosophenweg zum Sonnenuntergang",
    "region": "Heidelberg",
@@ -6581,9 +6748,42 @@ window.GUIDE_DATA = {
    "lat": 49.51395,
    "lon": 8.1533,
    "adresse": "Hauptstraße 45, 67273 Weisenheim am Berg"
+  },
+  "n:pf-bergstein-waldschenke": {
+   "lat": 49.36089,
+   "lon": 8.12996,
+   "adresse": "Im Meisental 81, 67433 Neustadt an der Weinstraße"
+  },
+  "r:esszimmer": {
+   "lat": 49.35493,
+   "lon": 8.13824,
+   "adresse": "Hintergasse 38, 67433 Neustadt an der Weinstraße"
   }
  },
  "toptipps": [
+  {
+   "id": "pfalz-bergstein-esszimmer",
+   "titel": "Heute: Bergstein & Esszimmer",
+   "stimmung": "Pfalz · Aussicht · italienisch",
+   "kurz": "Einkehr in der Waldschenke Ludwigsbrunnen, Aufstieg zum Neustadter Bergstein mit Blick über die Stadt, abends kreativ-italienisch im Esszimmer in der Altstadt.",
+   "n": "pf-bergstein-waldschenke",
+   "c": null,
+   "r": "esszimmer",
+   "zeit": "17:15",
+   "start": "13:15",
+   "folge": [
+    "n",
+    "r"
+   ],
+   "ablauf": [
+    "13:15 Abfahrt, ca. 39 Min. nach Neustadt-Haardt",
+    "14:00 Waldschenke Ludwigsbrunnen: Kuchen oder kleine Pfälzer Stärkung (Selbstbedienung, nur bar/PayPal/Wero)",
+    "14:45 zu Fuß zum Neustadter Bergstein (1,4 km, ca. 30 Min., zuletzt steil), Aussicht, optional Wolfsburg-Ruine",
+    "15:45 zurück zur Hütte, 16:15 Fahrt in die Altstadt (9 Min.), Parkhaus, Bummel durch die Hintergasse",
+    "17:15 Das Esszimmer, Hintergasse 38 – Tisch bis 19:30"
+   ],
+   "warum": "Beides liegt in Neustadt, nur 9 Minuten auseinander. Die Waldschenke (4,8★) hat eine Terrasse am Waldrand, Kuchen und Pfälzer Teller; der Bergstein (4,8★) ist ein Felsen mit Bank hoch über der Stadt. Das Esszimmer (4,7★, Michelin-Empfehlung) hatte heute Mittag für 2 Personen 17:00, 17:15 und 17:30 frei – bitte online oder unter 06321 354996 reservieren. Sonnenuntergang 17:03, der Aufstieg sollte also bis 16 Uhr erledigt sein."
+  },
   {
    "id": "heidelberg-verliebt",
    "titel": "Heidelberg zum Verlieben",

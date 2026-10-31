@@ -1,0 +1,58 @@
+{
+  "slug": "esszimmer",
+  "name": "Das Esszimmer – essen macht glücklich",
+  "adresse": "Hintergasse 38, 67433 Neustadt an der Weinstraße",
+  "ort": "Neustadt an der Weinstraße (Altstadt)",
+  "telefon": "+49 6321 354996",
+  "email": "info@esszimmer-neustadt.de",
+  "website": "https://www.esszimmer-neustadt.de/",
+  "speisekarte_url": "https://www.esszimmer-neustadt.de/esszimmer-am-abend",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Das+Esszimmer+Hintergasse+38%2C+67433+Neustadt+an+der+Weinstra%C3%9Fe",
+  "google_bewertung": 4.7,
+  "google_anzahl": 412,
+  "google_quelle": "Stephans Bildschirmfoto aus Google Maps, 31.10.2026",
+  "kueche": "moderne, kreative italienische Küche mit internationalen Einflüssen (Michelin-Empfehlung)",
+  "beschreibung": "Kleines Restaurant in der Neustadter Altstadt mit offener Küche von Thomas Manthey. Motto „Essen macht glücklich“: italienisch-mediterran, kreativ, dazu aufmerksamer Service in entspannter Atmosphäre. Donnerstags gibt es nur das Tastingmenü, am Samstag wird à la carte gegessen.",
+  "stephans_preisangabe": "Google: 40–90 € p. P.",
+  "preis_pro_person_korrigiert": "40–90 € p. P. (Google-Spanne); Tastingmenü donnerstags 63 €",
+  "preis_abweichung": null,
+  "preisbeispiele": [],
+  "oeffnung_samstag": "ab 17:00; zwei Startfenster: 17:00–17:30 (Tisch bis 19:30) und 20:00–20:30",
+  "oeffnung_hinweis": "Samstags nur abends. Im ersten Fenster steht der Tisch bis 19:30 Uhr zur Verfügung. Keine Hunde im Restaurant.",
+  "oeffnung_quelle": "https://www.esszimmer-neustadt.de/online-reservierung",
+  "reservierung": {
+    "art": "online",
+    "tool": "resmio",
+    "url": "https://www.esszimmer-neustadt.de/online-reservierung",
+    "verfuegbar_31_10": "ja",
+    "freie_zeiten": ["17:00", "17:15", "17:30", "20:00", "20:15", "20:30"],
+    "hinweis": "resmio-Formular auf der Website im Browser angesehen (31.10., ca. 12:45 Uhr), 2 Gäste, „Heute“: 17:00, 17:15, 17:30, 20:00, 20:15, 20:30 anklickbar. Nicht gebucht. Telefon 06321 354996.",
+    "stand": "2026-10-31"
+  },
+  "parken": {
+    "text": "Altstadt, Hintergasse ist eng. Parkhäuser in der Nähe (z. B. Altstadt-Parkhaus/Bahnhof), nicht einzeln geprüft.",
+    "parkopedia_url": null,
+    "quelle": null
+  },
+  "bilder": [
+    {"datei": "img/esszimmer-1.jpg", "art": "location", "beschreibung": "Gastraum des Esszimmers", "quelle_url": "https://www.esszimmer-neustadt.de/"},
+    {"datei": "img/esszimmer-2.jpg", "art": "location", "beschreibung": "Das Esszimmer von außen, Hintergasse", "quelle_url": "https://www.esszimmer-neustadt.de/"}
+  ],
+  "michelin": {
+    "auszeichnung": "teller",
+    "url": "https://guide.michelin.com/de/de/rheinland-pfalz/neustadt-an-der-weinstrasse/restaurant/das-esszimmer",
+    "quelle": "Guide MICHELIN, Restaurantseite (Feld distinction), abgerufen 31.10.2026",
+    "stand": "2026-10-31"
+  },
+  "quellen": [
+    "https://www.esszimmer-neustadt.de/",
+    "https://www.esszimmer-neustadt.de/online-reservierung",
+    "https://guide.michelin.com/de/de/rheinland-pfalz/neustadt-an-der-weinstrasse/restaurant/das-esszimmer"
+  ],
+  "nicht_geprueft": [
+    "Abendkarte mit Preisen nicht gelesen (Zeitdruck am 31.10.)",
+    "Parkhaus in der Altstadt nicht geprüft",
+    "Bilder von der Restaurant-Website, Alter unbekannt"
+  ],
+  "stand": "2026-10-31"
+}

@@ -214,5 +214,15 @@
     "km": 45.9,
     "min": 37,
     "route": "über A61 und A65"
+  },
+  "pf-bergstein-waldschenke": {
+    "km": 45.9,
+    "min": 39,
+    "route": "über A61 und A65"
+  },
+  "esszimmer": {
+    "km": 44.0,
+    "min": 36,
+    "route": "über A61 und A65"
   }
 }

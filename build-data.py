@@ -15,7 +15,7 @@ DATA = os.path.join(HIER, "data")
 # Reihenfolge der 9 von Stephan vorausgewählten Restaurants, danach die 5 Zusatz-Empfehlungen
 AUSWAHL = ["das-atelier", "mary-jane", "rieds", "der-philosoph", "doblers",
            "tourist-trap", "grenzhof", "turmrestaurant", "minoh"]
-ZUSATZ = ["spinne", "atable", "kurfuerstenstube", "ziegler", "bistronauten"]
+ZUSATZ = ["spinne", "atable", "kurfuerstenstube", "ziegler", "bistronauten", "esszimmer"]
 CAFE_SCHWELLE = 4.7
 STAND = "29.10.2026"
 START = "Dirschauer Weg, 68307 Mannheim"

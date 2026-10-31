@@ -690,5 +690,71 @@
       "Café-Fotos von der Website des Cafés (Alter unbekannt)"
     ],
     "stand": "2026-10-30"
+  },
+  {
+    "slug": "pf-bergstein-waldschenke",
+    "titel": "Waldschenke Ludwigsbrunnen und Neustadter Bergstein",
+    "region": "Pfalz",
+    "beschreibung": "Wanderhütte am Waldrand von Neustadt-Haardt mit großer Terrasse, Selbstbedienung, Pfälzer Küche, veganen Gerichten und täglicher Kuchenauswahl (Google 4,8★, 116). Von dort steigt ein Pfad in rund 30 Minuten zum Neustadter Bergstein, einem Felsen mit Bank und Geländer hoch über Neustadt (394 m, Google 4,8★, 112): Blick auf die Stadt, die Wolfsburg-Ruine und die Rheinebene.",
+    "ablauf": [
+      "14:00 Waldschenke Ludwigsbrunnen: Kuchen oder eine kleine Pfälzer Stärkung auf der Terrasse (Selbstbedienung)",
+      "14:45 Aufstieg zum Neustadter Bergstein, 1,4 km, ca. 30 Min., der letzte Teil ist steil",
+      "15:15 Aussicht vom Bergstein; wer mag, geht noch zur Wolfsburg-Ruine gleich unterhalb",
+      "15:45 zurück zur Hütte, ca. 25 Min. bergab",
+      "16:15 Fahrt in die Altstadt (9 Min.), Parkhaus, kurzer Bummel durch die Hintergasse"
+    ],
+    "dauer": "ca. 2,5 h inkl. Einkehr",
+    "start_adresse": "Waldschenke Ludwigsbrunnen, Im Meisental 81, 67433 Neustadt an der Weinstraße",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Wanderh%C3%BCtte+Waldschenke+Ludwigsbrunnen%2C+Im+Meisental+81%2C+67433+Neustadt+an+der+Weinstra%C3%9Fe",
+    "weitere_links": [
+      {
+        "text": "Waldschenke Ludwigsbrunnen (Website)",
+        "url": "https://waldschenke-ludwigsbrunnen.com/"
+      },
+      {
+        "text": "Neustadter Bergstein in Maps",
+        "url": "https://www.google.com/maps/search/?api=1&query=Neustadter+Bergstein"
+      },
+      {
+        "text": "Wanderung Ludwigsbrunnen–Wolfsburg (ich-geh-wandern.de)",
+        "url": "https://www.ich-geh-wandern.de/wandern/wolfsburg-neustadt-an-der-weinstrasse"
+      }
+    ],
+    "oeffnung_31_10": "Waldschenke Sa ab 12 Uhr (Google: bis 18:13). Bergstein frei zugänglich. Sonnenuntergang 17:03.",
+    "oeffnung_quelle": "waldschenke-ludwigsbrunnen.com und Google Maps, 31.10.2026",
+    "kosten": "Spaziergang kostenlos; Hütte 10–20 € p. P. (Kuchen, Leberknödelsuppe 7,50 €, Flammkuchen 12–14 €, Parfait 6,50 €). Bezahlung bar, PayPal oder Wero – keine Karte.",
+    "veranstaltung": null,
+    "cafe_vorschlag": {
+      "name": "Waldschenke Ludwigsbrunnen (Kuchen auf der Terrasse)",
+      "adresse": "Im Meisental 81, 67433 Neustadt an der Weinstraße",
+      "oeffnung_samstag": "12:00–18:00",
+      "hinweis": "Selbstbedienung, Parkplatz direkt vor der Hütte, Hund Horst gehört zum Haus. Telefon 0160 5876420.",
+      "quelle": "https://waldschenke-ludwigsbrunnen.com/ und Google Maps, 31.10.2026"
+    },
+    "bilder": [
+      {
+        "datei": "img/nm-pf-bergstein-1.jpg",
+        "art": "aussen",
+        "beschreibung": "Neustadter Bergstein",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:2012_Pf%C3%A4lzerwald_508_Neust%C3%A4dter_Bergstein.JPG"
+      },
+      {
+        "datei": "img/nm-pf-bergstein-2.jpg",
+        "art": "aussen",
+        "beschreibung": "Wolfsburg-Ruine über dem Schöntal",
+        "quelle_url": "https://commons.wikimedia.org/wiki/File:Wolfsburg_%C3%BCber_dem_Sch%C3%B6ntal.JPG"
+      }
+    ],
+    "quellen": [
+      "https://waldschenke-ludwigsbrunnen.com/",
+      "Google Maps (Öffnungszeiten, Bewertungen, Geh- und Fahrzeiten, 31.10.2026)",
+      "https://www.ich-geh-wandern.de/wandern/wolfsburg-neustadt-an-der-weinstrasse"
+    ],
+    "nicht_geprueft": [
+      "Wegverlauf und Steigung zum Bergstein nur aus Google Maps (Fußweg 1,4 km, 28 Min.), nicht selbst gelaufen",
+      "Ob die Waldschenke heute wirklich bis 18 Uhr offen hat (Website nennt keine Schlusszeit)",
+      "Kein Foto der Waldschenke (Website-Bilder nicht ladbar)"
+    ],
+    "stand": "2026-10-31"
   }
 ]

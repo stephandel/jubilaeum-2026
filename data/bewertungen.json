@@ -103,5 +103,9 @@
   "patisserie-sophie": {
     "bewertung": 5.0,
     "anzahl": 40
+  },
+  "esszimmer": {
+    "bewertung": 4.7,
+    "anzahl": 412
   }
 }

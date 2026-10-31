@@ -1,5 +1,28 @@
 [
   {
+    "id": "pfalz-bergstein-esszimmer",
+    "titel": "Heute: Bergstein & Esszimmer",
+    "stimmung": "Pfalz · Aussicht · italienisch",
+    "kurz": "Einkehr in der Waldschenke Ludwigsbrunnen, Aufstieg zum Neustadter Bergstein mit Blick über die Stadt, abends kreativ-italienisch im Esszimmer in der Altstadt.",
+    "n": "pf-bergstein-waldschenke",
+    "c": null,
+    "r": "esszimmer",
+    "zeit": "17:15",
+    "start": "13:15",
+    "folge": [
+      "n",
+      "r"
+    ],
+    "ablauf": [
+      "13:15 Abfahrt, ca. 39 Min. nach Neustadt-Haardt",
+      "14:00 Waldschenke Ludwigsbrunnen: Kuchen oder kleine Pfälzer Stärkung (Selbstbedienung, nur bar/PayPal/Wero)",
+      "14:45 zu Fuß zum Neustadter Bergstein (1,4 km, ca. 30 Min., zuletzt steil), Aussicht, optional Wolfsburg-Ruine",
+      "15:45 zurück zur Hütte, 16:15 Fahrt in die Altstadt (9 Min.), Parkhaus, Bummel durch die Hintergasse",
+      "17:15 Das Esszimmer, Hintergasse 38 – Tisch bis 19:30"
+    ],
+    "warum": "Beides liegt in Neustadt, nur 9 Minuten auseinander. Die Waldschenke (4,8★) hat eine Terrasse am Waldrand, Kuchen und Pfälzer Teller; der Bergstein (4,8★) ist ein Felsen mit Bank hoch über der Stadt. Das Esszimmer (4,7★, Michelin-Empfehlung) hatte heute Mittag für 2 Personen 17:00, 17:15 und 17:30 frei – bitte online oder unter 06321 354996 reservieren. Sonnenuntergang 17:03, der Aufstieg sollte also bis 16 Uhr erledigt sein."
+  },
+  {
     "id": "heidelberg-verliebt",
     "titel": "Heidelberg zum Verlieben",
     "stimmung": "romantisch · Gourmet",
