@@ -754,6 +754,9 @@ body.sheet-offen { overflow: hidden; }
 .mg-ausfuehrlich { margin: var(--s2) calc(-1 * var(--s5)) calc(-1 * var(--s4)); }
 .mg-ausfuehrlich > summary { padding-left: var(--s5); }
 #meteogramm-jg { padding: 0 var(--s2) var(--s3); }
+/* Haftende Datumsfahne des Meteogramms unter der Kopfzeile (Pille 58 px + 6 px Luft), ab 768 px auch unter der Tab-Leiste; Variable aus meteogramm.css */
+#meteogramm-jg.mg { --mg-haft-oben: calc(max(8px, var(--safe-top)) + 64px); }
+@media (min-width: 768px) { #meteogramm-jg.mg { --mg-haft-oben: calc(max(8px, var(--safe-top)) + 126px); } }
 /* Galerie: Quelle oben rechts, Pfeile auch per Tastatur */
 .gal-quelle { top: 6px; bottom: auto; }
 .bild.galerie:focus-within .gal-pfeil { display: inline-flex; }
