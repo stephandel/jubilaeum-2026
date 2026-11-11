@@ -503,7 +503,8 @@ body::before {
 .inhalt { padding-bottom: calc(76px + var(--safe-bottom) + var(--s6)); }
 .fuss { padding-bottom: calc(76px + var(--safe-bottom) + var(--s6)); }
 @media (min-width: 768px) { .inhalt, .fuss { padding-bottom: var(--s8); } }
-.toast { bottom: calc(80px + var(--safe-bottom)); border-radius: 999px; }
+/* Lange Hinweise (nur lesen) laufen über mehrere Zeilen: volle Breite statt halber, Radius 22 = Pille bei einer Zeile */
+.toast { bottom: calc(80px + var(--safe-bottom)); border-radius: 22px; width: max-content; text-align: center; }
 [id] { scroll-margin-top: 140px; }
 
 /* ---------- Bedienelemente ---------- */
