@@ -10,12 +10,16 @@ window.LikeStore = (function () {
   var LEUTE = { S: "stephan", B: "bilgen" };
   var online = /\.github\.io$/.test(location.hostname);
   // Seit 11.11.2026 meldet der Worker "nurLesen": Jubiläum vorbei, alles bleibt zum Nachlesen, nichts wird mehr geschickt
-  var nurLesen = false;
+  // Gemerkt in localStorage, damit die Seite auch ohne Netz keine Schreib-Knöpfe zeigt; meldet der Worker es nicht mehr, gilt es nicht mehr
+  var NL_KEY = "jg-nur-lesen";
+  var nurLesen = online && (function () { try { return localStorage.getItem(NL_KEY) === "1"; } catch (e) { return false; } })();
+  if (nurLesen) document.documentElement.classList.add("nur-lesen");
   function nurLesenMerken(d) {
-    if (!d || !d.nurLesen) return d;
-    nurLesen = true;
-    if (window.LikeStore) window.LikeStore.nurLesen = true;
-    document.documentElement.classList.add("nur-lesen");
+    if (!d) return d;
+    nurLesen = !!d.nurLesen;
+    if (window.LikeStore) window.LikeStore.nurLesen = nurLesen;
+    document.documentElement.classList.toggle("nur-lesen", nurLesen);
+    try { if (nurLesen) localStorage.setItem(NL_KEY, "1"); else localStorage.removeItem(NL_KEY); } catch (e) {}
     return d;
   }
   function antwortJson(r) {
@@ -182,7 +186,7 @@ window.LikeStore = (function () {
   var api = {
     KEY: KEY,
     online: online,
-    nurLesen: false,
+    nurLesen: nurLesen,
     NUR_LESEN_TEXT: "Euer Jubiläum ist vorbei – Likes, Kommentare und euer Tag bleiben zum Nachlesen, ändern geht nicht mehr.",
     load: function () {
       if (!online) return Promise.resolve(lokalLaden());
