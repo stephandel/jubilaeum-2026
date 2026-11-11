@@ -461,6 +461,7 @@
       if (vl) { vorlageAnwenden(vl.dataset.vorlage); alles(true); if (vl.dataset.vorlage !== "wuerfel") JG.toast(vl.dataset.vorlage === "leer" ? "Neu beginnen" : "Vorlage übernommen – nach Belieben anpassen."); return; }
       var a = ev.target.closest("[data-aktion]");
       if (a && a.dataset.aktion === "speichern") {
+        if (window.LikeStore && window.LikeStore.nurLesen) { JG.toast(window.LikeStore.NUR_LESEN_TEXT); return; }
         if (!JG.ich()) { JG.toast("Bitte oben erst wählen: Stephan oder Bilgen."); return; }
         var KS = window.KommentarStore;
         var zuSpeichern = { n: plan.n, c: plan.c, r: plan.r, zeit: plan.zeit, v: plan.v && KS ? KS.schluessel(plan.v) : plan.v, start: plan.start, folge: folge().join(","), zp: zeitplanKurz };

@@ -9,6 +9,19 @@ window.LikeStore = (function () {
   var WORKER = "https://fuerte-sync.stephanhandel.workers.dev";
   var LEUTE = { S: "stephan", B: "bilgen" };
   var online = /\.github\.io$/.test(location.hostname);
+  // Seit 11.11.2026 meldet der Worker "nurLesen": Jubiläum vorbei, alles bleibt zum Nachlesen, nichts wird mehr geschickt
+  var nurLesen = false;
+  function nurLesenMerken(d) {
+    if (!d || !d.nurLesen) return d;
+    nurLesen = true;
+    if (window.LikeStore) window.LikeStore.nurLesen = true;
+    document.documentElement.classList.add("nur-lesen");
+    return d;
+  }
+  function antwortJson(r) {
+    if (!r.ok) throw new Error("Worker " + r.status);
+    return r.json();
+  }
 
   function lokalLaden() {
     try { var roh = localStorage.getItem(KEY); return roh ? JSON.parse(roh) || {} : {}; } catch (e) { return {}; }
@@ -38,10 +51,7 @@ window.LikeStore = (function () {
     return liste;
   }
   function standHolen() {
-    return fetch(WORKER + "/state", { cache: "no-store" }).then(function (r) {
-      if (!r.ok) throw new Error("Worker " + r.status);
-      return r.json();
-    });
+    return fetch(WORKER + "/state", { cache: "no-store" }).then(antwortJson).then(nurLesenMerken);
   }
 
   // Alle Worker-Einträge der Art "jub", die keine Likes sind (z. B. "tag|…" für Unser Tag), unverändert
@@ -94,13 +104,11 @@ window.LikeStore = (function () {
           var wert = f === "fest" ? "1" : String(p[f]).replace(/\|/g, "/").slice(0, 70);
           liste.push({ slug: "tag|" + f + "|" + wert, by: LEUTE[person] || "stephan", at: jetzt });
         });
+        if (nurLesen) return d;
         return fetch(WORKER + "/marks", {
           method: "POST", headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ by: LEUTE[person] || "stephan", jub: liste })
-        });
-      }).then(function (r) {
-        if (!r.ok) throw new Error("Worker " + r.status);
-        return r.json();
+        }).then(antwortJson);
       }).then(function (d) { var q = tagAusWorker(d.jub); tLokalSpeichern(q); return q; });
     }
   };
@@ -127,6 +135,7 @@ window.LikeStore = (function () {
     try { localStorage.setItem(KKEY, JSON.stringify(obj || {})); } catch (e) {}
   }
   function post(pfad, daten) {
+    if (nurLesen) return standHolen().then(function (d) { var o = kommentareAusWorker(d.notes); kLokalSpeichern(o); return o; });
     return fetch(WORKER + pfad, {
       method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(daten)
     }).then(function (r) {
@@ -173,6 +182,8 @@ window.LikeStore = (function () {
   var api = {
     KEY: KEY,
     online: online,
+    nurLesen: false,
+    NUR_LESEN_TEXT: "Euer Jubiläum ist vorbei – Likes, Kommentare und euer Tag bleiben zum Nachlesen, ändern geht nicht mehr.",
     load: function () {
       if (!online) return Promise.resolve(lokalLaden());
       return standHolen().then(function (d) {
@@ -199,14 +210,12 @@ window.LikeStore = (function () {
       return standHolen().then(function (d) {
         var server = ausWorker(d.jub);
         var liste = fuerWorker(server, andere).concat(fuerWorker(obj, person)).concat(rohOhneLikes(d.jub));
+        if (nurLesen) return d;
         return fetch(WORKER + "/marks", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ by: LEUTE[person] || "stephan", jub: liste })
-        });
-      }).then(function (r) {
-        if (!r.ok) throw new Error("Worker " + r.status);
-        return r.json();
+        }).then(antwortJson);
       }).then(function (d) {
         var obj2 = ausWorker(d.jub);
         lokalSpeichern(obj2);

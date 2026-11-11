@@ -325,6 +325,7 @@
       var t = ev.target.closest("[data-tipp]");
       if (t) { location.href = "planer.html?tipp=" + encodeURIComponent(t.dataset.tipp); return; }
       if (ev.target.closest('[data-aktion="fest"]')) {
+        if (window.LikeStore && window.LikeStore.nurLesen) { JG.toast(window.LikeStore.NUR_LESEN_TEXT); return; }
         if (!JG.ich()) { JG.toast("Bitte erst wählen: Stephan oder Bilgen."); return; }
         var p = Object.assign({}, plan, { fest: !(plan && plan.fest) });
         window.TagStore.save(p, JG.ich()).then(function (q) { plan = q; tagZeichnen(); JG.toast(q.fest ? "Euer Tag steht fest 💛" : "Wieder als Entwurf markiert."); })
@@ -406,6 +407,7 @@
     app.addEventListener("change", function (ev) {
       var cb = ev.target.closest("[data-todo]");
       if (!cb) return;
+      if (window.LikeStore && window.LikeStore.nurLesen) { cb.checked = !cb.checked; JG.toast(window.LikeStore.NUR_LESEN_TEXT); return; }
       if (!JG.ich()) { cb.checked = !cb.checked; JG.toast("Bitte erst wählen: Stephan oder Bilgen."); return; }
       var erl = (plan.erledigt || "").split(",").filter(Boolean).filter(function (x) { return x !== cb.dataset.todo; });
       if (cb.checked) erl.push(cb.dataset.todo);

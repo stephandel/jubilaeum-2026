@@ -856,6 +856,7 @@
       var kel = kb.closest(".komm"), kkey = kel.dataset.key, akt2 = kb.dataset.komm;
       if (akt2 === "mehr") { kommOffen[kkey] = !kommOffen[kkey]; kommEinsZeichnen(kel); return; }
       if (akt2 === "abbrechen") { delete kommSchreiben[kkey]; kommEinsZeichnen(kel); return; }
+      if (window.LikeStore.nurLesen) { toast(window.LikeStore.NUR_LESEN_TEXT); return; }
       if (!ich) { toast("Bitte oben zuerst wählen: Ich bin Stephan oder Bilgen."); return; }
       if (akt2 === "schreiben") { kommSchreiben[kkey] = !kommSchreiben[kkey]; kommEinsZeichnen(kel); return; }
       var fertig = function (obj) { kommentare = obj || {}; kommentareAktualisieren(); kommEinsZeichnen(kel); };
@@ -877,6 +878,7 @@
 
     var lb = ev.target.closest(".like");
     if (lb) {
+      if (window.LikeStore.nurLesen) { toast(window.LikeStore.NUR_LESEN_TEXT); return; }
       if (!ich) {
         toast("Bitte oben zuerst wählen: Ich bin Stephan oder Bilgen.");
         var s = document.querySelector(".ichbin .seg");
@@ -1132,6 +1134,14 @@
 
   // Gemeinsamer Speicher nicht erreichbar → deutlich sagen, statt still nur die Likes dieses Geräts zu zeigen
   function verbindungHinweis() {
+    // Nur lesbar (seit 11.11.2026): ruhiger Hinweis statt Eingaben
+    if (window.LikeStore.nurLesen && !document.getElementById("nur-lesen-hinweis")) {
+      var h = document.createElement("p");
+      h.id = "nur-lesen-hinweis"; h.className = "hinweis nur-lesen-hinweis"; h.setAttribute("role", "status");
+      h.textContent = window.LikeStore.NUR_LESEN_TEXT;
+      var ort = document.querySelector("main") || document.body;
+      ort.insertBefore(h, ort.firstChild);
+    }
     var alt = document.getElementById("verbindung-hinweis");
     if (!window.LikeStore.online || !window.LikeStore.fehler) { if (alt) alt.remove(); return; }
     if (alt) return;

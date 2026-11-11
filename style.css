@@ -302,6 +302,10 @@ details > summary:focus-visible { outline-offset: -2px; }
 .dl dd { margin: 0; word-break: break-word; }
 .hinweis { font-size: var(--fs-footnote); color: var(--label-2); line-height: 1.4; }
 .hinweis.klein { margin-top: var(--s1); }
+/* Nur lesbar seit 11.11.2026: Hinweis oben, Schreib-Knöpfe ausgeblendet */
+.nur-lesen-hinweis { margin: var(--s2) 0; }
+html.nur-lesen .komm-knopf[data-komm="schreiben"], html.nur-lesen .komm-weg, html.nur-lesen .komm-form,
+html.nur-lesen [data-aktion="speichern"], html.nur-lesen [data-aktion="fest"] { display: none; }
 .fussnote, .fussnoten { font-size: var(--fs-footnote); color: var(--label-2); }
 .fussnoten { margin: var(--s2) 0; padding-left: var(--s5); }
 .karte-fuss { padding: var(--s2) var(--s4) 0; margin: 0; border-top: 1px solid var(--trenner); }
